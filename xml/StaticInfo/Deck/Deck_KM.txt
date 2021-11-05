@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DeckXmlRoot>
+	<Deck ID="12060001">
+		<Card>2060102</Card>
+		<Card>2060102</Card>
+		<Card>2060102</Card>
+		<Card>2060102</Card>
+		<Card>2060103</Card>
+		<Card>2060103</Card>
+		<Card>2060103</Card>
+		<Card>2060104</Card>
+		<Card>2060105</Card>
+	</Deck>
+	<Deck ID="12060002">
+		<Card>2060202</Card>
+		<Card>2060202</Card>
+		<Card>2060203</Card>
+		<Card>2060203</Card>
+		<Card>2060204</Card>
+		<Card>2060204</Card>
+		<Card>2060205</Card>
+		<Card>2060205</Card>
+		<Card>2060205</Card>
+	</Deck>
+	<Deck ID="12060003">
+		<Card>2060302</Card>
+		<Card>2060302</Card>
+		<Card>2060303</Card>
+		<Card>2060303</Card>
+		<Card>2060304</Card>
+		<Card>2060304</Card>
+		<Card>2060304</Card>
+		<Card>2060305</Card>
+		<Card>2060305</Card>
+	</Deck>
+	<Deck ID="12060004">
+		<Card>2060403</Card>
+		<Card>2060403</Card>
+		<Card>2060404</Card>
+		<Card>2060404</Card>
+		<Card>2060405</Card>
+		<Card>2060405</Card>
+		<Card>2060406</Card>
+		<Card>2060406</Card>
+		<Card>2060406</Card>
+	</Deck>
+	<Deck ID="12060005">
+		<Card>2060407</Card>
+		<Card>2060407</Card>
+		<Card>2060408</Card>
+		<Card>2060408</Card>
+		<Card>2060409</Card>
+		<Card>2060409</Card>
+		<Card>2060410</Card>
+		<Card>2060410</Card>
+		<Card>2060410</Card>
+	</Deck>
+	<Deck ID="12060006">
+		<Card>2060503</Card>
+		<Card>2060504</Card>
+		<Card>2060504</Card>
+		<Card>2060505</Card>
+		<Card>2060505</Card>
+		<Card>2060504</Card>
+		<Card>2060506</Card>
+		<Card>2060506</Card>
+		<Card>2060506</Card>
+	</Deck>
+	<Deck ID="12060007">
+		<Card>2060507</Card>
+		<Card>2060507</Card>
+		<Card>2060508</Card>
+		<Card>2060508</Card>
+		<Card>2060508</Card>
+		<Card>2060509</Card>
+		<Card>2060509</Card>
+		<Card>2060510</Card>
+		<Card>2060510</Card>
+	</Deck>
+</DeckXmlRoot>

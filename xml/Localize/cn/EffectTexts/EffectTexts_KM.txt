@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleEffectTextRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<effectTextList>
+		<BattleEffectText ID="ChargeLight">
+			<Name>光辉</Name>
+			<Desc>每有3层光辉手牌费用-1,现在手牌费用-{0}</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Sleep">
+			<Name>沉睡</Name>
+			<Desc>无法行动,仅可被玛利亚临光指定为目标，持续{0}幕</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blemishine_Ready">
+			<Name>摄敌辉光</Name>
+			<Desc>摄敌辉光已激活</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blemishine_Not_Ready">
+			<Name>摄敌辉光</Name>
+			<Desc>摄敌辉光还差{0}次进攻命中激活</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Stunning">
+			<Name>眩晕</Name>
+			<Desc>无法行动，持续{0}幕</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blessing">
+			<Name>天马祝福</Name>
+			<Desc>在这一幕结束时恢复其所有血量和混乱抗性</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BlessingLib">
+			<Name>天马祝福</Name>
+			<Desc>在这一幕结束时恢复其一半血量和所有混乱抗性</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Depressed">
+			<Name>斗志低昂</Name>
+			<Desc>骰子威力减少{0}点</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Monmentum">
+			<Name>迅敏动量</Name>
+			<Desc>骰防御骰时消耗1层迅捷动能使该骰子威力+1</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Force">
+			<Name>把握时机</Name>
+			<Desc>骰攻击骰时消耗1层把握时机使该骰子威力+1</Desc>
+		</BattleEffectText>
+	</effectTextList>
+</BattleEffectTextRoot>

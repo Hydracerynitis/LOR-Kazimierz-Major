@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PassiveXmlRoot>
+	<Passive ID="2060000">
+		<Rarity>Uncommon</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060031">
+		<Rarity>Rare</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
+	<Passive ID="2060032">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2060033">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060133">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060034">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060021">
+		<Rarity>Rare</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060022">
+		<Rarity>Unique</Rarity>
+		<Cost>5</Cost>
+  	</Passive>
+	<Passive ID="2060122">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060023">
+		<Rarity>Unique</Rarity>
+		<Cost>5</Cost>
+  	</Passive>
+	<Passive ID="2060123">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060024">
+		<Rarity>Rare</Rarity>
+		<Cost>5</Cost>
+  	</Passive>
+	<Passive ID="2060011">
+		<Rarity>Unique</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060012">
+		<Rarity>Unique</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060111">
+		<Rarity>Unique</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060013">
+		<Rarity>Rare</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2060014">
+		<Rarity>Rare</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2061040">
+		<Rarity>Unique</Rarity>
+		<Cost>1</Cost>
+  	</Passive>
+	<Passive ID="2061041">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2060041">
+		<Rarity>Rare</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2060042">
+		<Rarity>Rare</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060043">
+		<Rarity>Rare</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2060044">
+		<Rarity>Rare</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060045">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060046">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2061050">
+		<Rarity>Unique</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
+	<Passive ID="2060051">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060151">
+		<Rarity>Unique</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060052">
+		<Rarity>Uncommon</Rarity>
+		<Cost>9</Cost>
+  	</Passive>
+	<Passive ID="2060053">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2060054">
+		<Rarity>Unique</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060056">
+		<Rarity>Unique</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060057">
+		<Rarity>Unique</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+</PassiveXmlRoot>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleEffectTextRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<effectTextList>
+		<BattleEffectText ID="Blood">
+			<Name>鲜血附魔</Name>
+			<Desc>进攻骰造成伤害时提升该伤害{0}%并摧毁所有层数</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BloodStun">
+			<Name>血归缠身</Name>
+			<Desc>每一幕开始时承受10点伤害并使血骑士获得2层"鲜血附魔"，持续{0}幕</Desc>
+		</BattleEffectText>
+	</effectTextList>
+</BattleEffectTextRoot>

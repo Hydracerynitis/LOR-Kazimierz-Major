@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<localize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- 玛莉亚临光 -->
+	<text id="2060007">玛嘉烈临光之书</text>
+	<text id="2060006">"瑕光"骑士玛莉亚临光之书</text>
+	<text id="2060005">"凋零"骑士之书</text>
+	<text id="2060004">"腐败"骑士之书</text>
+	<text id="2060003">"左手"骑士泰特斯白杨之书</text>
+	<text id="2060002">"锈铜"骑士奥海默英格拉之书</text>
+	<text id="2060001">"塑料"骑士瑟奇亚克之书</text>
+	<text id="2060000">卡西米尔锦标赛邀请函</text>
+	<!-- 长夜临光 -->
+	<text id="2160007">"血"骑士之书</text>
+	<text id="2160000">卡西米尔特锦赛邀请函</text>
+</localize>

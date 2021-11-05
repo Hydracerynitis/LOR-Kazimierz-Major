@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookUseXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BookUse ID="2160000">
+		<TextId>2160000</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+	</BookUse>
+	<BookUse ID="2160007">
+		<TextId>2160007</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>7</Chapter>
+		<!--<DropItem Type="Equip">2060007</DropItem>-->
+	</BookUse>
+</BookUseXmlRoot>

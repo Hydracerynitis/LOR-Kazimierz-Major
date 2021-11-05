@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PassiveXmlRoot>
+	<Passive ID="2160000">
+		<Rarity>Uncommon</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2160041">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2160042">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160043">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160044">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160045">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2160046">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160047">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160048">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+</PassiveXmlRoot>

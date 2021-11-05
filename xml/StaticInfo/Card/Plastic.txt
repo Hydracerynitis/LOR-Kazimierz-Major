@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Card ID="2060101">
+		<Name>塑料节奏</Name>
+		<Artwork>Plastic5</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="Far" Cost="1" />
+		<Script>Tempo</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="4" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="MonmentumReplicate" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="ForceReplicate" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		 <Priority>10</Priority>
+</Card>
+<Card ID="2061101">
+		<Name>塑料节奏</Name>
+		<Artwork>Plastic5</Artwork>
+		<Rarity>Unique</Rarity>
+        <Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="4" />
+		<Script>TempoLib</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="4" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="MonmentumReplicate" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="ForceReplicate" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		 <Priority>10</Priority>
+</Card>
+<Card ID="2060102">
+		<Name>风筝战术</Name>
+		<Artwork>Plastic1</Artwork>
+		<Rarity>Rare</Rarity>
+        <Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="2" />
+		<Script>BothUse1power1</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="3" Dice="7" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="7" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>7</Priority>
+</Card>
+<Card ID="2060103">
+		<Name>打破僵局</Name>
+		<Artwork>Plastic4</Artwork>
+		<Rarity>Uncommon</Rarity>
+        <Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="2" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="6" Dice="9" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="Force2clash" ActionScript="" Desc="" />
+			<Behaviour Min="6" Dice="8" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Monmentum2atk" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>6</Priority>
+</Card>
+<Card ID="2060104">
+		<Name>拉开距离</Name>
+		<Artwork>Plastic2</Artwork>
+		<Rarity>Rare</Rarity>
+        <Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="1" />
+		<Script>energy2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="3" Dice="6" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="6" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="2" Dice="4" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>6</Priority>
+</Card>
+<Card ID="2060105">
+		<Name>识破连击</Name>
+		<Artwork>Plastic3</Artwork>
+		<Rarity>Uncommon</Rarity>
+        <Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="1" />
+		<Script>OneSideForceMomemtem</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="4" Dice="6" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="6" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="2" Dice="7" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>6</Priority>
+</Card>
+</DiceCardXmlRoot>

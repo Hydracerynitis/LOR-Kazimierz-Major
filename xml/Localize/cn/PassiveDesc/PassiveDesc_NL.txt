@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PassiveDesc ID="2160000">
+		<Name>巅峰对决</Name> 
+		<Desc>舞台开启时回复所有司书血量和混乱抗性并且提升至情感等级5</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160041">
+		<Name>血液蚀刻</Name> 
+		<Desc>每失去7点生命值时获得一层"鲜血附魔"。每层"鲜血附魔"会在进攻骰造成伤害时提升其20%伤害并清空"鲜血附魔"魔层数</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160042">
+		<Name>血归</Name> 
+		<Desc>会使用特殊书页"血归"，使书页目标从下一幕起陷入混乱持续2幕;期间每一幕目标承受10点血量并使自己获得2层"鲜血附魔";
+优先攻击未陷入混乱的司书.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160043">
+		<Name>血噬</Name> 
+		<Desc>没有陷入混乱时若一幕内被一个敌人造成超过50点伤害后立刻对其使用血归.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160044">
+		<Name>血甲</Name> 
+		<Desc>被单方面攻击伤害和混乱抗性改为抵抗.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160045">
+		<Name>血舞</Name> 
+		<Desc>体力无法低于1。若承受致死伤害则恢复至50%和所有混乱抗性清除所有状态并且下三幕自身不承受伤害无法行动无法被指定为目标,
+期间每幕都会召唤4个凝血之刃.若3幕后自身体力未达到100%时移除被动"血甲"和"血舞"并得被动"血刃"</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160046">
+		<Name>血刃</Name> 
+		<Desc>骰子伤害提升25%，每幕开始时召唤一个凝血之刃并获得10-16反击骰</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160047">
+		<Name>血祭</Name> 
+		<Desc>这一幕结束时恢复血骑士10%血量并摧毁自身</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160048">
+		<Name>血液造物</Name> 
+		<Desc>被范围杀伤书页指定为目标时伤害和混乱抗性改为抵抗.
+不会攻击被血归影响的司书</Desc>
+	</PassiveDesc>
+</PassiveDescRoot>

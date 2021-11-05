@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NormalInvitation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>1.1</Version>
+  <Workshop>
+    <ID>KazimierMajor</ID>
+    <Title>Kazimier Major Tournament</Title>
+    <Description>卡西米尔锦标赛 ---- 内含一个接待
+这个mod和虾珍之前交流时提议加入虾珍的方舟mod企划。所以这个mod有可能会是虾珍方舟mod的正式版的一部分
+目前在本地上发布给群友游玩
+
+程序,设计 by Hydracerynitis
+美术 by 虾珍</Description>
+    <Tag>Invitation</Tag>
+    <PreviewImage />
+  </Workshop>
+  <InvitationFile/>
+</NormalInvitation>

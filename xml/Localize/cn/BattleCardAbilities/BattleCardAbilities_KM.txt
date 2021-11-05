@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BattleCardAbility ID="aoeatk">
+    <Desc>[命中时] 对其他所有敌方单位造成等同于骰子的伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="FinalPush">
+    <Desc>仅限对拥有3层[斗志低昂]的敌人使用
+[使用时] 目标每有一层[斗志低昂]该牌所有骰子威力+10</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="break4atk">
+    <Desc>[命中时]对目标造成4点混乱抗性伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="break5pw">
+    <Desc>[拼点胜利]对目标造成5点混乱抗性伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="break4pw">
+    <Desc>[拼点胜利]对目标造成4点混乱抗性伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Allbreak4pw">
+    <Desc>[使用时] 该牌所有骰子获得"[拼点胜利]对目标造成4点混乱抗性伤害"</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Duel">
+    <Desc>[使用时] 该牌所有骰子获得"[拼点胜利]对目标造成4点混乱抗性伤害"和"[拼点失败]对自己造成2点混乱伤害"</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="drawCard2">
+    <Desc>[使用时]抽取2张书页</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="powerUp2targetDfn">
+    <Desc>如果目标是防御骰则该骰子威力+2</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="powerUp1thisRoundenergy2">
+    <Desc>[战斗开始时] 在这一幕自己获得1层“威力上升”</Desc>
+	<Desc>[使用时] 恢复2点光芒</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="powerUp1thisRound">
+    <Desc>[战斗开始时] 在这一幕自己获得1层“威力上升”</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="tag3hp10pc">
+    <Desc>[拼点时] 如果本书页骰子全部命中于目标，对其造成等同于其生命值10%的伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="tag3hp10pcLib">
+    <Desc>[拼点时] 如果本书页骰子全部命中于目标，对其造成等同于其生命值10%的伤害(最高24点)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="InfiniteRepeat">
+    <Desc>直至单方面攻击该骰子将重复无数遍
+[拖延并不是一个好选择]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Critical">
+    <Desc>仅限体力低于25%时使用</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Tempo">
+    <Desc>[使用时] 获得3层迅捷动量和把握时机，并下一幕让Jack2护甲[过热]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="TempoLib">
+    <Desc>[使用时] 获得2层迅捷动量和把握时机</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="MonmentumReplicate">
+    <Desc>若不与反击骰拼点,额外消耗1层[迅捷动能]复制一个穿刺4~10骰子(至多5次)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ForceReplicate">
+    <Desc>若不与反击骰拼点,额外消耗1层[把握时机]复制一个闪避4~10骰子(至多5次)</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="BothUse1power1">
+    <Desc>[使用时] 使用一层[迅捷动量]和[把握时机]使所有骰子获得威力+1</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Force2clash">
+    <Desc>[拼点胜利时] 自身获得2层[把握时机]</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="Monmentum2atk">
+    <Desc>[命中时] 自身获得2层[迅敏动量]</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="OneSideForceMomemtem">
+    <Desc>[单方面攻击时] 自身获得1层[把握时机][迅敏动量]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="doubleAoeDmg">
+    <Desc>[命中时]对其他所有敌方单位造成相等伤害</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="Other1SameBreak">
+    <Desc>[命中时]对随机其他1位造成等同于骰子的混乱伤害</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="Crippling">
+    <Desc>[命中时] 在下一幕减少目标一个速度骰</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="disarm2pw">
+    <Desc>[拼点胜利] 在下一幕对目标施加2层[破绽]</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="disarm1pw">
+    <Desc>[拼点胜利] 在下一幕对目标施加1层[破绽]</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="handicap">
+    <Desc>[命中时]使下一个骰子命中时对目标施加1层[虚弱][破绽][缠绕]</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="LowpowerUp1">
+    <Desc>如果目标混乱抗性小于50%，该骰子威力+1</Desc>
+  </BattleCardAbility>
+     <BattleCardAbility ID="Highbreak5">
+    <Desc>如果目标混乱抗性大于50%，该骰子混乱伤害+5</Desc>
+  </BattleCardAbility>
+	<BattleCardAbility ID="destroynextdice">
+    <Desc>[命中时] 摧毁目标下一个骰子</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="Sleeping">
+    <Desc>[拼点胜利] 下一幕对目标施加1层沉睡并使所有友方单位在这一幕结束时恢复其15%的血量</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="SleepingLib">
+    <Desc>[拼点胜利] 下一幕对目标施加1层沉睡
+使用者可攻击受承受的单位</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="Regenerate">
+    <Desc>[使用时] 使所有友方单位在这一幕结束时恢复其10%的血量</Desc>
+  </BattleCardAbility>
+	<BattleCardAbility ID="Blessing">
+    <Desc>[使用时] 为所有友方单位施加天马祝福，这一幕结束时每有一个天马祝福触发其效果则自己获得一层眩晕</Desc>
+  </BattleCardAbility>
+	<BattleCardAbility ID="BlessingLib">
+    <Desc>[使用时] 为所有友方单位施加天马祝福，这一幕结束时每有一个天马祝福触发其效果则自己获得一层眩晕</Desc>
+  </BattleCardAbility>
+ 	<BattleCardAbility ID="Avatar">
+    <Desc>仅限情感等级为3时使用
+[使用时] [光芒涌动]被动替换成[先贤化身]被动</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="Improvise">
+    <Desc>该书页的防御骰单方面攻击时会转化为最大值和最小值-2的打击进攻骰</Desc>
+  </BattleCardAbility>
+   	<BattleCardAbility ID="recoverBreak5pw">
+    <Desc>[拼点胜利] 恢复5点混乱抗性</Desc>
+  </BattleCardAbility>
+    	<BattleCardAbility ID="powerUp1Last">
+    <Desc>[拼点胜利] 最后一个骰子威力+1</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightHeal">
+    <Desc>[使用时] 抽两张牌
+如果光辉层数大于6消耗2层光辉恢复友方血量最少的单位10血量</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightHealLib">
+    <Desc>[使用时] 抽一张牌
+如果光辉层数大于6消耗2层光辉恢复友方血量最少的单位5血量</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightPowerUp">
+    <Desc>[使用时] 如果光辉层数大于6消耗2层光辉使该战斗书页所有骰子威力+1</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightPowerDown">
+    <Desc>[使用时] 如果光辉层数大于6消耗2层光辉使目标的战斗书页所有骰子最大值-2</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightProtection">
+    <Desc>[战斗开始] 如果光辉层数大于6消耗2层光辉使友方血量最少的单位获得2层[守护][振奋]</Desc>
+  </BattleCardAbility>
+</BattleCardAbilityDescRoot>

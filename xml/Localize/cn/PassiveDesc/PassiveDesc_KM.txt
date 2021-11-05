@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PassiveDesc ID="2060000">
+		<Name>战前准备</Name> 
+		<Desc>舞台开启时将双方情感等级提升至较高一方的平均情感等级</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060031">
+		<Name>威慑</Name> 
+		<Desc>敌人以自己为目标的骰子威力减1</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060032">
+		<Name>起来。继续。</Name> 
+		<Desc>如果把目标打入混乱，恢复目标所有混乱抗性并施加一层"斗志低昂"(所有骰子威力-X)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060033">
+		<Name>百折不饶</Name> 
+		<Desc>体力无法低于1，若体力将至1则在下一幕开始时恢复所有血量,混乱抗性和光芒并永久获得1层强壮忍耐
+(至多生效1次)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060133">
+		<Name>百折不饶</Name> 
+		<Desc>体力无法低于1，若体力将至1则在下一幕开始时恢复30%的血量和所有混乱抗性
+(至多生效1次)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060034">
+		<Name>浪费时间</Name> 
+		<Desc>如果敌人的斗志低昂层数达到3层会用特殊强力战斗书页终结对决</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060021">
+		<Name>嗜血</Name> 
+		<Desc>如果血量高于50%，减少等同于5%血量的伤害使下一个骰子威力+1；如果血量低于50%，命中目标会恢复等同于骰子威力血量</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060022">
+		<Name>粉碎</Name> 
+		<Desc>如果进攻骰子拼点胜利，对目标造成等同于骰子威力一半伤害(每张牌仅限一次)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060122">
+		<Name>粉碎</Name> 
+		<Desc>当血量大于50%时，如果进攻骰子拼点胜利，对目标造成等同于骰子威力一半的伤害(每张牌仅限一次)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060023">
+		<Name>狂怒</Name> 
+		<Desc>如果进攻骰子拼点失败，则重复该骰子一次(每张牌仅限一次)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060123">
+		<Name>狂怒</Name> 
+		<Desc>当血量小于50%时，如果进攻骰子拼点失败，则重复该骰子一次(每张牌仅限一次)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060024">
+		<Name>死斗</Name> 
+		<Desc>若体力减至25%，便恢复所有混乱抗性，随后使用特殊书页“殊死一搏”</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060011">
+		<Name>崭新的Jack护甲</Name> 
+		<Desc> 回合开始时如果没有陷入混乱和眩晕提供2点守护和2点敏捷并且抽取一张牌</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060012">
+		<Name>为了美观的牺牲</Name> 
+		<Desc>进入混乱或者眩晕时清空自身所有的迅捷动能和把握时机并获得2层易损</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060111">
+		<Name>残次的Jack护甲</Name> 
+		<Desc>回合开始时获得2层守护敏捷并抽取一张牌
+每使用6张牌后下一幕无法行动1幕</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060013">
+		<Name>游行弩击</Name> 
+		<Desc>骰进攻骰为自己施加一层迅捷动能，骰防御骰时消耗1层迅捷动能使该骰子威力+1</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060014">
+		<Name>洞悉破绽</Name> 
+		<Desc>骰防御骰为自己施加一层把握时机，骰攻击骰时消耗1层把握时机使该骰子威力+1</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060041">
+		<Name>腐败烟霾</Name> 
+		<Desc>每一幕开始时如果没有陷入混乱则对面受到4点伤害</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060043">
+		<Name>凋零污染</Name> 
+		<Desc>每一幕开始时如果没有陷入混乱则对面受到4点混乱伤害</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060042">
+		<Name>毁灭一切</Name> 
+		<Desc>命中时，对所有敌方单位造成4点伤害</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060044">
+		<Name>扩散邪咒</Name> 
+		<Desc>命中时，对两位随机敌方单位造成4点混乱伤害</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060045">
+		<Name>腐败的肉体不配在这站立</Name> 
+		<Desc>每三回合，腐败骑士和凋零骑士会交替使用他们的特殊战斗书页，做好准备</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060046">
+		<Name>凋零的思维理应消逝殆尽</Name> 
+		<Desc>每三回合，腐败骑士和凋零骑士会交替使用他们的特殊战斗书页，做好准备</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2061040">
+		<Name>商业联合的行刑官</Name> 
+		<Desc>每一幕开始时若带有“商业联合的行刑官”的队友死亡则速度骰子+4,抽8张牌且手牌费用减少至0</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2061041">
+		<Name>迅速收尾</Name> 
+		<Desc>每一幕开始时若有敌方单位死亡且己方占人数优势这一幕所有骰子威力+1</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2061050">
+		<Name>家训是“不畏苦暗”</Name> 
+		<Desc>承受伤害时恢复2点混乱抗性</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060051">
+		<Name>光芒涌动</Name> 
+		<Desc>击中敌人时恢复随机一位友方单位4血量</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060151">
+		<Name>先贤化身</Name> 
+		<Desc>骰子威力+1，击中敌人时对目标额外造成一半的伤害并恢复随机一位其他友方单位等同于额外伤害的血量</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060052">
+		<Name>剑盾骑士</Name> 
+		<Desc>防御骰子拼点胜利时添加一个4-4斩击骰子</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060053">
+		<Name>天马光环</Name> 
+		<Desc>每一幕开始时恢复所有友方单位4点血量和4点混乱抗性</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060054">
+		<Name>耀骑士</Name> 
+		<Desc>回合开始时如果所拥有的光芒大于3将多余的光芒储存为光辉，使用牌时恢复一点光芒</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060056">
+		<Name>摄敌辉光</Name> 
+		<Desc>命中5次之后被单方面攻击使会以16-16防御骰(拼点胜利使目标下一幕陷入沉睡)迎战。可以攻击陷入沉睡的单位</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060057">
+		<Name>天马之耀</Name> 
+		<Desc>如果有友方单位血量低于50%，将一张天马之耀置入你的手牌（每局只会触发一次）</Desc>
+	</PassiveDesc>
+</PassiveDescRoot>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookUseXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BookUse ID="2060000">
+		<TextId>2060000</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+	</BookUse>
+	<BookUse ID="2060007">
+		<TextId>2060007</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060007</DropItem>
+	</BookUse>
+		<BookUse ID="2060006">
+		<TextId>2060006</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060006</DropItem>
+	</BookUse>
+		<BookUse ID="2060005">
+		<TextId>2060005</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060005</DropItem>
+	</BookUse>
+		<BookUse ID="2060004">
+		<TextId>2060004</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060004</DropItem>
+	</BookUse>
+	<BookUse ID="2060003">
+		<TextId>2060003</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060003</DropItem>
+	</BookUse>
+	<BookUse ID="2060002">
+		<TextId>2060002</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060002</DropItem>
+	</BookUse>
+		<BookUse ID="2060001">
+		<TextId>2060001</TextId>
+		<BookIcon>Kazimier</BookIcon>
+		<Chapter>6</Chapter>
+		<DropItem Type="Equip">2060001</DropItem>
+	</BookUse>
+</BookUseXmlRoot>

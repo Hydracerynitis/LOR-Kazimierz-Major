@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BattleCardAbility ID="blood2">
+    <Desc>[使用时] 获得2层[鲜血附魔]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="blood4">
+    <Desc>[使用时] 获得4层[鲜血附魔]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodStun">
+    <Desc>[使用时] 摧毁本书页所有骰子并使目标从下一幕起陷入混乱持续2幕;
+期间每一幕目标承受10点血量并使自己获得2层[鲜血附魔]</Desc>
+  </BattleCardAbility>
+</BattleCardAbilityDescRoot>

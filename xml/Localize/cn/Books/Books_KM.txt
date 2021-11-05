@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<bookDescList>
+		<BookDesc BookID="2160007">
+			<BookName>"血"骑士之页</BookName>
+			<TextList>
+				<Desc>血骑士，狄开俄波利斯。卡西米尔感染者骑士参赛制度的提议人，大骑士领感染者的英雄，无数孩子与感染者心中的偶像。"英雄"究竟出卖了什么，才换取了如今的和平?</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060007">
+			<BookName>玛嘉烈临光之页</BookName>
+			<TextList>
+				<Desc>临光，前卡西米尔耀骑士，感染者援助团体"使徒"的一员。在掩护己方队员，机动作战，歼灭战与开阔地带作战中体现了极高的战斗技巧和个人军事素养。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060006">
+			<BookName>玛莉亚临光之页</BookName>
+			<TextList>
+				<Desc>玛莉亚·临光，来自卡西米尔的年轻骑士，干员临光的妹妹，曾有骑士竞技经验，在各项测试中均展露出优秀的作战素质。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060005">
+			<BookName>"凋零"骑士之页</BookName>
+			<TextList>
+				<Desc>散发着恐怖气息的断角萨卡兹骑士，有明显过度使用药物的痕迹。栽下凋零法术的种子，与之敌对的骑士终将归于凋零。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060004">
+			<BookName>"腐败"骑士之页</BookName>
+			<TextList>
+				<Desc>散发着恐怖气息的断角萨卡兹骑士，有明显过度使用药物的痕迹。拥有粉碎敌人的可怕力量，眼里只有目标。他踏出的每一步都是为了散播腐败。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060003">
+			<BookName>泰特斯白杨之页</BookName>
+			<TextList>
+				<Desc>他的傲慢如日中天，正如他恐怖的实力与冷酷的战法，以及排队到了隔壁赛区的粉丝人数!“左手”泰特斯白杨!削弱斗志，击垮精神，睥睨跪倒投降的敌人，这是他唯一认可的胜利!</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060002">
+			<BookName>奥尔默英格拉之页</BookName>
+			<TextList>
+				<Desc>被称为"赛场屠夫"的大骑士! 数次因行径残暴而被判犯规，有数次凭着企业献金避免了审判团的制裁! 古老的骑士家族英格拉家的幺子!愈战愈勇的无情斗士!奥尔默因格拉——</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2060001">
+			<BookName>瑟奇亚克之页</BookName>
+			<TextList>
+				<Desc>呼啸骑士团特锦赛首发成员，如今呼啸竞技场的大招牌，坚韧护甲，防守反击，十万粉丝，百万身价！别忘了！“呼啸守卫，狂风也将臣服于你”！！</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+	</bookDescList>
+</BookDescRoot>

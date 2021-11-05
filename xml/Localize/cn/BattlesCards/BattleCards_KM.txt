@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <cardDescList>
+    <BattleCardDesc ID="2060301">
+      <LocalizedName>嬉闹结束</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060302">
+      <LocalizedName>稍作歇息</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061302">
+      <LocalizedName>稍作歇息</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060303">
+      <LocalizedName>先行压制</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061303">
+      <LocalizedName>先行压制</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060304">
+      <LocalizedName>正面对决</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061304">
+      <LocalizedName>正面对决</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060305">
+      <LocalizedName>灭却尊严</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061305">
+      <LocalizedName>灭却尊严</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060201">
+      <LocalizedName>殊死一搏</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061201">
+      <LocalizedName>殊死一搏</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060202">
+      <LocalizedName>磨刀霍霍</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061202">
+      <LocalizedName>磨刀霍霍</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060203">
+      <LocalizedName>摧毁防护</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061203">
+      <LocalizedName>摧毁防护</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060204">
+      <LocalizedName>劈碎盾甲</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061204">
+      <LocalizedName>劈碎盾甲</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060205">
+      <LocalizedName>斧刃旋风</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061205">
+      <LocalizedName>斧刃旋风</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060101">
+      <LocalizedName>塑料节奏</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061101">
+      <LocalizedName>塑料节奏</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060102">
+      <LocalizedName>风筝战术</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060103">
+      <LocalizedName>撕开僵局</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060104">
+      <LocalizedName>拉开距离</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060105">
+      <LocalizedName>识破连击</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060401">
+      <LocalizedName>碾碎肉体</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060403">
+      <LocalizedName>骨碎脊折</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061403">
+      <LocalizedName>骨碎脊折</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060404">
+      <LocalizedName>行刑准备</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061404">
+      <LocalizedName>行刑准备</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060405">
+      <LocalizedName>致残猛袭</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060406">
+      <LocalizedName>颅骨之声</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061406">
+      <LocalizedName>颅骨之声</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060402">
+      <LocalizedName>湮灭灵魂</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060407">
+      <LocalizedName>刑场速射</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061407">
+      <LocalizedName>刑场速射</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060408">
+      <LocalizedName>集中点射</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061408">
+      <LocalizedName>集中点射</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060409">
+      <LocalizedName>恶咒侵蚀</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060410">
+      <LocalizedName>压制猛击</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060501">
+      <LocalizedName>摄敌辉光</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061501">
+      <LocalizedName>摄敌辉光</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060503">
+        <LocalizedName>先贤化身</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060504">
+      <LocalizedName>呼吸空间</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061504">
+      <LocalizedName>呼吸空间</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060505">
+      <LocalizedName>临场发挥</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060506">
+      <LocalizedName>观察，分析，击破</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061506">
+      <LocalizedName>观察，分析，击破</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060502">
+      <LocalizedName>天马之耀</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061502">
+      <LocalizedName>天马之耀</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060507">
+      <LocalizedName>紧急治疗</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061507">
+      <LocalizedName>紧急治疗</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060508">
+      <LocalizedName>战锤惩戒</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061508">
+      <LocalizedName>战锤惩戒</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060509">
+      <LocalizedName>刺眼闪光</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061509">
+      <LocalizedName>刺眼闪光</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060510">
+      <LocalizedName>光之屏障</LocalizedName>
+    </BattleCardDesc>
+ </cardDescList>
+</BattleCardDescRoot>

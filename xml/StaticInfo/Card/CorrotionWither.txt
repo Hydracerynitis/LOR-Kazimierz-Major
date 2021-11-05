@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Card ID="2060401">
+		<Name>碾碎肉体</Name>
+		<Artwork>Corrosion5</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="15" Dice="15" Type="Atk" Detail="Hit" Motion="J" EffectRes="Thumb_J" Script="doubleAoeDmg" ActionScript="hodfinal_spiderbud_s1" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>10</Priority>
+</Card>
+<Card ID="2061401">
+		<Name>碾碎肉体</Name>
+		<Artwork>Corrosion5</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="Near" Cost="4" />
+        <Option>ExhaustOnUse</Option>
+        <Option>OnlyPage</Option>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="12" Dice="18" Type="Atk" Detail="Hit" Motion="J" EffectRes="Thumb_J" Script="doubleAoeDmg" ActionScript="hodfinal_spiderbud_s1" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>10</Priority>
+</Card>
+<Card ID="2060403">
+		<Name>骨碎脊折</Name>
+		<Artwork>Corrosion2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="3"/>
+		<Script>drawCard2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="10" Dice="14" Type="Atk" Detail="Hit" Motion="H" EffectRes="Thumb_H" Script="Crippling" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>8</Priority>
+</Card>
+<Card ID="2061403">
+		<Name>骨碎脊折</Name>
+		<Artwork>Corrosion2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="3"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="10" Dice="14" Type="Atk" Detail="Hit" Motion="H" EffectRes="Thumb_H" Script="Crippling" ActionScript="" Desc="" />
+            <Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>8</Priority>
+</Card>
+<Card ID="2060404">
+		<Name>行刑准备</Name>
+		<Artwork>Corrosion4</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Spec Range="Near" Cost="0"/>
+		<Script>energy2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="2" Dice="5" Type="Atk" Detail="Penetrate" Motion="J" EffectRes="Thumb_J" Script="strength1atkAllFriend" ActionScript="" Desc="" />
+      		<Behaviour Min="2" Dice="8" Type="Atk" Detail="Hit" Motion="Z" EffectRes="Thumb_Z" Script="strength1atkAllFriend" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>5</Priority>
+</Card>
+<Card ID="2061404">
+		<Name>行刑准备</Name>
+		<Artwork>Corrosion4</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Spec Range="Near" Cost="1"/>
+		<Script>energy2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="2" Dice="5" Type="Atk" Detail="Penetrate" Motion="J" EffectRes="Thumb_J" Script="ally2strength1atk" ActionScript="" Desc="" />
+      		<Behaviour Min="2" Dice="8" Type="Atk" Detail="Hit" Motion="Z" EffectRes="Thumb_Z" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>5</Priority>
+</Card>
+<Card ID="2060405">
+		<Name>致残猛袭</Name>
+		<Artwork>Corrosion1</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Spec Range="Near" Cost="3"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="12" Dice="16" Type="Atk" Detail="Hit" Motion="J" EffectRes="Thumb_J" Script="handicap" ActionScript="" Desc="" />
+      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="Thumb_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>7</Priority>
+</Card>
+<Card ID="2060406">
+		<Name>颅骨之声</Name>
+		<Artwork>Corrosion3</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="2"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="6" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="Thumb_J" Script="weak2atk" ActionScript="" Desc="" />
+      		<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="Thumb_G" Script="disarm2pw" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>6</Priority>
+</Card>
+<Card ID="2061406">
+		<Name>颅骨之声</Name>
+		<Artwork>Corrosion3</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="2"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="6" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="Thumb_J" Script="weak1atk" ActionScript="" Desc="" />
+      		<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="Thumb_G" Script="disarm1pw" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>6</Priority>
+</Card>
+<Card ID="2060402">
+		<Name>湮灭灵魂</Name>
+		<Artwork>Wither5</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="FarArea" Cost="0" Affection="Team"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="20" Dice="20" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="Other1SameBreak" ActionScript="redhood_throwknives" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>10</Priority>
+</Card>
+<Card ID="2061402">
+		<Name>湮灭灵魂</Name>
+		<Artwork>Wither5</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="FarArea" Cost="5" Affection="Team"/>
+        <Option>ExhaustOnUse</Option>
+        <Option>OnlyPage</Option>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="16" Dice="24" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="Other1SameBreak" ActionScript="redhood_throwknives" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>10</Priority>
+</Card>
+<Card ID="2060407">
+		<Name>刑场速射</Name>
+		<Artwork>Wither3</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Spec Range="Far" Cost="0"/>
+		<Script>energy2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>5</Priority>
+</Card>
+<Card ID="2061407">
+		<Name>刑场速射</Name>
+		<Artwork>Wither3</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Spec Range="Far" Cost="0"/>
+		<Script>energy1</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>5</Priority>
+</Card>
+<Card ID="2060408">
+		<Name>集中点射</Name>
+		<Artwork>Wither2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="3"/>
+		<Script>drawCard2</Script>
+		<ScriptDesc></ScriptDesc>
+		<BehaviourList>
+			<Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="LowpowerUp1" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="LowpowerUp1" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="LowpowerUp1" ActionScript="" Desc=""/>
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>8</Priority>
+</Card>
+<Card ID="2061408">
+		<Name>集中点射</Name>
+		<Artwork>Wither2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="3"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+		<BehaviourList>
+			<Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="LowpowerUp1" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="LowpowerUp1" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="LowpowerUp1" ActionScript="" Desc=""/>
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>8</Priority>
+</Card>
+<Card ID="2060409">
+		<Name>恶咒侵蚀</Name>
+		<Artwork>Wither1</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="2"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+		<BehaviourList>
+			<Behaviour Min="2" Dice="7" Type="Def" Detail="Guard" Motion="E" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Highbreak5" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Highbreak5" ActionScript="" Desc=""/>
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>7</Priority>
+</Card>
+<Card ID="2060410">
+		<Name>压制猛击</Name>
+		<Artwork>Wither4</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Spec Range="Far" Cost="2"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+		<BehaviourList>
+			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="destroynextdice" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="destroynextdice" ActionScript="" Desc=""/>
+		</BehaviourList>
+		<Chapter>6</Chapter>
+		<Priority>6</Priority>
+</Card>
+</DiceCardXmlRoot>

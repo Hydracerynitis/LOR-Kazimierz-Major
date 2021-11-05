@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnemyUnitClassRoot>
+	<Enemy ID="2060001">
+		<NameID>206001</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060001</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060001</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2060002">
+		<NameID>206002</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060002</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060002</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2060003">
+		<NameID>206003</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060003</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060003</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2060004">
+		<NameID>206004</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060004</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060004</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2060005">
+		<NameID>206005</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060005</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060005</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2060006">
+		<NameID>206006</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060006</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060006</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2060007">
+		<NameID>206007</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12060007</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2060007</DropItem>
+		</DropTable>
+	</Enemy>
+</EnemyUnitClassRoot>

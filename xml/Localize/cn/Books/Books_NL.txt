@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<bookDescList>
+		<BookDesc BookID="2160007">
+			<BookName>"血"骑士之页</BookName>
+			<TextList>
+				<Desc>血骑士，狄开俄波利斯。卡西米尔感染者骑士参赛制度的提议人，大骑士领感染者的英雄，无数孩子与感染者心中的偶像。"英雄"究竟出卖了什么，才换取了如今的和平?</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160008">
+			<BookName>凝血之刃</BookName>
+			<TextList>
+				<Desc>呼应血骑士的意志而活性化的血液，凝聚成了一把利刃的形状</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+	</bookDescList>
+</BookDescRoot>

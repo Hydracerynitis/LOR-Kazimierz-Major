@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StageXmlRoot>
+	<Stage id="20600003">
+		<Wave>
+      			<Formation>13</Formation>
+      			<AvailableUnit>1</AvailableUnit>
+      			<Unit>2060001</Unit>
+		</Wave>
+		  <Wave>
+      			<Formation>13</Formation>
+      			<AvailableUnit>1</AvailableUnit>
+      			<Unit>2060002</Unit>
+		</Wave>
+   		 <Wave>
+      			<Formation>13</Formation>
+      			<AvailableUnit>1</AvailableUnit>
+      			<Unit>2060003</Unit>
+		</Wave>
+		<Wave>
+      			<Formation>5</Formation>
+      			<AvailableUnit>2</AvailableUnit>
+      			<Unit>2060004</Unit>
+      			<Unit>2060005</Unit>
+		</Wave>
+		<Wave>
+      			<Formation>5</Formation>
+      			<AvailableUnit>2</AvailableUnit>
+      			<Unit>2060006</Unit>
+      			<Unit>2060007</Unit>
+		</Wave>
+    		<FloorNum>1</FloorNum>
+		<StoryType>Kazimier</StoryType>
+    		<Invitation Combine="BookRecipe">
+      			<Book>2060000</Book>
+    		</Invitation>
+		<MapInfo>Custom_Stadium</MapInfo>
+    		<Chapter>6</Chapter>
+  	</Stage>
+	<Stage id="21600003">
+		<Wave>
+      			<Formation>1</Formation>
+      			<AvailableUnit>5</AvailableUnit>
+      			<Unit>2160007</Unit>
+		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>Kazimier</StoryType>
+    		<Invitation Combine="BookRecipe">
+      			<Book>2160000</Book>
+    		</Invitation>
+    	<Condition>
+      		<Stage>20600003</Stage>
+    	</Condition>
+		<MapInfo>Custom_Tournament</MapInfo>
+    	<Chapter>7</Chapter>
+  	</Stage>
+</StageXmlRoot>
