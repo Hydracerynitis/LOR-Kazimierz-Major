@@ -13,9 +13,11 @@ namespace KazimierzMajor
     {
         public override void CustomInit()
         {
-            base.CustomInit();
             this.Retextualize();
-            this.mapBgm = new AudioClip[3] { Harmony_Patch.Knight, Harmony_Patch.Knight, Harmony_Patch.Knight };
+            if (Singleton<StageController>.Instance.CurrentWave == 1)
+                mapBgm = new AudioClip[3] { Harmony_Patch.BGM["Fearless"], Harmony_Patch.BGM["Fearless"], Harmony_Patch.BGM["Fearless"] };
+            if (Singleton<StageController>.Instance.CurrentWave == 2) 
+                 mapBgm = new AudioClip[3] { Harmony_Patch.BGM["Knight"], Harmony_Patch.BGM["Knight"], Harmony_Patch.BGM["Knight"] };
             this.mapSize = MapSize.L;
             this._bMapInitialized = true;
         }
@@ -33,7 +35,10 @@ namespace KazimierzMajor
         private void Retextualize()
         {           
             GameObject bg = this.gameObject.transform.GetChild(1).GetChild(0).GetChild(0).gameObject;
-            DuplicateSprite(bg, "Tournament");
+            if (Singleton<StageController>.Instance.CurrentWave == 1)
+                DuplicateSprite(bg, "Street");
+            if (Singleton<StageController>.Instance.CurrentWave == 2)
+                DuplicateSprite(bg, "Tournament");
             for(int i=1; i<6; i++)
                 this.gameObject.transform.GetChild(1).GetChild(0).GetChild(i).gameObject.SetActive(false);
             this.gameObject.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);

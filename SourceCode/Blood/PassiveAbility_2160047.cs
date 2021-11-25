@@ -14,10 +14,15 @@ namespace KazimierzMajor
         private BattleUnitModel BloodKnight;
         private Queue<int> Priority=new Queue<int>(); 
         private bool sacrifice=false;
+
+        public override int MaxPlayPointAdder()
+        {
+            return -owner.emotionDetail.MaxPlayPointAdderByLevel();
+        }
         public override void Init(BattleUnitModel self)
         {
             base.Init(self);
-            BloodKnight = BattleObjectManager.instance.GetAliveList(this.owner.faction).Find(x => x.UnitData.unitData.EnemyUnitId == Tools.MakeLorId(2160007));
+            BloodKnight = BattleObjectManager.instance.GetAliveList(this.owner.faction).Find(x => x.UnitData.unitData.EnemyUnitId == Tools.MakeLorId(2160010));
         }
         public override void OnRoundStart()
         {
@@ -33,7 +38,8 @@ namespace KazimierzMajor
         public override void OnRoundEnd()
         {
             base.OnRoundEnd();
-            if (sacrifice)
+            owner.bufListDetail.OnRoundEnd();
+            if (sacrifice && !owner.IsDead())
             {
                 BloodKnight.RecoverHP(BloodKnight.MaxHp/10);
                 owner.Die();
@@ -43,13 +49,13 @@ namespace KazimierzMajor
         public override AtkResist GetResistBP(AtkResist origin, BehaviourDetail detail)
         {
             if (AreaTarget)
-                return AtkResist.Resist;
+                return AtkResist.Endure;
             return base.GetResistBP(origin, detail);
         }
         public override AtkResist GetResistHP(AtkResist origin, BehaviourDetail detail)
         {
             if (AreaTarget)
-                return AtkResist.Resist;
+                return AtkResist.Endure;
             return base.GetResistHP(origin, detail);
         }
         public override void OnStartParrying(BattlePlayingCardDataInUnitModel card)

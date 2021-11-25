@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KazimierzMajor_Mod.Corrupted
+namespace KazimierzMajor
 {
     public class DiceCardAbility_handicap: DiceCardAbilityBase
     {

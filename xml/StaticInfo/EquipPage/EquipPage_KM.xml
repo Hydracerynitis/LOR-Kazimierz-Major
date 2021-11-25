@@ -205,7 +205,7 @@
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
 		<Chapter>6</Chapter>
-		<Rarity>Unique</Rarity> <!-- Stephan-->
+		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Isadora</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>

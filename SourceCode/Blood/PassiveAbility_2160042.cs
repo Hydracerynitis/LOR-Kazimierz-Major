@@ -10,14 +10,6 @@ namespace KazimierzMajor
     public class PassiveAbility_2160042 :PassiveAbilityBase
     {
         public BattleUnitModel stunModel;
-        public override int SpeedDiceNumAdder()
-        {
-            int num1 = 0;
-            int num2 = this.owner.emotionDetail.SpeedDiceNumAdder();
-            if (num2 > 0)
-                num1 = -num2;
-            return num1;
-        }
         public override void OnRoundStart()
         {
             base.OnRoundStart();

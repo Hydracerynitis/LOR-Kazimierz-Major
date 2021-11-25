@@ -1,5 +1,4 @@
-﻿using LOR_DiceSystem;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace KazimierzMajor
 {
-    public class PassiveAbility_2160044 :PassiveAbilityBase
+    public class PassiveAbility_2160143 : PassiveAbilityBase
     {
         private bool oneSide = false;
-        public override AtkResist GetResistBP(AtkResist origin, BehaviourDetail detail)
+        public override int GetDamageReduction(BattleDiceBehavior behavior)
         {
             if (oneSide)
-                return AtkResist.Resist;
-            return base.GetResistBP(origin, detail);
+                return RandomUtil.Range(2, 3);
+            return base.GetDamageReduction(behavior);
         }
-        public override AtkResist GetResistHP(AtkResist origin, BehaviourDetail detail)
+        public override int GetBreakDamageReduction(BattleDiceBehavior behavior)
         {
             if (oneSide)
-                return AtkResist.Resist;
-            return base.GetResistHP(origin, detail);
+                return RandomUtil.Range(2, 3);
+            return base.GetBreakDamageReduction(behavior);
         }
         public override void OnRoundStart()
         {

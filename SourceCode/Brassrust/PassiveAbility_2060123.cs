@@ -12,7 +12,7 @@ namespace KazimierzMajor
         }
         public override void OnLoseParrying(BattleDiceBehavior behavior)
         {
-            if (!this.IsAttackDice(behavior.Detail) || _activated == true || this.owner.hp > (double)this.owner.MaxHp / 2)
+            if (!IsAttackDice(behavior.Detail) || _activated == true || owner.hp > owner.MaxHp / 2 || owner.IsBreakLifeZero())
                 return;
             behavior.isBonusAttack = true;
             _activated = true;

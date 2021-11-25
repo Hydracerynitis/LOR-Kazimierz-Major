@@ -15,7 +15,7 @@ namespace KazimierzMajor
                 if (unit.emotionDetail.EmotionLevel < level)
                 {
                     unit.emotionDetail.SetEmotionLevel(level);
-                    unit.cardSlotDetail.RecoverPlayPoint(this.owner.cardSlotDetail.GetMaxPlayPoint());
+                    unit.cardSlotDetail.RecoverPlayPoint(unit.cardSlotDetail.GetMaxPlayPoint());
                     Harmony_Patch.UpdateInfo(unit);
                 }
             }

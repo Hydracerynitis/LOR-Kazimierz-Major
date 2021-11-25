@@ -5,10 +5,11 @@
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
 	</BookUse>
-	<BookUse ID="2160007">
-		<TextId>2160007</TextId>
+	<BookUse ID="2160010">
+		<TextId>2160010</TextId>
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>7</Chapter>
-		<!--<DropItem Type="Equip">2060007</DropItem>-->
+		<DropItem Type="Equip">2160010</DropItem>
+		<DropItem Type="Equip">2160011</DropItem>
 	</BookUse>
 </BookUseXmlRoot>

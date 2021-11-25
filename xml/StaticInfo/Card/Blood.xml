@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Card ID="2160401">
+		<Name>巨斧劈砍</Name>
+		<Artwork>Rcorp11</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script>blood2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="12" Dice="16" Type="Atk" Detail="Slash" Motion="H" EffectRes="Greta_H" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="7" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160402">
+		<Name>斧柄反砸</Name>
+		<Artwork>Rcorp12</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script>blood4</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="Greta_G" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="14" Dice="17" Type="Atk" Detail="Hit" Motion="H" EffectRes="Greta_H" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160403">
+		<Name>湮灭</Name>
+		<Artwork>Rcorp6</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Special" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="16" Dice="24" Type="Atk" Detail="Slash" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160404">
+		<Name>血涌之舞</Name>
+		<Artwork>Rcorp1</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="6" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="6" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="6" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160405">
+		<Name>血归</Name>
+		<Artwork>KnightOfDespair_EGO</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="Far" Cost="0" />
+		<Script>BloodStun</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="50" Dice="50" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="EGO_ApcBird_FarLaserAtk_NotWin" Script="" ActionScript="Final_ApcBird_Laser" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160406">
+		<Name>血刃</Name>
+		<Artwork>Rcorp13</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="Special" Cost="0" />
+		<Script>BloodStun</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="10" Dice="16" Type="Standby" Detail="Slash" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161401">
+		<Name>血归</Name>
+		<Artwork>KnightOfDespair_EGO</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="4" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="13" Dice="21" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="EGO_ApcBird_FarLaserAtk_NotWin" Script="BloodStunLib" ActionScript="Final_ApcBird_Laser" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161402">
+		<Name>血刃</Name>
+		<Artwork>Rcorp13</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="5" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="10" Dice="16" Type="Standby" Detail="Slash" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161403">
+		<Name>巨斧劈砍</Name>
+		<Artwork>Rcorp11</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="3" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="12" Dice="15" Type="Atk" Detail="Slash" Motion="H" EffectRes="Greta_H" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="damage3atk" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161404">
+		<Name>斧柄反砸</Name>
+		<Artwork>Rcorp12</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="3" />
+		<Script>blood2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="Greta_G" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="10" Dice="16" Type="Atk" Detail="Hit" Motion="H" EffectRes="Greta_H" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161405">
+		<Name>湮灭</Name>
+		<Artwork>Rcorp6</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Special" Cost="4" />
+		<Script>special</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="15" Dice="25" Type="Atk" Detail="Slash" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161406">
+		<Name>凝血祭品</Name>
+		<Artwork>Rcorp1</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Instance" Cost="0" />
+		<Script>BloodHeal</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161407">
+		<Name>血反</Name>
+		<Artwork>Rcorp11</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="Z" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+</DiceCardXmlRoot>

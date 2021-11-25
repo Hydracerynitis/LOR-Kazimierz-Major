@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BattleCardAbility ID="Decay1Atk">
+    <Desc>[击中时] 对目标施加1层[腐蚀]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Decay3Atk">
+    <Desc>[击中时] 对目标施加3层[腐蚀]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="LateAttack">
+    <Desc>[后手]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="OneSideFastAttack">
+    <Desc>单方面攻击时该书页获得[先手]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="blood2">
+    <Desc>[使用时] 获得2层[鲜血附魔]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="blood4">
+    <Desc>[使用时] 获得4层[鲜血附魔]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodStun">
+    <Desc>[使用时] 摧毁本书页所有骰子并使目标从下一幕起陷入混乱持续2幕;
+期间每一幕目标承受10点血量并使自己获得2层[鲜血附魔]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodStunLib">
+    <Desc>[命中时] 对目标下一幕施加2层[血归缠身]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="special">
+    <Desc>该近战书页享受与远程书页相同的结算顺序</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodHeal">
+    <Desc>[装备时] 恢复自身15%的体力上限的生命值</Desc>
+  </BattleCardAbility>
+</BattleCardAbilityDescRoot>

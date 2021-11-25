@@ -6,6 +6,18 @@ namespace KazimierzMajor
 {
     public class PassiveAbility_2160000 : PassiveAbilityBase
     {
+        public override int SpeedDiceNumAdder()
+        {
+            int num1 = 0;
+            int num2 = this.owner.emotionDetail.SpeedDiceNumAdder();
+            if (num2 > 0)
+                num1 = -num2;
+            return num1;
+        }
+        public override int MaxPlayPointAdder()
+        {
+            return -owner.emotionDetail.MaxPlayPointAdderByLevel();
+        }
         public override void OnWaveStart()
         {
             base.OnWaveStart();
@@ -14,10 +26,10 @@ namespace KazimierzMajor
                 unit.RecoverHP(unit.MaxHp);
                 if (unit.emotionDetail.EmotionLevel < 5)
                 {
-                    unit.emotionDetail.SetEmotionLevel(5);
-                    unit.cardSlotDetail.RecoverPlayPoint(this.owner.cardSlotDetail.GetMaxPlayPoint());
                     unit.emotionDetail.CreateEmotionCoin(EmotionCoinType.Positive, 1);
                     unit.emotionDetail.CreateEmotionCoin(EmotionCoinType.Negative, 1);
+                    unit.emotionDetail.SetEmotionLevel(5);
+                    unit.cardSlotDetail.RecoverPlayPoint(unit.cardSlotDetail.GetMaxPlayPoint());
                     Harmony_Patch.UpdateInfo(unit);
                 }
             }

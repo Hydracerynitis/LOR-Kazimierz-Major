@@ -88,6 +88,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceCode\ArmorLess\DiceCardAbility_Decay3Atk .cs" />
+    <Compile Include="SourceCode\ArmorLess\DiceCardAbility_Decay1Atk.cs" />
+    <Compile Include="SourceCode\ArmorLess\DiceCardSelfAbility_LateAttack.cs" />
+    <Compile Include="SourceCode\ArmorLess\DiceCardSelfAbility_OneSideFastAttack.cs" />
+    <Compile Include="SourceCode\ArmorLess\EnemyTeamStageManager_ ArmorLess.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160029.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160028.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160027.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160026.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160025.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160024.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160023.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160022.cs" />
+    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160021.cs" />
     <Compile Include="SourceCode\Blemishine\BattleUnitBuf_Sleep.cs" />
     <Compile Include="SourceCode\Blemishine\DiceCardAbility_powerUp1Last.cs" />
     <Compile Include="SourceCode\Blemishine\DiceCardAbility_recoverBreak5pw.cs" />
@@ -101,10 +115,16 @@
     <Compile Include="SourceCode\Blemishine\PassiveAbility_2060056.cs" />
     <Compile Include="SourceCode\Blemishine\PassiveAbility_2060151.cs" />
     <Compile Include="SourceCode\Blood\BattleUnitBuf_Blood.cs" />
+    <Compile Include="SourceCode\Blood\BattleUnitBuf_BloodStunLib.cs" />
     <Compile Include="SourceCode\Blood\BattleUnitBuf_BloodStun.cs" />
+    <Compile Include="SourceCode\Blood\DiceCardSelfAbility_BloodHeal.cs" />
     <Compile Include="SourceCode\Blood\DiceCardSelfAbility_blood2.cs" />
     <Compile Include="SourceCode\Blood\DiceCardSelfAbility_blood4.cs" />
+    <Compile Include="SourceCode\Blood\DiceCardAbility_BloodStunLib.cs" />
     <Compile Include="SourceCode\Blood\DiceCardSelfAbility_BloodStun.cs" />
+    <Compile Include="SourceCode\Blood\PassiveAbility_2160143.cs" />
+    <Compile Include="SourceCode\Blood\PassiveAbility_2160142.cs" />
+    <Compile Include="SourceCode\Blood\PassiveAbility_2160141.cs" />
     <Compile Include="SourceCode\Blood\PassiveAbility_2160041.cs" />
     <Compile Include="SourceCode\Blood\PassiveAbility_2160042.cs" />
     <Compile Include="SourceCode\Blood\PassiveAbility_2160043.cs" />

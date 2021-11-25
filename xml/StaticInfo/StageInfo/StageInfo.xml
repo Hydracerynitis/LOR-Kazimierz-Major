@@ -38,19 +38,26 @@
   	</Stage>
 	<Stage id="21600003">
 		<Wave>
-      			<Formation>1</Formation>
-      			<AvailableUnit>5</AvailableUnit>
-      			<Unit>2160007</Unit>
+			<Formation>216</Formation>
+			<AvailableUnit>5</AvailableUnit>
+			<Unit>2160002</Unit>
+			<Unit>2160003</Unit>
+			<ManagerScript>ArmorLess</ManagerScript>
 		</Wave>
- 		<FloorNum>1</FloorNum>
+		<Wave>
+			<Formation>1</Formation>
+			<AvailableUnit>5</AvailableUnit>
+			<Unit>2160010</Unit>
+		</Wave>
+ 		<FloorNum>2</FloorNum>
 		<StoryType>Kazimier</StoryType>
     		<Invitation Combine="BookRecipe">
       			<Book>2160000</Book>
     		</Invitation>
-    	<Condition>
-      		<Stage>20600003</Stage>
-    	</Condition>
+    		<Condition>
+      			<Stage>20600003</Stage>
+    		</Condition>
 		<MapInfo>Custom_Tournament</MapInfo>
-    	<Chapter>7</Chapter>
+    		<Chapter>7</Chapter>
   	</Stage>
 </StageXmlRoot>

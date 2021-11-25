@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BookXmlRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Book ID="2160010">
+		<Name>血骑士</Name>
+		<TextId>2160010</TextId>
+		<EquipEffect>
+			<HP>141</HP>
+			<Break>60</Break>
+			<SpeedMin>3</SpeedMin>
+			<Speed>5</Speed>
+			<SResist>Endure</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Endure</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<OnlyCard>2161401</OnlyCard>
+			<OnlyCard>2161402</OnlyCard>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive Pid="@origin">10008</Passive>
+			<Passive>2160141</Passive>
+			<Passive>2160142</Passive>
+			<Passive>2160143</Passive>
+		</EquipEffect>
+		<BookIcon>Kazimier</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity>
+		<CharacterSkin>RhinoUnit3</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+	<Book ID="2160011">
+		<Name>凝血之刃</Name>
+		<TextId>216011</TextId>
+		<EquipEffect>
+			<HP>25</HP>
+			<Break>25</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<Passive>2160144</Passive>
+		</EquipEffect>
+		<NotEquip>true</NotEquip>
+		<BookIcon>Kazimier</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Rare</Rarity>
+		<CharacterSkin>BlackSilence4_Weapon4</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+</BookXmlRoot>

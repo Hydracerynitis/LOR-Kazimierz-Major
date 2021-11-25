@@ -10,6 +10,7 @@ namespace KazimierzMajor
 {
     public class PassiveAbility_2160046 :PassiveAbilityBase
     {
+        private int pattern = 0;
         public PassiveAbility_2160046(BattleUnitModel model)
         {
             this.Init(model);
@@ -17,7 +18,7 @@ namespace KazimierzMajor
             this.desc = Singleton<PassiveDescXmlList>.Instance.GetDesc(Tools.MakeLorId(2160046));
             this.rare = Rarity.Unique;
         }
-        public override int SpeedDiceNumAdder() => -2;
+        public override int SpeedDiceNumAdder() => -3;
         private Queue<int> Priority=new Queue<int>(); 
         public override void OnRoundStart()
         {
@@ -26,7 +27,22 @@ namespace KazimierzMajor
             Priority.Clear();
             for (int i = 100; i >= 0; i -= 10)
                 Priority.Enqueue(i);
-            Harmony_Patch.AddNewCard(owner, new List<int>() { 2160403, 2160403, 2160403, 2160403 }, Priority);
+            pattern += 1;
+            switch (pattern % 3)
+            {
+                case 1:
+                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160405, 2160403, 2160403, 2160403 }, Priority);
+                    break;
+                case 2:
+                case 0:
+                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160403, 2160403, 2160403, 2160403 }, Priority);
+                    break;
+            }
+        }
+        public override void OnBreakState()
+        {
+            base.OnBreakState();
+            pattern = 0;
         }
         public override void BeforeRollDice(BattleDiceBehavior behavior)
         {
@@ -50,7 +66,17 @@ namespace KazimierzMajor
         }
         public override void OnRoundEndTheLast()
         {
-            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160008), Tools.MakeLorId(12160008));
+            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+        }
+        public override void OnDie()
+        {
+            base.OnDie();
+            foreach(BattleUnitModel unit in BattleObjectManager.instance.GetAliveList(owner.faction))
+            {
+                if (unit != owner)
+                    unit.Die();
+            }
         }
     }
 }

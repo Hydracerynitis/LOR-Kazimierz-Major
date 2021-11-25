@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<bookDescList>
+		<BookDesc BookID="2160002">
+			<BookName>罗伊之页</BookName>
+			<TextList>
+				<Desc>无胄盟青金大位，罗伊。没有人知道一介杀手如何能在这个位置上坐稳多年，并取得如今的地位。传言他的财富早已匹敌一些小公司的老板，而他的实力也早已凌驾在绝大部分竞技骑士之上。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160003">
+			<BookName>莫妮克之页</BookName>
+			<TextList>
+				<Desc>无胄盟青金大位，莫妮克。习惯是行动前详细记录自身状态，讨厌的东西是罗伊，以及所有打扰她工作的人。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160004">
+			<BookName>清扫小队之页</BookName>
+			<TextList>
+				<Desc>罗伊亲自培养的清扫小队。替不愿意干活的罗伊管理小队，经验更加老道。队伍内部采取了某种赏金机制，所以积极性很高，攻击造成侵蚀损伤。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160005">
+			<BookName>第三小队之页</BookName>
+			<TextList>
+				<Desc>莫妮克亲率的小队队长，莫妮克不在时负责指挥。青金大位出于自身喜好挑选的班底，工资非常离谱。攻击将造成侵蚀损伤</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160006">
+			<BookName>无胄盟刺客之页</BookName>
+			<TextList>
+				<Desc>无胄盟雇佣的刺客，身手不凡且诡计多端。擅长藏身于黑暗，并在黑夜中砥砺刀锋，使攻击力不断增长</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160007">
+			<BookName>暗潮钳兽之页</BookName>
+			<TextList>
+				<Desc>从竞技场逃脱，生存在城市排水系统中的钳兽, 相比于寻常钳兽更适应黑暗,且更加残暴。在黑夜中的移动速度加快。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160008">
+			<BookName>无胄盟弩手之页</BookName>
+			<TextList>
+				<Desc>无胄盟雇佣的弩手，隐匿在城市的阴影中，更具威胁。擅长藏身于黑夜，并使用特殊的箭矢刺杀目标</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160010">
+			<BookName>"血"骑士之页</BookName>
+			<TextList>
+				<Desc>血骑士，狄开俄波利斯。卡西米尔感染者骑士参赛制度的提议人，大骑士领感染者的英雄，无数孩子与感染者心中的偶像。"英雄"究竟出卖了什么，才换取了如今的和平?</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160011">
+			<BookName>凝血之刃</BookName>
+			<TextList>
+				<Desc>呼应血骑士的意志而活性化的血液，凝聚成了一把利刃的形状</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+	</bookDescList>
+</BookDescRoot>

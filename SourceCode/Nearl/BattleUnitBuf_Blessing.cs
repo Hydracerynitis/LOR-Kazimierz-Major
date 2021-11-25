@@ -33,15 +33,16 @@ namespace KazimierzMajor
 
         public override void OnRoundEnd()
         {
-            int hp = (int)((double)this._owner.MaxHp);
+            int hp = _owner.MaxHp;
             if (_owner.faction == Faction.Enemy)
-                this._owner.RecoverHP(hp);
+                _owner.RecoverHP(hp);
             else
                 _owner.RecoverHP(hp / 2);
-            this._owner.breakDetail.RecoverBreakLife(this._owner.MaxBreakLife);
-            this._owner.breakDetail.RecoverBreak(this._owner.breakDetail.GetDefaultBreakGauge());
+            _owner.breakDetail.RecoverBreakLife(_owner.MaxBreakLife);
+            _owner.breakDetail.RecoverBreak(_owner.breakDetail.GetDefaultBreakGauge());
+            _owner.breakDetail.nextTurnBreak = false;
             BattleUnitBuf_Stunning.AddBuf(Giver, 1);
-            this.Destroy();
+            Destroy();
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KazimierzMajor_Mod.Brassrust
+namespace KazimierzMajor
 {
     public class DiceCardSelfAbility_Critical:DiceCardSelfAbilityBase
     {

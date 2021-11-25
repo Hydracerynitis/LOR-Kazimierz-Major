@@ -30,11 +30,11 @@ namespace KazimierzMajor
             switch (pattern % 3)
             {
                 case 1:
-                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160405, 2160401, 2160401, 2160402, 2160402, 2160402 },Priority);
+                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160405, 2160401, 2160401, 2160401, 2160402, 2160402, 2160402 },Priority);
                     break;
                 case 2:
                 case 0:
-                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160401, 2160401, 2160401, 2160401, 2160402, 2160402 }, Priority);
+                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160401, 2160401, 2160401, 2160401, 2160402, 2160402, 2160402 }, Priority);
                     break;
             }
         }
@@ -62,12 +62,14 @@ namespace KazimierzMajor
                 phasetrans = 3;
                 init = false;              
             }
+            if (owner.hp == owner.MaxHp)
+                phasetrans = 0;
             if (phasetrans > 0)
             {
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160008), Tools.MakeLorId(12160008));
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160008), Tools.MakeLorId(12160008));
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160008), Tools.MakeLorId(12160008));
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160008), Tools.MakeLorId(12160008));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
                 phasetrans--;
                 if(phasetrans==0)
                     check = true;
@@ -81,7 +83,8 @@ namespace KazimierzMajor
                     if (passive != null)
                         owner.passiveDetail.DestroyPassive(passive);
                     owner.passiveDetail.DestroyPassive(this);
-                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160008), Tools.MakeLorId(12160008));
+                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
                 }
                 pattern = 0;
                 check = false;   

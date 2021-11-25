@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using HarmonyLib;
 using BaseMod;
 using System.Threading.Tasks;
 
@@ -24,16 +25,16 @@ namespace KazimierzMajor
         }
         public override void AfterTakeDamage(BattleUnitModel attacker, int dmg)
         {
-            base.AfterTakeDamage(attacker, dmg);
-            if (owner.IsBreakLifeZero() || !Dmg.ContainsKey(attacker))
+            if (owner.IsBreakLifeZero() || !Dmg.ContainsKey(attacker) || attacker==null || attacker == owner)
                 return;
             Dmg[attacker] += dmg;
             if (Dmg[attacker] > 50 && !triggered.Contains(attacker))
             {
                 DiceCardSelfAbility_BloodStun cardability = new DiceCardSelfAbility_BloodStun();
-                BattlePlayingCardDataInUnitModel card = new BattlePlayingCardDataInUnitModel() { owner = owner, card = BloodStun, cardAbility= cardability };
+                BattlePlayingCardDataInUnitModel card = new BattlePlayingCardDataInUnitModel() { owner = owner, card = BloodStun, cardAbility= cardability,target=attacker, targetSlotOrder= RandomUtil.Range(0, attacker.cardSlotDetail.cardAry.Count - 1) };
                 cardability.card = card;
-                Singleton<StageController>.Instance.AddAllCardListInBattle(card, attacker);
+                card.ResetCardQueueWithoutStandby();
+                Singleton<StageController>.Instance.GetAllCards().Insert(0,card);
                 triggered.Add(attacker);
             }
         }

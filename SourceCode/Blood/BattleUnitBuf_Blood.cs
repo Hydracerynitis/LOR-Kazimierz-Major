@@ -9,7 +9,7 @@ namespace KazimierzMajor
     {
         protected override string keywordId => "Blood";
         protected override string keywordIconId => "Nosferatu_Blood";
-        public override int paramInBufDesc => 20*stack;
+        public override int paramInBufDesc => _owner.faction==Faction.Enemy? 20*stack: 10*stack;
         public static void AddBuf(BattleUnitModel model, int value)
         {
             if (!(model.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Blood) is BattleUnitBuf_Blood battleUnitBufBlood))
@@ -32,7 +32,10 @@ namespace KazimierzMajor
         }
         public override void BeforeGiveDamage(BattleDiceBehavior behavior)
         {
-            behavior.ApplyDiceStatBonus(new DiceStatBonus { dmgRate=20*stack });
+            if(_owner.faction==Faction.Enemy)
+                behavior.ApplyDiceStatBonus(new DiceStatBonus { dmgRate=20*stack });
+            else
+                behavior.ApplyDiceStatBonus(new DiceStatBonus { dmgRate = 10 * stack });
             this.Destroy();
         }
     }
