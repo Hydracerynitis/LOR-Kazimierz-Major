@@ -14,32 +14,32 @@
 	</Enemy>
 	<Enemy ID="2160004">
 		<NameID>216004</NameID>
-		<MinHeight>200</MinHeight>
-		<MaxHeight>200</MaxHeight>
+		<MinHeight>170</MinHeight>
+		<MaxHeight>170</MaxHeight>
 		<BookId>12160004</BookId>
 	</Enemy>
 	<Enemy ID="2160005">
 		<NameID>216005</NameID>
-		<MinHeight>200</MinHeight>
-		<MaxHeight>200</MaxHeight>
+		<MinHeight>170</MinHeight>
+		<MaxHeight>170</MaxHeight>
 		<BookId>12160005</BookId>
 	</Enemy>
 	<Enemy ID="2160006">
 		<NameID>216006</NameID>
-		<MinHeight>200</MinHeight>
-		<MaxHeight>200</MaxHeight>
+		<MinHeight>170</MinHeight>
+		<MaxHeight>170</MaxHeight>
 		<BookId>12160006</BookId>
 	</Enemy>
 	<Enemy ID="2160007">
 		<NameID>216007</NameID>
-		<MinHeight>200</MinHeight>
-		<MaxHeight>200</MaxHeight>
+		<MinHeight>170</MinHeight>
+		<MaxHeight>170</MaxHeight>
 		<BookId>12160007</BookId>
 	</Enemy>
 	<Enemy ID="2160008">
 		<NameID>216008</NameID>
-		<MinHeight>200</MinHeight>
-		<MaxHeight>200</MaxHeight>
+		<MinHeight>170</MinHeight>
+		<MaxHeight>170</MaxHeight>
 		<BookId>12160008</BookId>
 	</Enemy>
 	<Enemy ID="2160010">

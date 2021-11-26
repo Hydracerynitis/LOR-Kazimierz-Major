@@ -23,7 +23,17 @@ namespace KazimierzMajor
                     SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(Enemy[0]), Tools.MakeLorId(10000000 + Enemy[0]), index);
                     Enemy.RemoveAt(0);
                 }
-
+            }
+        }
+        public override void OnEndBattle()
+        {
+            if (BattleObjectManager.instance.GetAliveList(Faction.Enemy).Count > 0 && Enemy.Count > 0)
+                return;
+            for (int index = 0; index < 3; ++index)
+            {
+                Singleton<StageController>.Instance.OnEnemyDropBookForAdded(new DropBookDataForAddedReward(Tools.MakeLorId(2160002)));
+                Singleton<StageController>.Instance.OnEnemyDropBookForAdded(new DropBookDataForAddedReward(Tools.MakeLorId(2160002), true));
+                SingletonBehavior<BattleManagerUI>.Instance.ui_emotionInfoBar.DropBook(new List<string>() { TextDataModel.GetText("BattleUI_GetBook", Singleton<DropBookXmlList>.Instance.GetData(Tools.MakeLorId(2160002)).Name) });
             }
         }
     }

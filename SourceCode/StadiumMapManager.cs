@@ -13,12 +13,14 @@ namespace KazimierzMajor
     {
         public override void CustomInit()
         {
-            base.CustomInit();
-            this.Retextualize();
+            Retextualize();
+            string name;
             if (Singleton<StageController>.Instance.CurrentWave <= 3)
-                this.mapBgm = new AudioClip[3] { Harmony_Patch.Corrotion, Harmony_Patch.Corrotion, Harmony_Patch.Corrotion };
+                name = "Corrosion";
             else
-                this.mapBgm = new AudioClip[3] { Harmony_Patch.Putrid, Harmony_Patch.Putrid, Harmony_Patch.Putrid };
+                name = "Putrid";
+            AudioClip bgm = Harmony_Patch.BGM[name];
+            mapBgm = new AudioClip[3] { bgm, bgm, bgm };
             this.mapSize = MapSize.M;
             this._bMapInitialized = true;
         }

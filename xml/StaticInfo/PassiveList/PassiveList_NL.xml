@@ -4,6 +4,7 @@
 		<Rarity>Uncommon</Rarity>
 		<Cost>10</Cost>
   	</Passive>
+	<!--无胄盟-->
 	<Passive ID="2160021">
 		<Rarity>Unique</Rarity>
 		<Cost>8</Cost>
@@ -40,6 +41,39 @@
 		<Rarity>Unique</Rarity>
 		<Cost>10</Cost>
   	</Passive>
+	<Passive ID="2160121">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2160122">
+		<Rarity>Unique</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
+	<Passive ID="2160123">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2160124">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160125">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160126">
+		<Rarity>Common</Rarity>
+		<Cost>2</Cost>
+  	</Passive>
+	<Passive ID="2160127">
+		<Rarity>Common</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
+	<Passive ID="2160128">
+		<Rarity>Common</Rarity>
+		<Cost>7</Cost>
+  	</Passive>
+	<!-- 血骑士 -->
 	<Passive ID="2160041">
 		<Rarity>Unique</Rarity>
 		<Cost>6</Cost>

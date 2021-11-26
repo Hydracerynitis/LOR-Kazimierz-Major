@@ -2,12 +2,22 @@
 <BookUseXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<BookUse ID="2160000">
 		<TextId>2160000</TextId>
-		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+	</BookUse>
+	<BookUse ID="2160002">
+		<TextId>2160002</TextId>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+		<DropItem Type="Equip">2160002</DropItem>
+		<DropItem Type="Equip">2160003</DropItem>
+		<DropItem Type="Equip">2160006</DropItem>
+		<DropItem Type="Equip">2160007</DropItem>
+		<DropItem Type="Equip">2160008</DropItem>
 	</BookUse>
 	<BookUse ID="2160010">
 		<TextId>2160010</TextId>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<DropItem Type="Equip">2160010</DropItem>
 		<DropItem Type="Equip">2160011</DropItem>

@@ -1,5 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <BookXmlRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Book ID="2160002">
+		<Name>罗伊</Name>
+		<TextId>2160002</TextId>
+		<EquipEffect>
+			<HP>102</HP>
+			<Break>50</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Endure</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Endure</HBResist>
+			<OnlyCard>2161201</OnlyCard>
+			<OnlyCard>2161202</OnlyCard>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive Pid="@origin">10008</Passive>
+			<Passive>2160121</Passive>
+			<Passive>2160122</Passive>
+			<Passive>2160123</Passive>
+		</EquipEffect>
+		<RangeType>Range</RangeType>
+		<BookIcon>ASK</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity>
+		<CharacterSkin>Kalo</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+	<Book ID="2160003">
+		<Name>莫妮克</Name>
+		<TextId>2160003</TextId>
+		<EquipEffect>
+			<HP>102</HP>
+			<Break>50</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Endure</SBResist>
+			<PBResist>Endure</PBResist>
+			<HBResist>Normal</HBResist>
+			<OnlyCard>2161201</OnlyCard>
+			<OnlyCard>2161202</OnlyCard>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive Pid="@origin">10008</Passive>
+			<Passive>2160121</Passive>
+			<Passive>2160124</Passive>
+			<Passive>2160125</Passive>
+		</EquipEffect>
+		<RangeType>Range</RangeType>
+		<BookIcon>ASK</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity>
+		<CharacterSkin>Katriel</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+	<Book ID="2160006">
+		<Name>无胄盟刺客</Name>
+		<TextId>2160006</TextId>
+		<EquipEffect>
+			<HP>90</HP>
+			<Break>43</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<OnlyCard>2161204</OnlyCard>
+			<Passive Pid="@origin">10001</Passive>
+			<Passive>2160126</Passive>
+		</EquipEffect>
+		<BookIcon>ASK</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Common</Rarity>
+		<CharacterSkin>IndexUnit</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+	<Book ID="2160007">
+		<Name>暗潮钳兽</Name>
+		<TextId>2160007</TextId>
+		<EquipEffect>
+			<HP>125</HP>
+			<Break>45</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Vulnerable</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Vulnerable</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<OnlyCard>2161205</OnlyCard>
+			<Passive Pid="@origin">10001</Passive>
+			<Passive>2160127</Passive>
+		</EquipEffect>
+		<BookIcon>ASK</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Common</Rarity>
+		<CharacterSkin>GearsUnit</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+	<Book ID="2160008">
+		<Name>无胄盟弩手</Name>
+		<TextId>2160008</TextId>
+		<EquipEffect>
+			<HP>90</HP>
+			<Break>51</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Vulnerable</HBResist>
+			<Passive Pid="@origin">10001</Passive>
+			<Passive>2160128</Passive>
+		</EquipEffect>
+		<RangeType>Range</RangeType>
+		<BookIcon>ASK</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Common</Rarity>
+		<CharacterSkin>ThumbUnit</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
 	<Book ID="2160010">
 		<Name>血骑士</Name>
 		<TextId>2160010</TextId>
@@ -23,7 +160,7 @@
 			<Passive>2160142</Passive>
 			<Passive>2160143</Passive>
 		</EquipEffect>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
@@ -47,7 +184,7 @@
 			<Passive>2160144</Passive>
 		</EquipEffect>
 		<NotEquip>true</NotEquip>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity>

@@ -12,6 +12,15 @@
   <BattleCardAbility ID="OneSideFastAttack">
     <Desc>单方面攻击时该书页获得[先手]</Desc>
   </BattleCardAbility>
+  <BattleCardAbility ID="BackStab">
+    <Desc>反击池每有一个骰子该骰子提升2点威力</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="FastAttackPowerUp">
+    <Desc>[使用时] 若该书页具有[先手],所有骰子威力提升2点</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BountyPublish">
+    <Desc>[战斗开始] 使目标获得1层[赏金]</Desc>
+  </BattleCardAbility>
   <BattleCardAbility ID="blood2">
     <Desc>[使用时] 获得2层[鲜血附魔]</Desc>
   </BattleCardAbility>

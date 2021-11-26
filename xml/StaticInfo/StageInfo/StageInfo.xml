@@ -37,6 +37,10 @@
     		<Chapter>6</Chapter>
   	</Stage>
 	<Stage id="21600003">
+		<StoryType>ASK</StoryType>
+		<Chapter>7</Chapter>
+	</Stage>
+	<Stage id="21600023">
 		<Wave>
 			<Formation>216</Formation>
 			<AvailableUnit>5</AvailableUnit>
@@ -44,17 +48,30 @@
 			<Unit>2160003</Unit>
 			<ManagerScript>ArmorLess</ManagerScript>
 		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>ArmorLess</StoryType>
+    		<Invitation Combine="BookRecipe">
+      			<Book>2160000</Book>
+    		</Invitation>
+    		<Condition>
+      			<Stage>20600003</Stage>
+    		</Condition>
+		<MapInfo>Custom_Street</MapInfo>
+    		<Chapter>7</Chapter>
+  	</Stage>
+	<Stage id="21600043">
 		<Wave>
 			<Formation>1</Formation>
 			<AvailableUnit>5</AvailableUnit>
 			<Unit>2160010</Unit>
 		</Wave>
- 		<FloorNum>2</FloorNum>
-		<StoryType>Kazimier</StoryType>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>ASK</StoryType>
     		<Invitation Combine="BookRecipe">
-      			<Book>2160000</Book>
+				<Book>2160002</Book>
     		</Invitation>
     		<Condition>
+      			<Stage>21600023</Stage>
       			<Stage>20600003</Stage>
     		</Condition>
 		<MapInfo>Custom_Tournament</MapInfo>

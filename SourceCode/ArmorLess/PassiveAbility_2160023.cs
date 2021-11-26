@@ -45,7 +45,7 @@ namespace KazimierzMajor
         }
         public class Bounty: BattleUnitBuf
         {
-            protected override string keywordId => "Bounty";
+            protected override string keywordId => _owner!=null && _owner.faction==Faction.Enemy? "BountyLib" :"Bounty";
             protected override string keywordIconId => "NicolaiTarget";
             public void Add(int count) => stack += count;
             public override void Init(BattleUnitModel owner)

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BattleCardDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
  <cardDescList>
+    <!-- 无胄盟 -->
     <BattleCardDesc ID="2160201">
       <LocalizedName>废足毁腕</LocalizedName>
     </BattleCardDesc>
@@ -19,6 +20,28 @@
     <BattleCardDesc ID="2160206">
       <LocalizedName>连射速杀</LocalizedName>
     </BattleCardDesc>
+    <BattleCardDesc ID="2161201">
+      <LocalizedName>废足毁腕</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161202">
+      <LocalizedName>封喉刺心</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161203">
+      <LocalizedName>暗中砥砺</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161204">
+      <LocalizedName>瞬息行刺</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161205">
+      <LocalizedName>螯肢钳杀</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161206">
+      <LocalizedName>连射速杀</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161207">
+      <LocalizedName>发布赏金</LocalizedName>
+    </BattleCardDesc>
+    <!-- 血骑士 -->
     <BattleCardDesc ID="2160401">
       <LocalizedName>巨斧劈砍</LocalizedName>
     </BattleCardDesc>

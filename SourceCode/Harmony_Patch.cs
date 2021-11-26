@@ -24,11 +24,8 @@ namespace KazimierzMajor
         public static bool CenterPanel_Init;
         public static string ModPath;
         public static Dictionary<string, AudioClip> BGM;
-        public static AudioClip Corrotion;
-        public static AudioClip Putrid;
-        public static AudioClip Knight;
-        public static AudioClip Fearless;
         public static Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot> Storyslots;
+        public static List<BattlePlayingCardDataInUnitModel> FastCards;
         public Harmony_Patch()
         {
             try
@@ -36,16 +33,14 @@ namespace KazimierzMajor
                 Harmony harmony = new Harmony("Kazimier");
                 ModPath = Path.GetDirectoryName(Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
                 BGM = new Dictionary<string, AudioClip>();
-                Corrotion = Tools.GetAudio(ModPath + "/BGM/Corrosion.mp3");
-                Putrid = Tools.GetAudio(ModPath + "/BGM/Putrid.mp3");
-                //Knight = Tools.GetAudio(ModPath + "/BGM/Knight.mp3");
-                //Fearless = Tools.GetAudio(ModPath + "/BGM/Fearless.mp3");
+                FastCards = new List<BattlePlayingCardDataInUnitModel>();
                 PatchGeneral(ref harmony);
                 PatchStoryLine(ref harmony);
                 //PatchEntryCG(ref harmony);
                 GetBGMs(new DirectoryInfo(ModPath + "/BGM"));
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
-                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600003), ModPath + "/ArtWork/Tournament.png");
+                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/Street.png");
+                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600043), ModPath + "/ArtWork/Tournament.png");
             }
             catch(Exception ex)
             {
@@ -102,7 +97,10 @@ namespace KazimierzMajor
         public static void DropBookInventoryModel_GetBookList_invitationBookList(ref List<LorId> __result)
         {
             __result.Add(Tools.MakeLorId(2060000));
-            __result.Add(Tools.MakeLorId(2160000));
+            if (LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(20600003)) >= 1)
+                __result.Add(Tools.MakeLorId(2160000));
+            if (!__result.Contains(Tools.MakeLorId(2160002)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600023))>=1)
+                __result.Add(Tools.MakeLorId(2160002));
         }
         public static void UIInvitationDropBookSlot_SetData_DropBook(ref TextMeshProUGUI ___txt_bookNum, LorId bookId)
         {
@@ -145,9 +143,11 @@ namespace KazimierzMajor
         }
         public static void StageController_ActivateStartBattleEffectPhase(List<BattlePlayingCardDataInUnitModel> ____allCardList)
         {
-            List<BattlePlayingCardDataInUnitModel> LateAttack = ____allCardList.FindAll(x => x.cardAbility is DiceCardSelfAbility_LateAttack);
+            FastCards.Clear();
+            PassiveAbility_2160127.owners.FindAll(x => x != null && x.cardSlotDetail?.cardQueue?.Count>0).ForEach(x => FastCards.Add(x.cardSlotDetail?.cardAry?.Find(x => x != null)));
+            List<BattlePlayingCardDataInUnitModel> LateAttack = ____allCardList.FindAll(x => IsLateAttack(x));
             ____allCardList.RemoveAll(x => LateAttack.Contains(x));
-            List<BattlePlayingCardDataInUnitModel> FastAttack = ____allCardList.FindAll(x => x.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(x)==null);
+            List<BattlePlayingCardDataInUnitModel> FastAttack = ____allCardList.FindAll(x => IsFastAttack(x));
             ____allCardList.RemoveAll(x => FastAttack.Contains(x));
             FastAttack.ForEach(x => ____allCardList.Insert(0, x));
             ____allCardList.AddRange(LateAttack);
@@ -170,9 +170,9 @@ namespace KazimierzMajor
                 {
                     BattlePlayingCardDataInUnitModel currentDiceAction1 = u1.currentDiceAction;
                     BattlePlayingCardDataInUnitModel currentDiceAction2 = u2.currentDiceAction;
-                    if (currentDiceAction1.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction1)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                    if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
                     {
-                        if (currentDiceAction2.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction2)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                        if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -181,9 +181,9 @@ namespace KazimierzMajor
                         else
                             return 1;
                     }
-                    if (currentDiceAction2.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction2)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                    if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
                     {
-                        if (currentDiceAction1.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction1)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                        if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -192,9 +192,9 @@ namespace KazimierzMajor
                         else
                             return -1;
                     }
-                    if(currentDiceAction1.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction1) == null)
+                    if (IsFastAttack(currentDiceAction1) || IsFastAttack(GetParry(currentDiceAction1)))
                     {
-                        if (currentDiceAction2.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction2) == null)
+                        if (IsFastAttack(currentDiceAction2) || IsFastAttack(GetParry(currentDiceAction2)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -203,9 +203,9 @@ namespace KazimierzMajor
                         else
                             return -1;
                     }
-                    if (currentDiceAction2.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction2) == null)
+                    if (IsFastAttack(currentDiceAction2) || IsFastAttack(GetParry(currentDiceAction2)))
                     {
-                        if (currentDiceAction1.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction1) == null)
+                        if (IsFastAttack(currentDiceAction1) || IsFastAttack(GetParry(currentDiceAction1)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -245,7 +245,7 @@ namespace KazimierzMajor
                         unit.currentDiceAction = null;
                     else if (unit.turnState != BattleUnitTurnState.BREAK)
                     {
-                        if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Far && !(unit.currentDiceAction.target?.currentDiceAction?.cardAbility is DiceCardSelfAbility_LateAttack))
+                        if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Far && !IsLateAttack(unit.currentDiceAction.target?.currentDiceAction))
                         {
                             unit.moveDetail.Stop();
                             unit.currentDiceAction?.GetDiceBehaviorList();
@@ -256,7 +256,7 @@ namespace KazimierzMajor
                             unit.moveDetail.Stop();
                             battleUnitModelList3.Add(target);
                         }
-                        else if (unit.currentDiceAction.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(unit.currentDiceAction) == null)
+                        else if (IsFastAttack(unit.currentDiceAction))
                         {
                             unit.moveDetail.Stop();
                             battleUnitModelList3.Add(target);
@@ -327,9 +327,9 @@ namespace KazimierzMajor
                 {
                     BattlePlayingCardDataInUnitModel currentDiceAction1 = u1.currentDiceAction;
                     BattlePlayingCardDataInUnitModel currentDiceAction2 = u2.currentDiceAction;
-                    if (currentDiceAction1.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction1)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                    if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
                     {
-                        if (currentDiceAction2.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction2)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                        if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -338,9 +338,9 @@ namespace KazimierzMajor
                         else
                             return 1;
                     }
-                    if (currentDiceAction2.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction2)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                    if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
                     {
-                        if (currentDiceAction1.cardAbility is DiceCardSelfAbility_LateAttack || GetParry(currentDiceAction1)?.cardAbility is DiceCardSelfAbility_LateAttack)
+                        if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -349,9 +349,9 @@ namespace KazimierzMajor
                         else
                             return -1;
                     }
-                    if (currentDiceAction1.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction1) == null)
+                    if (IsFastAttack(currentDiceAction1) || IsFastAttack(GetParry(currentDiceAction1)))
                     {
-                        if (currentDiceAction2.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction2) == null)
+                        if (IsFastAttack(currentDiceAction2) || IsFastAttack(GetParry(currentDiceAction2)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -360,9 +360,9 @@ namespace KazimierzMajor
                         else
                             return -1;
                     }
-                    if (currentDiceAction2.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction2) == null)
+                    if (IsFastAttack(currentDiceAction2) || IsFastAttack(GetParry(currentDiceAction2)))
                     {
-                        if (currentDiceAction1.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(currentDiceAction1) == null)
+                        if (IsFastAttack(currentDiceAction1) || IsFastAttack(GetParry(currentDiceAction1)))
                         {
                             if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
                                 return 0;
@@ -424,12 +424,12 @@ namespace KazimierzMajor
                                 arrivedUnit = unit;
                                 break;
                             }
-                            if (unit.currentDiceAction.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(unit.currentDiceAction) == null)
+                            if (IsFastAttack(unit.currentDiceAction))
                             {
                                 arrivedUnit = unit;
                                 break;
                             }
-                            if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Far && !(unit.currentDiceAction.target?.currentDiceAction?.cardAbility is DiceCardSelfAbility_LateAttack))
+                            if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Far && !IsLateAttack(unit.currentDiceAction.target.currentDiceAction!))
                             {
                                 arrivedUnit = unit;
                                 break;
@@ -565,20 +565,27 @@ namespace KazimierzMajor
             {
                 if (Storyslots == null)
                     Storyslots = new Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot>();
-                CreateKazimier1(__instance);
-                CreateKazimier2(__instance);
+                CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
+                //CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
+                CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
+                //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
+                CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
+                //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 CenterPanel_Init = true;
             }
             if (__instance.gameObject.transform.parent.gameObject.name == "BattleStoryPanel" && !BattleStoryPanel_Init)
             {
                 if(Storyslots==null)
                     Storyslots = new Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot>();
-                CreateKazimier1(__instance);
-                CreateKazimier2(__instance);
+                CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
+                //CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
+                CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
+                //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
+                CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
+                //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 BattleStoryPanel_Init = true;
             }
-            if (LibraryModel.Instance.ClearInfo.GetClearCount(Tools.MakeLorId(20600003))>=1)
-                LibraryModel.Instance.ClearInfo.AddClearCount(20600003);
+            PatchCondition();
             foreach (List<StageClassInfo> key in Storyslots.Keys)
             {
                 Storyslots[key].SetSlotData(key);
@@ -588,39 +595,28 @@ namespace KazimierzMajor
                     Storyslots[key].SetActiveStory(false);
             }
         }
-        public static void CreateKazimier1(UIStoryProgressPanel __instance)
+        public static void PatchCondition()
         {
-            StageClassInfo data = Singleton<StageClassInfoList>.Instance.GetData(Tools.MakeLorId(20600003));
-            if (Storyslots.TryGetValue(new List<StageClassInfo>() { data }, out UIStoryProgressIconSlot slot))
-                slot.Initialized(__instance);
-            UIStoryProgressIconSlot progressIconSlot = ((List<UIStoryProgressIconSlot>)typeof(UIStoryProgressPanel).GetField("iconList", AccessTools.all).GetValue((object)__instance)).Find((Predicate<UIStoryProgressIconSlot>)(x => x.currentStory == UIStoryLine.CaneOffice));
-            UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate<UIStoryProgressIconSlot>(progressIconSlot, progressIconSlot.transform.parent);
-            SlotCopying(__instance, progressIconSlot, newslot);
-            newslot.transform.localPosition += new Vector3(250f, 0.0f);
-            ((List<GameObject>)typeof(UIStoryProgressIconSlot).GetField("connectLineList", AccessTools.all).GetValue((object)newslot))[0].transform.localPosition += new Vector3(250f, 0.0f);
-            Storyslots[new List<StageClassInfo>(){data}] = newslot;
+            if (LibraryModel.Instance.ClearInfo.GetClearCount(Tools.MakeLorId(20600003)) >= 1)
+                LibraryModel.Instance.ClearInfo.AddClearCount(20600003);
+            if (LibraryModel.Instance.ClearInfo.GetClearCount(Tools.MakeLorId(21600023)) >= 1)
+                LibraryModel.Instance.ClearInfo.AddClearCount(21600023);
         }
-        public static void CreateKazimier2(UIStoryProgressPanel __instance)
+        public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
         {
-            StageClassInfo data = Singleton<StageClassInfoList>.Instance.GetData(Tools.MakeLorId(21600003));
+            StageClassInfo data = Singleton<StageClassInfoList>.Instance.GetData(Tools.MakeLorId(stageId));
             if (Storyslots.TryGetValue(new List<StageClassInfo>() { data }, out UIStoryProgressIconSlot slot))
+            {
                 slot.Initialized(__instance);
-            UIStoryProgressIconSlot progressIconSlot = ((List<UIStoryProgressIconSlot>)typeof(UIStoryProgressPanel).GetField("iconList", AccessTools.all).GetValue((object)__instance)).Find((Predicate<UIStoryProgressIconSlot>)(x => x.currentStory == UIStoryLine.HanaAssociation));
+                return;
+            }
+            UIStoryProgressIconSlot progressIconSlot = ((List<UIStoryProgressIconSlot>)typeof(UIStoryProgressPanel).GetField("iconList", AccessTools.all).GetValue((object)__instance)).Find(x => x.currentStory == reference);
             UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate<UIStoryProgressIconSlot>(progressIconSlot, progressIconSlot.transform.parent);
-            SlotCopying(__instance, progressIconSlot, newslot);
-            newslot.transform.localPosition += new Vector3(1000f, 0.0f);
-            ((List<GameObject>)typeof(UIStoryProgressIconSlot).GetField("connectLineList", AccessTools.all).GetValue((object)newslot))[0].transform.localPosition += new Vector3(750f, 0.0f);
-            Storyslots[new List<StageClassInfo>() { data }] = newslot;
-        }
-        public static void SlotCopying(UIStoryProgressPanel __instance, UIStoryProgressIconSlot slot, UIStoryProgressIconSlot newslot)
-        {
             newslot.currentStory = UIStoryLine.Rats;
-            List<GameObject> gameObjectList = new List<GameObject>();
-            GameObject original = ((List<GameObject>)slot.GetType().GetField("connectLineList", AccessTools.all).GetValue((object)slot))[0];
-            GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(original, original.transform.parent);
-            gameObjectList.Add(gameObject);
             newslot.Initialized(__instance);
-            newslot.GetType().GetField("connectLineList", AccessTools.all).SetValue((object)newslot, (object)gameObjectList);
+            newslot.transform.localPosition += vector;
+            typeof(UIStoryProgressIconSlot).GetField("connectLineList", AccessTools.all).SetValue(newslot, new List<GameObject>());
+            Storyslots[new List<StageClassInfo>() { data }] = newslot;
         }
         public static void LibraryModel_OnClearStage(LorId stageId)
         {
@@ -662,6 +658,20 @@ namespace KazimierzMajor
 
             }
             return null;
+        }
+        public static bool IsLateAttack(BattlePlayingCardDataInUnitModel card)
+        {
+            if (card == null)
+                return false;
+            return card.cardAbility is DiceCardSelfAbility_LateAttack;
+        }
+        public static bool IsFastAttack(BattlePlayingCardDataInUnitModel card)
+        {
+            if (card == null)
+                return false;
+            if (FastCards.Contains(card))
+                return true;
+            return card.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(card) == null;
         }
         public static void UpdateInfo(BattleUnitModel unit) => SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(unit, unit.faction, unit.hp, unit.breakDetail.breakGauge);
         public static void AddNewCard(BattleUnitModel unit, List<int> cards, Queue<int> priority)

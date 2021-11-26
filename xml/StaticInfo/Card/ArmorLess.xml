@@ -84,4 +84,104 @@
 		<Chapter>7</Chapter>
         <Priority>10</Priority>
 </Card>
+<Card ID="2161201">
+		<Name>废足毁腕</Name>
+		<Artwork>Thumb21</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="4" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Decay1Atk" ActionScript="" Desc="" />
+            <Behaviour Min="7" Dice="10" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Decay1Atk" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>10</Priority>
+</Card>
+<Card ID="2161202">
+		<Name>封喉刺心</Name>
+		<Artwork>Rcorp8</Artwork>
+		<Rarity>Rare</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="4" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="12" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Decay3Atk" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>10</Priority>
+</Card>
+<Card ID="2161203">
+		<Name>暗中砥砺</Name>
+		<Artwork>ShadowStrike</Artwork>
+		<Rarity>Common</Rarity>
+		<Spec Range="Near" Cost="2" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+            <Behaviour Min="4" Dice="8" Type="Standby" Detail="Guard" Motion="G" EffectRes="BS3_G" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="8" Type="Standby" Detail="Guard" Motion="G" EffectRes="BS3_G" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="8" Type="Standby" Detail="Guard" Motion="G" EffectRes="BS3_G" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+        <Priority>10</Priority>
+</Card>
+<Card ID="2161204">
+		<Name>瞬息行刺</Name>
+		<Artwork>Shi2</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="2" />
+		<Script>LateAttack</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+            <Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="H" EffectRes="BS3DurandalHit_H" Script="BackStab" ActionScript="" Desc="" />
+        </BehaviourList>
+		<Chapter>7</Chapter>
+        <Priority>10</Priority>
+</Card>
+<Card ID="2161205">
+		<Name>螯肢钳杀</Name>
+		<Artwork>Claw1</Artwork>
+		<Rarity>Common</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="2" />
+		<Script>FastAttackPowerUp</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+            <Behaviour Min="3" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="ch1_H" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="H" EffectRes="ch1_J" Script="" ActionScript="" Desc="" />
+        </BehaviourList>
+		<Chapter>7</Chapter>
+        <Priority>10</Priority>
+</Card>
+<Card ID="2161206">
+		<Name>连射速杀</Name>
+		<Artwork>FullStop4</Artwork>
+		<Rarity>Common</Rarity>
+		<Spec Range="Far" Cost="2" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+            <Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+        </BehaviourList>
+		<Chapter>7</Chapter>
+        <Priority>10</Priority>
+</Card>
+<Card ID="2161207">
+		<Name>发布悬赏</Name>
+		<Artwork>Redhood_Hunt</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="Far" Cost="0" />
+		<Script>BountyPublish</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>10</Priority>
+</Card>
 </DiceCardXmlRoot>

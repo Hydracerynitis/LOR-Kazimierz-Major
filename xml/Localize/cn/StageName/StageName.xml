@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <CharactersNameRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Name ID="20600003">卡兹米尔锦标赛</Name>
-	<Name ID="21600003">卡兹米尔特锦赛</Name>
+	<Name ID="21600003">长夜临光</Name>
+	<Name ID="21600023">无胄盟</Name>
+	<Name ID="21600043">血骑士</Name>
 </CharactersNameRoot>

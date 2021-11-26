@@ -9,16 +9,12 @@ using System.IO;
 
 namespace KazimierzMajor
 {
-    public class TournamentMapManager: CustomMapManager
+    public class StreetMapManager: CustomMapManager
     {
         public override void CustomInit()
         {
             Retextualize();
-            string name = "Vorarephilia";
-            LorId stageid = Singleton<StageController>.Instance.GetStageModel().ClassInfo.id;
-            if (stageid==Tools.MakeLorId(21600043))
-                name = "Knight";
-            AudioClip bgm = Harmony_Patch.BGM[name];
+            AudioClip bgm = Harmony_Patch.BGM["Fearless"];
             mapBgm = new AudioClip[3] { bgm,bgm, bgm };
             mapSize = MapSize.L;
             _bMapInitialized = true;
@@ -30,19 +26,19 @@ namespace KazimierzMajor
         public override void OnRoundStart()
         {
             base.OnRoundStart();
-            SingletonBehavior<BattleSoundManager>.Instance.SetEnemyTheme(mapBgm);
+            SingletonBehavior<BattleSoundManager>.Instance.SetEnemyTheme(this.mapBgm);
         }
         public override GameObject GetWallCrater() => (GameObject)null;
         public override GameObject GetScratch(int lv, Transform parent) => (GameObject)null;
         private void Retextualize()
         {           
-            GameObject bg = this.gameObject.transform.GetChild(1).GetChild(0).GetChild(0).gameObject;
-            DuplicateSprite(bg, "Tournament");
+            GameObject bg = gameObject.transform.GetChild(1).GetChild(0).GetChild(0).gameObject;
+            DuplicateSprite(bg, "Street");
             for (int i=1; i<6; i++)
-                this.gameObject.transform.GetChild(1).GetChild(0).GetChild(i).gameObject.SetActive(false);
-            this.gameObject.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
-            this.gameObject.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
-            this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+                gameObject.transform.GetChild(1).GetChild(0).GetChild(i).gameObject.SetActive(false);
+            gameObject.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
+            gameObject.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
+            gameObject.transform.GetChild(3).gameObject.SetActive(false);
         }
         private void DuplicateSprite(GameObject obj, string path, float ReactWidth=1, float RectLength=1)
         {

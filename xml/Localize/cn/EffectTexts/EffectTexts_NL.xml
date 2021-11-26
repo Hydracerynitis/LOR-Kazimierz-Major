@@ -23,13 +23,17 @@
 			<Name>赏金</Name>
 			<Desc>非罗伊单位攻击该目标使书页所有骰子威力+{0}</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="BountyLib">
+			<Name>赏金</Name>
+			<Desc>非罗伊单位攻击该目标使书页所有骰子威力+{0},这一幕结束时清空层数.</Desc>
+		</BattleEffectText>
 		<BattleEffectText ID="LateAttack">
 			<Name>后手</Name>
-			<Desc>该书页将在最后使用</Desc>
+			<Desc>该书页及其拼点目标书页将在最后使用</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="FastAttack">
 			<Name>先手</Name>
-			<Desc>该书页将最优先使用</Desc>
+			<Desc>该书页及其拼点目标书页将最优先使用</Desc>
 		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

@@ -22,7 +22,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Kalo</CharacterSkin>
@@ -51,7 +51,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Katriel</CharacterSkin>
@@ -79,7 +79,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>Kalo</CharacterSkin>
@@ -107,7 +107,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>Katriel</CharacterSkin>
@@ -133,7 +133,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
 		<CharacterSkin>IndexUnit</CharacterSkin>
@@ -159,7 +159,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
 		<CharacterSkin>GearsUnit</CharacterSkin>
@@ -185,7 +185,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
 		<CharacterSkin>ThumbUnit</CharacterSkin>
@@ -215,7 +215,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>RhinoUnit3</CharacterSkin>
@@ -241,7 +241,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>Kazimier</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>BlackSilence4_Weapon4</CharacterSkin>
