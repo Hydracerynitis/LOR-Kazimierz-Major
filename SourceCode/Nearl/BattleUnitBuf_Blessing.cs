@@ -20,7 +20,7 @@ namespace KazimierzMajor
             else
                 battleUnitBufBlessing.stack += value;
         }
-        public bool GetBuff(BattleUnitModel model, out BattleUnitBuf_Blessing buf)
+        public static bool GetBuff(BattleUnitModel model, out BattleUnitBuf_Blessing buf)
         {
             if (model.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Blessing) is BattleUnitBuf_Blessing battleUnitBufBlessing)
             {

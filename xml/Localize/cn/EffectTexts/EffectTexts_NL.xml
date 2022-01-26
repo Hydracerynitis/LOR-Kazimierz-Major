@@ -35,5 +35,9 @@
 			<Name>先手</Name>
 			<Desc>该书页及其拼点目标书页将最优先使用</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="LightIndicator">
+			<Name>所剩光芒</Name>
+			<Desc>烛骑士还有{0}点光芒</Desc>
+		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

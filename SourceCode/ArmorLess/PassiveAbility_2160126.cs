@@ -12,7 +12,7 @@ namespace KazimierzMajor
         {
             if (!IsAttackDice(behavior.Detail) || owner.cardSlotDetail.keepCard.GetDiceBehaviorList().Count<=0)
                 return;
-            behavior.ApplyDiceStatBonus(new DiceStatBonus() { dmg=2 });
+            behavior.ApplyDiceStatBonus(new DiceStatBonus() { power=1});
         }
     }
 }

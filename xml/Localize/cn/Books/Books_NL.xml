@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<bookDescList>
+		<BookDesc BookID="2160001">
+			<BookName>"烛"骑士之页</BookName>
+			<TextList>
+				<Desc>烛骑士薇薇安娜·德罗斯特，言语无法形容她的美好，只有她映照光辉的眼眸令人沉醉。今夜，金盏花为她盛开。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
 		<BookDesc BookID="2160002">
 			<BookName>罗伊之页</BookName>
 			<TextList>

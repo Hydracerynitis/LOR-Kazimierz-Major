@@ -9,9 +9,10 @@ namespace KazimierzMajor
     public class PassiveAbility_2160127 :PassiveAbilityBase
     {
         public static List<BattleUnitModel> owners = new List<BattleUnitModel>();
-        public override void OnWaveStart()
+        public override void Init(BattleUnitModel self)
         {
-            owners.Add(owner);
+            base.Init(self);
+            owners.Add(self);
         }
         public override void OnDie()
         {

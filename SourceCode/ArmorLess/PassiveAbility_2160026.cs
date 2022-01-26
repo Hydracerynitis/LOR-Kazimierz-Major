@@ -13,7 +13,7 @@ namespace KazimierzMajor
         {
             if (!IsAttackDice(behavior.Detail))
                 return;
-            behavior.ApplyDiceStatBonus(new DiceStatBonus() { power = 4 * owner.cardSlotDetail.keepCard.GetDiceBehaviorList().Count });
+            behavior.ApplyDiceStatBonus(new DiceStatBonus() { min = 4 * owner.cardSlotDetail.keepCard.GetDiceBehaviorList().Count, max = 4 * owner.cardSlotDetail.keepCard.GetDiceBehaviorList().Count });
         }
         public override void OnRoundStartAfter()
         {

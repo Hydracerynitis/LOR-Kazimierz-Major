@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <EnemyUnitClassRoot>
+	<Enemy ID="2160001">
+		<NameID>216001</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12160001</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2160001</DropItem>
+		</DropTable>
+	</Enemy>
 	<Enemy ID="2160002">
 		<NameID>216002</NameID>
 		<MinHeight>200</MinHeight>

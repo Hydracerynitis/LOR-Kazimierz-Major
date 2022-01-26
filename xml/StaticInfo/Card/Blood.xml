@@ -32,8 +32,8 @@
 		<Name>湮灭</Name>
 		<Artwork>Rcorp6</Artwork>
 		<Rarity>Rare</Rarity>
-		<Spec Range="Special" Cost="0" />
-		<Script></Script>
+		<Spec Range="Near" Cost="0" />
+		<Script>FastAttack</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="16" Dice="24" Type="Atk" Detail="Slash" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
@@ -142,8 +142,8 @@
 		<Name>湮灭</Name>
 		<Artwork>Rcorp6</Artwork>
 		<Rarity>Rare</Rarity>
-		<Spec Range="Special" Cost="4" />
-		<Script>special</Script>
+		<Spec Range="Near" Cost="4" />
+		<Script>FastAttack</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="15" Dice="25" Type="Atk" Detail="Slash" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />

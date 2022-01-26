@@ -4,6 +4,15 @@
 		<Rarity>Uncommon</Rarity>
 		<Cost>10</Cost>
   	</Passive>
+	<!--烛骑士-->
+	<Passive ID="2160011">
+		<Rarity>Unique</Rarity>
+		<Cost>12</Cost>
+  	</Passive>
+	<Passive ID="2160012">
+		<Rarity>Unique</Rarity>
+		<Cost>12</Cost>
+  	</Passive>
 	<!--无胄盟-->
 	<Passive ID="2160021">
 		<Rarity>Unique</Rarity>
@@ -63,7 +72,7 @@
   	</Passive>
 	<Passive ID="2160126">
 		<Rarity>Common</Rarity>
-		<Cost>2</Cost>
+		<Cost>4</Cost>
   	</Passive>
 	<Passive ID="2160127">
 		<Rarity>Common</Rarity>

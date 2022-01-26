@@ -4,6 +4,16 @@
 		<Name>巅峰对决</Name> 
 		<Desc>舞台开启时回复所有司书血量和混乱抗性并且提升至情感等级5</Desc>
 	</PassiveDesc>
+	<!--烛骑士-->
+	<PassiveDesc ID="2160011">
+		<Name>悄然噬光华</Name> 
+		<Desc>使用书页后若光芒已耗尽则摧毁其他所有角色下一张即将使用的书页, 自身恢复所摧毁的书页费用总和点光芒</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160012">
+		<Name>“金盏花“</Name> 
+		<Desc>每4幕会获得一个额外速度骰使用特殊书页微光之触</Desc>
+	</PassiveDesc>
+	<!--无胄盟-->
 	<PassiveDesc ID="2160021">
 		<Name>青金箭术</Name> 
 		<Desc>进攻骰拼点失败会以25%原本伤害和混乱伤害直接攻击目标</Desc>
@@ -26,7 +36,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160026">
 		<Name>蓄力背刺</Name> 
-		<Desc>反击池每有一个骰子提升进攻骰4点威力</Desc>
+		<Desc>反击池每有一个骰子提升进攻骰4点基础值</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160027">
 		<Name>凶暴钳肢</Name> 
@@ -57,7 +67,7 @@
 	<PassiveDesc ID="2160123">
 		<Name>都市狩猎</Name> 
 		<Desc>该单位能无限使用"发布赏金"([战斗开始] 使目标获得1层[赏金])
-其他单位攻击赏金目标所有骰子会提升赏金层数的威</Desc>
+其他单位攻击赏金目标所有骰子会提升赏金层数的威力</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160124">
 		<Name>专注射击</Name> 
@@ -69,7 +79,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160126">
 		<Name>蓄力背刺</Name> 
-		<Desc>反击池若有骰子则提升进攻骰2点伤害</Desc>
+		<Desc>反击池若有骰子则提升进攻骰1点威力</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160127">
 		<Name>凶暴钳肢</Name> 
@@ -79,6 +89,7 @@
 		<Name>暗箭难防</Name> 
 		<Desc>单方面攻击时改为直接造成追加伤害和混伤</Desc>
 	</PassiveDesc>
+	<!--血骑士-->
 	<PassiveDesc ID="2160041">
 		<Name>血液蚀刻</Name> 
 		<Desc>每失去7点生命值时获得一层"鲜血附魔"。每层"鲜血附魔"会在进攻骰造成伤害时提升其20%伤害并清空"鲜血附魔"魔层数</Desc>

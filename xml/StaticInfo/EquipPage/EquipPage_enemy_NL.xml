@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <BookXmlRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Book ID="12160001">
+		<Name>烛骑士</Name>
+		<TextId>2160001</TextId>
+		<EquipEffect>
+			<HP>1000</HP>
+			<Break>1000</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Vulnerable</SResist>
+			<PResist>Vulnerable</PResist>
+			<HResist>Vulnerable</HResist>
+			<SBResist>Vulnerable</SBResist>
+			<PBResist>Vulnerable</PBResist>
+			<HBResist>Vulnerable</HBResist>		
+			<Passive>2160011</Passive>
+			<Passive>2160012</Passive>
+			<Passive>2160000</Passive>
+			<StartPlayPoint>0</StartPlayPoint>
+      		<MaxPlayPoint>10</MaxPlayPoint>
+		</EquipEffect>
+		<RangeType>Range</RangeType>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity> 
+		<CharacterSkin>TwistPhilip</CharacterSkin>
+		<SpeedDiceNum>6</SpeedDiceNum>
+		<!--<RandomFace>true</RandomFace>-->
+	</Book>
 	<Book ID="12160002">
 		<Name>罗伊</Name>
 		<TextId>2160002</TextId>

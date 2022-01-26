@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceCode\ArmorLess\BattleUnitBuf_Corrosion.cs" />
     <Compile Include="SourceCode\ArmorLess\DiceCardAbility_BackStab.cs" />
     <Compile Include="SourceCode\ArmorLess\DiceCardAbility_Decay3Atk .cs" />
     <Compile Include="SourceCode\ArmorLess\DiceCardAbility_Decay1Atk.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="SourceCode\Blood\DiceCardSelfAbility_blood4.cs" />
     <Compile Include="SourceCode\Blood\DiceCardAbility_BloodStunLib.cs" />
     <Compile Include="SourceCode\Blood\DiceCardSelfAbility_BloodStun.cs" />
+    <Compile Include="SourceCode\Blood\DiceCardSelfAbility_FastAttack.cs" />
     <Compile Include="SourceCode\Blood\PassiveAbility_2160143.cs" />
     <Compile Include="SourceCode\Blood\PassiveAbility_2160142.cs" />
     <Compile Include="SourceCode\Blood\PassiveAbility_2160141.cs" />
@@ -156,6 +158,16 @@
     <Compile Include="SourceCode\Brassrust\PassiveAbility_2060024.cs" />
     <Compile Include="SourceCode\Brassrust\PassiveAbility_2060122.cs" />
     <Compile Include="SourceCode\Brassrust\PassiveAbility_2060123.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardAbility_Burn5AoeAtk.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardAbility_Light1Light1.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardAbility_Light3Prot5.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardAbility_Light3AddDice.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardAbility_Light2Strength2.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardSelfAbility_InfiniteLight.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardSelfAbility_Light2Power2.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardSelfAbility_Light1Max6.cs" />
+    <Compile Include="SourceCode\Candle\PassiveAbility_2160012.cs" />
+    <Compile Include="SourceCode\Candle\PassiveAbility_2160011.cs" />
     <Compile Include="SourceCode\Corrupted\DiceCardAbility_Crippling.cs" />
     <Compile Include="SourceCode\Corrupted\DiceCardAbility_doubleAoeDmg.cs" />
     <Compile Include="SourceCode\Corrupted\DiceCardAbility_handicap.cs" />

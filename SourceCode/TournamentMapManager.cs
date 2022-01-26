@@ -16,6 +16,8 @@ namespace KazimierzMajor
             Retextualize();
             string name = "Vorarephilia";
             LorId stageid = Singleton<StageController>.Instance.GetStageModel().ClassInfo.id;
+            if (stageid == Tools.MakeLorId(21600013))
+                name = "Champion";
             if (stageid==Tools.MakeLorId(21600043))
                 name = "Knight";
             AudioClip bgm = Harmony_Patch.BGM[name];

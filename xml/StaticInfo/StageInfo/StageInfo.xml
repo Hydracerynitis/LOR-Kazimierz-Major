@@ -40,6 +40,23 @@
 		<StoryType>ASK</StoryType>
 		<Chapter>7</Chapter>
 	</Stage>
+	<Stage id="21600013">
+		<Wave>
+			<Formation>1</Formation>
+			<AvailableUnit>5</AvailableUnit>
+			<Unit>2160001</Unit>
+		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>CandleKnight</StoryType>
+    		<Invitation Combine="BookRecipe">
+      			<Book>2160000</Book>
+    		</Invitation>
+    		<Condition>
+      			<Stage>20600003</Stage>
+    		</Condition>
+		<MapInfo>Custom_Tournament</MapInfo>
+    		<Chapter>7</Chapter>
+  	</Stage>
 	<Stage id="21600023">
 		<Wave>
 			<Formation>216</Formation>
@@ -51,10 +68,10 @@
  		<FloorNum>1</FloorNum>
 		<StoryType>ArmorLess</StoryType>
     		<Invitation Combine="BookRecipe">
-      			<Book>2160000</Book>
+      			<Book>2160001</Book>
     		</Invitation>
     		<Condition>
-      			<Stage>20600003</Stage>
+      			<Stage>21600013</Stage>
     		</Condition>
 		<MapInfo>Custom_Street</MapInfo>
     		<Chapter>7</Chapter>
@@ -72,7 +89,6 @@
     		</Invitation>
     		<Condition>
       			<Stage>21600023</Stage>
-      			<Stage>20600003</Stage>
     		</Condition>
 		<MapInfo>Custom_Tournament</MapInfo>
     		<Chapter>7</Chapter>

@@ -39,6 +39,7 @@ namespace KazimierzMajor
                 //PatchEntryCG(ref harmony);
                 GetBGMs(new DirectoryInfo(ModPath + "/BGM"));
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
+                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600013), ModPath + "/ArtWork/Candle.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/Street.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600043), ModPath + "/ArtWork/Tournament.png");
             }
@@ -65,12 +66,9 @@ namespace KazimierzMajor
             MethodInfo Patch1 = typeof(Harmony_Patch).GetMethod("DropBookInventoryModel_GetBookList_invitationBookList");
             MethodInfo Method1 = typeof(DropBookInventoryModel).GetMethod("GetBookList_invitationBookList", AccessTools.all);
             harmony.Patch(Method1, postfix: new HarmonyMethod(Patch1));
-            MethodInfo Patch2 = typeof(Harmony_Patch).GetMethod("UIInvitationDropBookSlot_SetData_DropBook");
+/*            MethodInfo Patch2 = typeof(Harmony_Patch).GetMethod("UIInvitationDropBookSlot_SetData_DropBook");
             MethodInfo Method2 = typeof(UIInvitationDropBookSlot).GetMethod("SetData_DropBook", AccessTools.all);
-            harmony.Patch(Method2, postfix: new HarmonyMethod(Patch2));
-            MethodInfo Patch3 = typeof(Harmony_Patch).GetMethod("BattleUnitBuf_GetBufIcon");
-            MethodInfo Method3 = typeof(BattleUnitBuf).GetMethod("GetBufIcon", AccessTools.all);
-            harmony.Patch(Method3, prefix: new HarmonyMethod(Patch3));
+            harmony.Patch(Method2, postfix: new HarmonyMethod(Patch2));*/
             MethodInfo Patch4 = typeof(Harmony_Patch).GetMethod("StageController_ActivateStartBattleEffectPhase");
             MethodInfo Method4 = typeof(StageController).GetMethod("ActivateStartBattleEffectPhase", AccessTools.all);
             harmony.Patch(Method4, prefix: new HarmonyMethod(Patch4));
@@ -99,6 +97,8 @@ namespace KazimierzMajor
             __result.Add(Tools.MakeLorId(2060000));
             if (LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(20600003)) >= 1)
                 __result.Add(Tools.MakeLorId(2160000));
+            if (!__result.Contains(Tools.MakeLorId(2160001)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600013)) >= 1)
+                __result.Add(Tools.MakeLorId(2160001));
             if (!__result.Contains(Tools.MakeLorId(2160002)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600023))>=1)
                 __result.Add(Tools.MakeLorId(2160002));
         }
@@ -106,40 +106,6 @@ namespace KazimierzMajor
         {
             if (Singleton<DropBookInventoryModel>.Instance.GetBookCount(bookId) == 0)
                 ___txt_bookNum.text = "∞";
-        }
-        public static bool BattleUnitBuf_GetBufIcon(ref Sprite ____bufIcon, ref bool ____iconInit, BattleUnitBuf __instance, ref Sprite __result)
-        {
-            string iconid = "";
-            try
-            {
-                MethodInfo getId = typeof(BattleUnitBuf).GetMethod("get_keywordIconId", AccessTools.all);
-                iconid = getId.Invoke(__instance, Array.Empty<object>()) as string;
-            }
-            catch(Exception ex)
-            {
-                File.AppendAllText(Application.dataPath + "/Mods/iconidError.txt", iconid + "\n" + ex.Message + "\n" + ex.StackTrace + "\n\n");
-            }
-            if (!____iconInit)
-            {
-                if (__instance.Hide)
-                    ____bufIcon = null;
-                else
-                {
-                    try
-                    {
-                        ____bufIcon = Resources.Load<Sprite>("Sprites/BufIcon/" + iconid);
-                        if (____bufIcon == null)
-                            ____bufIcon = BaseMod.Harmony_Patch.ArtWorks[iconid];
-                    }
-                    catch 
-                    {
-                        ____bufIcon = null;
-                    }
-                    ____iconInit = true;
-                }            
-            }
-            __result = ____bufIcon;
-            return false;
         }
         public static void StageController_ActivateStartBattleEffectPhase(List<BattlePlayingCardDataInUnitModel> ____allCardList)
         {
@@ -566,7 +532,7 @@ namespace KazimierzMajor
                 if (Storyslots == null)
                     Storyslots = new Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot>();
                 CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
-                //CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
+                CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
                 CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
                 //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
@@ -578,14 +544,13 @@ namespace KazimierzMajor
                 if(Storyslots==null)
                     Storyslots = new Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot>();
                 CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
-                //CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
+                CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
                 CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
                 //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
                 //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 BattleStoryPanel_Init = true;
             }
-            PatchCondition();
             foreach (List<StageClassInfo> key in Storyslots.Keys)
             {
                 Storyslots[key].SetSlotData(key);
@@ -594,13 +559,6 @@ namespace KazimierzMajor
                 else
                     Storyslots[key].SetActiveStory(false);
             }
-        }
-        public static void PatchCondition()
-        {
-            if (LibraryModel.Instance.ClearInfo.GetClearCount(Tools.MakeLorId(20600003)) >= 1)
-                LibraryModel.Instance.ClearInfo.AddClearCount(20600003);
-            if (LibraryModel.Instance.ClearInfo.GetClearCount(Tools.MakeLorId(21600023)) >= 1)
-                LibraryModel.Instance.ClearInfo.AddClearCount(21600023);
         }
         public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
         {
@@ -618,7 +576,7 @@ namespace KazimierzMajor
             typeof(UIStoryProgressIconSlot).GetField("connectLineList", AccessTools.all).SetValue(newslot, new List<GameObject>());
             Storyslots[new List<StageClassInfo>() { data }] = newslot;
         }
-        public static void LibraryModel_OnClearStage(LorId stageId)
+        private static void LibraryModel_OnClearStage(LorId stageId)
         {
             if (stageId == Tools.MakeLorId(20600003))
             {
@@ -631,7 +589,7 @@ namespace KazimierzMajor
                 Singleton<SaveManager>.Instance.SaveLatestData(data);
             }
         }
-        public static void EntryScene_SetCG(EntryScene __instance,LatestDataModel ____latestData)
+        private static void EntryScene_SetCG(EntryScene __instance,LatestDataModel ____latestData)
         {
             if (____latestData.LatestStorychapter==6 &&  ____latestData.LatestStorygroup== 20600003 && ____latestData.LatestStoryepisode== 20600003)
             {
@@ -671,7 +629,9 @@ namespace KazimierzMajor
                 return false;
             if (FastCards.Contains(card))
                 return true;
-            return card.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(card) == null;
+            if (card.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(card) == null)
+                return true;
+            return card.cardAbility is DiceCardSelfAbility_FastAttack;
         }
         public static void UpdateInfo(BattleUnitModel unit) => SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(unit, unit.faction, unit.hp, unit.breakDetail.breakGauge);
         public static void AddNewCard(BattleUnitModel unit, List<int> cards, Queue<int> priority)

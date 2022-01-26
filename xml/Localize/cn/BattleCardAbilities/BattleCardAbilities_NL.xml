@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 烛骑士 -->
+  <BattleCardAbility ID="Light1Max6">
+    <Desc>[使用时] 额外消耗1点光芒使该书页进攻骰最大值+6</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Light2Power2">
+    <Desc>[使用时] 额外消耗2点光芒使该书页所有骰子威力+2</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Light2Strength2">
+    <Desc>[拼点失败] 额外消耗2点光芒下一幕自身获得2层强壮</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Light1Light1">
+    <Desc>[命中时] 额外消耗1点光芒使目标下一幕开始时损失1点光芒</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Light3AddDice">
+    <Desc>[拼点失败] 额外消耗3点光芒将一个斩击进攻骰(9-12)置入书页末尾</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Light3Prot5">
+    <Desc>[命中时] 额外消耗3点光芒使自身下一幕获得5层守护振奋</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="InfiniteLight">
+    <Desc>[战斗开始] 这一幕内使用书页恢复最高光芒. 这一幕结束时清空自身光芒</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Burn5AoeAtk">
+    <Desc>[命中时] 对目标施加5层烧伤</Desc>
+  </BattleCardAbility>
+  <!--无胄盟-->
   <BattleCardAbility ID="Decay1Atk">
-    <Desc>[击中时] 对目标施加1层[腐蚀]</Desc>
+    <Desc>[命中时] 对目标施加1层[腐蚀]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="Decay3Atk">
-    <Desc>[击中时] 对目标施加3层[腐蚀]</Desc>
+    <Desc>[命中时] 对目标施加3层[腐蚀]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="LateAttack">
     <Desc>[后手]</Desc>
@@ -21,6 +47,7 @@
   <BattleCardAbility ID="BountyPublish">
     <Desc>[战斗开始] 使目标获得1层[赏金]</Desc>
   </BattleCardAbility>
+  <!--血骑士-->
   <BattleCardAbility ID="blood2">
     <Desc>[使用时] 获得2层[鲜血附魔]</Desc>
   </BattleCardAbility>
@@ -34,8 +61,8 @@
   <BattleCardAbility ID="BloodStunLib">
     <Desc>[命中时] 对目标下一幕施加2层[血归缠身]</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="special">
-    <Desc>该近战书页享受与远程书页相同的结算顺序</Desc>
+  <BattleCardAbility ID="FastAttack">
+    <Desc>[先手]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BloodHeal">
     <Desc>[装备时] 恢复自身15%的体力上限的生命值</Desc>

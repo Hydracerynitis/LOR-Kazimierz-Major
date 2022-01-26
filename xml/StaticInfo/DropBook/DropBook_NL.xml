@@ -5,6 +5,11 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 	</BookUse>
+	<BookUse ID="2160001">
+		<TextId>2160001</TextId>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+	</BookUse>
 	<BookUse ID="2160002">
 		<TextId>2160002</TextId>
 		<BookIcon>ASK</BookIcon>
