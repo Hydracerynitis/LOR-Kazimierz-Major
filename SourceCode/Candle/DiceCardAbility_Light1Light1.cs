@@ -7,11 +7,14 @@ namespace KazimierzMajor
     {
         public override void OnSucceedAttack(BattleUnitModel target)
         {
-            if (owner.PlayPoint - owner.cardSlotDetail.ReservedPlayPoint >= 1)
+            for(int i=0;i<2; i++)
             {
-                owner.cardSlotDetail.LosePlayPoint(1);
-                target.bufListDetail.AddBuf(new LoseLight());
-                LightIndicator.RefreshLight(owner);
+                if (owner.PlayPoint - owner.cardSlotDetail.ReservedPlayPoint >= 1)
+                {
+                    owner.cardSlotDetail.LosePlayPoint(1);
+                    target.bufListDetail.AddBuf(new LoseLight());
+                    LightIndicator.RefreshLight(owner);
+                }
             }
         }
         public class LoseLight: BattleUnitBuf

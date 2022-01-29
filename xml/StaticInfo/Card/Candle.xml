@@ -61,10 +61,10 @@
 		<Artwork>CryPhilip_Strong</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Far" Cost="0" />
-		<Script></Script>
+		<Script>Light3AddDice</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="9" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Light3AddDice" ActionScript="" Desc="" />
+      		<Behaviour Min="9" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>

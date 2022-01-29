@@ -7,11 +7,16 @@ namespace KazimierzMajor
     {
         public override void OnLoseParrying()
         {
-            if (owner.PlayPoint - owner.cardSlotDetail.ReservedPlayPoint >= 2)
+            for(int i=0; i<2; i++)
             {
-                owner.cardSlotDetail.LosePlayPoint(2);
-                owner.bufListDetail.AddKeywordBufByCard(KeywordBuf.Strength, 2, owner);
-                LightIndicator.RefreshLight(owner);
+                if (owner.PlayPoint - owner.cardSlotDetail.ReservedPlayPoint >= 2)
+                {
+                    owner.cardSlotDetail.LosePlayPoint(2);
+                    owner.bufListDetail.AddKeywordBufByCard(KeywordBuf.Strength, 2, owner);
+                    LightIndicator.RefreshLight(owner);
+                }
+                else
+                    return;
             }
         }
     }

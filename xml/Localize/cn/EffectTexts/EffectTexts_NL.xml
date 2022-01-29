@@ -39,5 +39,10 @@
 			<Name>所剩光芒</Name>
 			<Desc>烛骑士还有{0}点光芒</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="Corrosion">
+			<Name>侵蚀</Name>
+			<Desc>被施加至4层时,承受{0}点伤害并这一幕和下一幕施加2层易损。
+自身每有一层易损该伤害便提升2点</Desc>
+		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

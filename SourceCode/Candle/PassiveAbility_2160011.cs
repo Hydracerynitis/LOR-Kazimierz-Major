@@ -13,18 +13,22 @@ namespace KazimierzMajor
             owner.bufListDetail.AddBuf(new LightIndicator());
             LightIndicator.RefreshLight(owner);
         }
-        public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
+        public void SuckLight()
         {
             if (owner.PlayPoint <= 0)
             {
                 List<BattlePlayingCardDataInUnitModel> eat = new List<BattlePlayingCardDataInUnitModel>();
-                foreach(BattleUnitModel unit in BattleObjectManager.instance.GetAliveList_opponent(owner.faction))
+                foreach (BattleUnitModel unit in BattleObjectManager.instance.GetAliveList_opponent(owner.faction))
                 {
-                    BattlePlayingCardDataInUnitModel card = unit.cardSlotDetail.cardAry.Find(x => x != null && x != curCard.target.currentDiceAction);
+                    BattlePlayingCardDataInUnitModel card;
+                    if (owner.currentDiceAction!=null)
+                        card = unit.cardSlotDetail.cardAry.Find(x => x != null && x != owner.currentDiceAction.target.currentDiceAction && !x.isDestroyed);
+                    else
+                        card = unit.cardSlotDetail.cardAry.Find(x => x != null && !x.isDestroyed);
                     if (card != null)
                         eat.Add(card);
                 }
-                foreach(BattlePlayingCardDataInUnitModel card in eat)
+                foreach (BattlePlayingCardDataInUnitModel card in eat)
                 {
                     owner.cardSlotDetail.RecoverPlayPoint(card.card.GetCost());
                     card.DestroyPlayingCard();
@@ -32,6 +36,14 @@ namespace KazimierzMajor
                 SoundEffectPlayer.PlaySound("Creature/Bigbird_Eyes");
             }
             LightIndicator.RefreshLight(owner);
+        }
+        public override void OnStartBattle()
+        {
+            SuckLight();
+        }
+        public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
+        {
+            SuckLight();
         }
     }
     public class LightIndicator: BattleUnitBuf

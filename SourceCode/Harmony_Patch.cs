@@ -66,9 +66,6 @@ namespace KazimierzMajor
             MethodInfo Patch1 = typeof(Harmony_Patch).GetMethod("DropBookInventoryModel_GetBookList_invitationBookList");
             MethodInfo Method1 = typeof(DropBookInventoryModel).GetMethod("GetBookList_invitationBookList", AccessTools.all);
             harmony.Patch(Method1, postfix: new HarmonyMethod(Patch1));
-/*            MethodInfo Patch2 = typeof(Harmony_Patch).GetMethod("UIInvitationDropBookSlot_SetData_DropBook");
-            MethodInfo Method2 = typeof(UIInvitationDropBookSlot).GetMethod("SetData_DropBook", AccessTools.all);
-            harmony.Patch(Method2, postfix: new HarmonyMethod(Patch2));*/
             MethodInfo Patch4 = typeof(Harmony_Patch).GetMethod("StageController_ActivateStartBattleEffectPhase");
             MethodInfo Method4 = typeof(StageController).GetMethod("ActivateStartBattleEffectPhase", AccessTools.all);
             harmony.Patch(Method4, prefix: new HarmonyMethod(Patch4));
@@ -102,18 +99,13 @@ namespace KazimierzMajor
             if (!__result.Contains(Tools.MakeLorId(2160002)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600023))>=1)
                 __result.Add(Tools.MakeLorId(2160002));
         }
-        public static void UIInvitationDropBookSlot_SetData_DropBook(ref TextMeshProUGUI ___txt_bookNum, LorId bookId)
-        {
-            if (Singleton<DropBookInventoryModel>.Instance.GetBookCount(bookId) == 0)
-                ___txt_bookNum.text = "∞";
-        }
         public static void StageController_ActivateStartBattleEffectPhase(List<BattlePlayingCardDataInUnitModel> ____allCardList)
         {
             FastCards.Clear();
             PassiveAbility_2160127.owners.FindAll(x => x != null && x.cardSlotDetail?.cardQueue?.Count>0).ForEach(x => FastCards.Add(x.cardSlotDetail?.cardAry?.Find(x => x != null)));
-            List<BattlePlayingCardDataInUnitModel> LateAttack = ____allCardList.FindAll(x => IsLateAttack(x));
+            List<BattlePlayingCardDataInUnitModel> LateAttack = ____allCardList.FindAll(x => IsLateAttack(x) || IsLateAttack(GetParry(x)));
             ____allCardList.RemoveAll(x => LateAttack.Contains(x));
-            List<BattlePlayingCardDataInUnitModel> FastAttack = ____allCardList.FindAll(x => IsFastAttack(x));
+            List<BattlePlayingCardDataInUnitModel> FastAttack = ____allCardList.FindAll(x => IsFastAttack(x) || IsFastAttack(GetParry(x)));
             ____allCardList.RemoveAll(x => FastAttack.Contains(x));
             FastAttack.ForEach(x => ____allCardList.Insert(0, x));
             ____allCardList.AddRange(LateAttack);
@@ -132,32 +124,15 @@ namespace KazimierzMajor
                 ____phase = StageController.StagePhase.RoundEndPhase;
             else
             {
+                List<BattleUnitModel> LateAttack = battleUnitModelList1.FindAll(x => IsLateAttack(x.currentDiceAction) || IsLateAttack(GetParry(x.currentDiceAction)));
+                if (battleUnitModelList1.Count - LateAttack.Count <= 0)
+                    battleUnitModelList1 = LateAttack;
+                else
+                    battleUnitModelList1.RemoveAll(x => LateAttack.Contains(x));
                 battleUnitModelList1.Sort((u1, u2) =>
                 {
                     BattlePlayingCardDataInUnitModel currentDiceAction1 = u1.currentDiceAction;
                     BattlePlayingCardDataInUnitModel currentDiceAction2 = u2.currentDiceAction;
-                    if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
-                    {
-                        if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
-                        {
-                            if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
-                                return 0;
-                            return currentDiceAction1.speedDiceResultValue > currentDiceAction2.speedDiceResultValue ? -1 : 1;
-                        }
-                        else
-                            return 1;
-                    }
-                    if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
-                    {
-                        if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
-                        {
-                            if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
-                                return 0;
-                            return currentDiceAction1.speedDiceResultValue > currentDiceAction2.speedDiceResultValue ? -1 : 1;
-                        }
-                        else
-                            return -1;
-                    }
                     if (IsFastAttack(currentDiceAction1) || IsFastAttack(GetParry(currentDiceAction1)))
                     {
                         if (IsFastAttack(currentDiceAction2) || IsFastAttack(GetParry(currentDiceAction2)))
@@ -289,32 +264,15 @@ namespace KazimierzMajor
                 ____phase = StageController.StagePhase.RoundEndPhase;
             else
             {
+                List<BattleUnitModel> LateAttack = battleUnitModelList1.FindAll(x => IsLateAttack(x.currentDiceAction) || IsLateAttack(GetParry(x.currentDiceAction)));
+                if (battleUnitModelList1.Count - LateAttack.Count <= 0)
+                    battleUnitModelList1 = LateAttack;
+                else
+                    battleUnitModelList1.RemoveAll(x => LateAttack.Contains(x));
                 battleUnitModelList1.Sort((u1, u2) =>
                 {
                     BattlePlayingCardDataInUnitModel currentDiceAction1 = u1.currentDiceAction;
                     BattlePlayingCardDataInUnitModel currentDiceAction2 = u2.currentDiceAction;
-                    if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
-                    {
-                        if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
-                        {
-                            if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
-                                return 0;
-                            return currentDiceAction1.speedDiceResultValue > currentDiceAction2.speedDiceResultValue ? -1 : 1;
-                        }
-                        else
-                            return 1;
-                    }
-                    if (IsLateAttack(currentDiceAction2) || IsLateAttack(GetParry(currentDiceAction2)))
-                    {
-                        if (IsLateAttack(currentDiceAction1) || IsLateAttack(GetParry(currentDiceAction1)))
-                        {
-                            if (currentDiceAction1.speedDiceResultValue == currentDiceAction2.speedDiceResultValue)
-                                return 0;
-                            return currentDiceAction1.speedDiceResultValue > currentDiceAction2.speedDiceResultValue ? -1 : 1;
-                        }
-                        else
-                            return -1;
-                    }
                     if (IsFastAttack(currentDiceAction1) || IsFastAttack(GetParry(currentDiceAction1)))
                     {
                         if (IsFastAttack(currentDiceAction2) || IsFastAttack(GetParry(currentDiceAction2)))

@@ -7,11 +7,12 @@ using System.Xml.Schema;
 
 namespace KazimierzMajor
 {
-    public class DiceCardAbility_Decay1Atk : DiceCardAbilityBase
+    public class DiceCardAbility_Corrosion3Atk : DiceCardAbilityBase
     {
+        public override string[] Keywords => new string[] { "Corrosion" };
         public override void OnSucceedAttack(BattleUnitModel target)
         {
-            target.bufListDetail.AddKeywordBufThisRoundByCard(KeywordBuf.Decay, 1, owner);
+            BattleUnitBuf_Corrosion.AddBuf(target, 3);
         }
     }
 }

@@ -8,8 +8,8 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="7" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Decay1Atk" ActionScript="" Desc="" />
-            <Behaviour Min="7" Dice="10" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Decay1Atk" ActionScript="" Desc="" />
+      		<Behaviour Min="7" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Corrosion1Atk" ActionScript="" Desc="" />
+            <Behaviour Min="7" Dice="10" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Corrosion1Atk" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>10</Priority>
@@ -22,7 +22,7 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="12" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Decay3Atk" ActionScript="" Desc="" />
+      		<Behaviour Min="12" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Corrosion3Atk" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>10</Priority>
@@ -93,8 +93,8 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="7" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Decay1Atk" ActionScript="" Desc="" />
-            <Behaviour Min="7" Dice="10" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Decay1Atk" ActionScript="" Desc="" />
+      		<Behaviour Min="7" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Corrosion1Atk" ActionScript="" Desc="" />
+            <Behaviour Min="7" Dice="10" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Corrosion1Atk" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>10</Priority>
@@ -108,7 +108,7 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="12" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Decay3Atk" ActionScript="" Desc="" />
+      		<Behaviour Min="12" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="Corrosion3Atk" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>10</Priority>

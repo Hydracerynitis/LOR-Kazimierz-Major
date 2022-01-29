@@ -18,11 +18,16 @@ namespace KazimierzMajor
         }
         public void OnUseCardAfter()
         {
-            if (owner.PlayPoint - owner.cardSlotDetail.ReservedPlayPoint >= 2)
+            for(int i = 0; i < 2; i++)
             {
-                owner.cardSlotDetail.LosePlayPoint(2);
-                card.ApplyDiceStatBonus(DiceMatch.AllAttackDice, new DiceStatBonus() { power=2});
-                LightIndicator.RefreshLight(owner);
+                if (owner.PlayPoint - owner.cardSlotDetail.ReservedPlayPoint >= 2)
+                {
+                    owner.cardSlotDetail.LosePlayPoint(2);
+                    card.ApplyDiceStatBonus(DiceMatch.AllAttackDice, new DiceStatBonus() { power = 2 });
+                    LightIndicator.RefreshLight(owner);
+                }
+                else
+                    return;
             }
         }
     }

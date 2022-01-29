@@ -19,7 +19,7 @@ namespace KazimierzMajor
             List<int> cards = new List<int>();
             if (Singleton<StageController>.Instance.RoundTurn % 4 == 0)
                 cards.Add(2160107);
-            cards.AddRange(new List<int>() { 2160101, 2160102, 2160103, 2160104, 2160105, 2160106 });
+            cards.AddRange(new List<int>() { 2160105, 2160103, 2160104, 2160106, 2160102, 2160101  });
             Harmony_Patch.AddNewCard(owner, cards, Priority);
         }
     }
