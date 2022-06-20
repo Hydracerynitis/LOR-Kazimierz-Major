@@ -8,8 +8,8 @@ namespace KazimierzMajor
     public class BattleUnitBuf_Blessing : BattleUnitBuf
     {
         public BattleUnitModel Giver;
-        protected override string keywordId => _owner.faction==Faction.Enemy? "Blessing": "BlessingLib";
-        protected override string keywordIconId => "Blessing";
+        public override string keywordId => _owner.faction==Faction.Enemy? "Blessing": "BlessingLib";
+        public override string keywordIconId => "Blessing";
         public static void AddBuf(BattleUnitModel model, BattleUnitModel giver, int value)
         {
             if (!(model.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Blessing) is BattleUnitBuf_Blessing battleUnitBufBlessing))

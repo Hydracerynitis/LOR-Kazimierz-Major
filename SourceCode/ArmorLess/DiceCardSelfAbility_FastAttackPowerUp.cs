@@ -9,7 +9,7 @@ namespace KazimierzMajor
         public override string[] Keywords => new string[] { "FastAttack" };
         public override void OnUseCard()
         {
-            if (Harmony_Patch.IsFastAttack(card))
+            if (FastLateAttack.IsFastAttack(card))
                 card.ApplyDiceStatBonus(DiceMatch.AllDice, new DiceStatBonus() { power = 2 });
         }
     }

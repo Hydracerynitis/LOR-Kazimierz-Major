@@ -7,8 +7,8 @@ namespace KazimierzMajor
 {
     public class BattleUnitBuf_Corrosion : BattleUnitBuf
     {
-        protected override string keywordId => "Corrosion";
-        protected override string keywordIconId => "Decay_Yan";
+        public override string keywordId => "Corrosion";
+        public override string keywordIconId => "Decay_Yan";
         public override int paramInBufDesc => _owner==null? 4: 4+_owner.bufListDetail.GetKewordBufStack(KeywordBuf.Vulnerable)*2;
         public static void AddBuf(BattleUnitModel model, int value)
         {

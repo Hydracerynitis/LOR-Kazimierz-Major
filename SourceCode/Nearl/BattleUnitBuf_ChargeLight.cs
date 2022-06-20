@@ -7,7 +7,7 @@ namespace KazimierzMajor
 {
     public class BattleUnitBuf_ChargeLight : BattleUnitBuf
     {
-        protected override string keywordId => "ChargeLight";
+        public override string keywordId => "ChargeLight";
         public override int paramInBufDesc => stack/3;
         public static void AddBuf(BattleUnitModel model, int value)
         {

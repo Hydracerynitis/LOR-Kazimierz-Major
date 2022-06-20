@@ -8,8 +8,8 @@ namespace KazimierzMajor
     public class BattleUnitBuf_BloodStunLib : BattleUnitBuf
     {
         private BattleUnitModel Giver;
-        protected override string keywordId => "BloodStunLib";
-        protected override string keywordIconId => "Stun";
+        public override string keywordId => "BloodStunLib";
+        public override string keywordIconId => "Stun";
         public override int SpeedDiceBreakedAdder()
         {
             return 1;

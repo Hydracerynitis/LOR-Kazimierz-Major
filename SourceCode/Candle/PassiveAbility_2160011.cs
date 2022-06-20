@@ -48,12 +48,12 @@ namespace KazimierzMajor
     }
     public class LightIndicator: BattleUnitBuf
     {
-        protected override string keywordId => "LightIndicator";
-        protected override string keywordIconId => "ChargeLight";
+        public override string keywordId => "LightIndicator";
+        public override string keywordIconId => "ChargeLight";
         public void RefreshLight()
         {
             stack = _owner.PlayPoint;
-            Harmony_Patch.UpdateInfo(_owner);
+            KazimierInitializer.UpdateInfo(_owner);
         }
         public static void RefreshLight(BattleUnitModel model)
         {

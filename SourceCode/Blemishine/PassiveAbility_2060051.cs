@@ -11,7 +11,7 @@ namespace KazimierzMajor
             List<BattleUnitModel> friend = BattleObjectManager.instance.GetAliveList(this.owner.faction);
             BattleUnitModel battleUnitModel = RandomUtil.SelectOne<BattleUnitModel>(friend);
             battleUnitModel.RecoverHP(4);
-            owner.battleCardResultLog.SetSucceedAtkEvent(() => Harmony_Patch.UpdateInfo(battleUnitModel));
+            owner.battleCardResultLog.SetSucceedAtkEvent(() => KazimierInitializer.UpdateInfo(battleUnitModel));
         }
     }
 }

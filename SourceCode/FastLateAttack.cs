@@ -1,108 +1,23 @@
 ﻿using System;
-using HarmonyLib;
-using System.Reflection;
-using System.IO;
-using UI;
-using TMPro;
-using UnityEngine;
 using System.Collections.Generic;
-using BaseMod;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using NAudio.Wave;
-using UnityEngine.Networking;
-using GameSave;
-using UnityEngine.UI;
+using HarmonyLib;
 using LOR_DiceSystem;
+using UnityEngine;
 
 namespace KazimierzMajor
 {
-    public class Harmony_Patch
+    [HarmonyPatch]
+    static class FastLateAttack
     {
-        public static bool BattleStoryPanel_Init;
-        public static bool CenterPanel_Init;
-        public static string ModPath;
-        public static Dictionary<string, AudioClip> BGM;
-        public static Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot> Storyslots;
-        public static List<BattlePlayingCardDataInUnitModel> FastCards;
-        public Harmony_Patch()
-        {
-            try
-            {
-                Harmony harmony = new Harmony("Kazimier");
-                ModPath = Path.GetDirectoryName(Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
-                BGM = new Dictionary<string, AudioClip>();
-                FastCards = new List<BattlePlayingCardDataInUnitModel>();
-                PatchGeneral(ref harmony);
-                PatchStoryLine(ref harmony);
-                //PatchEntryCG(ref harmony);
-                GetBGMs(new DirectoryInfo(ModPath + "/BGM"));
-                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
-                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600013), ModPath + "/ArtWork/Candle.png");
-                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/Street.png");
-                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600043), ModPath + "/ArtWork/Tournament.png");
-            }
-            catch(Exception ex)
-            {
-                File.WriteAllText(Application.dataPath + "/Mods/Kazimier.log", ex.Message + Environment.NewLine + ex.StackTrace);
-            }
-        }
-        public static void GetBGMs(DirectoryInfo dir)
-        {
-            if (dir.GetDirectories().Length != 0)
-            {
-                foreach (DirectoryInfo directory in dir.GetDirectories())
-                    GetBGMs(directory);
-            }
-            foreach (FileInfo file in dir.GetFiles())
-            {
-                string withoutExtension = Path.GetFileNameWithoutExtension(file.FullName);
-                BGM[withoutExtension] = Tools.GetAudio(file.FullName);
-            }
-        }
-        private void PatchGeneral(ref Harmony harmony)
-        {
-            MethodInfo Patch1 = typeof(Harmony_Patch).GetMethod("DropBookInventoryModel_GetBookList_invitationBookList");
-            MethodInfo Method1 = typeof(DropBookInventoryModel).GetMethod("GetBookList_invitationBookList", AccessTools.all);
-            harmony.Patch(Method1, postfix: new HarmonyMethod(Patch1));
-            MethodInfo Patch4 = typeof(Harmony_Patch).GetMethod("StageController_ActivateStartBattleEffectPhase");
-            MethodInfo Method4 = typeof(StageController).GetMethod("ActivateStartBattleEffectPhase", AccessTools.all);
-            harmony.Patch(Method4, prefix: new HarmonyMethod(Patch4));
-            MethodInfo Patch5 = typeof(Harmony_Patch).GetMethod("StageController_MoveUnitPhase");
-            MethodInfo Mehthod5 = typeof(StageController).GetMethod("MoveUnitPhase", AccessTools.all);
-            harmony.Patch(Mehthod5, prefix: new HarmonyMethod(Patch5));
-            MethodInfo Patch6 = typeof(Harmony_Patch).GetMethod("StageController_WaitUnitArrivePhase");
-            MethodInfo Method6 = typeof(StageController).GetMethod("WaitUnitArrivePhase", AccessTools.all);
-            harmony.Patch(Method6, prefix: new HarmonyMethod(Patch6));
-        }
-        private void PatchStoryLine(ref Harmony harmony)
-        {
-            MethodInfo method1 = typeof(Harmony_Patch).GetMethod("UIStoryProgressPanel_SetStoryLine");
-            MethodInfo method2 = typeof(UIStoryProgressPanel).GetMethod("SetStoryLine", AccessTools.all);
-            harmony.Patch(method2, postfix: new HarmonyMethod(method1));
-        }
-        private void PatchEntryCG(ref Harmony harmony)
-        {
-            MethodInfo method1 = typeof(LibraryModel).GetMethod("OnClearStage", AccessTools.all);
-            harmony.Patch(method1, postfix: new HarmonyMethod(typeof(Harmony_Patch).GetMethod("LibraryModel_OnClearStage")));
-            MethodInfo method2 = typeof(EntryScene).GetMethod("SetCG", AccessTools.all);
-            harmony.Patch(method2, postfix: new HarmonyMethod(typeof(Harmony_Patch).GetMethod("EntryScene_SetCG")));
-        }
-        public static void DropBookInventoryModel_GetBookList_invitationBookList(ref List<LorId> __result)
-        {
-            __result.Add(Tools.MakeLorId(2060000));
-            if (LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(20600003)) >= 1)
-                __result.Add(Tools.MakeLorId(2160000));
-            if (!__result.Contains(Tools.MakeLorId(2160001)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600013)) >= 1)
-                __result.Add(Tools.MakeLorId(2160001));
-            if (!__result.Contains(Tools.MakeLorId(2160002)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600023))>=1)
-                __result.Add(Tools.MakeLorId(2160002));
-        }
+        public static List<BattlePlayingCardDataInUnitModel> FastCards = new List<BattlePlayingCardDataInUnitModel>();
+        [HarmonyPatch(typeof(StageController),nameof(StageController.ActivateStartBattleEffectPhase))]
+        [HarmonyPrefix]
         public static void StageController_ActivateStartBattleEffectPhase(List<BattlePlayingCardDataInUnitModel> ____allCardList)
         {
             FastCards.Clear();
-            PassiveAbility_2160127.owners.FindAll(x => x != null && x.cardSlotDetail?.cardQueue?.Count>0).ForEach(x => FastCards.Add(x.cardSlotDetail?.cardAry?.Find(x => x != null)));
+            PassiveAbility_2160127.owners.FindAll(x => x != null && x.cardSlotDetail?.cardQueue?.Count > 0).ForEach(x => FastCards.Add(x.cardSlotDetail?.cardAry?.Find(x => x != null)));
             List<BattlePlayingCardDataInUnitModel> LateAttack = ____allCardList.FindAll(x => IsLateAttack(x) || IsLateAttack(GetParry(x)));
             ____allCardList.RemoveAll(x => LateAttack.Contains(x));
             List<BattlePlayingCardDataInUnitModel> FastAttack = ____allCardList.FindAll(x => IsFastAttack(x) || IsFastAttack(GetParry(x)));
@@ -110,6 +25,8 @@ namespace KazimierzMajor
             FastAttack.ForEach(x => ____allCardList.Insert(0, x));
             ____allCardList.AddRange(LateAttack);
         }
+        [HarmonyPatch(typeof(StageController),nameof(StageController.MoveUnitPhase))]
+        [HarmonyPrefix]
         public static bool StageController_MoveUnitPhase(ref StageController.StagePhase ____phase)
         {
             List<BattleUnitModel> battleUnitModelList1 = new List<BattleUnitModel>();
@@ -242,14 +159,13 @@ namespace KazimierzMajor
                         unit.moveDetail.Stop();
                     }
                 }
-                StageController.OnChangePhaseDelegate onChangePhase = Singleton<StageController>.Instance.onChangePhase;
-                if (onChangePhase != null)
-                    onChangePhase(____phase, StageController.StagePhase.WaitUnitsArrive);
-                ____phase = StageController.StagePhase.WaitUnitsArrive;
+                StageController.Instance.phase = StageController.StagePhase.WaitUnitsArrive;
                 SingletonBehavior<BattleCamManager>.Instance.StartMoveUnits();
             }
             return false;
         }
+        [HarmonyPatch(typeof(StageController),nameof(StageController.WaitUnitArrivePhase))]
+        [HarmonyPrefix]
         public static bool StageController_WaitUnitArrivePhase(ref StageController.StagePhase ____phase)
         {
             List<BattleUnitModel> battleUnitModelList1 = new List<BattleUnitModel>();
@@ -477,85 +393,10 @@ namespace KazimierzMajor
                         if (battleUnitModel != target1 && battleUnitModel != arrivedUnit && !battleUnitModel.IsDead())
                             battleUnitModel.view.charAppearance.ChangeColor(Color.grey);
                     }
-                    MethodInfo Action = typeof(StageController).GetMethod("StartAction", AccessTools.all);
-                    Action.Invoke(Singleton<StageController>.Instance, new object[] { arrivedUnit.currentDiceAction });
+                    StageController.Instance.StartAction(arrivedUnit.currentDiceAction);
                 }
             }
             return false;
-        }
-        public static void UIStoryProgressPanel_SetStoryLine(UIStoryProgressPanel __instance)
-        {
-            if (__instance.gameObject.transform.parent.gameObject.name== "[Rect]CenterPanel" && !CenterPanel_Init)
-            {
-                if (Storyslots == null)
-                    Storyslots = new Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot>();
-                CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
-                CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
-                CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
-                //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
-                CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
-                //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
-                CenterPanel_Init = true;
-            }
-            if (__instance.gameObject.transform.parent.gameObject.name == "BattleStoryPanel" && !BattleStoryPanel_Init)
-            {
-                if(Storyslots==null)
-                    Storyslots = new Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot>();
-                CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
-                CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
-                CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
-                //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
-                CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
-                //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
-                BattleStoryPanel_Init = true;
-            }
-            foreach (List<StageClassInfo> key in Storyslots.Keys)
-            {
-                Storyslots[key].SetSlotData(key);
-                if (key[0].currentState != StoryState.Close)
-                    Storyslots[key].SetActiveStory(true);
-                else
-                    Storyslots[key].SetActiveStory(false);
-            }
-        }
-        public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
-        {
-            StageClassInfo data = Singleton<StageClassInfoList>.Instance.GetData(Tools.MakeLorId(stageId));
-            if (Storyslots.TryGetValue(new List<StageClassInfo>() { data }, out UIStoryProgressIconSlot slot))
-            {
-                slot.Initialized(__instance);
-                return;
-            }
-            UIStoryProgressIconSlot progressIconSlot = ((List<UIStoryProgressIconSlot>)typeof(UIStoryProgressPanel).GetField("iconList", AccessTools.all).GetValue((object)__instance)).Find(x => x.currentStory == reference);
-            UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate<UIStoryProgressIconSlot>(progressIconSlot, progressIconSlot.transform.parent);
-            newslot.currentStory = UIStoryLine.Rats;
-            newslot.Initialized(__instance);
-            newslot.transform.localPosition += vector;
-            typeof(UIStoryProgressIconSlot).GetField("connectLineList", AccessTools.all).SetValue(newslot, new List<GameObject>());
-            Storyslots[new List<StageClassInfo>() { data }] = newslot;
-        }
-        private static void LibraryModel_OnClearStage(LorId stageId)
-        {
-            if (stageId == Tools.MakeLorId(20600003))
-            {
-                LatestDataModel data = new LatestDataModel();
-                Singleton<SaveManager>.Instance.LoadLatestData(data);
-                data.LatestStorychapter = 9;
-                data.LatestStorygroup = 20600003;
-                data.LatestStoryepisode = 20600003;
-                data.RuinTitle = LibraryModel.Instance.PlayHistory.Clear_EndcontentsAllStage == 1 ? 1 : 0;
-                Singleton<SaveManager>.Instance.SaveLatestData(data);
-            }
-        }
-        private static void EntryScene_SetCG(EntryScene __instance,LatestDataModel ____latestData)
-        {
-            if (____latestData.LatestStorychapter==6 &&  ____latestData.LatestStorygroup== 20600003 && ____latestData.LatestStoryepisode== 20600003)
-            {
-                Texture2D texture2D = new Texture2D(1, 1);
-                texture2D.LoadImage(File.ReadAllBytes(Harmony_Patch.ModPath + "/ArtWork/background.png"));
-                Sprite sprite= Sprite.Create(texture2D, new Rect(0.0f, 0.0f, (float)texture2D.width, (float)texture2D.height), new Vector2(0.5f, 0.5f));
-                __instance.CGImage.sprite = sprite;
-            }
         }
         public static BattlePlayingCardDataInUnitModel GetParry(BattlePlayingCardDataInUnitModel card)
         {
@@ -591,19 +432,5 @@ namespace KazimierzMajor
                 return true;
             return card.cardAbility is DiceCardSelfAbility_FastAttack;
         }
-        public static void UpdateInfo(BattleUnitModel unit) => SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(unit, unit.faction, unit.hp, unit.breakDetail.breakGauge);
-        public static void AddNewCard(BattleUnitModel unit, List<int> cards, Queue<int> priority)
-        {
-            do
-            {
-                int p = 0;
-                if (priority.Count > 0)
-                    p = priority.Dequeue();
-                unit.allyCardDetail.AddNewCard(Tools.MakeLorId(cards[0])).SetPriorityAdder(p);
-                cards.RemoveAt(0);
-            }
-            while (cards.Count > 0);
-        }
     }
-
 }

@@ -30,11 +30,11 @@ namespace KazimierzMajor
             switch (pattern % 3)
             {
                 case 1:
-                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160405, 2160401, 2160401, 2160401, 2160402, 2160402, 2160402 },Priority);
+                    KazimierInitializer.AddNewCard(owner, new List<int>() { 2160405, 2160401, 2160401, 2160401, 2160402, 2160402, 2160402 },Priority);
                     break;
                 case 2:
                 case 0:
-                    Harmony_Patch.AddNewCard(owner, new List<int>() { 2160401, 2160401, 2160401, 2160401, 2160402, 2160402, 2160402 }, Priority);
+                    KazimierInitializer.AddNewCard(owner, new List<int>() { 2160401, 2160401, 2160401, 2160401, 2160402, 2160402, 2160402 }, Priority);
                     break;
             }
         }

@@ -25,7 +25,7 @@ namespace KazimierzMajor
             friend.Remove(this.owner);
             BattleUnitModel battleUnitModel = RandomUtil.SelectOne<BattleUnitModel>(friend);
             battleUnitModel.RecoverHP(dmg);
-            owner.battleCardResultLog.SetSucceedAtkEvent(() => Harmony_Patch.UpdateInfo(battleUnitModel));
+            owner.battleCardResultLog.SetSucceedAtkEvent(() => KazimierInitializer.UpdateInfo(battleUnitModel));
         }
     }
 }

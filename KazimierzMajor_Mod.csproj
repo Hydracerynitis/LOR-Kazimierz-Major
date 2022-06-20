@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -174,7 +175,8 @@
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060041.cs" />
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060042.cs" />
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060045.cs" />
-    <Compile Include="SourceCode\Harmony_Patch.cs" />
+    <Compile Include="SourceCode\FastLateAttack.cs" />
+    <Compile Include="SourceCode\KazimierInitializer.cs" />
     <Compile Include="SourceCode\Left-Handed\BattleUnitBuf_Depressed.cs" />
     <Compile Include="SourceCode\Left-Handed\DiceCardAbility_break2pl.cs" />
     <Compile Include="SourceCode\Left-Handed\DiceCardAbility_break4pw.cs" />
@@ -229,6 +231,8 @@
     <Compile Include="SourceCode\Withered\PassiveAbility_2060043.cs" />
     <Compile Include="SourceCode\Withered\PassiveAbility_2060044.cs" />
     <Compile Include="SourceCode\Withered\PassiveAbility_2060046.cs" />
+    <PackageReference Include="Krafs.Publicizer" Version="1.0.2" />
+    <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

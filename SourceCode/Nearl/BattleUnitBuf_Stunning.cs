@@ -7,8 +7,8 @@ namespace KazimierzMajor
 {
     public class BattleUnitBuf_Stunning : BattleUnitBuf
     {
-        protected override string keywordId => "Stunning";
-        protected override string keywordIconId => "Stun";
+        public override string keywordId => "Stunning";
+        public override string keywordIconId => "Stun";
         public static void AddBuf(BattleUnitModel model, int value)
         {
             if (!(model.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Stunning) is BattleUnitBuf_Stunning battleUnitBufStunning))

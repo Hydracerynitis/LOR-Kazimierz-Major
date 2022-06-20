@@ -21,7 +21,7 @@ namespace KazimierzMajor
             Priority.Clear();
             for (int i = 100; i >= 0; i -= 10)
                 Priority.Enqueue(i);
-            Harmony_Patch.AddNewCard(owner, new List<int>() { 2160203, 2160203, 2160204}, Priority);
+            KazimierInitializer.AddNewCard(owner, new List<int>() { 2160203, 2160203, 2160204}, Priority);
         }
     }
 }

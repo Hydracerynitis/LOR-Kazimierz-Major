@@ -31,9 +31,9 @@ namespace KazimierzMajor
             for (int i = 100; i >= 0; i -= 10)
                 Priority.Enqueue(i);
             if(owner.Book.GetSpeedDiceRule(owner).speedDiceList.Count==4)
-                Harmony_Patch.AddNewCard(owner, new List<int>() { 2160201, 2160201, 2160201, 2160202 }, Priority);
+                KazimierInitializer.AddNewCard(owner, new List<int>() { 2160201, 2160201, 2160201, 2160202 }, Priority);
             else
-                Harmony_Patch.AddNewCard(owner, new List<int>() { 2160201, 2160201, 2160202 }, Priority);
+                KazimierInitializer.AddNewCard(owner, new List<int>() { 2160201, 2160201, 2160202 }, Priority);
         }
     }
 }

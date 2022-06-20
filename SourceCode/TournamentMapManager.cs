@@ -11,6 +11,10 @@ namespace KazimierzMajor
 {
     public class TournamentMapManager: CustomMapManager
     {
+        public override bool IsMapChangable()
+        {
+            return false;
+        }
         public override void CustomInit()
         {
             Retextualize();
@@ -20,7 +24,7 @@ namespace KazimierzMajor
                 name = "Champion";
             if (stageid==Tools.MakeLorId(21600043))
                 name = "Knight";
-            AudioClip bgm = Harmony_Patch.BGM[name];
+            AudioClip bgm = KazimierInitializer.BGM[name];
             mapBgm = new AudioClip[3] { bgm,bgm, bgm };
             mapSize = MapSize.L;
             _bMapInitialized = true;
@@ -49,7 +53,7 @@ namespace KazimierzMajor
         private void DuplicateSprite(GameObject obj, string path, float ReactWidth=1, float RectLength=1)
         {
             Texture2D texture2D = new Texture2D(1,1);
-            texture2D.LoadImage(File.ReadAllBytes(Harmony_Patch.ModPath + "/ArtWork/"+path+".png"));
+            texture2D.LoadImage(File.ReadAllBytes(KazimierInitializer.ModPath + "/ArtWork/"+path+".png"));
             Sprite sprite = obj.GetComponent<SpriteRenderer>().sprite;
             obj.GetComponent<SpriteRenderer>().sprite = Sprite.Create(texture2D, new Rect(0.0f, 0.0f, (float)texture2D.width*ReactWidth, (float)texture2D.height* RectLength), new Vector2(0.5f, 0.5f), sprite.pixelsPerUnit, 0U, SpriteMeshType.FullRect);
         }

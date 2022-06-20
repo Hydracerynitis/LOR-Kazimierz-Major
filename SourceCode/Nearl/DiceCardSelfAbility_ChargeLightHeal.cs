@@ -18,7 +18,7 @@ namespace KazimierzMajor
                     return;
                 aliveList.Sort((x, y) => (int)((double)x.hp - (double)y.hp));
                 aliveList[0].RecoverHP(10);
-                Harmony_Patch.UpdateInfo(aliveList[0]);
+                KazimierInitializer.UpdateInfo(aliveList[0]);
             }
         }
     }

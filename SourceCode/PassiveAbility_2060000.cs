@@ -16,7 +16,7 @@ namespace KazimierzMajor
                 {
                     unit.emotionDetail.SetEmotionLevel(level);
                     unit.cardSlotDetail.RecoverPlayPoint(unit.cardSlotDetail.GetMaxPlayPoint());
-                    Harmony_Patch.UpdateInfo(unit);
+                    KazimierInitializer.UpdateInfo(unit);
                 }
             }
         }

@@ -8,8 +8,8 @@ namespace KazimierzMajor
     public class BattleUnitBuf_Sleep : BattleUnitBuf
     {
         private BattleUnitModel giver;
-        protected override string keywordId => "Sleep";
-        protected override string keywordIconId => "BigBird_Sleep";
+        public override string keywordId => "Sleep";
+        public override string keywordIconId => "BigBird_Sleep";
         public static void AddBuf(BattleUnitModel model,BattleUnitModel giver, int value)
         {
             if (!(model.bufListDetail.GetReadyBufList().Find(x => x is BattleUnitBuf_Sleep) is BattleUnitBuf_Sleep battleUnitBufSleep))

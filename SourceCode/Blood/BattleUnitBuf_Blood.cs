@@ -7,8 +7,8 @@ namespace KazimierzMajor
 {
     public class BattleUnitBuf_Blood : BattleUnitBuf
     {
-        protected override string keywordId => "Blood";
-        protected override string keywordIconId => "Nosferatu_Blood";
+        public override string keywordId => "Blood";
+        public override string keywordIconId => "Nosferatu_Blood";
         public override int paramInBufDesc => _owner.faction==Faction.Enemy? 20*stack: 10*stack;
         public static void AddBuf(BattleUnitModel model, int value)
         {

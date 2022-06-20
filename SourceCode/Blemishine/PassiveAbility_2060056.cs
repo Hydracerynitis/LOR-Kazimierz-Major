@@ -41,8 +41,8 @@ namespace KazimierzMajor
         }
         public class BattleUnitBuf_BlemishineReady : BattleUnitBuf
         {
-            protected override string keywordId => stack >= 5 ? "Blemishine_Ready" : "Blemishine_Not_Ready";
-            protected override string keywordIconId => "YanArea_Ready";
+            public override string keywordId => stack >= 5 ? "Blemishine_Ready" : "Blemishine_Not_Ready";
+            public override string keywordIconId => "YanArea_Ready";
             public override int paramInBufDesc => stack >= 5 ? base.paramInBufDesc: 5-stack ;
             public override void OnRoundEnd() => this.Destroy();
             public BattleUnitBuf_BlemishineReady(int stack)

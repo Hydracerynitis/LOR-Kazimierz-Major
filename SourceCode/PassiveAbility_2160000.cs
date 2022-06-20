@@ -30,7 +30,7 @@ namespace KazimierzMajor
                     unit.emotionDetail.CreateEmotionCoin(EmotionCoinType.Negative, 1);
                     unit.emotionDetail.SetEmotionLevel(5);
                     unit.cardSlotDetail.RecoverPlayPoint(unit.cardSlotDetail.GetMaxPlayPoint());
-                    Harmony_Patch.UpdateInfo(unit);
+                    KazimierInitializer.UpdateInfo(unit);
                 }
             }
         }

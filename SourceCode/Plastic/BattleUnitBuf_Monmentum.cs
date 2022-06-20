@@ -7,7 +7,7 @@ namespace KazimierzMajor
 {
     public class BattleUnitBuf_Monmentum : BattleUnitBuf
     {
-        protected override string keywordId => "Monmentum";
+        public override string keywordId => "Monmentum";
         public static void AddBuf(BattleUnitModel model, int value)
         {
             if (!(model.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Monmentum) is BattleUnitBuf_Monmentum battleUnitBufMonmentum))

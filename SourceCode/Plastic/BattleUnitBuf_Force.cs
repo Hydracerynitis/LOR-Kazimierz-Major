@@ -7,7 +7,7 @@ namespace KazimierzMajor
 {
     public class BattleUnitBuf_Force : BattleUnitBuf
     {
-        protected override string keywordId => "Force";
+        public override string keywordId => "Force";
         public void Add(int add) => this.stack += add;
 
         public static void AddBuf(BattleUnitModel model, int value)

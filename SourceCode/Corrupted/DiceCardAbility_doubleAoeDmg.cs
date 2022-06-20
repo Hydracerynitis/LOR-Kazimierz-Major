@@ -16,7 +16,7 @@ namespace KazimierzMajor
             foreach (BattleUnitModel battleUnitModel in BattleObjectManager.instance.GetAliveList_opponent(this.owner.faction).FindAll(x => x != behavior.card.target))
             {
                 battleUnitModel.TakeDamage(splashdamage);
-                owner.battleCardResultLog.SetSucceedAtkEvent(() => Harmony_Patch.UpdateInfo(battleUnitModel));
+                owner.battleCardResultLog.SetSucceedAtkEvent(() => KazimierInitializer.UpdateInfo(battleUnitModel));
             }
         }
     }
