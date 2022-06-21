@@ -89,6 +89,22 @@
 		<Name>暗箭难防</Name> 
 		<Desc>单方面攻击时改为直接造成追加伤害和混伤</Desc>
 	</PassiveDesc>
+	<!--逐魇骑士-->
+	<PassiveDesc ID="2160031">
+		<Name>恐惧凝集</Name> 
+		<Desc>使速度最慢的速度骰子上的书页获得“恐惧凝集”，该书页具有“先手”且会攻击所有司书
+该书页只会和司书手牌中费用最高的书页进行拼点，用于拼点的书页会在这一幕结束时弃置</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160032">
+		<Name>可汗之刃</Name> 
+		<Desc>召唤4个自身的复制体，自身与复制体共享血量，状态与战斗书页
+隐匿攻击意图和状态</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160033">
+		<Name>“最后的怯薛”</Name> 
+		<Desc>对所有司书施加“压抑的恐惧”
+(压抑的恐惧:使自身的所有骰子最大值-3，造成的伤害与混乱伤害-50%)</Desc>
+	</PassiveDesc>
 	<!--血骑士-->
 	<PassiveDesc ID="2160041">
 		<Name>血液蚀刻</Name> 

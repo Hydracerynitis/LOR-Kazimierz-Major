@@ -57,6 +57,13 @@
 			</TextList>
 			<PassiveList />
 		</BookDesc>
+		<BookDesc BookID="2160009">
+			<BookName>"逐魇"骑士之页</BookName>
+			<TextList>
+				<Desc>梦魇从未承认过自己的骑士封号，城市与文明不过是他征服之路上的障碍，如今卡西米尔赋予骑士的所有含义，即是对他虔信历史的彻底亵渎。</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
 		<BookDesc BookID="2160010">
 			<BookName>"血"骑士之页</BookName>
 			<TextList>
@@ -68,6 +75,15 @@
 			<BookName>凝血之刃</BookName>
 			<TextList>
 				<Desc>呼应血骑士的意志而活性化的血液，凝聚成了一把利刃的形状</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+		<BookDesc BookID="2160012">
+			<BookName>"耀"骑士之页</BookName>
+			<TextList>
+				<Desc>再次归来的耀骑士，依旧与过去一样勇毅而可靠，但她的战斗方式还是发生了一定变化。除了常用武器的更换之外，她对源石技艺的应用也不再拘泥于治疗。那柄金芒缠绕的剑枪，在战场上无疑会给敌人带来极强的威慑。</Desc>
+				<Desc>就像她的好友闪灵说的那样，“与我们一同流浪的日子里，玛嘉烈学会了如何收敛锋芒，而回到卡西米尔再度发起冲锋的耀骑士，已学会了心无旁骛地盛放。”</Desc>
+				<Desc>不光闪灵小姐和夜莺小姐，其他与临光合作过的干员也都惊叹于临光的改变，但并没有人感到不适应。大家很清楚，无论正义是否决定要对邪恶强硬，只要正义与邪恶一样处在边际上，就都必然会有锋芒。同样沐浴在耀骑士的光芒之下，邪恶的人或许会感到灼痛难当，而正义的同伴则依然会受到无上的鼓舞。</Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>

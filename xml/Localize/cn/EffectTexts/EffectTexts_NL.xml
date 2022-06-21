@@ -44,5 +44,9 @@
 			<Desc>被施加至4层时,承受{0}点伤害并这一幕和下一幕施加2层易损。
 自身每有一层易损该伤害便提升2点</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="Fearness">
+			<Name>压抑的恐惧</Name>
+			<Desc>使自身的所有骰子最大值-3，造成的伤害与混乱伤害-50%</Desc>
+		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>
