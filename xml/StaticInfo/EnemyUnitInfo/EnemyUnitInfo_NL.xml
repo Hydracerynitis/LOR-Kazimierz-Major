@@ -51,6 +51,12 @@
 		<MaxHeight>170</MaxHeight>
 		<BookId>12160008</BookId>
 	</Enemy>
+	<Enemy ID="2160009">
+		<NameID>216009</NameID>
+		<MinHeight>190</MinHeight>
+		<MaxHeight>190</MaxHeight>
+		<BookId>12160009</BookId>
+	</Enemy>
 	<Enemy ID="2160010">
 		<NameID>216010</NameID>
 		<MinHeight>200</MinHeight>

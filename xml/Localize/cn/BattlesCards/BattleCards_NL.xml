@@ -63,6 +63,34 @@
     <BattleCardDesc ID="2161207">
       <LocalizedName>发布赏金</LocalizedName>
     </BattleCardDesc>
+    <!-- 逐魇骑士 -->
+    <BattleCardDesc ID="2160301">
+      <LocalizedName>独行天途</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160302">
+      <LocalizedName>兵戈相向</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160303">
+      <LocalizedName>恐惧浸染</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160304">
+      <LocalizedName>梦魇长戟</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160305">
+      <LocalizedName>支配恐惧</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160306">
+      <LocalizedName>噩梦侵袭</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160307">
+      <LocalizedName>可汗出征</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160308">
+      <LocalizedName>长旗飘扬</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160309">
+      <LocalizedName>号角声响</LocalizedName>
+    </BattleCardDesc>
     <!-- 血骑士 -->
     <BattleCardDesc ID="2160401">
       <LocalizedName>巨斧劈砍</LocalizedName>

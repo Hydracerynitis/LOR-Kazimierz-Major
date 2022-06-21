@@ -76,6 +76,23 @@
 		<MapInfo>Custom_Street</MapInfo>
     		<Chapter>7</Chapter>
   	</Stage>
+	<Stage id="21600033">
+		<Wave>
+			<Formation>1</Formation>
+			<AvailableUnit>5</AvailableUnit>
+			<Unit>2160009</Unit>
+		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>ASK</StoryType>
+    		<Invitation Combine="BookRecipe">
+				<Book>2160002</Book>
+    		</Invitation>
+    		<Condition>
+      			<Stage>21600023</Stage>
+    		</Condition>
+		<MapInfo>Custom_Tournament</MapInfo>
+    		<Chapter>7</Chapter>
+  	</Stage>
 	<Stage id="21600043">
 		<Wave>
 			<Formation>1</Formation>
@@ -85,10 +102,10 @@
  		<FloorNum>1</FloorNum>
 		<StoryType>ASK</StoryType>
     		<Invitation Combine="BookRecipe">
-				<Book>2160002</Book>
+				<Book>2160003</Book>
     		</Invitation>
     		<Condition>
-      			<Stage>21600023</Stage>
+      			<Stage>21600033</Stage>
     		</Condition>
 		<MapInfo>Custom_Tournament</MapInfo>
     		<Chapter>7</Chapter>

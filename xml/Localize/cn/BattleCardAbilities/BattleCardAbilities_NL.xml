@@ -47,6 +47,28 @@
   <BattleCardAbility ID="BountyPublish">
     <Desc>[战斗开始] 使目标获得1层[赏金]</Desc>
   </BattleCardAbility>
+  <!--逐魇骑士-->
+  <BattleCardAbility ID="fearness1">
+    <Desc>[使用时] 若该书页拥有[恐惧凝集]则该书页所有骰子威力+2</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="fearness2">
+    <Desc>[使用时] 若该书页拥有[恐惧凝集]则在该书页开头置入一颗斩击骰子(5~9)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="fearness3">
+    <Desc>[战斗开始] 若该书页拥有[恐惧凝集]则这一幕中[压抑的恐惧]中造成伤害与混乱伤害变为-100%</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="breakDamage150">
+    <Desc>该骰子造成的混乱伤害+50%</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="targetPower_2">
+    <Desc>[拼点胜利] 使目标书页剩余骰子威力-2</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kehan1">
+    <Desc>[战斗开始] 使所有友方角色获得3层[守护]与[振奋]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kehan2">
+    <Desc>[战斗开始] 使所有友方角色获得2层[强壮]与[忍耐]</Desc>
+  </BattleCardAbility>
   <!--血骑士-->
   <BattleCardAbility ID="blood2">
     <Desc>[使用时] 获得2层[鲜血附魔]</Desc>

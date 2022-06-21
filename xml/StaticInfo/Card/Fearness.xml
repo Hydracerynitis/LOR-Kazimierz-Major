@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Card ID="2160301">
+	<Name>独行天途</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script>fearness1</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+      	<Behaviour Min="3" Dice="7" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2160302">
+	<Name>兵戈相向</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script></Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+      	<Behaviour Min="6" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="targetPower_2" ActionScript="" Desc="" />
+	<Behaviour Min="5" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="5" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2160303">
+	<Name>恐惧浸染</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script></Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+	<Behaviour Min="6" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="break3atk" ActionScript="" Desc="" />
+	<Behaviour Min="6" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="break3atk" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2160304">
+	<Name>梦魇长戟</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script>fearness2</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+	<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="4" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="3" Dice="7" Type="Standby" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2160305">
+	<Name>支配恐惧</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script>fearness3</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+	<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="4" Dice="7" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2160306">
+	<Name>噩梦侵袭</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script>FastAttack</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+	<Behaviour Min="10" Dice="26" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="breakDamage150" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>2</Priority>
+</Card>
+<Card ID="2160307">
+		<Name>可汗出征</Name>
+		<Artwork>NigthMare</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="FarAreaEach" Cost="0" Affection="Team"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Slash" Motion="S2" EffectRes="" Script="" ActionScript="shyao_areaatk2" Desc="" />
+      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Penetrate" Motion="S2" EffectRes="" Script="" ActionScript="shyao_areaatk2" Desc="" />
+      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Hit" Motion="S2" EffectRes="" Script="" ActionScript="shyao_areaatk2" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160308">
+	<Name>长旗飘扬</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script>kehan1</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+	<Behaviour Min="4" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="6" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2160309">
+	<Name>号角声响</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Rare</Rarity>
+	<Spec Range="Near" Cost="0" />
+	<Script>kehan2</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
+	<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+</DiceCardXmlRoot>

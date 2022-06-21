@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Card ID="2160101">
+		<Name>烛影</Name>
+		<Artwork>CryPhilip_Parry</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script>Light1Max6</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="6" Dice="9" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160102">
+		<Name>烛光探戈</Name>
+		<Artwork>CryPhilip_Phase2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Near" Cost="0" />
+		<Script>Light2Power2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="4" Dice="7" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="7" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160103">
+		<Name>烛上火星</Name>
+		<Artwork>CryPhilip_Atk</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="12" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="Light2Strength2" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160104">
+		<Name>熄灯</Name>
+		<Artwork>CryPhilip_FarArea</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="9" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Light1Light1" ActionScript="" Desc="" />
+            <Behaviour Min="7" Dice="10" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="" Script="Light1Light1" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160105">
+		<Name>烛芯重燃</Name>
+		<Artwork>CryPhilip_Strong</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="0" />
+		<Script>Light3AddDice</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="9" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160106">
+		<Name>烛火之护</Name>
+		<Artwork>CryPhilip_Parry</Artwork>
+		<Rarity>Rare</Rarity>
+		<Spec Range="Far" Cost="0" />
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="3" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="Light3Prot5" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2160107">
+		<Name>微光之触</Name>
+		<Artwork>TwistPhilip1</Artwork>
+		<Rarity>Unique</Rarity>
+		<Spec Range="FarArea" Cost="0" Affection="Team"/>
+		<Script>InfiniteLight</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="25" Dice="30" Type="Atk" Detail="Hit" Motion="S5" EffectRes="" Script="Burn5AoeAtk" ActionScript="TwistPhilip_AreaBurnDespair" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+</DiceCardXmlRoot>
