@@ -22,8 +22,10 @@ namespace KazimierzMajor
             LorId stageid = Singleton<StageController>.Instance.GetStageModel().ClassInfo.id;
             if (stageid == Tools.MakeLorId(21600013))
                 name = "Champion";
-            if (stageid==Tools.MakeLorId(21600043))
+            if (stageid == Tools.MakeLorId(21600043))
                 name = "Knight";
+            if (stageid == Tools.MakeLorId(21600053))
+                name = "Amon";
             AudioClip bgm = KazimierInitializer.BGM[name];
             mapBgm = new AudioClip[3] { bgm,bgm, bgm };
             mapSize = MapSize.L;

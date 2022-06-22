@@ -20,6 +20,12 @@
 		<DropItem Type="Equip">2160007</DropItem>
 		<DropItem Type="Equip">2160008</DropItem>
 	</BookUse>
+	<BookUse ID="2160003">
+		<TextId>2160003</TextId>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+
+	</BookUse>
 	<BookUse ID="2160010">
 		<TextId>2160010</TextId>
 		<BookIcon>ASK</BookIcon>

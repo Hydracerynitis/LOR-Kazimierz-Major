@@ -9,7 +9,8 @@
 	<ScriptDesc></ScriptDesc>
     <BehaviourList>
       	<Behaviour Min="3" Dice="7" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
-	<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="4" Dice="7" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+	<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
     </BehaviourList>
 	<Chapter>7</Chapter>
 	<Priority>0</Priority>

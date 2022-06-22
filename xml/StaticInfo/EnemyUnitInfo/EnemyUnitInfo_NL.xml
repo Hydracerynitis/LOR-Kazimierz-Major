@@ -56,6 +56,9 @@
 		<MinHeight>190</MinHeight>
 		<MaxHeight>190</MaxHeight>
 		<BookId>12160009</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2160003</DropItem>
+		</DropTable>
 	</Enemy>
 	<Enemy ID="2160010">
 		<NameID>216010</NameID>

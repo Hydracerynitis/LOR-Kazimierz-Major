@@ -248,6 +248,11 @@
     <Compile Include="SourceCode\Nearl\PassiveAbility_2060053.cs" />
     <Compile Include="SourceCode\Nearl\PassiveAbility_2060054.cs" />
     <Compile Include="SourceCode\Nearl\PassiveAbility_2060057.cs" />
+    <Compile Include="SourceCode\NightMare\BattleUnitBuf_fearness.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan1.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan2.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardAbility_breakDamage150.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160033.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardAbility_targetPower_2.cs" />
     <Compile Include="SourceCode\PassiveAbility_2060000.cs" />
     <Compile Include="SourceCode\PassiveAbility_2061040.cs" />

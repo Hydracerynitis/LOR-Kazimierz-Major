@@ -238,7 +238,7 @@
 			<Passive>2160033</Passive>
 			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
-      		<MaxPlayPoint>10</MaxPlayPoint>
+      		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>

@@ -64,10 +64,10 @@
     <Desc>[拼点胜利] 使目标书页剩余骰子威力-2</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kehan1">
-    <Desc>[战斗开始] 使所有友方角色获得3层[守护]与[振奋]</Desc>
+    <Desc>[战斗开始] 使所有我方角色获得3层[守护]与[振奋]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kehan2">
-    <Desc>[战斗开始] 使所有友方角色获得2层[强壮]与[忍耐]</Desc>
+    <Desc>[战斗开始] 使所有我方角色获得2层[强壮]与[忍耐]</Desc>
   </BattleCardAbility>
   <!--血骑士-->
   <BattleCardAbility ID="blood2">

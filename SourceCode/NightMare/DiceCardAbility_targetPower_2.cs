@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SN
+namespace KazimierzMajor
 {
 	// Token: 0x0200000B RID: 11
 	public class DiceCardAbility_targetPower_2 : DiceCardAbilityBase
