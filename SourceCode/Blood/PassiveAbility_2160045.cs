@@ -66,10 +66,10 @@ namespace KazimierzMajor
                 phasetrans = 0;
             if (phasetrans > 0)
             {
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
-                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
+                SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
                 phasetrans--;
                 if(phasetrans==0)
                     check = true;
@@ -83,8 +83,8 @@ namespace KazimierzMajor
                     if (passive != null)
                         owner.passiveDetail.DestroyPassive(passive);
                     owner.passiveDetail.DestroyPassive(this);
-                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
-                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
+                    SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
                 }
                 pattern = 0;
                 check = false;   

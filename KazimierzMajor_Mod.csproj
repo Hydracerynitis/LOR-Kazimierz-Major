@@ -23,6 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>8.0</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -46,7 +47,7 @@
       <HintPath>D:\Steam\steamapps\common\Library Of Ruina\LibraryOfRuina_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="BaseMod">
-      <HintPath>D:\Steam\steamapps\workshop\content\1256670\2603522001\Assemblies\BaseMod.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\1256670\2603522001\Assemblies\BaseMod.dll</HintPath>
     </Reference>
     <Reference Include="LORpatch">
       <HintPath>D:\Steam\steamapps\common\Library Of Ruina\LibraryOfRuina_Data\Managed\LORpatch.dll</HintPath>
@@ -150,7 +151,6 @@
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160125.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160124.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160123.cs" />
-    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160122.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160121.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160029.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160028.cs" />
@@ -249,9 +249,16 @@
     <Compile Include="SourceCode\Nearl\PassiveAbility_2060054.cs" />
     <Compile Include="SourceCode\Nearl\PassiveAbility_2060057.cs" />
     <Compile Include="SourceCode\NightMare\BattleUnitBuf_fearness.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness2.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness1.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan1.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness3.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan2.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardAbility_breakDamage150.cs" />
+    <Compile Include="SourceCode\NightMare\EnemyTeamStageManager_ Nightmare.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160032.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160132.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160031.cs" />
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160033.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardAbility_targetPower_2.cs" />
     <Compile Include="SourceCode\PassiveAbility_2060000.cs" />

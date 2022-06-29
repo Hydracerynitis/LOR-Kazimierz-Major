@@ -22,7 +22,7 @@ namespace KazimierzMajor
         public override void Init(BattleUnitModel self)
         {
             base.Init(self);
-            BloodKnight = BattleObjectManager.instance.GetAliveList(this.owner.faction).Find(x => x.UnitData.unitData.EnemyUnitId == Tools.MakeLorId(2160010));
+            BloodKnight = BattleObjectManager.instance.GetAliveList(this.owner.faction).Find(x => x.UnitData.unitData.EnemyUnitId == Tools.MakeLorId(2160011));
         }
         public override void OnRoundStart()
         {

@@ -13,8 +13,8 @@ namespace KazimierzMajor
         {
             base.OnLoseHp(dmg);
             accumulated += dmg;
-            int stack = accumulated / 7;
-            accumulated -= 7 * stack;
+            int stack = accumulated / 10;
+            accumulated -= 10 * stack;
             BattleUnitBuf_Blood.AddBuf(owner, stack);
         }
     }

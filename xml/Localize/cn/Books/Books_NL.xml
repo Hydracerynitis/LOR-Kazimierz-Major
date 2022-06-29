@@ -64,21 +64,21 @@
 			</TextList>
 			<PassiveList />
 		</BookDesc>
-		<BookDesc BookID="2160010">
+		<BookDesc BookID="2160011">
 			<BookName>"血"骑士之页</BookName>
 			<TextList>
 				<Desc>血骑士，狄开俄波利斯。卡西米尔感染者骑士参赛制度的提议人，大骑士领感染者的英雄，无数孩子与感染者心中的偶像。"英雄"究竟出卖了什么，才换取了如今的和平?</Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
-		<BookDesc BookID="2160011">
+		<BookDesc BookID="2160012">
 			<BookName>凝血之刃</BookName>
 			<TextList>
 				<Desc>呼应血骑士的意志而活性化的血液，凝聚成了一把利刃的形状</Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
-		<BookDesc BookID="2160012">
+		<BookDesc BookID="2160013">
 			<BookName>"耀"骑士之页</BookName>
 			<TextList>
 				<Desc>再次归来的耀骑士，依旧与过去一样勇毅而可靠，但她的战斗方式还是发生了一定变化。除了常用武器的更换之外，她对源石技艺的应用也不再拘泥于治疗。那柄金芒缠绕的剑枪，在战场上无疑会给敌人带来极强的威慑。</Desc>

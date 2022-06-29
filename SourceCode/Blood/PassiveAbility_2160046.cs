@@ -66,8 +66,8 @@ namespace KazimierzMajor
         }
         public override void OnRoundEndTheLast()
         {
-            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
-            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160011), Tools.MakeLorId(12160011));
+            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
+            SummonLiberation.Harmony_Patch.SummonUnit(Faction.Enemy, Tools.MakeLorId(2160012), Tools.MakeLorId(12160012));
         }
         public override void OnDie()
         {

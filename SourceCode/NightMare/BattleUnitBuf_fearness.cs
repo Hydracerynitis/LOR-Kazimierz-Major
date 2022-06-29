@@ -2,12 +2,10 @@
 
 namespace KazimierzMajor
 {
-	// Token: 0x0200004D RID: 77
 	public class BattleUnitBuf_fearness : BattleUnitBuf
 	{
-		// Token: 0x17000013 RID: 19
-		// (get) Token: 0x06000110 RID: 272
-		protected override string keywordId
+		public bool Boost = false;
+		public override string keywordId
 		{
 			get
 			{
@@ -15,34 +13,32 @@ namespace KazimierzMajor
 			}
 		}
 
-		protected override string keywordIconId
+		public override string keywordIconId
 		{
 			get
 			{
 				return "Fearness";
 			}
 		}
-
-		// Token: 0x06000111 RID: 273
 		public override void BeforeRollDice(BattleDiceBehavior behavior)
 		{
+			int reduce = 50;
+			if (Boost)
+				reduce = 100;
 			behavior.ApplyDiceStatBonus(new DiceStatBonus
 			{
 				max = -3,
-				dmgRate = -50,
-				breakRate = -50
+				dmgRate = -reduce,
+				breakRate = -reduce
 			});
 		}
-
-		// Token: 0x06000112 RID: 274
 		public override void OnRoundEnd()
 		{
-			this.Destroy();
+			Boost = false;
 		}
-
-		// Token: 0x06000113 RID: 275
 		public BattleUnitBuf_fearness()
 		{
+			stack = 0;
 		}
 	}
 }

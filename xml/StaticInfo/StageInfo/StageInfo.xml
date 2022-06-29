@@ -83,7 +83,7 @@
 			<Unit>2160009</Unit>
 		</Wave>
  		<FloorNum>1</FloorNum>
-		<StoryType>ASK</StoryType>
+		<StoryType>Tora</StoryType>
     		<Invitation Combine="BookRecipe">
 				<Book>2160002</Book>
     		</Invitation>
@@ -97,7 +97,7 @@
 		<Wave>
 			<Formation>1</Formation>
 			<AvailableUnit>5</AvailableUnit>
-			<Unit>2160010</Unit>
+			<Unit>2160011</Unit>
 		</Wave>
  		<FloorNum>1</FloorNum>
 		<StoryType>ASK</StoryType>

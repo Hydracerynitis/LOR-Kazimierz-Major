@@ -11,7 +11,7 @@ namespace KazimierzMajor
         public override void BeforeGiveDamage(BattleDiceBehavior behavior)
         {
             if (behavior.card.target.hp > behavior.card.target.MaxHp / 2)
-                behavior.ApplyDiceStatBonus(new DiceStatBonus() { dmg = behavior.DiceResultValue });
+                behavior.ApplyDiceStatBonus(new DiceStatBonus() { dmg = behavior.DiceResultValue/2 });
         }
     }
 }

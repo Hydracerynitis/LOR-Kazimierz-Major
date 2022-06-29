@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <EnemyUnitClassRoot>
+	<!--烛骑士-->
 	<Enemy ID="2160001">
 		<NameID>216001</NameID>
 		<MinHeight>200</MinHeight>
@@ -9,6 +10,7 @@
 			<DropItem Prob="1">2160001</DropItem>
 		</DropTable>
 	</Enemy>
+	<!--无胄盟-->
 	<Enemy ID="2160002">
 		<NameID>216002</NameID>
 		<MinHeight>200</MinHeight>
@@ -61,12 +63,11 @@
 		</DropTable>
 	</Enemy>
 	<Enemy ID="2160010">
-		<NameID>216010</NameID>
-		<MinHeight>200</MinHeight>
-		<MaxHeight>200</MaxHeight>
+		<NameID>216009</NameID>
+		<MinHeight>190</MinHeight>
+		<MaxHeight>190</MaxHeight>
 		<BookId>12160010</BookId>
 		<DropTable Level="0">
-			<DropItem Prob="1">2160010</DropItem>
 		</DropTable>
 	</Enemy>
 	<Enemy ID="2160011">
@@ -74,5 +75,14 @@
 		<MinHeight>200</MinHeight>
 		<MaxHeight>200</MaxHeight>
 		<BookId>12160011</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2160010</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2160012">
+		<NameID>216012</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12160012</BookId>
 	</Enemy>
 </EnemyUnitClassRoot>

@@ -40,6 +40,7 @@ namespace KazimierzMajor
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600013), ModPath + "/ArtWork/Candle.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/Street.png");
+                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/NightMare.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600043), ModPath + "/ArtWork/Tournament.png");
             }
             catch(Exception ex)
@@ -83,7 +84,7 @@ namespace KazimierzMajor
                 CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
                 CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
                 CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
-                //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
+                CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
                 //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 CenterPanel_Init = true;
@@ -95,7 +96,7 @@ namespace KazimierzMajor
                 CreateStoryLine(__instance, 20600003, UIStoryLine.CaneOffice, new Vector3(500f, 0.0f));
                 CreateStoryLine(__instance, 21600013, UIStoryLine.CaneOffice, new Vector3(250f, 160f));
                 CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
-                //CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
+                CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
                 //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 BattleStoryPanel_Init = true;
@@ -108,6 +109,99 @@ namespace KazimierzMajor
                 else
                     Storyslots[key].SetActiveStory(false);
             }
+        }
+        [HarmonyPatch(typeof(StageController),nameof(StageController.StartAction))]
+        [HarmonyPrefix]
+        public static bool StageController_StartAction_Pre(BattlePlayingCardDataInUnitModel card)
+        {
+            if (card !=  PassiveAbility_2160031.nightmare)
+                return true;
+            return InitNightmareClash(card);
+        }
+        [HarmonyPatch(typeof(StageController), nameof(StageController.StartParrying))]
+        [HarmonyPrefix]
+        public static bool StageController_StartParrying_Pre(BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)
+        {
+            if (cardA == PassiveAbility_2160031.nightmare && cardB.isKeepedCard)
+                return InitNightmareClash(cardA);
+            if (cardB == PassiveAbility_2160031.nightmare && cardA.isKeepedCard)
+                return InitNightmareClash(cardB);
+            return true;
+        }
+        public static bool InitNightmareClash(BattlePlayingCardDataInUnitModel card)
+        {
+            BattleUnitModel target = card.target;
+            List<BattleDiceCardModel> cards = new List<BattleDiceCardModel>(target.allyCardDetail.GetHand().FindAll(x=> target.CheckCardAvailable(x) && !IsNotClashCard(x)));
+            if (cards.Count <= 0)
+                return true;
+            cards.Sort((x, y) => y.GetCost() - x.GetCost());
+            BattleDiceCardModel clashCard = cards[0];
+            BattlePlayingCardDataInUnitModel retaliate = new BattlePlayingCardDataInUnitModel()
+            {
+                owner = target,
+                card = clashCard,
+                cardAbility = clashCard.CreateDiceCardSelfAbilityScript(),
+                target = card.owner,
+                slotOrder = card.targetSlotOrder,
+                targetSlotOrder = card.slotOrder
+            };
+            if (retaliate.cardAbility != null)
+                retaliate.cardAbility.card = retaliate;
+            retaliate.ResetCardQueueWithoutStandby();
+            target.allyCardDetail.UseCard(clashCard);
+            target.allyCardDetail.SpendCard(clashCard);
+            target.cardSlotDetail.ReserveCost(clashCard.GetCost());
+            target.cardSlotDetail.SpendCost(clashCard.GetCost());
+            Singleton<StageController>.Instance.sp(card, (retaliate));
+            return false;
+        }
+        [HarmonyPatch(typeof(BattleUnitBreakDetail),nameof(BattleUnitBreakDetail.TakeBreakDamage))]
+        [HarmonyPostfix]
+        static void BattleUnitBreakDetail_TakeBreakDamage_Post(BattleUnitBreakDetail __instance)
+        {
+            foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
+                if (passive is NightmareUpdater)
+                    (passive as NightmareUpdater).AfterChangeBreak();
+        }
+        [HarmonyPatch(typeof(BattleUnitBreakDetail), nameof(BattleUnitBreakDetail.RecoverBreak))]
+        [HarmonyPostfix]
+        static void BattleUnitBreakDetail_RecoverBreak_Post(BattleUnitBreakDetail __instance)
+        {
+            foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
+                if (passive is NightmareUpdater)
+                    (passive as NightmareUpdater).AfterChangeBreak();
+        }
+        [HarmonyPatch(typeof(BattleUnitBreakDetail), nameof(BattleUnitBreakDetail.LoseBreakGauge))]
+        [HarmonyPostfix]
+        static void BattleUnitBreakDetail_LoseBreakGauge_Post(BattleUnitBreakDetail __instance)
+        {
+            foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
+                if (passive is NightmareUpdater)
+                    (passive as NightmareUpdater).AfterChangeBreak();
+        }
+        [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.RecoverHP))]
+        [HarmonyPostfix]
+        static void BattleUnitModel_RecoverHP_Post(BattleUnitModel __instance)
+        {
+            foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
+                if (passive is NightmareUpdater)
+                    (passive as NightmareUpdater).AfterChangeHp();
+        }
+        [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.TakeDamage))]
+        [HarmonyPostfix]
+        static void BattleUnitModel_TakeDamage_Post(BattleUnitModel __instance)
+        {
+            foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
+                if (passive is NightmareUpdater)
+                    (passive as NightmareUpdater).AfterChangeHp();
+        }
+        [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.LoseHp))]
+        [HarmonyPostfix]
+        static void BattleUnitModel_LoseHp_Post(BattleUnitModel __instance)
+        {
+            foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
+                if (passive is NightmareUpdater)
+                    (passive as NightmareUpdater).AfterChangeHp();
         }
         public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
         {
@@ -138,6 +232,13 @@ namespace KazimierzMajor
             }
             while (cards.Count > 0);
         }
-    }
+        public static bool IsNotClashCard(BattleDiceCardModel card) => card.XmlData.Spec.Ranged == CardRange.FarArea || card.XmlData.Spec.Ranged == CardRange.FarAreaEach || card.XmlData.Spec.Ranged == CardRange.Instance;
 
+
+    }
+    public interface NightmareUpdater
+    {
+        public void AfterChangeBreak();
+        public void AfterChangeHp();
+    }
 }

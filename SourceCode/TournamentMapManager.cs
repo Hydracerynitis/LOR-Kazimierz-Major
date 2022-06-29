@@ -59,5 +59,10 @@ namespace KazimierzMajor
             Sprite sprite = obj.GetComponent<SpriteRenderer>().sprite;
             obj.GetComponent<SpriteRenderer>().sprite = Sprite.Create(texture2D, new Rect(0.0f, 0.0f, (float)texture2D.width*ReactWidth, (float)texture2D.height* RectLength), new Vector2(0.5f, 0.5f), sprite.pixelsPerUnit, 0U, SpriteMeshType.FullRect);
         }
+        public void ChangeToKhan()
+        {
+            GameObject bg = this.gameObject.transform.GetChild(1).GetChild(0).GetChild(0).gameObject;
+            DuplicateSprite(bg, "NigthMare");
+        }
     }
 }

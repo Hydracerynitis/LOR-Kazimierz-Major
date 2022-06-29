@@ -430,6 +430,8 @@ namespace KazimierzMajor
                 return true;
             if (card.cardAbility is DiceCardSelfAbility_OneSideFastAttack && GetParry(card) == null)
                 return true;
+            if (card == PassiveAbility_2160031.nightmare)
+                return true;
             return card.cardAbility is DiceCardSelfAbility_FastAttack;
         }
     }

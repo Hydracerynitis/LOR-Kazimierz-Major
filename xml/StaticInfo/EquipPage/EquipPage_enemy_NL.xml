@@ -240,7 +240,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>Tora</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>XiaoDistort</CharacterSkin>
@@ -248,8 +248,33 @@
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
 	<Book ID="12160010">
+		<Name>逐魇骑士之影</Name>
+		<TextId>2160009</TextId>
+		<EquipEffect>
+			<HP>900</HP>
+			<Break>400</Break>
+			<SpeedMin>3</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>		
+			<Passive>2160132</Passive>
+			<StartPlayPoint>0</StartPlayPoint>
+      		<MaxPlayPoint>0</MaxPlayPoint>
+		</EquipEffect>
+		<BookIcon>Tora</BookIcon>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity> 
+		<CharacterSkin>XiaoDistort</CharacterSkin>
+		<SpeedDiceNum>3</SpeedDiceNum>
+		<!--<RandomFace>true</RandomFace>-->
+	</Book>
+	<Book ID="12160011">
 		<Name>血骑士</Name>
-		<TextId>2160010</TextId>
+		<TextId>2160011</TextId>
 		<EquipEffect>
 			<HP>700</HP>
 			<Break>350</Break>
@@ -277,12 +302,12 @@
 		<SpeedDiceNum>7</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
-	<Book ID="12160011">
+	<Book ID="12160012">
 		<Name>凝血之刃</Name>
-		<TextId>2160011</TextId>
+		<TextId>2160012</TextId>
 		<EquipEffect>
-			<HP>100</HP>
-			<Break>100</Break>
+			<HP>80</HP>
+			<Break>80</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>6</Speed>
 			<SResist>Normal</SResist>

@@ -23,7 +23,7 @@
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="7" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="Greta_G" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="14" Dice="17" Type="Atk" Detail="Hit" Motion="H" EffectRes="Greta_H" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="11" Dice="17" Type="Atk" Detail="Hit" Motion="H" EffectRes="Greta_H" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
@@ -49,9 +49,9 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="6" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
-            <Behaviour Min="6" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
-            <Behaviour Min="6" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Greta_J" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
