@@ -6,8 +6,7 @@ namespace KazimierzMajor
 	{
 		public override void OnStartBattle()
 		{
-			owner.bufListDetail.AddKeywordBufThisRoundByCard(KeywordBuf.Protection, 3, base.owner);
-			owner.bufListDetail.AddKeywordBufThisRoundByCard(KeywordBuf.BreakProtection, 3, base.owner);
+			owner.bufListDetail.AddKeywordBufThisRoundByCard(KeywordBuf.DmgUp, 3, base.owner);
 		}
 	}
 }

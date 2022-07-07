@@ -64,10 +64,13 @@
     <Desc>[拼点胜利] 使目标书页剩余骰子威力-2</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kehan1">
-    <Desc>[战斗开始] 使所有我方角色获得3层[守护]与[振奋]</Desc>
+    <Desc>[战斗开始] 使自身获得3层[伤害提升]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kehan2">
-    <Desc>[战斗开始] 使所有我方角色获得2层[强壮]与[忍耐]</Desc>
+    <Desc>[战斗开始] 使自身获得2层[强壮]与[忍耐]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="KhanStance">
+    <Desc>[装备时] 使所有书页变成"恐惧凝集"的变体</Desc>
   </BattleCardAbility>
   <!--血骑士-->
   <BattleCardAbility ID="blood2">

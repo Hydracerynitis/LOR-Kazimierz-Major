@@ -240,7 +240,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>Tora</BookIcon>
+		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>XiaoDistort</CharacterSkin>
@@ -262,6 +262,7 @@
 			<PBResist>Normal</PBResist>
 			<HBResist>Normal</HBResist>		
 			<Passive>2160132</Passive>
+			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>

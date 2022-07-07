@@ -161,7 +161,12 @@ namespace KazimierzMajor
         {
             foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
                 if (passive is NightmareUpdater)
-                    (passive as NightmareUpdater).AfterChangeBreak();
+                {
+                    if (StageController.Instance.IsLogState())
+                        __instance._self.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeBreak());
+                    else
+                        (passive as NightmareUpdater).AfterChangeBreak();
+                }
         }
         [HarmonyPatch(typeof(BattleUnitBreakDetail), nameof(BattleUnitBreakDetail.RecoverBreak))]
         [HarmonyPostfix]
@@ -169,7 +174,12 @@ namespace KazimierzMajor
         {
             foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
                 if (passive is NightmareUpdater)
-                    (passive as NightmareUpdater).AfterChangeBreak();
+                {
+                    if (StageController.Instance.IsLogState())
+                        __instance._self.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeBreak());
+                    else
+                        (passive as NightmareUpdater).AfterChangeBreak();
+                }
         }
         [HarmonyPatch(typeof(BattleUnitBreakDetail), nameof(BattleUnitBreakDetail.LoseBreakGauge))]
         [HarmonyPostfix]
@@ -177,7 +187,12 @@ namespace KazimierzMajor
         {
             foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
                 if (passive is NightmareUpdater)
-                    (passive as NightmareUpdater).AfterChangeBreak();
+                {
+                    if (StageController.Instance.IsLogState())
+                        __instance._self.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeBreak());
+                    else
+                        (passive as NightmareUpdater).AfterChangeBreak();
+                }
         }
         [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.RecoverHP))]
         [HarmonyPostfix]
@@ -185,7 +200,12 @@ namespace KazimierzMajor
         {
             foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
                 if (passive is NightmareUpdater)
-                    (passive as NightmareUpdater).AfterChangeHp();
+                {
+                    if (StageController.Instance.IsLogState())
+                        __instance.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeHp());
+                    else
+                        (passive as NightmareUpdater).AfterChangeHp();
+                }
         }
         [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.TakeDamage))]
         [HarmonyPostfix]
@@ -193,7 +213,12 @@ namespace KazimierzMajor
         {
             foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
                 if (passive is NightmareUpdater)
-                    (passive as NightmareUpdater).AfterChangeHp();
+                {
+                    if (StageController.Instance.IsLogState())
+                        __instance.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeHp());
+                    else
+                        (passive as NightmareUpdater).AfterChangeHp();
+                }
         }
         [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.LoseHp))]
         [HarmonyPostfix]
@@ -201,7 +226,27 @@ namespace KazimierzMajor
         {
             foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
                 if (passive is NightmareUpdater)
-                    (passive as NightmareUpdater).AfterChangeHp();
+                {
+                    if (StageController.Instance.IsLogState())
+                        __instance.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeHp());
+                    else
+                        (passive as NightmareUpdater).AfterChangeHp();
+                }              
+        }
+        [HarmonyPatch(typeof(BattleObjectManager),nameof(BattleObjectManager.OnFixedUpdate))]
+        [HarmonyPostfix]
+        static void BattleObjectManager_OnFixedUpdate_Post(float deltaTime)
+        {
+            foreach (BattleUnitModel unit in KhanEffectData.added)
+                unit.OnFixedUpdate(deltaTime);
+        }
+        [HarmonyPatch(typeof(BattlePersonalEgoCardDetail),nameof(BattlePersonalEgoCardDetail.UseCard))]
+        [HarmonyPrefix]
+        static bool BattlePersonalEgoCardDetail_UseCard_Pre(BattleDiceCardModel card)
+        {
+            if (card.GetID() == Tools.MakeLorId(2161301))
+                return false;
+            return true;
         }
         public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
         {

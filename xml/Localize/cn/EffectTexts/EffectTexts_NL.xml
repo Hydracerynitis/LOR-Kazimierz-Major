@@ -46,7 +46,11 @@
 		</BattleEffectText>
 		<BattleEffectText ID="Fearness">
 			<Name>压抑的恐惧</Name>
-			<Desc>使自身的所有骰子最大值-3，造成的伤害与混乱伤害-50%</Desc>
+			<Desc>使自身的所有骰子最大值-{0}，造成的伤害与混乱伤害-{1}%</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="KhanStance">
+			<Name>恐惧凝集</Name>
+			<Desc>使用书页额外消耗4点光芒并使其获得先手并且攻击所有敌方单位</Desc>
 		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

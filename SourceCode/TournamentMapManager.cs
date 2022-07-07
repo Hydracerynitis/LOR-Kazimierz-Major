@@ -3,7 +3,7 @@ using BaseMod;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using Sound;
 using UnityEngine;
 using System.IO;
 
@@ -63,6 +63,8 @@ namespace KazimierzMajor
         {
             GameObject bg = this.gameObject.transform.GetChild(1).GetChild(0).GetChild(0).gameObject;
             DuplicateSprite(bg, "NigthMare");
+            BattleSceneRoot.Instance._mapChangeFilter.StartMapChangingEffect(Direction.LEFT);
+            SoundEffectManager.Instance.PlayClip("Creature / BossBird_Birth");
         }
     }
 }

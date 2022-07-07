@@ -95,6 +95,19 @@
 		<Rarity>Unique</Rarity>
 		<Cost>8</Cost>
   	</Passive>
+	<Passive ID="2160131">
+		<Rarity>Unique</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>7</Cost>
+  	</Passive>
+	<Passive ID="2160232">
+		<Rarity>Unique</Rarity>
+		<Cost>5</Cost>
+  	</Passive>
+	<Passive ID="2160133">
+		<Rarity>Unique</Rarity>
+		<Cost>3</Cost>
+	</Passive>
 	<!-- 血骑士 -->
 	<Passive ID="2160041">
 		<Rarity>Unique</Rarity>

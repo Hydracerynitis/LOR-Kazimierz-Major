@@ -5,6 +5,7 @@ namespace KazimierzMajor
 	public class BattleUnitBuf_fearness : BattleUnitBuf
 	{
 		public bool Boost = false;
+		public bool Nerf = false;
 		public override string keywordId
 		{
 			get
@@ -20,18 +21,32 @@ namespace KazimierzMajor
 				return "Fearness";
 			}
 		}
-		public override void BeforeRollDice(BattleDiceBehavior behavior)
+        public override string bufActivatedText => string.Format(BattleEffectTextsXmlList.Instance.GetEffectTextDesc("Fearness"),getMax().ToString(),getDamage().ToString()) ;
+        public override void BeforeRollDice(BattleDiceBehavior behavior)
 		{
-			int reduce = 50;
-			if (Boost)
-				reduce = 100;
 			behavior.ApplyDiceStatBonus(new DiceStatBonus
 			{
-				max = -3,
-				dmgRate = -reduce,
-				breakRate = -reduce
+				max = getMax(),
+				dmgRate = -getDamage(),
+				breakRate = -getDamage()
 			});
 		}
+		public int getMax()
+        {
+			int output = -3;		
+			if(Nerf)
+				output = 0;
+			return output;
+		}
+		public int getDamage()
+        {
+			int damage = 50;
+			if (Boost)
+				damage = 100;
+			if (Nerf)
+				damage = 25;
+			return damage;
+        }
 		public override void OnRoundEnd()
 		{
 			Boost = false;

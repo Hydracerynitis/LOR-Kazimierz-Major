@@ -256,7 +256,11 @@
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan2.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardAbility_breakDamage150.cs" />
     <Compile Include="SourceCode\NightMare\EnemyTeamStageManager_ Nightmare.cs" />
+    <Compile Include="SourceCode\NightMare\FarAreaEffect_Khan.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160133.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160131.cs" />
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160032.cs" />
+    <Compile Include="SourceCode\NightMare\PassiveAbility_2160232.cs" />
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160132.cs" />
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160031.cs" />
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160033.cs" />

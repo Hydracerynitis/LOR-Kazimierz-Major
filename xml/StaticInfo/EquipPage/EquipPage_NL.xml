@@ -137,6 +137,33 @@
 		<CharacterSkin>ThumbUnit</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
+	<Book ID="2160009">
+		<Name>逐魇骑士</Name>
+		<TextId>2160009</TextId>
+		<EquipEffect>
+			<HP>125</HP>
+			<Break>65</Break>
+			<SpeedMin>3</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Endure</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Endure</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>	
+			<Passive Pid="@origin">10008</Passive>	
+			<Passive>2160131</Passive>
+			<Passive>2160232</Passive>
+			<Passive>2160133</Passive>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
+		</EquipEffect>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity> 
+		<CharacterSkin>XiaoDistort</CharacterSkin>
+		<!--<RandomFace>true</RandomFace>-->
+	</Book>
 	<Book ID="2160010">
 		<Name>血骑士</Name>
 		<TextId>2160010</TextId>

@@ -6,6 +6,7 @@ namespace KazimierzMajor
 {
 	public class PassiveAbility_2160031 : PassiveAbilityBase
 	{
+        private int AoeCoolDown = 0;
         private int minHP =500;
         private bool nextPhase = false;
         public static BattlePlayingCardDataInUnitModel nightmare;
@@ -75,6 +76,24 @@ namespace KazimierzMajor
         public override int GetMinHp()
         {
             return minHP;
+        }
+        public override void OnAfterRollSpeedDice()
+        {
+            owner.allyCardDetail.ExhaustAllCards();
+            foreach (DiceCardXmlInfo xml in owner.UnitData.unitData.GetDeck())
+            {
+                if (xml.id == Tools.MakeLorId(2160307))
+                {
+                    if (AoeCoolDown > 0)
+                        continue;
+                    AoeCoolDown = 3;
+                    owner.allyCardDetail.AddNewCard(xml.id).SetPriorityAdder(100);
+                    continue;
+                }
+                owner.allyCardDetail.AddNewCard(xml.id);
+            }
+            if (AoeCoolDown > 0)
+                AoeCoolDown--;
         }
     }
 }

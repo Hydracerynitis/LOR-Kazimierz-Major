@@ -92,13 +92,14 @@
 		<Name>可汗出征</Name>
 		<Artwork>NigthMare</Artwork>
 		<Rarity>Unique</Rarity>
+		<Option>Basic</Option>
 		<Spec Range="FarAreaEach" Cost="0" Affection="Team"/>
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Slash" Motion="S2" EffectRes="" Script="" ActionScript="shyao_areaatk2" Desc="" />
-      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Penetrate" Motion="S2" EffectRes="" Script="" ActionScript="shyao_areaatk2" Desc="" />
-      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Hit" Motion="S2" EffectRes="" Script="" ActionScript="shyao_areaatk2" Desc="" />
+      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Hit" Motion="S2" EffectRes="" Script="" ActionScript="KhanAoe1" Desc="" />
+      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Slash" Motion="S2" EffectRes="" Script="" ActionScript="KhanAoe2" Desc="" />
+      		<Behaviour Min="3" Dice="10" Type="Atk" Detail="Penetrate" Motion="S2" EffectRes="" Script="" ActionScript="KhanAoe3" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
@@ -127,6 +128,19 @@
     <BehaviourList>
 	<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
 	<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+	<Chapter>7</Chapter>
+	<Priority>0</Priority>
+</Card>
+<Card ID="2161301">
+	<Name>恐惧凝集</Name>
+	<Artwork>NigthMare</Artwork>
+	<Rarity>Unique</Rarity>
+	<Option>Personal</Option>
+	<Spec Range="Instance" Cost="0" />
+	<Script>KhanStance</Script>
+	<ScriptDesc></ScriptDesc>
+    <BehaviourList>
     </BehaviourList>
 	<Chapter>7</Chapter>
 	<Priority>0</Priority>

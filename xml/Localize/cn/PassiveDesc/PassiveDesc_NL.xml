@@ -94,18 +94,31 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160032">
 		<Name>可汗之刃</Name> 
-		<Desc>召唤4个自身的复制体，自身与复制体共享血量，状态与战斗书页
-隐匿攻击意图和状态</Desc>
+		<Desc>召唤4个自身的复制体，自身与复制体共享血量，状态
+隐匿攻击意图和状态.减少90%来自范围杀伤书页的伤害和混乱伤害</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160132">
 		<Name>可汗之刃</Name> 
-		<Desc>召唤4个自身的复制体，自身与复制体共享血量，状态与战斗书页
-隐匿攻击意图和状态</Desc>
+		<Desc>召唤4个自身的复制体，自身与复制体共享血量，状态
+隐匿攻击意图和状态.减少90%来自范围杀伤书页的伤害和混乱伤害</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160033">
 		<Name>“最后的怯薛”</Name> 
 		<Desc>对所有司书施加“压抑的恐惧”
 (压抑的恐惧:使自身的所有骰子最大值-3，造成的伤害与混乱伤害-50%)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160131">
+		<Name>恐惧凝集</Name> 
+		<Desc>可切换普通出牌模式和恐惧凝集模式. 恐惧凝集模式使用书页额外消耗4点光明并使其获得先手并且攻击所有敌方单位</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160232">
+		<Name>可汗进军</Name> 
+		<Desc>这一舞台每造成50点伤害提升所有友方单位进贡给伤害2点</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160133">
+		<Name>“最后的怯薛”</Name> 
+		<Desc>对所有敌人施加“压抑的恐惧”
+(压抑的恐惧:造成的伤害与混乱伤害-25%)</Desc>
 	</PassiveDesc>
 	<!--血骑士-->
 	<PassiveDesc ID="2160041">

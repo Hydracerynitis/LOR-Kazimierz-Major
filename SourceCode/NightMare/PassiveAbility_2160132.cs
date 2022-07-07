@@ -41,25 +41,25 @@ namespace KazimierzMajor
             foreach (BattleUnitModel unit in BattleObjectManager.instance.GetAliveList(owner.faction))
             {
                 unit.breakDetail.breakGauge = stageManager.Break;
-                if (StageController.Instance.IsLogState())
-                    unit.battleCardResultLog?.SetPrintDamagedEffectEvent(()=>KazimierInitializer.UpdateInfo(unit));
-                else
-                    KazimierInitializer.UpdateInfo(unit);
+                KazimierInitializer.UpdateInfo(unit);
             }
                 
         }
-
+        
         public void AfterChangeHp()
         {
             stageManager.hp = owner.hp;
             foreach (BattleUnitModel unit in BattleObjectManager.instance.GetAliveList(owner.faction))
             {
                 unit.SetHp((int)stageManager.hp);
-                if (StageController.Instance.IsLogState())
-                    unit.battleCardResultLog?.SetPrintDamagedEffectEvent(() => KazimierInitializer.UpdateInfo(unit));
-                else
-                    KazimierInitializer.UpdateInfo(unit);
+                KazimierInitializer.UpdateInfo(unit);
             }
+        }
+        public override void OnAfterRollSpeedDice()
+        {
+            owner.allyCardDetail.ExhaustAllCards();
+            foreach (DiceCardXmlInfo xml in owner.UnitData.unitData.GetDeck())
+                owner.allyCardDetail.AddNewCard(xml.id);
         }
     }
 }
