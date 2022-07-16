@@ -57,6 +57,9 @@
   <BattleCardAbility ID="fearness3">
     <Desc>[战斗开始] 若该书页拥有[恐惧凝集]则这一幕中[压抑的恐惧]中造成伤害与混乱伤害变为-100%</Desc>
   </BattleCardAbility>
+  <BattleCardAbility ID="fearness4">
+    <Desc>[战斗开始] 使这书页所有指定的目标在这一幕内造成的伤害和混乱伤害-25%</Desc>
+  </BattleCardAbility>
   <BattleCardAbility ID="breakDamage150">
     <Desc>该骰子造成的混乱伤害+50%</Desc>
   </BattleCardAbility>
@@ -65,6 +68,9 @@
   </BattleCardAbility>
   <BattleCardAbility ID="kehan1">
     <Desc>[战斗开始] 使自身获得3层[伤害提升]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kehan1_p">
+    <Desc>[战斗开始] 使所有友方单位获得3层[伤害提升]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kehan2">
     <Desc>[战斗开始] 使自身获得2层[强壮]与[忍耐]</Desc>

@@ -91,6 +91,24 @@
     <BattleCardDesc ID="2160309">
       <LocalizedName>号角声响</LocalizedName>
     </BattleCardDesc>
+    <BattleCardDesc ID="2161301">
+      <LocalizedName>恐惧凝集</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161302">
+      <LocalizedName>兵戈相向</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161303">
+      <LocalizedName>支配恐惧</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161304">
+      <LocalizedName>恐惧浸染</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161305">
+      <LocalizedName>长旗飘扬</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161306">
+      <LocalizedName>可汗出征</LocalizedName>
+    </BattleCardDesc>
     <!-- 血骑士 -->
     <BattleCardDesc ID="2160401">
       <LocalizedName>巨斧劈砍</LocalizedName>

@@ -151,6 +151,8 @@
 			<SBResist>Endure</SBResist>
 			<PBResist>Normal</PBResist>
 			<HBResist>Normal</HBResist>	
+			<OnlyCard>2161303</OnlyCard>
+			<OnlyCard>2161306</OnlyCard>
 			<Passive Pid="@origin">10008</Passive>	
 			<Passive>2160131</Passive>
 			<Passive>2160232</Passive>

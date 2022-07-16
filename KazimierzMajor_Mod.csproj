@@ -119,6 +119,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Steam\steamapps\common\Library Of Ruina\LibraryOfRuina_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\SteamLibrary\steamapps\common\Library Of Ruina\LibraryOfRuina_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
@@ -251,6 +252,8 @@
     <Compile Include="SourceCode\NightMare\BattleUnitBuf_fearness.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness2.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness1.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness4.cs" />
+    <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan1_p.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan1.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_fearness3.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardSelfAbility_kehan2.cs" />

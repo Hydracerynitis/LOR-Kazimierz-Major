@@ -101,7 +101,7 @@
 		<Artwork>Rcorp13</Artwork>
 		<Rarity>Unique</Rarity>
 		<Option>OnlyPage</Option>
-		<Spec Range="Near" Cost="5" />
+		<Spec Range="Near" Cost="4" />
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>

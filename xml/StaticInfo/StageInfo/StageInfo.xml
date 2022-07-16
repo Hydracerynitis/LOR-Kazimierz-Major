@@ -110,4 +110,21 @@
 		<MapInfo>Custom_Tournament</MapInfo>
     		<Chapter>7</Chapter>
   	</Stage>
+	<Stage id="21600053">
+		<Wave>
+			<Formation>1</Formation>
+			<AvailableUnit>5</AvailableUnit>
+			<Unit>2060003</Unit>
+		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>ASK</StoryType>
+    		<Invitation Combine="BookRecipe">
+				<Book>2160010</Book>
+    		</Invitation>
+    		<Condition>
+      			<Stage>21600043</Stage>
+    		</Condition>
+		<MapInfo>Custom_Tournament</MapInfo>
+    		<Chapter>7</Chapter>
+  	</Stage>
 </StageXmlRoot>
