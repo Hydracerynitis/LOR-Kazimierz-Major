@@ -85,4 +85,10 @@
 		<MaxHeight>200</MaxHeight>
 		<BookId>12160012</BookId>
 	</Enemy>
+	<Enemy ID="2160013">
+		<NameID>216013</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12160013</BookId>
+	</Enemy>
 </EnemyUnitClassRoot>

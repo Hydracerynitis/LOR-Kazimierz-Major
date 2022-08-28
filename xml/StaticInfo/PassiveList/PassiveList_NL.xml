@@ -158,4 +158,29 @@
 		<Rarity>Rare</Rarity>
 		<Cost>0</Cost>
   	</Passive>
+	<!-- 耀骑士 -->
+	<Passive ID="2160051">
+		<Rarity>Unique</Rarity>
+		<Cost>5</Cost>
+  	</Passive>
+	<Passive ID="2160052">
+		<Rarity>Unique</Rarity>
+		<Cost>1</Cost>
+  	</Passive>
+	<Passive ID="2160053">
+		<Rarity>Unique</Rarity>
+		<Cost>7</Cost>
+  	</Passive>
+	<Passive ID="2160054">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160055">
+		<Rarity>Unique</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
+	<Passive ID="2160056">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
+  	</Passive>
 </PassiveXmlRoot>

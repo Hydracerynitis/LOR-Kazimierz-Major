@@ -136,6 +136,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SourceCode\NightmareHp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SourceCode\ArmorLess\BattleUnitBuf_Corrosion.cs" />
     <Compile Include="SourceCode\ArmorLess\DiceCardAbility_BackStab.cs" />
@@ -288,6 +289,25 @@
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060013.cs" />
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060014.cs" />
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060111.cs" />
+    <Compile Include="SourceCode\MagerateHp.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_ParryPayback.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_PWBoostDmg.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_RecoverNDamageBreak.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_ParryGuaran.cs" />
+    <Compile Include="SourceCode\Radiant\FarAreaEffect_Enough.cs" />
+    <Compile Include="SourceCode\Radiant\RadiantSpecialAoe.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardSelfAbility_OnlyOneSide.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_RepeatBelow50.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_PLNerfLast.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_Discard1Atk.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardSelfAbility_ParryLate.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardSelfAbility_ObserveRollMax.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160053.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160054.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160052.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160056.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160055.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160051.cs" />
     <Compile Include="SourceCode\StadiumMapManager.cs" />
     <Compile Include="SourceCode\StreetMapManager.cs" />
     <Compile Include="SourceCode\TournamentMapManager.cs" />

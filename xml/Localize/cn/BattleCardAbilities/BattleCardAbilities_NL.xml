@@ -98,4 +98,59 @@
   <BattleCardAbility ID="BloodHeal">
     <Desc>[装备时] 恢复自身15%的体力上限的生命值</Desc>
   </BattleCardAbility>
+  <!--耀骑士-->
+  <BattleCardAbility ID="Discard1Atk">
+    <Desc>[命中时] 目标丢弃一张手牌</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="PLNerfLast">
+    <Desc>[拼点失败] 书页最后一个骰子基础值-9</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RepeatBelow50">
+    <Desc>若血量低于50%则重复投掷一次</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ObserveRollMax">
+    <Desc>若使用该书页时未被击中则最后一个骰子投掷最大值</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RecoverNDamageBreak">
+    <Desc>[命中时] 追加5点混乱伤害并且恢复5点混乱抗性</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="PWBoostDmg">
+    <Desc>[拼点胜利] 骰子威力每高出目标1点提升下一个骰子伤害4点</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryLate">
+    <Desc>[后手] 其他书页触发[看破]时摧毁该书页并且把该书页骰子移至触发书页末尾</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryBelow50">
+    <Desc>若血量低于50%则额外获得[看破]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryGuaran">
+    <Desc>必定获得[看破]. 触发[看破]时重新投掷该骰</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryPayback">
+    <Desc>触发[看破]时追加目标骰子威力伤害和混乱伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryAll">
+    <Desc>获得[看破]时对所有进攻形式生效</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="OnlyOneSide">
+    <Desc>仅攻击使用单方面攻击自身的敌人</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RadiantSum">
+    <Desc>[范围杀伤书页-清算] 仅攻击主目标</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RadiantSingle">
+    <Desc>[范围杀伤书页-交锋] 仅攻击副目标</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryNone">
+    <Desc>[看破-进攻]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParrySlash">
+    <Desc>[看破-斩击]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryHit">
+    <Desc>[看破-打击]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryPenetrate">
+    <Desc>[看破-穿刺]</Desc>
+  </BattleCardAbility>
 </BattleCardAbilityDescRoot>

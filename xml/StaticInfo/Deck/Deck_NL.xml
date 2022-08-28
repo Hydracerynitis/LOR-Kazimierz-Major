@@ -45,4 +45,15 @@
 		<Card>2160404</Card>
 		<Card>2160405</Card>
 	</Deck>
+	<Deck ID="12160013">
+		<Card>2160501</Card>
+		<Card>2160502</Card>
+		<Card>2160504</Card>
+		<Card>2160505</Card>
+		<Card>2160506</Card>
+		<Card>2160507</Card>
+		<Card>2160508</Card>
+		<Card>2160509</Card>
+		<Card>2160510</Card>
+	</Deck>
 </DeckXmlRoot>

@@ -52,5 +52,17 @@
 			<Name>恐惧凝集</Name>
 			<Desc>使用书页额外消耗4点光芒并使其获得先手并且攻击所有敌方单位</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="Blind">
+			<Name>闪盲</Name>
+			<Desc>这一幕所有骰子最小值-3</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="RadiantShield">
+			<Name>护盾</Name>
+			<Desc>这一幕内可抵挡{0}次伤害</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="TargetIndicator">
+			<Name>耀阳落地点</Name>
+			<Desc>成为了耀阳颔首的首要目标</Desc>
+		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

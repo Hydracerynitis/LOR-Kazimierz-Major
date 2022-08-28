@@ -319,6 +319,7 @@
 			<HBResist>Normal</HBResist>
 			<Passive>2160047</Passive>
 			<Passive>2160048</Passive>
+			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
@@ -327,6 +328,37 @@
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>BlackSilence4_Weapon4</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
+		<!--<RandomFace>true</RandomFace>-->
+	</Book>
+	<Book ID="12160013">
+		<Name>耀骑士</Name>
+		<TextId>2160013</TextId>
+		<EquipEffect>
+			<HP>1350</HP>
+			<Break>600</Break>
+			<SpeedMin>4</SpeedMin>
+			<Speed>5</Speed>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<Passive>2160051</Passive>
+			<Passive>2160052</Passive>
+			<Passive>2160053</Passive>
+			<Passive>2160054</Passive>
+			<Passive>2160055</Passive>
+			<Passive>2160056</Passive>
+			<Passive>2160000</Passive>
+			<StartPlayPoint>0</StartPlayPoint>
+      		<MaxPlayPoint>0</MaxPlayPoint>
+		</EquipEffect>
+		<BookIcon>ASK</BookIcon>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity> 
+		<CharacterSkin>Oscar</CharacterSkin>
+		<SpeedDiceNum>9</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
 </BookXmlRoot>

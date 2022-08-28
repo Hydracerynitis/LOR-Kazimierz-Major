@@ -172,4 +172,32 @@
 		<Name>凝血祭品</Name> 
 		<Desc>若该书页被动转移到血骑士之页, 舞台开启时将一张"血涌之舞"([装备时] 恢复自身15%的体力上限的生命值)洗入牌库</Desc>
 	</PassiveDesc>
+	<!--耀骑士-->
+	<PassiveDesc ID="2160051">
+		<Name>不畏苦暗</Name> <!--命中时恢复15点混乱抗性.被击中时恢复10点混乱抗性.-->
+		<Desc>命中时恢复20点混乱抗性.若触发了"看破"效果则恢复所有混乱抗性.
+混乱时不改变伤害抗性.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160052">
+		<Name>崇高准则</Name> 
+		<Desc>自身所有骰子不受威力增减影响</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160053">
+		<Name>耀骑士的技巧</Name> 
+		<Desc>每幕开始时所有书页里的随机一个骰子会获得对应随机进攻类型的"看破"效果
+(与对应进攻类型的骰子拼点时会无效化该骰子并且摧毁目标下一个骰子).</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160054">
+		<Name>灿焰长刃</Name> 
+		<Desc>使用范围杀伤书页击中目标时使其下一幕内所有骰子最小值-3.若命中时骰子威力高于20则使其丢弃所有手牌.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160055">
+		<Name>破晓</Name> 
+		<Desc>近战进攻骰造成伤害时无视目标任何减伤.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160056">
+		<Name>逐夜烁光</Name> 
+		<Desc>每幕开始时若自身未陷入混乱则获得20层护盾(每层护盾将抵消一次这一幕即将承受的伤害)
+护盾激活时近战进攻骰伤害和混乱伤害提升50%.</Desc>
+	</PassiveDesc>
 </PassiveDescRoot>

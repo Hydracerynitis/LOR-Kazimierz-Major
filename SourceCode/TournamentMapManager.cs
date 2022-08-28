@@ -11,13 +11,15 @@ namespace KazimierzMajor
 {
     public class TournamentMapManager: CustomMapManager
     {
-        private bool EasterEgg = false;
+        public bool EasterEgg = false;
         private int loopIndex = 0;
+        public bool HasKill = false;
+        public bool Below50 = false;
         public override bool IsMapChangable()
         {
             return false;
         }
-        private bool HasMachine() => StageController.Instance.CurrentFloor == SephirahType.Keter;
+        private bool HasMachine() => /*false;*/ StageController.Instance.CurrentFloor == SephirahType.Keter;
         public override void CustomInit()
         {
             Retextualize();
@@ -51,7 +53,8 @@ namespace KazimierzMajor
                 _creatureDlgIdList.Add("Creature of steel.");
                 _creatureDlgIdList.Add("My gratitude upon thee for my freedom");
                 _creatureDlgIdList.Add("but the crime thy kind have commited against humanity are NOT forgotten.");
-                _creatureDlgIdList.Add("And thy punishment......");
+                _creatureDlgIdList.Add("And thy punishment");
+                _creatureDlgIdList.Add("..................");
                 _creatureDlgIdList.Add("is DEATH!");
                 //Loop
                 _creatureDlgIdList.Add("Judgement!");
@@ -59,52 +62,64 @@ namespace KazimierzMajor
                 _creatureDlgIdList.Add("Crush!");
                 _creatureDlgIdList.Add("Prepare thyself!");
                 _creatureDlgIdList.Add("Thy end is now!");
-                //Special
-                _creatureDlgIdList.Add("Weak");
-                _creatureDlgIdList.Add("Useless");
-                _creatureDlgIdList.Add("Ah");
-                _creatureDlgIdList.Add("Forgive me, my children for I fail to bring salvation in this cold dark world.");
                 _dlgIdx = 0;
-                BattleObjectManager.instance.GetAliveList(Faction.Enemy)[0].UnitData.unitData.SetTempName("Magerate Prime");
             }
         }
         public override void CreateDialog(Color txtColor)
         {
-            if (_dlgIdx < 9)
+            if (HasKill)
             {
-                PrintLine(txtColor);
+                PrintLine(txtColor, "Useless");
+                HasKill = false;
+                return;
             }
+            else if (Below50)
+            {
+                PrintLine(txtColor, "Weak");
+                Below50 = false;
+                return;
+            }
+            if (_dlgIdx < 10)
+                PrintLine(txtColor);
             else
             {
-                if (_dlgIdx > 13)
-                    _dlgIdx = 9;
+                if (_dlgIdx > 14)
+                    _dlgIdx = 10;
                 loopIndex = _dlgIdx;
                 PrintLine(txtColor);
             }
+            ++_dlgIdx;
         }
         public override void Update()
         {
-            if(!CreatureDlgManagerUI.Instance.canvas.enabled)
-                CreatureDlgManagerUI.Instance.Init(BattleSceneRoot.Instance.currentMapObject = this);
-            else
+            if (EasterEgg)
             {
-                if (_dlgEffect != null && _dlgEffect.gameObject != null)
-                {
-                    if (!_dlgEffect.DisplayDone)
-                        return;
-                    ++_dlgIdx;
-                    CreateDialog(Color.cyan);
-                }
+                if (!CreatureDlgManagerUI.Instance.canvas.enabled)
+                    CreatureDlgManagerUI.Instance.Init(BattleSceneRoot.Instance.currentMapObject = this);
                 else
-                    CreateDialog(Color.cyan);
-            }
-
+                {
+                    if (_dlgEffect != null && _dlgEffect.gameObject != null)
+                    {
+                        if (!_dlgEffect.DisplayDone)
+                            return;
+                        CreateDialog(Color.cyan);
+                    }
+                    else
+                        CreateDialog(Color.cyan);
+                }
+            } 
         }
         private void PrintLine(Color txtColor)
         {
             if (_dlgEffect != null && _dlgEffect.gameObject != null)
                 _dlgEffect.FadeOut();
             _dlgEffect = SingletonBehavior<CreatureDlgManagerUI>.Instance.SetDlg(_creatureDlgIdList[_dlgIdx],txtColor);
+        }
+        private void PrintLine(Color txtColor,string msg)
+        {
+            if (_dlgEffect != null && _dlgEffect.gameObject != null)
+                _dlgEffect.FadeOut();
+            _dlgEffect = SingletonBehavior<CreatureDlgManagerUI>.Instance.SetDlg(msg, txtColor);
         }
         public override void EnableMap(bool b)
         {
@@ -114,7 +129,13 @@ namespace KazimierzMajor
         {
             base.OnRoundStart();
             SingletonBehavior<BattleSoundManager>.Instance.SetEnemyTheme(mapBgm);
-            
+            if(EasterEgg && StageController.Instance.RoundTurn == 1)
+            {
+                BattleObjectManager.instance.GetAliveList(Faction.Enemy)[0].UnitData.unitData.SetTempName("Magerate Prime");
+                BattleObjectManager.instance.InitUI();
+            }
+                
+
         }
         public override GameObject GetWallCrater() => (GameObject)null;
         public override GameObject GetScratch(int lv, Transform parent) => (GameObject)null;

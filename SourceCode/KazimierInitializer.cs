@@ -35,6 +35,8 @@ namespace KazimierzMajor
                 ModPath = Path.GetDirectoryName(Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
                 BGM = new Dictionary<string, AudioClip>();
                 harmony.PatchAll(typeof(FastLateAttack));
+                harmony.PatchAll(typeof(NightmareHp));
+                harmony.PatchAll(typeof(MagerateHp));
                 harmony.PatchAll(typeof(KazimierInitializer));
                 GetBGMs(new DirectoryInfo(ModPath + "/BGM"));
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
@@ -42,6 +44,7 @@ namespace KazimierzMajor
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/Street.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/NightMare.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600043), ModPath + "/ArtWork/Tournament.png");
+                BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600053), ModPath + "/ArtWork/Duel.png");
             }
             catch(Exception ex)
             {
@@ -86,7 +89,7 @@ namespace KazimierzMajor
                 CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
                 CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
-                //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
+                CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 CenterPanel_Init = true;
             }
             if (__instance.gameObject.transform.parent.gameObject.name == "BattleStoryPanel" && !BattleStoryPanel_Init)
@@ -98,7 +101,7 @@ namespace KazimierzMajor
                 CreateStoryLine(__instance, 21600023, UIStoryLine.CaneOffice, new Vector3(375f, 320f));
                 CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
-                //CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
+                CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
                 BattleStoryPanel_Init = true;
             }
             foreach (List<StageClassInfo> key in Storyslots.Keys)
@@ -110,136 +113,7 @@ namespace KazimierzMajor
                     Storyslots[key].SetActiveStory(false);
             }
         }
-        [HarmonyPatch(typeof(StageController),nameof(StageController.StartAction))]
-        [HarmonyPrefix]
-        public static bool StageController_StartAction_Pre(BattlePlayingCardDataInUnitModel card)
-        {
-            if (card !=  PassiveAbility_2160031.nightmare)
-                return true;
-            return InitNightmareClash(card);
-        }
-        [HarmonyPatch(typeof(StageController), nameof(StageController.StartParrying))]
-        [HarmonyPrefix]
-        public static bool StageController_StartParrying_Pre(BattlePlayingCardDataInUnitModel cardA, BattlePlayingCardDataInUnitModel cardB)
-        {
-            if (cardA == PassiveAbility_2160031.nightmare && cardB.isKeepedCard)
-                return InitNightmareClash(cardA);
-            if (cardB == PassiveAbility_2160031.nightmare && cardA.isKeepedCard)
-                return InitNightmareClash(cardB);
-            return true;
-        }
-        public static bool InitNightmareClash(BattlePlayingCardDataInUnitModel card)
-        {
-            BattleUnitModel target = card.target;
-            List<BattleDiceCardModel> cards = new List<BattleDiceCardModel>(target.allyCardDetail.GetHand().FindAll(x=> target.CheckCardAvailable(x) && !IsNotClashCard(x)));
-            if (cards.Count <= 0)
-                return true;
-            cards.Sort((x, y) => y.GetCost() - x.GetCost());
-            BattleDiceCardModel clashCard = cards[0];
-            BattlePlayingCardDataInUnitModel retaliate = new BattlePlayingCardDataInUnitModel()
-            {
-                owner = target,
-                card = clashCard,
-                cardAbility = clashCard.CreateDiceCardSelfAbilityScript(),
-                target = card.owner,
-                slotOrder = card.targetSlotOrder,
-                targetSlotOrder = card.slotOrder
-            };
-            if (retaliate.cardAbility != null)
-                retaliate.cardAbility.card = retaliate;
-            retaliate.ResetCardQueueWithoutStandby();
-            target.allyCardDetail.UseCard(clashCard);
-            target.allyCardDetail.SpendCard(clashCard);
-            target.cardSlotDetail.ReserveCost(clashCard.GetCost());
-            target.cardSlotDetail.SpendCost(clashCard.GetCost());
-            Singleton<StageController>.Instance.sp(card, (retaliate));
-            return false;
-        }
-        [HarmonyPatch(typeof(BattleUnitBreakDetail),nameof(BattleUnitBreakDetail.TakeBreakDamage))]
-        [HarmonyPostfix]
-        static void BattleUnitBreakDetail_TakeBreakDamage_Post(BattleUnitBreakDetail __instance)
-        {
-            foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
-                if (passive is NightmareUpdater)
-                {
-                    if (StageController.Instance.IsLogState())
-                        __instance._self.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeBreak());
-                    else
-                        (passive as NightmareUpdater).AfterChangeBreak();
-                }
-        }
-        [HarmonyPatch(typeof(BattleUnitBreakDetail), nameof(BattleUnitBreakDetail.RecoverBreak))]
-        [HarmonyPostfix]
-        static void BattleUnitBreakDetail_RecoverBreak_Post(BattleUnitBreakDetail __instance)
-        {
-            foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
-                if (passive is NightmareUpdater)
-                {
-                    if (StageController.Instance.IsLogState())
-                        __instance._self.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeBreak());
-                    else
-                        (passive as NightmareUpdater).AfterChangeBreak();
-                }
-        }
-        [HarmonyPatch(typeof(BattleUnitBreakDetail), nameof(BattleUnitBreakDetail.LoseBreakGauge))]
-        [HarmonyPostfix]
-        static void BattleUnitBreakDetail_LoseBreakGauge_Post(BattleUnitBreakDetail __instance)
-        {
-            foreach (PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
-                if (passive is NightmareUpdater)
-                {
-                    if (StageController.Instance.IsLogState())
-                        __instance._self.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeBreak());
-                    else
-                        (passive as NightmareUpdater).AfterChangeBreak();
-                }
-        }
-        [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.RecoverHP))]
-        [HarmonyPostfix]
-        static void BattleUnitModel_RecoverHP_Post(BattleUnitModel __instance)
-        {
-            foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
-                if (passive is NightmareUpdater)
-                {
-                    if (StageController.Instance.IsLogState())
-                        __instance.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeHp());
-                    else
-                        (passive as NightmareUpdater).AfterChangeHp();
-                }
-        }
-        [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.TakeDamage))]
-        [HarmonyPostfix]
-        static void BattleUnitModel_TakeDamage_Post(BattleUnitModel __instance)
-        {
-            foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
-                if (passive is NightmareUpdater)
-                {
-                    if (StageController.Instance.IsLogState())
-                        __instance.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeHp());
-                    else
-                        (passive as NightmareUpdater).AfterChangeHp();
-                }
-        }
-        [HarmonyPatch(typeof(BattleUnitModel), nameof(BattleUnitModel.LoseHp))]
-        [HarmonyPostfix]
-        static void BattleUnitModel_LoseHp_Post(BattleUnitModel __instance)
-        {
-            foreach (PassiveAbilityBase passive in __instance.passiveDetail.PassiveList)
-                if (passive is NightmareUpdater)
-                {
-                    if (StageController.Instance.IsLogState())
-                        __instance.battleCardResultLog?.SetPrintDamagedEffectEvent(() => (passive as NightmareUpdater).AfterChangeHp());
-                    else
-                        (passive as NightmareUpdater).AfterChangeHp();
-                }              
-        }
-        [HarmonyPatch(typeof(BattleObjectManager),nameof(BattleObjectManager.OnFixedUpdate))]
-        [HarmonyPostfix]
-        static void BattleObjectManager_OnFixedUpdate_Post(float deltaTime)
-        {
-            foreach (BattleUnitModel unit in KhanEffectData.added)
-                unit.OnFixedUpdate(deltaTime);
-        }
+        
         [HarmonyPatch(typeof(BattlePersonalEgoCardDetail),nameof(BattlePersonalEgoCardDetail.UseCard))]
         [HarmonyPrefix]
         static bool BattlePersonalEgoCardDetail_UseCard_Pre(BattleDiceCardModel card)
@@ -272,7 +146,9 @@ namespace KazimierzMajor
                 int p = 0;
                 if (priority.Count > 0)
                     p = priority.Dequeue();
-                unit.allyCardDetail.AddNewCard(Tools.MakeLorId(cards[0])).SetPriorityAdder(p);
+                BattleDiceCardModel newCard = unit.allyCardDetail.AddNewCard(Tools.MakeLorId(cards[0]));
+                newCard.SetPriorityAdder(p);
+                newCard.SetCostToZero();
                 cards.RemoveAt(0);
             }
             while (cards.Count > 0);
