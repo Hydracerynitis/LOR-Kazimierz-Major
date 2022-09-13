@@ -2,7 +2,7 @@
 <DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <Card ID="2160201">
 		<Name>废足毁腕</Name>
-		<Artwork>Thumb21</Artwork>
+		<Artwork>Armorless1</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Far" Cost="0" />
 		<Script></Script>
@@ -16,7 +16,7 @@
 </Card>
 <Card ID="2160202">
 		<Name>封喉刺心</Name>
-		<Artwork>Rcorp8</Artwork>
+		<Artwork>Armorless2</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Far" Cost="0" />
 		<Script></Script>
@@ -29,7 +29,7 @@
 </Card>
 <Card ID="2160203">
 		<Name>暗中砥砺</Name>
-		<Artwork>ShadowStrike</Artwork>
+		<Artwork>Armorless3</Artwork>
 		<Rarity>Common</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -44,7 +44,7 @@
 </Card>
 <Card ID="2160204">
 		<Name>瞬息行刺</Name>
-		<Artwork>Shi2</Artwork>
+		<Artwork>Armorless4</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script>LateAttack</Script>
@@ -57,7 +57,7 @@
 </Card>
 <Card ID="2160205">
 		<Name>螯肢钳杀</Name>
-		<Artwork>Claw1</Artwork>
+		<Artwork>Armorless5</Artwork>
 		<Rarity>Common</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script>OneSideFastAttack</Script>
@@ -71,7 +71,7 @@
 </Card>
 <Card ID="2160206">
 		<Name>连射速杀</Name>
-		<Artwork>FullStop4</Artwork>
+		<Artwork>Armorless6</Artwork>
 		<Rarity>Common</Rarity>
 		<Spec Range="Far" Cost="0" />
 		<Script></Script>
@@ -86,7 +86,7 @@
 </Card>
 <Card ID="2161201">
 		<Name>废足毁腕</Name>
-		<Artwork>Thumb21</Artwork>
+		<Artwork>Armorless1</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Option>OnlyPage</Option>
 		<Spec Range="Far" Cost="4" />
@@ -101,7 +101,7 @@
 </Card>
 <Card ID="2161202">
 		<Name>封喉刺心</Name>
-		<Artwork>Rcorp8</Artwork>
+		<Artwork>Armorless2</Artwork>
 		<Rarity>Rare</Rarity>
 		<Option>OnlyPage</Option>
 		<Spec Range="Far" Cost="4" />
@@ -115,7 +115,7 @@
 </Card>
 <Card ID="2161203">
 		<Name>暗中砥砺</Name>
-		<Artwork>ShadowStrike</Artwork>
+		<Artwork>Armorless3</Artwork>
 		<Rarity>Common</Rarity>
 		<Spec Range="Near" Cost="2" />
 		<Script></Script>
@@ -130,7 +130,7 @@
 </Card>
 <Card ID="2161204">
 		<Name>瞬息行刺</Name>
-		<Artwork>Shi2</Artwork>
+		<Artwork>Armorless4</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="2" />
@@ -144,7 +144,7 @@
 </Card>
 <Card ID="2161205">
 		<Name>螯肢钳杀</Name>
-		<Artwork>Claw1</Artwork>
+		<Artwork>Armorless5</Artwork>
 		<Rarity>Common</Rarity>
 		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="2" />
@@ -159,7 +159,7 @@
 </Card>
 <Card ID="2161206">
 		<Name>连射速杀</Name>
-		<Artwork>FullStop4</Artwork>
+		<Artwork>Armorless6</Artwork>
 		<Rarity>Common</Rarity>
 		<Spec Range="Far" Cost="2" />
 		<Script></Script>
@@ -174,7 +174,7 @@
 </Card>
 <Card ID="2161207">
 		<Name>发布悬赏</Name>
-		<Artwork>Redhood_Hunt</Artwork>
+		<Artwork>Armorless7</Artwork>
 		<Rarity>Unique</Rarity>
 		<Spec Range="Far" Cost="0" />
 		<Script>BountyPublish</Script>

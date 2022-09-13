@@ -26,6 +26,8 @@ namespace KazimierzMajor
         public static string ModPath;
         public static Dictionary<string, AudioClip> BGM;
         public static Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot> Storyslots;
+        public static GameObject mainGameobject;
+        public static Dictionary<string, AssetBundle> assetBundle;
 
         public override void OnInitializeMod()
         {
@@ -38,6 +40,9 @@ namespace KazimierzMajor
                 harmony.PatchAll(typeof(NightmareHp));
                 harmony.PatchAll(typeof(MagerateHp));
                 harmony.PatchAll(typeof(KazimierInitializer));
+                KazimierInitializer.assetBundle = new Dictionary<string, AssetBundle>();
+                KazimierInitializer.mainGameobject = new GameObject();
+                KazimierInitializer.AddAssets();
                 GetBGMs(new DirectoryInfo(ModPath + "/BGM"));
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600013), ModPath + "/ArtWork/Candle.png");
@@ -64,6 +69,13 @@ namespace KazimierzMajor
                 BGM[withoutExtension] = Tools.GetAudio(file.FullName);
             }
         }
+        public static void AddAsset(string name, string path)
+        {
+            AssetBundle assetBundle = AssetBundle.LoadFromFile(path);
+            KazimierInitializer.assetBundle.Add(name, assetBundle);
+        }
+
+        public static void AddAssets() => KazimierInitializer.AddAsset("耀阳颔首", KazimierInitializer.ModPath + "/ab/耀阳颔首.ab");
         [HarmonyPatch(typeof(DropBookInventoryModel),nameof(DropBookInventoryModel.GetBookList_invitationBookList))]
         [HarmonyPostfix]
         public static void DropBookInventoryModel_GetBookList_invitationBookList(ref List<LorId> __result)
@@ -121,6 +133,15 @@ namespace KazimierzMajor
             if (card.GetID() == Tools.MakeLorId(2161301))
                 return false;
             return true;
+        }
+        [HarmonyPatch(typeof(DiceCardSelfAbilityBase),nameof(DiceCardSelfAbilityBase.IsTrueDamage))]
+        [HarmonyPostfix]
+        static void DiceCardSelfAbilityBase_IsTrueDamage(DiceCardSelfAbilityBase __instance, ref bool __result)
+        {
+            BattleUnitModel owner = __instance.owner;
+            if (owner != null && owner.passiveDetail.HasPassive<PassiveAbility_2160128>())
+                if (__instance.card!=null &&  __instance.card.currentBehavior != null && !__instance.card.currentBehavior.IsParrying())
+                    __result = true;
         }
         public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
         {

@@ -29,7 +29,7 @@ namespace KazimierzMajor
         {
             if (BattleObjectManager.instance.GetAliveList(Faction.Enemy).Count > 0 && Enemy.Count > 0)
                 return;
-            for (int index = 0; index < 3; ++index)
+            for (int index = 0; index < 5; ++index)
             {
                 Singleton<StageController>.Instance.OnEnemyDropBookForAdded(new DropBookDataForAddedReward(Tools.MakeLorId(2160002)));
                 Singleton<StageController>.Instance.OnEnemyDropBookForAdded(new DropBookDataForAddedReward(Tools.MakeLorId(2160002), true));

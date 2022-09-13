@@ -173,7 +173,7 @@
 		<Episode>20600003</Episode>
 		<Chapter>6</Chapter>
 		<Rarity>Unique</Rarity> <!-- Stephan-->
-		<CharacterSkin>Julia</CharacterSkin>
+		<CharacterSkin>Custom_Blemishine</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 		<Book ID="2060007">
@@ -206,7 +206,7 @@
 		<Episode>20600003</Episode>
 		<Chapter>6</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>Isadora</CharacterSkin>
+		<CharacterSkin>Custom_Nearl</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 </BookXmlRoot>
