@@ -124,7 +124,7 @@
 		<Desc>每一幕开始时恢复所有友方单位4点血量和4点混乱抗性</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060054">
-		<Name>耀骑士</Name> 
+		<Name>临光长骑</Name> 
 		<Desc>回合开始时如果所拥有的光芒大于3将多余的光芒储存为光辉，使用牌时恢复一点光芒</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060056">

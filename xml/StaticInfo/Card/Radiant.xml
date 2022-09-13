@@ -2,21 +2,21 @@
 <DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <Card ID="2160501">
 		<Name>耀阳颔首</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant1</Artwork>
 		<Rarity>Unique</Rarity>
 		<Spec Range="FarAreaEach" Cost="0" Affection="Team"/>
 		<Script>RadiantSpecial</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-			<Behaviour Min="25" Dice="30" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="RadiantSum" ActionScript="TwistedElenaArea2" Desc="" />
-      		<Behaviour Min="6" Dice="10" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="RadiantSingle" ActionScript="Xiao_610005" Desc="" />
+			<Behaviour Min="25" Dice="30" Type="Atk" Detail="Hit" Motion="H" EffectRes="Effect01_Yaoyanghanshou" Script="RadiantSum" ActionScript="Effect01_Yaoyanghanshou" Desc="" />
+      		<Behaviour Min="6" Dice="10" Type="Atk" Detail="Hit" Motion="H" EffectRes="Effect02_Yaoyanghanshou" Script="RadiantSingle" ActionScript="Effect02_Yaoyanghanshou" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
 </Card>
 <Card ID="2160502">
 		<Name>光刃威慑</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant2</Artwork>
 		<Rarity>Unique</Rarity>
 		<Spec Range="FarAreaEach" Cost="0" Affection="Team"/>
 		<Script>OnlyOneSide</Script>
@@ -29,7 +29,7 @@
 </Card>
 <Card ID="2160503">
 		<Name>诱敌追击</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant3</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -44,7 +44,7 @@
 </Card>
 <Card ID="2160504">
 		<Name>四段挥击</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant4</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -60,7 +60,7 @@
 </Card>
 <Card ID="2160505">
 		<Name>破防刺脏</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant5</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -75,7 +75,7 @@
 </Card>
 <Card ID="2160506">
 		<Name>蓄力猛刺</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant6</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -90,7 +90,7 @@
 </Card>
 <Card ID="2160507">
 		<Name>扫荡劈砍</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant7</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -104,7 +104,7 @@
 </Card>
 <Card ID="2160508">
 		<Name>光耀一击</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant8</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script>ParryLate</Script>
@@ -117,7 +117,7 @@
 </Card>
 <Card ID="2160509">
 		<Name>空劈瞬刺</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant9</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -131,7 +131,7 @@
 </Card>
 <Card ID="2160510">
 		<Name>破晓三段</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant10</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -146,7 +146,7 @@
 </Card>
 <Card ID="2160511">
 		<Name>打量动作</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant11</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script>ObserveRollMax</Script>
@@ -161,7 +161,7 @@
 </Card>
 <Card ID="2160512">
 		<Name>侧身回击</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant12</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -176,7 +176,7 @@
 </Card>
 <Card ID="2160513">
 		<Name>流转反攻</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant13</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -191,7 +191,7 @@
 </Card>
 <Card ID="2160514">
 		<Name>震反直击</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant14</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -206,7 +206,7 @@
 </Card>
 <Card ID="2160515">
 		<Name>精准挡反</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant15</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>
@@ -221,7 +221,7 @@
 </Card>
 <Card ID="2160516">
 		<Name>防反突破</Name>
-		<Artwork>Duel</Artwork>
+		<Artwork>Radiant16</Artwork>
 		<Rarity>Uncommon</Rarity>
 		<Spec Range="Near" Cost="0" />
 		<Script></Script>

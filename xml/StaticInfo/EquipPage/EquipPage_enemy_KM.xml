@@ -175,7 +175,7 @@
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>Julia</CharacterSkin>
+		<CharacterSkin>Custom_Blemishine</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 		<RandomFace>true</RandomFace>
 	</Book>
@@ -205,7 +205,7 @@
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
 		<Rarity>Unique</Rarity>
-		<CharacterSkin>Isadora</CharacterSkin>
+		<CharacterSkin>Custom_Nearl</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 		<RandomFace>true</RandomFace>
 	</Book>

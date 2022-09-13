@@ -8,7 +8,7 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="4" Type="Atk" Detail="Slash" Motion="H" EffectRes="LiuSection2Unit_H" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="4" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>6</Priority>
@@ -21,7 +21,7 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="16" Dice="16" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="Sleeping" ActionScript="" Desc=""/>
+			<Behaviour Min="8" Dice="16" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="Sleeping" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>9</Priority>
@@ -30,13 +30,13 @@
 		<Name>摄敌辉光</Name>
 		<Artwork>Liu2_2</Artwork>
 		<Rarity>Unique</Rarity>
-		<Spec Range="Near" Cost="4"/>
+		<Spec Range="Near" Cost="2"/>
 		<Option>ExhaustOnUse</Option>
         <Option>OnlyPage</Option>
 		<Script>Regenerate</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="8" Dice="16" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="SleepingLib" ActionScript="" Desc=""/>
+			<Behaviour Min="8" Dice="16" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="SleepingLib" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>9</Priority>
@@ -51,8 +51,8 @@
 		<Script>Avatar</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="LiuSection2Unit_H" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="LiuSection2Unit_H" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>10</Priority>
@@ -65,8 +65,8 @@
 		<Script>energy2</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="recoverBreak5pw" ActionScript="" Desc=""/>
-			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="recoverBreak5pw" ActionScript="" Desc=""/>
+			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>5</Priority>
@@ -79,8 +79,8 @@
 		<Script>drawAndEnergy</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="recoverBreak5pw" ActionScript="" Desc=""/>
-			<Behaviour Min="2" Dice="5" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="recoverBreak5pw" ActionScript="" Desc=""/>
+			<Behaviour Min="2" Dice="5" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>5</Priority>
@@ -93,9 +93,9 @@
 		<Script>Improvise</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="H" EffectRes="LiuSection2Unit_H" Script="recoverBreak5atk" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="recoverBreak5atk" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -108,10 +108,10 @@
 		<Script>drawCard</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="drawCard1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
+			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
+			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="drawCard1atk" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -124,31 +124,31 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
+			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
+			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2060502">
-		<Name>耀骑士之光</Name>
+		<Name>天马之耀</Name>
 		<Artwork>TheIndex4</Artwork>
 		<Rarity>Unique</Rarity>
 		<Spec Range="Near" Cost="0"/>
 		<Script>Blessing</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>10</Priority>
 </Card>
 <Card ID="2061502">
-		<Name>耀骑士之光</Name>
+		<Name>天马之耀</Name>
 		<Artwork>TheIndex4</Artwork>
 		<Rarity>Unique</Rarity>
 		<Option>OnlyPage</Option>
@@ -157,7 +157,7 @@
 		<Script>BlessingLib</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>10</Priority>
@@ -170,8 +170,8 @@
 		<Script>ChargeLightHeal</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -185,7 +185,7 @@
 		<Script>ChargeLightHealLib</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -198,9 +198,9 @@
 		<Script>ChargeLightPowerUp</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="paralysis1atk" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="drawCard1atk" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="drawCard1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -214,8 +214,8 @@
 		<Script>ChargeLightPowerUp</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="paralysis1atk" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -229,10 +229,10 @@
 		<Script>ChargeLightPowerDown</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="LiuSection2Unit_Z" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="LiuSection2Unit_H" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -246,9 +246,9 @@
 		<Script>ChargeLightPowerDown</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="LiuSection2Unit_Z" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="LiuSection2Unit_H" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -263,8 +263,8 @@
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
 			<Behaviour Min="4" Dice="8" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="paralysis1atk" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="LiuSection2Unit_G" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>
@@ -279,7 +279,7 @@
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
 			<Behaviour Min="4" Dice="8" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="LiuSection2Unit_J" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
 		</BehaviourList>
 		<Chapter>6</Chapter>
 		<Priority>8</Priority>

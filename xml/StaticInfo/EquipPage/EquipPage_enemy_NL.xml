@@ -53,7 +53,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>Kalo</CharacterSkin>
+		<CharacterSkin>Custom_WZM_LY</CharacterSkin>
 		<SpeedDiceNum>4</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
@@ -82,7 +82,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>Katriel</CharacterSkin>
+		<CharacterSkin>Custom_WZM_MNK</CharacterSkin>
 		<SpeedDiceNum>4</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
@@ -110,9 +110,8 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
-		<CharacterSkin>Kalo</CharacterSkin>
+		<CharacterSkin>Custom_WZM_LY2</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
-		<RandomFace>true</RandomFace>
 	</Book>
 	<Book ID="12160005">
 		<Name>第三小队</Name>
@@ -138,7 +137,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
-		<CharacterSkin>Katriel</CharacterSkin>
+		<CharacterSkin>Custom_WZM_MNK2</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
 		<RandomFace>true</RandomFace>
 	</Book>
@@ -164,7 +163,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
-		<CharacterSkin>IndexUnit</CharacterSkin>
+		<CharacterSkin>Custom_WZM_CK</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
 		<RandomFace>true</RandomFace>
 	</Book>
@@ -216,7 +215,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
-		<CharacterSkin>ThumbUnit</CharacterSkin>
+		<CharacterSkin>Custom_WZM_NS</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
 		<RandomFace>true</RandomFace>
 	</Book>
@@ -357,7 +356,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>Oscar</CharacterSkin>
+		<CharacterSkin>Custom_NTRNearl</CharacterSkin>
 		<SpeedDiceNum>9</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>

@@ -28,7 +28,7 @@
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
-		<CharacterSkin>Kalo</CharacterSkin>
+		<CharacterSkin>Custom_WZM_LY</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 	<Book ID="2160003">
@@ -59,7 +59,7 @@
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
-		<CharacterSkin>Katriel</CharacterSkin>
+		<CharacterSkin>Custom_WZM_MNK</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 	<Book ID="2160006">
@@ -84,7 +84,7 @@
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity>
-		<CharacterSkin>IndexUnit</CharacterSkin>
+		<CharacterSkin>Custom_WZM_CK</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 	<Book ID="2160007">
@@ -134,7 +134,7 @@
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity>
-		<CharacterSkin>ThumbUnit</CharacterSkin>
+		<CharacterSkin>Custom_WZM_NS</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 	<Book ID="2160009">
@@ -160,6 +160,7 @@
 			<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
 		</EquipEffect>
+		<Episode>21600003</Episode>
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
