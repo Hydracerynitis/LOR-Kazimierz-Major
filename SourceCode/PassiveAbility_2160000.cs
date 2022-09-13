@@ -42,21 +42,6 @@ namespace KazimierzMajor
             Singleton<StageController>.Instance.GetCurrentWaveModel().team.emotionTotalBonus = emotionTotalCoinNumber + 1;
             Singleton<StageController>.Instance.GetStageModel().SetCurrentMapInfo(0);
         }
-        public override void OnKill(BattleUnitModel target)
-        {
-            base.OnKill(target);
-            if (BattleSceneRoot.Instance.currentMapObject is TournamentMapManager TMM && TMM.EasterEgg)
-                TMM.HasKill = true;
-        }
-        public override void AfterTakeDamage(BattleUnitModel attacker, int dmg)
-        {
-            base.AfterTakeDamage(attacker, dmg);
-            if (owner.hp < owner.MaxHp / 5 && BattleSceneRoot.Instance.currentMapObject is TournamentMapManager TMM && TMM.EasterEgg && !hasBroadcast)
-            {
-                TMM.Below50 = true;
-                hasBroadcast = true;
-            }
-        }
     }
 }
 
