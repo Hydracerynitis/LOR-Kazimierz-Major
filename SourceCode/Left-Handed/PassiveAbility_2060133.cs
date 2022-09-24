@@ -19,7 +19,7 @@ namespace KazimierzMajor
             base.OnRoundEnd();
             if (_activated && !hasActivated)
             {
-                this.owner.RecoverHP((int)(this.owner.MaxHp*0.3));
+                this.owner.RecoverHP((int)(this.owner.MaxHp*0.4));
                 this.owner.breakDetail.RecoverBreakLife(this.owner.MaxBreakLife);
                 this.owner.breakDetail.nextTurnBreak = false;
                 this.owner.breakDetail.RecoverBreak(this.owner.breakDetail.GetDefaultBreakGauge());
