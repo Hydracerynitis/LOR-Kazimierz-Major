@@ -150,5 +150,25 @@ namespace KazimierzMajor
             foreach (BattleUnitModel unit in KhanEffectData.added)
                 unit.OnFixedUpdate(deltaTime);
         }
+        [HarmonyPatch(typeof(BattleAllyCardDetail),nameof(BattleAllyCardDetail.ReturnCardToHand))]
+        [HarmonyPostfix]
+        static void BattleAllyCardDetail_ReturnCardToHand(BattleAllyCardDetail __instance,BattleDiceCardModel appliedCard)
+        {
+            if (__instance._self.bufListDetail.HasBuf<KhanStance>())
+            {
+                if (!KhanStance.ChangeCards.Contains(appliedCard))
+                    KhanStance.ChangeToTeamNear(appliedCard);
+            }
+            else if (KhanStance.ChangeCards.Contains(appliedCard))
+            {
+                KhanStance.ChangeBack(appliedCard);
+            }
+        }
+        [HarmonyPatch(typeof(StageController),nameof(StageController.EndBattle))]
+        [HarmonyPostfix]
+        static void StageController_EndBattle()
+        {
+            KhanStance.ChangeCards.Clear();
+        }
     }
 }

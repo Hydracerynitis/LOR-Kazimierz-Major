@@ -21,7 +21,7 @@ namespace KazimierzMajor
 				return "Fearness";
 			}
 		}
-        public override string bufActivatedText => string.Format(BattleEffectTextsXmlList.Instance.GetEffectTextDesc("Fearness"),getMax().ToString(),getDamage().ToString()) ;
+        public override string bufActivatedText => string.Format(BattleEffectTextsXmlList.Instance.GetEffectText("Fearness").Desc,Math.Abs(getMax()).ToString(),getDamage().ToString()) ;
         public override void BeforeRollDice(BattleDiceBehavior behavior)
 		{
 			behavior.ApplyDiceStatBonus(new DiceStatBonus

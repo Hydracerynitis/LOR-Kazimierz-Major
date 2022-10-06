@@ -12,7 +12,7 @@ namespace KazimierzMajor
             target.breakDetail.breakGauge = 0;
             target.breakDetail.breakLife = 0;
             target.breakDetail.DestroyBreakPoint();
-            card.DestroyDice(DiceMatch.AllDice, DiceUITiming.Start);
+            card.GetDiceBehaviorList().ForEach(x => x.SetBlocked(true));
             base.OnUseCard();
         }
     }

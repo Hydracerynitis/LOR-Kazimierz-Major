@@ -164,7 +164,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>XiaoDistort</CharacterSkin>
+		<CharacterSkin>Custom_TL</CharacterSkin>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
 	<Book ID="2160010">
@@ -194,7 +194,7 @@
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
-		<CharacterSkin>RhinoUnit3</CharacterSkin>
+		<CharacterSkin>Custom_BLOOD</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 	<Book ID="2160011">
@@ -218,7 +218,7 @@
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity>
-		<CharacterSkin>BlackSilence4_Weapon4</CharacterSkin>
+		<CharacterSkin>Custom_BLOOD_A</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 </BookXmlRoot>

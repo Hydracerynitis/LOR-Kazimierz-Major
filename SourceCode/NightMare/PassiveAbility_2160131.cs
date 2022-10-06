@@ -15,7 +15,6 @@ namespace KazimierzMajor
         }
         public override void OnRoundStart()
         {
-            base.OnRoundEnd();
             if (!owner.bufListDetail.HasBuf<KhanStance>())
             {
                 foreach (BattleDiceCardModel cards in owner.allyCardDetail.GetAllDeck())
@@ -28,7 +27,7 @@ namespace KazimierzMajor
             {
                 foreach (BattleDiceCardModel cards in owner.allyCardDetail.GetAllDeck())
                 {
-                    if (!KazimierInitializer.IsNotClashCard(cards))
+                    if (!KhanStance.ChangeCards.Contains(cards))
                         KhanStance.ChangeToTeamNear(cards);
                 }
             }

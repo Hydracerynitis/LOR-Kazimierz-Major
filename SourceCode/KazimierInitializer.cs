@@ -175,8 +175,6 @@ namespace KazimierzMajor
             while (cards.Count > 0);
         }
         public static bool IsNotClashCard(BattleDiceCardModel card) => card.XmlData.Spec.Ranged == CardRange.FarArea || card.XmlData.Spec.Ranged == CardRange.FarAreaEach || card.XmlData.Spec.Ranged == CardRange.Instance;
-
-
     }
     public interface NightmareUpdater
     {

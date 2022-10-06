@@ -24,7 +24,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>TwistPhilip</CharacterSkin>
+		<CharacterSkin>Custom_ZQS</CharacterSkin>
 		<SpeedDiceNum>6</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
@@ -242,7 +242,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>XiaoDistort</CharacterSkin>
+		<CharacterSkin>Custom_TL</CharacterSkin>
 		<SpeedDiceNum>6</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
@@ -268,7 +268,7 @@
 		<BookIcon>Tora</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>XiaoDistort</CharacterSkin>
+		<CharacterSkin>Custom_TL_2</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
@@ -298,7 +298,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
-		<CharacterSkin>RhinoUnit3</CharacterSkin>
+		<CharacterSkin>Custom_BLOOD</CharacterSkin>
 		<SpeedDiceNum>7</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
@@ -325,7 +325,7 @@
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
-		<CharacterSkin>BlackSilence4_Weapon4</CharacterSkin>
+		<CharacterSkin>Custom_BLOOD_A</CharacterSkin>
 		<SpeedDiceNum>3</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
