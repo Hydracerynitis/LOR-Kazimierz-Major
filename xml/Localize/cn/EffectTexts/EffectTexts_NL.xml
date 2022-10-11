@@ -3,7 +3,8 @@
 	<effectTextList>
 		<BattleEffectText ID="Blood">
 			<Name>鲜血附魔</Name>
-			<Desc>进攻骰造成伤害时提升该伤害{0}%并摧毁所有层数</Desc>
+			<Desc>"进攻型"骰子伤害+{0}%
+造成伤害时层数清零</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="BloodStun">
 			<Name>血归缠身</Name>
