@@ -49,7 +49,7 @@
  		<FloorNum>1</FloorNum>
 		<StoryType>CandleKnight</StoryType>
     		<Invitation Combine="BookRecipe">
-      			<Book>2160010</Book><!--2160000-->
+      			<Book>2160000</Book>
     		</Invitation>
     		<Condition>
       			<Stage>20600003</Stage>
@@ -119,10 +119,10 @@
  		<FloorNum>1</FloorNum>
 		<StoryType>Kazimier</StoryType>
     		<Invitation Combine="BookRecipe">
-				<Book>2160000</Book><!--2160010-->
+				<Book>2160010</Book><!--2160010-->
     		</Invitation>
     		<Condition>
-      			<!--<Stage>21600043</Stage>-->
+      			<Stage>21600043</Stage>
     		</Condition>
 		<MapInfo>Custom_Tournament</MapInfo>
     		<Chapter>7</Chapter>

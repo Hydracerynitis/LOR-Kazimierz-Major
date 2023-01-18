@@ -1,34 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using BaseMod;
 
 namespace KazimierzMajor
 {
     public class DiceCardSelfAbility_InfiniteLight : DiceCardSelfAbilityBase
     {
-        public override void OnStartBattle()
+        public override void OnUseCard()
         {
-            owner.bufListDetail.AddBuf(new InfiniteLight());
-        }        
-        public class InfiniteLight: BattleUnitBuf
+            BattleObjectManager.instance.GetAliveList().ForEach(x => x.bufListDetail.AddBufByCard<InfiniteLight>(3,readyType:BufReadyType.NextRound));
+        }
+    }
+    public class InfiniteLight : BattleUnitBuf
+    {
+        public override string keywordId => "InifiniteLight";
+        public override string keywordIconId => "KeterFinal_Light";
+        public override void OnRoundStart()
         {
-            public override void Init(BattleUnitModel owner)
-            {
-                base.Init(owner);
-                owner.cardSlotDetail.RecoverPlayPoint(owner.cardSlotDetail.GetMaxPlayPoint());
-            }
-            public override void OnUseCard(BattlePlayingCardDataInUnitModel card)
-            {
-                _owner.cardSlotDetail.RecoverPlayPoint(_owner.cardSlotDetail.GetMaxPlayPoint());
-                LightIndicator.RefreshLight(_owner);
-            }
-            public override void OnRoundEnd()
-            {
-                base.OnRoundEnd();
-                _owner.cardSlotDetail.LosePlayPoint(_owner.cardSlotDetail.GetMaxPlayPoint());
-                LightIndicator.RefreshLight(_owner);
+            base.OnRoundStart();
+            _owner.cardSlotDetail.RecoverPlayPoint(_owner.cardSlotDetail.GetMaxPlayPoint());
+        }
+        public override void OnRoundEnd()
+        {
+            base.OnRoundEnd();
+            stack--;
+            if (stack <= 0)
                 Destroy();
-            }
         }
     }
 }

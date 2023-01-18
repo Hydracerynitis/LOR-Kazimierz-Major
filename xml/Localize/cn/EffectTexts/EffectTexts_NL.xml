@@ -35,10 +35,6 @@
 			<Name>先手</Name>
 			<Desc>该书页及其拼点目标书页将最优先使用</Desc>
 		</BattleEffectText>
-		<BattleEffectText ID="LightIndicator">
-			<Name>所剩光芒</Name>
-			<Desc>烛骑士还有{0}点光芒</Desc>
-		</BattleEffectText>
 		<BattleEffectText ID="Corrosion">
 			<Name>侵蚀</Name>
 			<Desc>被施加至4层时,承受{0}点伤害并这一幕和下一幕施加2层易损。
@@ -63,6 +59,14 @@
 		<BattleEffectText ID="TargetIndicator">
 			<Name>耀阳落地点</Name>
 			<Desc>成为了耀阳颔首的首要目标</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="InifiniteLight">
+			<Name>烛耀过载</Name>
+			<Desc>每一幕开始时恢复所有的光芒,持续{0}幕</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="AmpDmg">
+			<Name>伤害提升</Name>
+			<Desc>下{0}个骰子提升+25%造成的伤害和混乱伤害</Desc>
 		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

@@ -13,6 +13,10 @@
 		<Rarity>Unique</Rarity>
 		<Cost>12</Cost>
   	</Passive>
+	<Passive ID="2160013">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
 	<!--无胄盟-->
 	<Passive ID="2160021">
 		<Rarity>Unique</Rarity>

@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using BaseMod;
 using HarmonyLib;
+using HarmonyLib.Tools;
 using LOR_BattleUnit_UI;
 using LOR_DiceSystem;
 using UnityEngine;
+using static RencounterManager;
 
 namespace KazimierzMajor
 {
@@ -83,6 +86,56 @@ namespace KazimierzMajor
                     }
                 }
             }
+        }
+        [HarmonyPatch(typeof(RencounterManager), nameof(RencounterManager.SetMovingStateByActionResult))]
+        [HarmonyPrefix]
+        public static bool RencounterManager_SetMovingStateByActionResult(RencounterManager __instance)
+        {
+            RencounterManager.ActionAfterBehaviour actionAfterBehaviour = new RencounterManager.ActionAfterBehaviour() { infoList=new List<RencounterManager.MovingAction>(),result=Result.Win };
+            RencounterManager.ActionAfterBehaviour loser = new RencounterManager.ActionAfterBehaviour() { infoList=new List<RencounterManager.MovingAction>(),result=Result.Lose};
+            if (__instance._currentEnemyBehaviourResult == Parry.ParryTriggered)
+            {
+                __instance._currentEnemyBehaviourResult.diceBehaviourResult.result = Result.Win;
+                __instance._currentLibrarianBehaviourResult.diceBehaviourResult.result = Result.Lose;
+                DiceBehaviour xml = __instance._currentEnemyBehaviourResult.behaviourRawData.Copy();
+                xml.Type = BehaviourType.Atk;
+                __instance._currentEnemyBehaviourResult.behaviourRawData=xml;
+                actionAfterBehaviour.view = __instance._enemy;
+                loser.view = __instance._librarian;
+                actionAfterBehaviour.data = __instance._currentEnemyBehaviourResult.diceBehaviourResult;
+                loser.data = __instance._currentLibrarianBehaviourResult.diceBehaviourResult;
+                actionAfterBehaviour.behaviourResultData = __instance._currentEnemyBehaviourResult;
+                loser.behaviourResultData = __instance._currentLibrarianBehaviourResult;
+                LoadParryBehaviourList(__instance, ref actionAfterBehaviour, ref loser);
+                return false;
+            }
+            if (__instance._currentLibrarianBehaviourResult == Parry.ParryTriggered)
+            {
+                __instance._currentLibrarianBehaviourResult.diceBehaviourResult.result = Result.Win;
+                __instance._currentEnemyBehaviourResult.diceBehaviourResult.result = Result.Lose;
+                DiceBehaviour xml = __instance._currentLibrarianBehaviourResult.behaviourRawData.Copy();
+                xml.Type = BehaviourType.Atk;
+                __instance._currentLibrarianBehaviourResult.behaviourRawData = xml;
+                actionAfterBehaviour.view = __instance._librarian;
+                loser.view = __instance._enemy;
+                actionAfterBehaviour.data = __instance._currentLibrarianBehaviourResult.diceBehaviourResult;
+                loser.data = __instance._currentEnemyBehaviourResult.diceBehaviourResult;
+                actionAfterBehaviour.behaviourResultData = __instance._currentLibrarianBehaviourResult;
+                loser.behaviourResultData = __instance._currentEnemyBehaviourResult;
+                LoadParryBehaviourList(__instance, ref actionAfterBehaviour, ref loser);
+                return false;
+            }
+            return true;
+        }
+        public static void LoadParryBehaviourList(RencounterManager __instance, ref RencounterManager.ActionAfterBehaviour actionAfterBehaviour, ref RencounterManager.ActionAfterBehaviour loser)
+        {
+            actionAfterBehaviour.preventOverlap = true;
+            loser.preventOverlap = true;
+            if (loser.behaviourResultData.IsFarAtk())
+                actionAfterBehaviour.infoList = new ParryFar().GetMovingAction(ref actionAfterBehaviour, ref loser);
+            else
+                actionAfterBehaviour.infoList = new ParryNear().GetMovingAction(ref actionAfterBehaviour, ref loser);
+            __instance.StartCoroutine(__instance.MoveRoutine(actionAfterBehaviour, loser));
         }
         [HarmonyPatch(typeof(BattleCardAbilityDescXmlList),nameof(BattleCardAbilityDescXmlList.GetDefaultAbilityDescString))]
         [HarmonyPostfix]

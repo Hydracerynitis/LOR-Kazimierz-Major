@@ -44,6 +44,7 @@ namespace KazimierzMajor
     }
     public class Parry: DiceCardAbilityBase
     {
+        public static BattleCardBehaviourResult ParryTriggered;
         private BehaviourDetail bd = BehaviourDetail.Evasion;
         public Parry(BehaviourDetail detail)
         {
@@ -66,7 +67,7 @@ namespace KazimierzMajor
                         Die.GetDiceBehaviorList().ForEach(x => behavior.card.AddDice(x));
                     }
                     behavior.abilityList.FindAll(x => x is ParryAbility).ForEach(x => (x as ParryAbility).TriggerParry());
-                    SoundEffectManager.Instance.PlayClip("Battle/Puppet_Break");
+                    ParryTriggered = owner.battleCardResultLog.CurbehaviourResult;
                 }
             }
         }

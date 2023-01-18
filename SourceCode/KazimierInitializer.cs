@@ -39,6 +39,8 @@ namespace KazimierzMajor
                 harmony.PatchAll(typeof(FastLateAttack));
                 harmony.PatchAll(typeof(NightmareHp));
                 harmony.PatchAll(typeof(MagerateHp));
+                harmony.PatchAll(typeof(CandleHP));
+                harmony.PatchAll(typeof(BattleStartCinematic));
                 harmony.PatchAll(typeof(KazimierInitializer));
                 KazimierInitializer.assetBundle = new Dictionary<string, AssetBundle>();
                 KazimierInitializer.mainGameobject = new GameObject();
@@ -168,8 +170,11 @@ namespace KazimierzMajor
                 if (priority.Count > 0)
                     p = priority.Dequeue();
                 BattleDiceCardModel newCard = unit.allyCardDetail.AddNewCard(Tools.MakeLorId(cards[0]));
+                if (newCard == null)
+                    return;
                 newCard.SetPriorityAdder(p);
-                newCard.SetCostToZero();
+                if(unit.UnitData.unitData.EnemyUnitId!=Tools.MakeLorId(2160001))
+                    newCard.SetCostToZero();
                 cards.RemoveAt(0);
             }
             while (cards.Count > 0);

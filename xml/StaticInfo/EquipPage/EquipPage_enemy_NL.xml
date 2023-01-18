@@ -8,24 +8,25 @@
 			<Break>1000</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
-			<SResist>Vulnerable</SResist>
-			<PResist>Vulnerable</PResist>
-			<HResist>Vulnerable</HResist>
-			<SBResist>Vulnerable</SBResist>
-			<PBResist>Vulnerable</PBResist>
-			<HBResist>Vulnerable</HBResist>		
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>		
 			<Passive>2160011</Passive>
 			<Passive>2160012</Passive>
+			<Passive>2160013</Passive>
 			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
-      		<MaxPlayPoint>10</MaxPlayPoint>
+      		<MaxPlayPoint>20</MaxPlayPoint>
 		</EquipEffect>
-		<RangeType>Range</RangeType>
+		<RangeType>Hybrid</RangeType>
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_ZQS</CharacterSkin>
-		<SpeedDiceNum>6</SpeedDiceNum>
+		<SpeedDiceNum>7</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
 	<Book ID="12160002">

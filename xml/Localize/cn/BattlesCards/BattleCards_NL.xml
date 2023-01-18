@@ -3,24 +3,51 @@
  <cardDescList>
     <!--烛骑士-->
     <BattleCardDesc ID="2160101">
-      <LocalizedName>烛影</LocalizedName>
+      <LocalizedName>亮剑欢迎</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="2160102">
       <LocalizedName>烛光探戈</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="2160103">
-      <LocalizedName>烛上火星</LocalizedName>
+      <LocalizedName>剑光伦巴</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="2160104">
-      <LocalizedName>熄灯</LocalizedName>
+      <LocalizedName>对烛恰恰</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="2160105">
-      <LocalizedName>烛芯重燃</LocalizedName>
+      <LocalizedName>对剑快步</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="2160106">
-      <LocalizedName>烛火之护</LocalizedName>
+      <LocalizedName>熄灯</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="2160107">
+      <LocalizedName>细剑扎心</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160108">
+      <LocalizedName>圆舞回击</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160109">
+      <LocalizedName>烛影</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160110">
+      <LocalizedName>金盏花开</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160111">
+      <LocalizedName>点燃烛芯</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160112">
+      <LocalizedName>明灯</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160113">
+      <LocalizedName>炫目</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160114">
+      <LocalizedName>群花</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160115">
+      <LocalizedName>含苞</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160116">
       <LocalizedName>微光之触</LocalizedName>
     </BattleCardDesc>
     <!-- 无胄盟 -->

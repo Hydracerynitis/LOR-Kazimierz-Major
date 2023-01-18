@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!-- 烛骑士 -->
-  <BattleCardAbility ID="Light1Max6">
-    <Desc>[使用时] 额外消耗至多2点光芒,每消耗1点光芒使该书页进攻骰最大值+6</Desc>
+  <BattleCardAbility ID="DrainLight2">
+    <Desc>[命中时] 汲取目标2点光芒</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="Light2Power2">
-    <Desc>[使用时] 额外消耗至多4点光芒，每消耗2点光芒使该书页所有骰子威力+2</Desc>
+  <BattleCardAbility ID="pwNextPower3">
+    <Desc>[拼点胜利] 下一个骰子威力+3</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="Light2Strength2">
-    <Desc>[拼点失败] 额外消耗至多4点光芒，每消耗2点光芒下一幕自身获得2层强壮</Desc>
+  <BattleCardAbility ID="SplitShot">
+    <Desc>额外攻击其他一个敌人</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="Light1Light1">
-    <Desc>[命中时] 额外消耗至多2点光芒，每消耗1点光芒使目标下一幕开始时损失1点光芒</Desc>
+  <BattleCardAbility ID="TripleHit">
+    <Desc>[命中时] 该骰子额外攻击目标2次</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="Light3AddDice">
-    <Desc>[拼点开始] 额外消耗至多6点光芒，每消耗3点光芒将一个斩击进攻骰(9-12)置入书页末尾</Desc>
+  <BattleCardAbility ID="DoubleHit">
+    <Desc>[命中时] 若目标也被上一个骰子命中,则该骰子额外攻击目标一次</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="Light3Prot5">
-    <Desc>[命中时] 额外消耗至多6点光芒，每消耗3点光芒使自身下一幕获得5层守护振奋</Desc>
+  <BattleCardAbility ID="TrueDamage">
+    <Desc>该书页骰子命中时将造成骰子威力的伤害</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="AmpDmg">
+    <Desc>该书页骰子每命中一个目标便使下一个骰子造成的伤害和混乱伤害提升+50%</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="InfiniteLight">
-    <Desc>[战斗开始] 这一幕内使用书页恢复最高光芒. 这一幕结束时清空自身光芒</Desc>
+    <Desc>[使用时] 使所有角色下三幕内每一幕开始时恢复所有的光芒</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="Burn5AoeAtk">
-    <Desc>[命中时] 对目标施加5层烧伤</Desc>
+  <BattleCardAbility ID="FlowerBlossom">
+    <Desc>[命中时] 使用斩击12-16的骰子额外攻击目标3次</Desc>
   </BattleCardAbility>
   <!--无胄盟-->
   <BattleCardAbility ID="Corrosion1Atk">
