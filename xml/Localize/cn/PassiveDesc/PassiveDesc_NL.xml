@@ -33,19 +33,19 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160024">
 		<Name>专注射击</Name> 
-		<Desc>攻击同一单位会使自身书页所有骰子2点威力</Desc>
+		<Desc>攻击同一单位会使自身书页所有骰子威力+2</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160025">
 		<Name>厌恶打扰</Name> 
-		<Desc>被转移目标时自身书页所有骰子提升2点威力</Desc>
+		<Desc>被转移目标时自身书页所有骰子威力+2</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160026">
 		<Name>蓄力背刺</Name> 
-		<Desc>反击池每有一个骰子提升进攻骰4点基础值</Desc>
+		<Desc>反击池每有一个骰子便使"进攻型"骰子基础值+4</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160027">
 		<Name>凶暴钳肢</Name> 
-		<Desc>单方面攻击时提升50%造成的混乱伤害，优先攻击混乱抗性最低的敌人</Desc>
+		<Desc>单方面攻击时造成的混乱伤害+50%，优先攻击混乱抗性最低的敌人</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160028">
 		<Name>暗箭难防</Name> 
@@ -80,11 +80,11 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160126">
 		<Name>蓄力背刺</Name> 
-		<Desc>反击池若有骰子则提升进攻骰1点威力</Desc>
+		<Desc>反击池若有骰子则使"进攻型"骰子威力+1</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160127">
 		<Name>凶暴钳肢</Name> 
-		<Desc>第一个使用的书页获得[先行]</Desc>
+		<Desc>每一幕中使用的首张书页获得[先行]</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160128">
 		<Name>暗箭难防</Name> 
@@ -118,7 +118,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160232">
 		<Name>可汗进军</Name> 
-		<Desc>这一舞台每造成50点伤害提升所有友方单位进贡给伤害2点</Desc>
+		<Desc>这一舞台每造成50点伤害便使所有友方单位伤害+2</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160133">
 		<Name>“最后的怯薛”</Name> 
@@ -175,7 +175,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160144">
 		<Name>凝血祭品</Name> 
-		<Desc>若该书页被动转移到血骑士之页, 舞台开启时将一张"血涌之舞"([装备时] 恢复自身15%的体力上限的生命值)洗入牌库</Desc>
+		<Desc>若该书页被动归属于血骑士之页, 舞台开启时将一张"血涌之舞"([装备时] 恢复自身15%的体力上限的生命值)洗入牌库</Desc>
 	</PassiveDesc>
 	<!--耀骑士-->
 	<PassiveDesc ID="2160051">

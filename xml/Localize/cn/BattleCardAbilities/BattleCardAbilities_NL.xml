@@ -45,7 +45,7 @@
     <Desc>反击池每有一个骰子该骰子提升2点威力</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="FastAttackPowerUp">
-    <Desc>[使用时] 若该书页具有[先手],所有骰子威力提升2点</Desc>
+    <Desc>[使用时] 若该书页具有[先手]则使该书页所有骰子威力+2</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BountyPublish">
     <Desc>[战斗开始] 使目标获得1层[赏金]</Desc>
@@ -61,7 +61,7 @@
     <Desc>[战斗开始] 若该书页拥有[恐惧凝集]则这一幕中[压抑的恐惧]中造成伤害与混乱伤害变为-100%</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="fearness4">
-    <Desc>[战斗开始] 使这书页所有指定的目标在这一幕内造成的伤害和混乱伤害-25%</Desc>
+    <Desc>[战斗开始] 使该书页所有指定的目标在这一幕内造成的伤害和混乱伤害-25%</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="breakDamage150">
     <Desc>该骰子造成的混乱伤害+50%</Desc>
@@ -79,7 +79,7 @@
     <Desc>[战斗开始] 使自身获得2层[强壮]与[忍耐]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="KhanStance">
-    <Desc>[装备时] 使所有书页变成"恐惧凝集"的变体</Desc>
+    <Desc>[装备时] 使所有书页变成[恐惧凝集]的变体</Desc>
   </BattleCardAbility>
   <!--血骑士-->
   <BattleCardAbility ID="blood2">
@@ -89,7 +89,7 @@
     <Desc>[使用时] 获得4层[鲜血附魔]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BloodStun">
-    <Desc>[使用时] 摧毁本书页所有骰子并使目标从下一幕起陷入混乱持续2幕;
+    <Desc>[使用时] 摧毁本书页所有骰子并使目标从下一幕起陷入混乱持续2幕
 期间每一幕目标承受10点血量并使自己获得2层[鲜血附魔]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BloodStunLib">
@@ -103,28 +103,28 @@
   </BattleCardAbility>
   <!--耀骑士-->
   <BattleCardAbility ID="Discard1Atk">
-    <Desc>[命中时] 目标丢弃一张手牌</Desc>
+    <Desc>[命中时] 使目标丢弃一张书页</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="PLNerfLast">
-    <Desc>[拼点失败] 书页最后一个骰子基础值-9</Desc>
+    <Desc>[拼点失败] 该书页最后一颗骰子基础值-9</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="RepeatBelow50">
-    <Desc>若血量低于50%则重复投掷一次</Desc>
+    <Desc>若自身血量低于50%则该骰子重复投掷一次</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ObserveRollMax">
-    <Desc>若使用该书页时未被击中则最后一个骰子投掷最大值</Desc>
+    <Desc>若使用该书页时未被击中则最后一颗骰子固定骰出最大值</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="RecoverNDamageBreak">
     <Desc>[命中时] 追加5点混乱伤害并且恢复5点混乱抗性</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="PWBoostDmg">
-    <Desc>[拼点胜利] 骰子威力每高出目标1点提升下一个骰子伤害4点</Desc>
+    <Desc>[拼点胜利] 骰子威力每高出目标1点便使下一颗骰子伤害+4</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ParryLate">
-    <Desc>[后手] 其他书页触发[看破]时摧毁该书页并且把该书页骰子移至触发书页末尾</Desc>
+    <Desc>[后手] 其他书页触发[看破]时摧毁该书页并把该书页骰子移至触发书页末尾</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ParryBelow50">
-    <Desc>若血量低于50%则额外获得[看破]</Desc>
+    <Desc>若自身血量低于50%则额外获得[看破]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ParryGuaran">
     <Desc>必定获得[看破]. 触发[看破]时重新投掷该骰</Desc>
@@ -139,7 +139,7 @@
     <Desc>仅攻击使用单方面攻击自身的敌人</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="RadiantSum">
-    <Desc>[范围杀伤书页-清算] 仅攻击主目标</Desc>
+    <Desc>[范围杀伤书页-清算] 仅攻击首选目标</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="RadiantSingle">
     <Desc>[范围杀伤书页-交锋] 仅攻击副目标</Desc>
