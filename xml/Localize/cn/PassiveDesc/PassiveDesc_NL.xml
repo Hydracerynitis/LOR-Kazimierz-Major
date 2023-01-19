@@ -2,13 +2,13 @@
 <PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<PassiveDesc ID="2160000">
 		<Name>巅峰对决</Name> 
-		<Desc>舞台开启时回复所有司书血量和混乱抗性并且提升至情感等级5</Desc>
+		<Desc>舞台开启时回复所有司书血量和混乱抗性并且情感等级提升至5</Desc>
 	</PassiveDesc>
 	<!--烛骑士-->
 	<PassiveDesc ID="2160011">
 		<Name>悄然噬光华</Name> 
-		<Desc>战斗开始时若自身不处于满光则摧毁其他所有角色费用最高的即将使用的书页, 自身恢复所摧毁的书页费用总和点光芒
-因此被摧毁的书页不会返回手牌</Desc>
+		<Desc>战斗开始时若自身光芒未满则摧毁其他所有角色费用最高的即将使用的书页, 自身恢复等同于所摧毁的书页费用总和的光芒
+因此被摧毁的书页不会回到手中</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160012">
 		<Name>阁影孤烛</Name> 
@@ -17,6 +17,11 @@
 	<PassiveDesc ID="2160013">
 		<Name>烛火之护</Name> 
 		<Desc>每一幕开始时自身每拥有一点光芒,则使这一幕内承受伤害和混乱伤害-3%</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160111">
+		<Name>悄然噬光华</Name> 
+		<Desc>无法正常恢复光芒
+可以指定友方角色并在战斗开始时摧毁其费用最高的即将使用的书页, 自身恢复等同于所摧毁的书页费用的光芒</Desc>
 	</PassiveDesc>
 	<!--无胄盟-->
 	<PassiveDesc ID="2160021">
@@ -49,7 +54,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160028">
 		<Name>暗箭难防</Name> 
-		<Desc>单方面攻击时改为直接造成追加伤害和混伤</Desc>
+		<Desc>单方面攻击时改为直接造成追加伤害和混乱伤害</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160029">
 		<Name>无胄盟围剿</Name> 
@@ -132,7 +137,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160042">
 		<Name>血归</Name> 
-		<Desc>会使用特殊书页"血归"，使书页目标从下一幕起陷入混乱持续2幕;期间每一幕目标承受10点血量并使自己获得2层"鲜血附魔";
+		<Desc>会使用特殊书页"血归"，使书页目标从下一幕起陷入混乱持续2幕;期间每一幕目标受到10点伤害并使自己获得2层"鲜血附魔";
 优先攻击未陷入混乱的司书.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160043">
@@ -163,15 +168,15 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160141">
 		<Name>血液蚀刻</Name> 
-		<Desc>每失去7点生命值时获得一层"鲜血附魔"。每层"鲜血附魔"会在进攻骰造成伤害时提升其10%伤害并清空"鲜血附魔"魔层数</Desc>
+		<Desc>每失去7点生命值时获得一层"鲜血附魔"。每层"鲜血附魔"会在进攻骰造成伤害时提升其10%伤害并清空"鲜血附魔"层数</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160142">
 		<Name>血反</Name> 
-		<Desc>没有陷入混乱时若一幕内被一个敌人造成超过14点伤害后立刻以5-9斩击骰攻击该敌人</Desc>
+		<Desc>没有陷入混乱时若一幕内被一个敌人造成超过14点伤害后立刻以一颗斩击骰子(5-9)攻击该敌人</Desc>
 	</PassiveDesc>
-	<PassiveDesc ID="2160143">
-		<Name>血甲</Name> 
-		<Desc>被单方面攻击时减少2-3点所受伤害和混乱伤害.</Desc>
+	<PassiveDesc ID="2160143"> <!--血甲：被单方面攻击时减少2-3点所受伤害和混乱伤害.-->
+		<Name>巨武专精</Name> 
+		<Desc>使用费用不低于3且初始骰子数为1的书页时恢复1点光芒并使该书页的所有骰子伤害+25%</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160144">
 		<Name>凝血祭品</Name> 
@@ -181,7 +186,7 @@
 	<PassiveDesc ID="2160051">
 		<Name>不畏苦暗</Name> <!--命中时恢复15点混乱抗性.被击中时恢复10点混乱抗性.-->
 		<Desc>命中时恢复20点混乱抗性.若触发了"看破"效果则恢复所有混乱抗性.
-混乱时不改变伤害抗性.</Desc>
+陷入混乱时不改变伤害抗性.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160052">
 		<Name>崇高准则</Name> 
@@ -202,7 +207,23 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160056">
 		<Name>逐夜烁光</Name> 
-		<Desc>每幕开始时若自身未陷入混乱则获得20层护盾(每层护盾将抵消一次这一幕即将承受的伤害)
+		<Desc>每一幕开始时若自身未陷入混乱则获得20层护盾(每层护盾将抵消一次这一幕即将承受的伤害)
 护盾激活时近战进攻骰伤害和混乱伤害提升50%.</Desc>
+	</PassiveDesc>
+
+	<PassiveDesc ID="2160151">
+		<Name>不畏苦暗/崇高准则</Name>
+		<Desc>命中时恢复6点混乱抗性
+陷入混乱时不改变伤害抗性
+自身所有骰子不受威力增减影响</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160153">
+		<Name>耀骑士的技巧</Name>
+		<Desc>每一幕开始时随机将数张仅限这一幕使用的耀骑士战斗书页置入手中
+战斗书页的数量与质量将会随着情感等级提升而提升</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160156">
+		<Name>逐夜烁光</Name> 
+		<Desc>每一幕开始时若自身未陷入混乱则获得5层护盾(每层护盾将抵消一次这一幕即将承受的伤害)</Desc>
 	</PassiveDesc>
 </PassiveDescRoot>

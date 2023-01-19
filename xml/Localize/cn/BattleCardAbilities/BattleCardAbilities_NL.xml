@@ -5,7 +5,7 @@
     <Desc>[命中时] 汲取目标2点光芒</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="pwNextPower3">
-    <Desc>[拼点胜利] 下一个骰子威力+3</Desc>
+    <Desc>[拼点胜利] 使自身当前书页的下一颗骰子威力+3</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="SplitShot">
     <Desc>额外攻击其他一个敌人</Desc>
@@ -14,10 +14,10 @@
     <Desc>[命中时] 该骰子额外攻击目标2次</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="DoubleHit">
-    <Desc>[命中时] 若目标也被上一个骰子命中,则该骰子额外攻击目标一次</Desc>
+    <Desc>[命中时] 若目标被上一颗骰子击中则使本骰子额外攻击目标一次</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="TrueDamage">
-    <Desc>该书页骰子命中时将造成骰子威力的伤害</Desc>
+    <Desc>该书页骰子命中时将造成等同于骰子威力的伤害</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="AmpDmg">
     <Desc>该书页骰子每命中一个目标便使下一个骰子造成的伤害和混乱伤害提升+50%</Desc>
@@ -26,7 +26,7 @@
     <Desc>[使用时] 使所有角色下三幕内每一幕开始时恢复所有的光芒</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="FlowerBlossom">
-    <Desc>[命中时] 使用斩击12-16的骰子额外攻击目标3次</Desc>
+    <Desc>[命中时] 使用斩击(12-16)的骰子额外攻击目标3次</Desc>
   </BattleCardAbility>
   <!--无胄盟-->
   <BattleCardAbility ID="Corrosion1Atk">
