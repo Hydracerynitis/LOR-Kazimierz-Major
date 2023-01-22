@@ -61,6 +61,10 @@
 			<Name>耀阳落地点</Name>
 			<Desc>成为了耀阳颔首的首要目标</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="CounterReady">
+			<Name>耀骑士的技巧</Name>
+			<Desc>该角色被威力不低于15的进攻骰攻击会无效化该骰子</Desc>
+		</BattleEffectText>
 		<BattleEffectText ID="InifiniteLight">
 			<Name>烛耀过载</Name>
 			<Desc>每一幕开始时恢复所有的光芒,持续{0}幕</Desc>

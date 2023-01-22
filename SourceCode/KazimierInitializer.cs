@@ -161,6 +161,23 @@ namespace KazimierzMajor
             newslot.connectLineList = new List<GameObject>();
             Storyslots[new List<StageClassInfo>() { data }] = newslot;
         }
+        [HarmonyPatch(typeof(LibraryModel),nameof(LibraryModel.OnClearStage))]
+        [HarmonyPostfix]
+        public static void LibraryModel_OnClearStage(LorId stageId)
+        {
+            if (stageId == Tools.MakeLorId(21600053))
+            {
+                LorId radiantReward = Tools.MakeLorId(2160012);
+                List<BookModel> all = Singleton<BookInventoryModel>.Instance.GetBookListAll().FindAll(x => x.ClassInfo.id == radiantReward);
+                BookXmlInfo data2 = Singleton<BookXmlList>.Instance.GetData(radiantReward);
+                if (data2 == null || all.Count >= data2.Limit)
+                    return;
+                int difference = data2.Limit - all.Count;
+                for (int i = 0; i < difference; i++)
+                    Singleton<BookInventoryModel>.Instance.CreateBook(radiantReward);
+                UIAlarmPopup.instance.SetAlarmText(TextDataModel.GetText("ui_popup_getequippage", (object)Singleton<BookDescXmlList>.Instance.GetBookName(Tools.MakeLorId(2160013)), (object)difference));
+            }
+        }
         public static void UpdateInfo(BattleUnitModel unit) => SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(unit, unit.faction, unit.hp, unit.breakDetail.breakGauge);
         public static void AddNewCard(BattleUnitModel unit, List<int> cards, Queue<int> priority)
         {

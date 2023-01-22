@@ -187,4 +187,21 @@
 		<Rarity>Unique</Rarity>
 		<Cost>6</Cost>
   	</Passive>
+	<Passive ID="2160151">
+		<Rarity>Unique</Rarity>
+		<Cost>4</Cost>
+  	</Passive>
+	<Passive ID="2160152">
+		<Rarity>Unique</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>12</Cost>
+  	</Passive>
+	<Passive ID="2160153">
+		<Rarity>Unique</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
+	<Passive ID="2160154">
+		<Rarity>Unique</Rarity>
+		<Cost>5</Cost>
+  	</Passive>
 </PassiveXmlRoot>

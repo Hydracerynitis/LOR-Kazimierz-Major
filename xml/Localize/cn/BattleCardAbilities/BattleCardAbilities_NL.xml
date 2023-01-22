@@ -156,4 +156,13 @@
   <BattleCardAbility ID="ParryPenetrate">
     <Desc>[看破-穿刺]</Desc>
   </BattleCardAbility>
+  <BattleCardAbility ID="ReplaceRadiant1">
+    <Desc>[装备时] 移除手牌里随机一张费用等于2的书页并将一张精装耀骑士战斗书页置入手牌</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ReplaceRadiant2">
+    <Desc>[装备时] 移除手牌里随机一张费用等于3的书页并将一张限定耀骑士战斗书页置入手牌</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ReplaceRadiant3">
+    <Desc>[装备时] 移除手牌里随机一张费用等于3的书页并将一张限定耀骑士战斗书页置入手牌,同时将耀阳颔首洗入牌库</Desc>
+  </BattleCardAbility>
 </BattleCardAbilityDescRoot>

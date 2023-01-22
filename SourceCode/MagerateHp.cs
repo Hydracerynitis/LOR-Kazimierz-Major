@@ -16,9 +16,20 @@ namespace KazimierzMajor
     [HarmonyPatch]
     class MagerateHp
     {
+        [HarmonyPatch(typeof(BattleDiceBehavior), nameof(BattleDiceBehavior.GiveDamage))]
+        [HarmonyPrefix]
+        public static void BattleDiceBehavior_GiveDamage_Pre(BattleDiceBehavior __instance)
+        {
+            if(__instance._diceResultValue>=15 && __instance.card.target.bufListDetail.HasBuf<PassiveAbility_2160153.CounterReady>())
+            {
+                __instance.SetBlocked(true);
+                __instance.card.target.bufListDetail.RemoveBufAll(typeof(PassiveAbility_2160153.CounterReady));
+                PassiveAbility_2160153.GetParried = __instance.owner.battleCardResultLog.CurbehaviourResult;
+            }
+        }
         [HarmonyPatch(typeof(BattleDiceBehavior),nameof(BattleDiceBehavior.GiveDamage))]
         [HarmonyPostfix]
-        public static void BattleDiceBehavior_GiveDamage(BattleDiceBehavior __instance)
+        public static void BattleDiceBehavior_GiveDamage_Post(BattleDiceBehavior __instance)
         {
             PassiveAbility_2160055.Active = false;
         }
@@ -93,13 +104,13 @@ namespace KazimierzMajor
         {
             RencounterManager.ActionAfterBehaviour actionAfterBehaviour = new RencounterManager.ActionAfterBehaviour() { infoList=new List<RencounterManager.MovingAction>(),result=Result.Win };
             RencounterManager.ActionAfterBehaviour loser = new RencounterManager.ActionAfterBehaviour() { infoList=new List<RencounterManager.MovingAction>(),result=Result.Lose};
-            if (__instance._currentEnemyBehaviourResult == Parry.ParryTriggered)
+            if (__instance._currentEnemyBehaviourResult == Parry.ParryTriggered || __instance._currentLibrarianBehaviourResult == PassiveAbility_2160153.GetParried && __instance._currentEnemyBehaviourResult.behaviourRawData!=null)
             {
                 __instance._currentEnemyBehaviourResult.diceBehaviourResult.result = Result.Win;
                 __instance._currentLibrarianBehaviourResult.diceBehaviourResult.result = Result.Lose;
                 DiceBehaviour xml = __instance._currentEnemyBehaviourResult.behaviourRawData.Copy();
                 xml.Type = BehaviourType.Atk;
-                __instance._currentEnemyBehaviourResult.behaviourRawData=xml;
+                __instance._currentEnemyBehaviourResult.behaviourRawData = xml;
                 actionAfterBehaviour.view = __instance._enemy;
                 loser.view = __instance._librarian;
                 actionAfterBehaviour.data = __instance._currentEnemyBehaviourResult.diceBehaviourResult;
@@ -109,7 +120,7 @@ namespace KazimierzMajor
                 LoadParryBehaviourList(__instance, ref actionAfterBehaviour, ref loser);
                 return false;
             }
-            if (__instance._currentLibrarianBehaviourResult == Parry.ParryTriggered)
+            if (__instance._currentLibrarianBehaviourResult == Parry.ParryTriggered || __instance._currentEnemyBehaviourResult == PassiveAbility_2160153.GetParried && __instance._currentLibrarianBehaviourResult.behaviourRawData != null)
             {
                 __instance._currentLibrarianBehaviourResult.diceBehaviourResult.result = Result.Win;
                 __instance._currentEnemyBehaviourResult.diceBehaviourResult.result = Result.Lose;

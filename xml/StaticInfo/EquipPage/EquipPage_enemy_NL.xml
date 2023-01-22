@@ -22,7 +22,7 @@
       		<MaxPlayPoint>20</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Hybrid</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>CandleKnight</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_ZQS</CharacterSkin>
@@ -51,7 +51,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_WZM_LY</CharacterSkin>
@@ -80,7 +80,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_WZM_MNK</CharacterSkin>
@@ -108,7 +108,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>Custom_WZM_LY2</CharacterSkin>
@@ -135,7 +135,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>Custom_WZM_MNK2</CharacterSkin>
@@ -161,7 +161,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
 		<CharacterSkin>Custom_WZM_CK</CharacterSkin>
@@ -187,7 +187,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
 		<CharacterSkin>Custom_WZM_QS</CharacterSkin>
@@ -213,7 +213,7 @@
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity> 
 		<CharacterSkin>Custom_WZM_NS</CharacterSkin>
@@ -240,7 +240,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>Tora</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_TL</CharacterSkin>
@@ -354,7 +354,7 @@
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>Kazimier</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_NTRNearl</CharacterSkin>

@@ -4,6 +4,7 @@
 		<Name>耀阳颔首</Name>
 		<Artwork>Radiant1</Artwork>
 		<Rarity>Unique</Rarity>
+		<Option>Basic</Option>
 		<Spec Range="FarAreaEach" Cost="0" Affection="Team"/>
 		<Script>RadiantSpecial</Script>
 		<ScriptDesc></ScriptDesc>
@@ -230,6 +231,76 @@
 			<Behaviour Min="7" Dice="10" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
       		<Behaviour Min="5" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="ParryAll" ActionScript="" Desc="" />
             <Behaviour Min="6" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161501">
+		<Name>剑式追忆1</Name>
+		<Artwork>Radiant2</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Option>ExhaustOnUse</Option>
+		<Option>Personal</Option>
+		<Spec Range="Instance" Cost="0" />
+		<Script>ReplaceRadiant1</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161502">
+		<Name>剑式追忆1</Name>
+		<Artwork>Radiant2</Artwork>
+		<Rarity>Uncommon</Rarity>
+		<Option>ExhaustOnUse</Option>
+		<Option>Personal</Option>
+		<Spec Range="Instance" Cost="0" />
+		<Script>ReplaceRadiant1</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161503">
+		<Name>剑式追忆2</Name>
+		<Artwork>Radiant2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Option>ExhaustOnUse</Option>
+		<Option>Personal</Option>
+		<Spec Range="Instance" Cost="0" />
+		<Script>ReplaceRadiant2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161504">
+		<Name>剑式追忆2</Name>
+		<Artwork>Radiant2</Artwork>
+		<Rarity>Rare</Rarity>
+		<Option>ExhaustOnUse</Option>
+		<Option>Personal</Option>
+		<Spec Range="Instance" Cost="0" />
+		<Script>ReplaceRadiant2</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161505">
+		<Name>剑式追忆3</Name>
+		<Artwork>Radiant2</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>ExhaustOnUse</Option>
+		<Option>Personal</Option>
+		<Spec Range="Instance" Cost="0" />
+		<Script>ReplaceRadiant3</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		<Priority>0</Priority>

@@ -205,4 +205,22 @@
 		<Desc>每幕开始时若自身未陷入混乱则获得20层护盾(每层护盾将抵消一次这一幕即将承受的伤害)
 护盾激活时近战进攻骰伤害和混乱伤害提升50%.</Desc>
 	</PassiveDesc>
+	<PassiveDesc ID="2160151">
+		<Name>不畏苦暗/崇高准则</Name>
+		<Desc> 命中时恢复6点混乱抗性且混乱时不改变伤害抗性/自身所有骰子不受威力增减影响</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160152">
+		<Name>耀光剑式</Name> 
+		<Desc>提升情感等级时将一张“剑式追忆”置入手牌([装备时] 将手牌中高费用书页替换成耀骑士的战斗书页)
+高情感等级下获得的“剑式追忆”会提供质量更高的书页</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160153">
+		<Name>耀骑士的技巧</Name> 
+		<Desc>被威力不低于15的进攻骰攻击会无效化该骰子,这个被动每3幕最多触发一次.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160154">
+		<Name>逐夜烁光</Name> 
+		<Desc>舞台开启时获得10层护盾(每层护盾将抵消一次这一幕即将承受的伤害).
+从混乱状态中恢复会重新获得5层护盾</Desc>
+	</PassiveDesc>
 </PassiveDescRoot>

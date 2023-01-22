@@ -7,8 +7,8 @@ namespace KazimierzMajor
     {
         private int SpecialCoolDown = 3;
         private int EnoughCoolDown = 2;
-        private static readonly int[] StrongCard = new int[] { 2160504, 2160505, 2160506, 2160507, 2160508, 2160509, 2160510 };
-        private static readonly int[] WeakCard = new int[] { 2160503, 2160511, 2160512, 2160513, 2160514, 2160515, 2160516 };
+        public static readonly int[] StrongCard = new int[] { 2160504, 2160505, 2160506, 2160507, 2160508, 2160509, 2160510 };
+        public static readonly int[] WeakCard = new int[] { 2160503, 2160511, 2160512, 2160513, 2160514, 2160515, 2160516 };
         public override void OnRoundStart()
         {
             base.OnRoundStart();

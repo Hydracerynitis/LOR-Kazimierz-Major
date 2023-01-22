@@ -100,6 +100,8 @@ namespace KazimierzMajor
             this.Main.layer = 8;
             this.Main.transform.parent = this._targetTransform;
             this.Main.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
+            if (atkdir == Direction.LEFT)
+                Main.transform.localScale = new Vector3(-Main.transform.localScale.x, Main.transform.localScale.y, Main.transform.localScale.z);
             Transform[] componentsInChildren = this.Main.GetComponentsInChildren<Transform>(true);
             for (int index = 0; index < componentsInChildren.Length; ++index)
             {

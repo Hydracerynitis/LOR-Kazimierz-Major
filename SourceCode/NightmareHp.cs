@@ -121,7 +121,7 @@ namespace KazimierzMajor
                     else
                         (passive as NightmareUpdater).AfterChangeHp();
                 }
-            if (__instance.bufListDetail.FindBuf<PassiveAbility_2160056.Shield>() is PassiveAbility_2160056.Shield s)
+            if (__instance.bufListDetail.FindBuf<Shield>() is Shield s)
             {
                 s.Reduce();
                 if (Singleton<StageController>.Instance.IsLogState())

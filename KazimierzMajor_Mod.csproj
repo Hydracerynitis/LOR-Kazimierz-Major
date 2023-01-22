@@ -302,6 +302,10 @@
     <Compile Include="SourceCode\Radiant\FarAreaEffect_Effect02_Yaoyanghanshou.cs" />
     <Compile Include="SourceCode\Radiant\FarAreaEffect_Effect01_Yaoyanghanshou.cs" />
     <Compile Include="SourceCode\Radiant\FarAreaEffect_Enough.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160152.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160153.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160154.cs" />
+    <Compile Include="SourceCode\Radiant\PassiveAbility_2160151.cs" />
     <Compile Include="SourceCode\Radiant\RadiantSpecialAoe.cs" />
     <Compile Include="SourceCode\Radiant\DiceCardSelfAbility_OnlyOneSide.cs" />
     <Compile Include="SourceCode\Radiant\DiceCardAbility_RepeatBelow50.cs" />

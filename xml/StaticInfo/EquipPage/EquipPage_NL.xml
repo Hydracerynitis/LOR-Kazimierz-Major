@@ -24,7 +24,7 @@
 			<Passive>2160123</Passive>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
@@ -55,7 +55,7 @@
 			<Passive>2160125</Passive>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
@@ -80,7 +80,7 @@
 			<Passive Pid="@origin">10001</Passive>
 			<Passive>2160126</Passive>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity>
@@ -105,7 +105,7 @@
 			<Passive Pid="@origin">10001</Passive>
 			<Passive>2160127</Passive>
 		</EquipEffect>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity>
@@ -130,7 +130,7 @@
 			<Passive>2160128</Passive>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>ArmorLess</BookIcon>
 		<Episode>21600003</Episode>
 		<Chapter>7</Chapter>
 		<Rarity>Common</Rarity>
@@ -161,7 +161,7 @@
       		<MaxPlayPoint>4</MaxPlayPoint>
 		</EquipEffect>
 		<Episode>21600003</Episode>
-		<BookIcon>ASK</BookIcon>
+		<BookIcon>Tora</BookIcon>
 		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_TL</CharacterSkin>
@@ -169,7 +169,7 @@
 	</Book>
 	<Book ID="2160010">
 		<Name>血骑士</Name>
-		<TextId>2160010</TextId>
+		<TextId>2160011</TextId>
 		<EquipEffect>
 			<HP>141</HP>
 			<Break>60</Break>
@@ -199,7 +199,7 @@
 	</Book>
 	<Book ID="2160011">
 		<Name>凝血之刃</Name>
-		<TextId>216011</TextId>
+		<TextId>2160012</TextId>
 		<EquipEffect>
 			<HP>25</HP>
 			<Break>25</Break>
@@ -219,6 +219,35 @@
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity>
 		<CharacterSkin>Custom_BLOOD_A</CharacterSkin>
+		<SpeedDiceNum>1</SpeedDiceNum>
+	</Book>
+	<Book ID="2160012">
+		<Name>耀骑士</Name>
+		<TextId>2160013</TextId>
+		<EquipEffect>
+			<HP>160</HP>
+			<Break>68</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<SResist>Endure</SResist>
+			<PResist>Endure</PResist>
+			<HResist>Endure</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive Pid="@origin">10008</Passive>
+			<Passive>2160151</Passive>
+			<Passive>2160152</Passive>
+			<Passive>2160153</Passive>
+			<Passive>2160154</Passive>
+		</EquipEffect>
+		<BookIcon>ASK</BookIcon>
+		<Episode>21600003</Episode>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity>
+		<CharacterSkin>Custom_NTRNearl</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
 	</Book>
 </BookXmlRoot>

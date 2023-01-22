@@ -176,5 +176,69 @@
     <BattleCardDesc ID="2161407">
       <LocalizedName>血反</LocalizedName>
     </BattleCardDesc>
+    <!-- 血骑士 -->
+    <BattleCardDesc ID="2160501">
+      <LocalizedName>耀阳颔首</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160502">
+      <LocalizedName>光刃威慑</LocalizedName><!--Enough-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160503">
+      <LocalizedName>诱敌追击</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160504">
+      <LocalizedName>四段挥击</LocalizedName><!--Thy End is Now-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160505">
+      <LocalizedName>破防刺脏</LocalizedName><!--Prepare Thyself-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160506">
+      <LocalizedName>蓄力猛刺</LocalizedName><!--Judgment-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160507">
+      <LocalizedName>扫荡劈砍</LocalizedName><!--勾拳下砸-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160508">
+      <LocalizedName>光耀一击</LocalizedName><!--Die-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160509">
+      <LocalizedName>空劈瞬刺</LocalizedName><!--裂头劈投矛-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160510">
+      <LocalizedName>破晓三段</LocalizedName><!--三段连招-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160511">
+      <LocalizedName>打量动作</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160512">
+      <LocalizedName>侧身回击</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160513">
+      <LocalizedName>流转反攻</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160514">
+      <LocalizedName>震反直击</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160515">
+      <LocalizedName>精准挡反</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160516">
+      <LocalizedName>防反突破</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161501">
+      <LocalizedName>剑式追忆</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161502">
+      <LocalizedName>剑式追忆</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161503">
+      <LocalizedName>剑式追忆</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161504">
+      <LocalizedName>剑式追忆</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161505">
+      <LocalizedName>剑式追忆</LocalizedName>
+    </BattleCardDesc>
  </cardDescList>
 </BattleCardDescRoot>
