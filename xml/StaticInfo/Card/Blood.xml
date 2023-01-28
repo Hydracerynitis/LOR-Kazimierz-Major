@@ -171,7 +171,7 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="10" Dice="16" Type="Atk" Detail="Slash" Motion="Z" EffectRes="" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>

@@ -138,14 +138,17 @@
     <Compile Include="SourceCode\BattleStartCinematic.cs" />
     <Compile Include="SourceCode\CandleHP.cs" />
     <Compile Include="SourceCode\Candle\BattleVoidBehaviour.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardAbility_FlowerBlossomLib.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_FlowerBlossom.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_DoubleHit.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_TripleHit.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_pwNextPower3.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_DrainLight2.cs" />
     <Compile Include="SourceCode\Candle\DiceCardSelfAbility_AmpDmg.cs" />
+    <Compile Include="SourceCode\Candle\DiceCardSelfAbility_ApplySuckTarget.cs" />
     <Compile Include="SourceCode\Candle\DiceCardSelfAbility_TrueDamage.cs" />
     <Compile Include="SourceCode\Candle\DiceCardSelfAbility_SplitShot.cs" />
+    <Compile Include="SourceCode\Candle\PassiveAbility_2160111.cs" />
     <Compile Include="SourceCode\Candle\PassiveAbility_2160013.cs" />
     <Compile Include="SourceCode\NightmareHp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

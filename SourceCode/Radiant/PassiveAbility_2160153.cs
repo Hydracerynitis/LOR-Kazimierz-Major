@@ -27,6 +27,11 @@ namespace KazimierzMajor
         {
             public override string keywordIconId => "KeterFinal_SilenceGirl_Hand_Target";
             public override string keywordId => "CounterReady";
+            public override void Init(BattleUnitModel owner)
+            {
+                base.Init(owner);
+                stack = 0;
+            }
         }
     }
 }

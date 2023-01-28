@@ -8,38 +8,14 @@ namespace KazimierzMajor
 {
     public class PassiveAbility_2160143 : PassiveAbilityBase
     {
-        private bool oneSide = false;
-        public override int GetDamageReduction(BattleDiceBehavior behavior)
+        public override void OnRollDice(BattleDiceBehavior behavior)
         {
-            if (oneSide)
-                return RandomUtil.Range(2, 3);
-            return base.GetDamageReduction(behavior);
-        }
-        public override int GetBreakDamageReduction(BattleDiceBehavior behavior)
-        {
-            if (oneSide)
-                return RandomUtil.Range(2, 3);
-            return base.GetBreakDamageReduction(behavior);
-        }
-        public override void OnRoundStart()
-        {
-            base.OnRoundStart();
-            oneSide = false;
-        }
-        public override void OnStartParrying(BattlePlayingCardDataInUnitModel card)
-        {
-            base.OnStartParrying(card);
-            oneSide = false;
-        }
-        public override void OnStartTargetedOneSide(BattlePlayingCardDataInUnitModel attackerCard)
-        {
-            base.OnStartTargetedOneSide(attackerCard);
-            oneSide = true;
-        }
-        public override void OnStartTargetedByAreaAtk(BattlePlayingCardDataInUnitModel attackerCard)
-        {
-            base.OnStartTargetedByAreaAtk(attackerCard);
-            oneSide = false;
+            base.OnRollDice(behavior);
+            if (behavior.DiceVanillaValue >= 10)
+            {
+                behavior.ApplyDiceStatBonus(new DiceStatBonus() { dmgRate = 20 });
+                owner.cardSlotDetail.RecoverPlayPoint(1);
+            }
         }
     }
 }

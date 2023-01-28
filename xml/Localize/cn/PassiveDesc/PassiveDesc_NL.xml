@@ -18,11 +18,11 @@
 		<Name>烛火之护</Name> 
 		<Desc>每一幕开始时自身每拥有一点光芒,则使这一幕内承受伤害和混乱伤害-3%</Desc>
 	</PassiveDesc>
-	<!--<PassiveDesc ID="2160111">
+	<PassiveDesc ID="2160111">
 		<Name>悄然噬光华</Name> 
-		<Desc>无法正常恢复光芒
-可以指定友方角色并在战斗开始时摧毁其费用最高的即将使用的书页, 自身恢复等同于所摧毁的书页费用的光芒</Desc>
-	</PassiveDesc>-->
+		<Desc>无法正常恢复光芒,可以使用强力专属书页;
+可以指定友方角色在战斗开始时摧毁其费用最高的即将使用的书页, 自身恢复等同于所摧毁的书页费用的光芒</Desc>
+	</PassiveDesc>
 	<!--无胄盟-->
 	<PassiveDesc ID="2160021">
 		<Name>青金箭术</Name> 
@@ -168,19 +168,19 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160141">
 		<Name>血液蚀刻</Name> 
-		<Desc>每失去7点生命值时获得一层"鲜血附魔"。每层"鲜血附魔"会在进攻骰造成伤害时提升其10%伤害并清空"鲜血附魔"层数</Desc>
+		<Desc>每失去7点生命值时获得一层"鲜血附魔"。每层"鲜血附魔"会在进攻骰造成伤害时提升其20%伤害并清空"鲜血附魔"层数</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160142">
 		<Name>血反</Name> 
-		<Desc>没有陷入混乱时若一幕内被一个敌人造成超过14点伤害后立刻以一颗斩击骰子(5-9)攻击该敌人</Desc>
+		<Desc>同一舞台内若一个敌人对自身造成超过20点伤害后自身未陷入混乱则立刻用一颗斩击骰子(10-16)攻击该敌人</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160143">
-		<Name>血甲</Name> 
-		<Desc>被单方面攻击时减少2-3点所受伤害和混乱伤害.</Desc>
+		<Name>巨武专精</Name> 
+		<Desc>投掷基础值不低于10点的进攻骰时恢复一点光芒并使该骰子造成的伤害提升+20%.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160144">
 		<Name>凝血祭品</Name> 
-		<Desc>若该书页被动归属于血骑士之页, 舞台开启时将一张"血涌之舞"([装备时] 恢复自身15%的体力上限的生命值)洗入牌库</Desc>
+		<Desc>若该书页被动归属于血骑士之页, 舞台开启时将一张"血涌之舞"([装备时] 恢复自身15%的体力上限的生命值;抽取1张书页)洗入牌库</Desc>
 	</PassiveDesc>
 	<!--耀骑士-->
 	<PassiveDesc ID="2160051">
@@ -211,10 +211,8 @@
 护盾激活时近战进攻骰伤害和混乱伤害提升50%.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160151">
-		<Name>不畏苦暗/崇高准则</Name>
-		<Desc>命中时恢复6点混乱抗性
-陷入混乱时不改变伤害抗性
-自身所有骰子不受威力增减影响</Desc>
+		<Name>不畏苦暗</Name>
+		<Desc>命中时恢复5点混乱抗性</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160152">
 		<Name>耀光剑式</Name> 
@@ -223,7 +221,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160153">
 		<Name>耀骑士的技巧</Name>
-		<Desc>被威力不低于15的进攻骰攻击会无效化该骰子,这个被动每3幕最多触发一次.</Desc>
+		<Desc>被骰子点数不低于15的进攻骰攻击会无效化该骰子,这个被动每3幕最多触发一次.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160154">
 		<Name>逐夜烁光</Name> 

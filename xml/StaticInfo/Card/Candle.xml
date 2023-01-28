@@ -137,7 +137,7 @@
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="7" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="6" Dice="9" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="doubleAoeDmg" ActionScript="" Desc="" />
+			<Behaviour Min="6" Dice="10" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="doubleAoeDmg" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		<Priority>0</Priority>
@@ -223,5 +223,199 @@
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
+</Card>
+<Card ID="2161101">
+		<Name>亮剑欢迎</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Common</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="0" />
+		<Script>drawCard</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="6" Dice="10" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161102">
+		<Name>烛光探戈</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Common</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="0" />
+		<Script>drawCard</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="3" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161103">
+		<Name>剑光伦巴</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Common</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="0" />
+		<Script>drawCard</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="4" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Penetrate" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="4" Dice="7" Type="Atk" Detail="Penetrate" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161104">
+		<Name>对烛恰恰</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Common</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="0" />
+		<Script>drawCard</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="2" Dice="10" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="3" Dice="9" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="2" Dice="9" Type="Atk" Detail="Penetrate" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161105">
+		<Name>对剑快步</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Common</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Near" Cost="0" />
+		<Script>drawCard</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="5" Dice="8" Type="Atk" Detail="Penetrate" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161106">
+		<Name>烛影</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Rare</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="2" />
+		<Script>SplitShot</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="8" Dice="11" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="8" Dice="11" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161107">
+		<Name>金盏花开</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Rare</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="2" />
+		<Script>SplitShot</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="6" Dice="10" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="doubleAoeDmg" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161108">
+		<Name>点燃烛芯</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Rare</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="Far" Cost="2" />
+		<Script>SplitShot</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="6" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="6" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
+            <Behaviour Min="5" Dice="7" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="TripleHit" ActionScript="" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
+</Card>
+<Card ID="2161109">
+		<Name>明灯</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="FarArea" Cost="5" Affection="Team"/>
+		<Script>TrueDamage</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="25" Dice="30" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="Xiao_610005" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161110">
+		<Name>炫目</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="FarAreaEach" Cost="5" Affection="Team"/>
+		<Script>AmpDmg</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="7" Dice="12" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="Eileen_FarArea_Second" Desc="" />
+			<Behaviour Min="7" Dice="12" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="" ActionScript="Eileen_FarArea_Second" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161111">
+		<Name>群花</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="FarArea" Cost="5" Affection="Team"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="15" Dice="24" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="FlowerBlossomLib" ActionScript="TwistPhilip_AreaBurnDespair" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161112">
+		<Name>含苞</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>OnlyPage</Option>
+		<Spec Range="FarAreaEach" Cost="5" Affection="Team"/>
+		<Script></Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+      		<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="F" EffectRes="" Script="DoubleHitIndicator" ActionScript="shyao_areaatk" Desc="" />
+			<Behaviour Min="12" Dice="20" Type="Atk" Detail="Slash" Motion="F" EffectRes="" Script="DoubleHit" ActionScript="shyao_areaatk2" Desc="" />
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		 <Priority>0</Priority>
+</Card>
+<Card ID="2161113">
+		<Name>火烛之应</Name>
+		<Artwork>Candle</Artwork>
+		<Rarity>Unique</Rarity>
+		<Option>Personal</Option>
+		<Spec Range="Instance" Cost="0"/>
+		<Script>ApplySuckTarget</Script>
+		<ScriptDesc></ScriptDesc>
+    	<BehaviourList>
+		</BehaviourList>
+		<Chapter>7</Chapter>
+		<Priority>0</Priority>
 </Card>
 </DiceCardXmlRoot>

@@ -57,6 +57,10 @@
 			<Name>护盾</Name>
 			<Desc>这一幕内可抵挡{0}次伤害</Desc>
 		</BattleEffectText>
+		<BattleEffectText ID="RadiantShieldLib">
+			<Name>护盾</Name>
+			<Desc>可抵挡{0}次伤害</Desc>
+		</BattleEffectText>
 		<BattleEffectText ID="TargetIndicator">
 			<Name>耀阳落地点</Name>
 			<Desc>成为了耀阳颔首的首要目标</Desc>
@@ -72,6 +76,10 @@
 		<BattleEffectText ID="AmpDmg">
 			<Name>伤害提升</Name>
 			<Desc>下{0}个骰子提升+25%造成的伤害和混乱伤害</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="SuckTarget">
+			<Name>金盏花开</Name>
+			<Desc>战斗开始时摧毁该单位费用最高的即将使用的书页,友方“烛”骑士司书恢复等同于所摧毁的书页费用的光芒</Desc>
 		</BattleEffectText>
 	</effectTextList>
 </BattleEffectTextRoot>

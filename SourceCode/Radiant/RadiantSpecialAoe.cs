@@ -75,7 +75,8 @@ namespace KazimierzMajor
         public override void OnAfterAreaAtk(List<BattleUnitModel> damagedList, List<BattleUnitModel> defensedList)
         {
             base.OnAfterAreaAtk(damagedList, defensedList);
-            BattleFarAreaPlayManager.Instance.victims.Add(target);
+            if(target!=null)
+                BattleFarAreaPlayManager.Instance.victims.Add(target);
         }
     }
 }

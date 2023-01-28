@@ -7,8 +7,17 @@ using System.Threading.Tasks;
 
 namespace KazimierzMajor
 {
-    public class PassiveAbility_2160141 : PassiveAbility_2160041
+    public class PassiveAbility_2160141 : PassiveAbilityBase
     {
+        private int accumulated;
+        public override void OnLoseHp(int dmg)
+        {
+            base.OnLoseHp(dmg);
+            accumulated += dmg;
+            int stack = accumulated / 7;
+            accumulated -= 7 * stack;
+            BattleUnitBuf_Blood.AddBuf(owner, stack);
+        }
         public override void OnWaveStart()
         {
             base.OnWaveStart();

@@ -11,6 +11,7 @@ namespace KazimierzMajor
         {
             base.OnUseInstance(unit, self, targetUnit);
             unit.RecoverHP((int)(unit.MaxHp *0.15));
+            unit.allyCardDetail.DrawCards(1);
         }
     }
 }

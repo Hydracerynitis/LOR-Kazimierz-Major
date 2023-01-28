@@ -127,12 +127,19 @@ namespace KazimierzMajor
                     Storyslots[key].SetActiveStory(false);
             }
         }
-        
+        [HarmonyPatch(typeof(BattlePlayingCardSlotDetail),nameof(BattlePlayingCardSlotDetail.RecoverPlayPoint))]
+        [HarmonyPrefix]
+        static bool BattlePlayingCardSlotDetail_RecoverPlayPoint_Pre(BattlePlayingCardSlotDetail __instance)
+        {
+            if (__instance._self.passiveDetail.HasPassive<PassiveAbility_2160111>())
+                return false;
+            return true;
+        }
         [HarmonyPatch(typeof(BattlePersonalEgoCardDetail),nameof(BattlePersonalEgoCardDetail.UseCard))]
         [HarmonyPrefix]
         static bool BattlePersonalEgoCardDetail_UseCard_Pre(BattleDiceCardModel card)
         {
-            if (card.GetID() == Tools.MakeLorId(2161301))
+            if (card.GetID() == Tools.MakeLorId(2161301) || card.GetID() == Tools.MakeLorId(2161113))
                 return false;
             return true;
         }

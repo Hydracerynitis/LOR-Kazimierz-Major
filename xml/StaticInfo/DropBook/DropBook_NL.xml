@@ -9,6 +9,7 @@
 		<TextId>2160001</TextId>
 		<BookIcon>ASK</BookIcon>
 		<Chapter>7</Chapter>
+		<DropItem Type="Equip">2160001</DropItem>
 	</BookUse>
 	<BookUse ID="2160002">
 		<TextId>2160002</TextId>

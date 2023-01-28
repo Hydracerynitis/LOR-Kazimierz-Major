@@ -50,6 +50,45 @@
     <BattleCardDesc ID="2160116">
       <LocalizedName>微光之触</LocalizedName>
     </BattleCardDesc>
+    <BattleCardDesc ID="2161101">
+      <LocalizedName>亮剑欢迎</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161102">
+      <LocalizedName>烛光探戈</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161103">
+      <LocalizedName>剑光伦巴</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161104">
+      <LocalizedName>对烛恰恰</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161105">
+      <LocalizedName>对剑快步</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161106">
+      <LocalizedName>烛影</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161107">
+      <LocalizedName>金盏花开</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161108">
+      <LocalizedName>点燃烛芯</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161109">
+      <LocalizedName>明灯</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161110">
+      <LocalizedName>炫目</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161111">
+      <LocalizedName>群花</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161112">
+      <LocalizedName>含苞</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161113">
+      <LocalizedName>火烛之应</LocalizedName>
+    </BattleCardDesc>
     <!-- 无胄盟 -->
     <BattleCardDesc ID="2160201">
       <LocalizedName>废足毁腕</LocalizedName>

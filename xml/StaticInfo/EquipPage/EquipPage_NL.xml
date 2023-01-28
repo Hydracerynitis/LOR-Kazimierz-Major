@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <BookXmlRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Book ID="2160001">
+		<Name>烛骑士</Name>
+		<TextId>2160001</TextId>
+		<EquipEffect>
+			<HP>125</HP>
+			<Break>52</Break>
+			<SpeedMin>2</SpeedMin>
+			<Speed>7</Speed>
+			<StartPlayPoint>0</StartPlayPoint>
+			<MaxPlayPoint>4</MaxPlayPoint>
+			<SResist>Normal</SResist>
+			<PResist>Normal</PResist>
+			<HResist>Normal</HResist>
+			<SBResist>Normal</SBResist>
+			<PBResist>Normal</PBResist>
+			<HBResist>Normal</HBResist>
+			<OnlyCard>2161101</OnlyCard>
+			<OnlyCard>2161102</OnlyCard>
+			<OnlyCard>2161103</OnlyCard>
+			<OnlyCard>2161104</OnlyCard>
+			<OnlyCard>2161105</OnlyCard>
+			<OnlyCard>2161106</OnlyCard>
+			<OnlyCard>2161107</OnlyCard>
+			<OnlyCard>2161108</OnlyCard>
+			<OnlyCard>2161109</OnlyCard>
+			<OnlyCard>2161110</OnlyCard>
+			<OnlyCard>2161111</OnlyCard>
+			<OnlyCard>2161112</OnlyCard>
+			<Passive Pid="@origin">10008</Passive>	
+			<Passive>2160111</Passive>
+		</EquipEffect>
+		<RangeType>Hybrid</RangeType>
+		<BookIcon>CandleKnight</BookIcon>
+		<Chapter>7</Chapter>
+		<Rarity>Unique</Rarity> 
+		<CharacterSkin>Custom_ZQS</CharacterSkin>
+		<!--<RandomFace>true</RandomFace>-->
+	</Book>
 	<Book ID="2160002">
 		<Name>罗伊</Name>
 		<TextId>2160002</TextId>

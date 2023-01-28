@@ -17,6 +17,11 @@
 		<Rarity>Unique</Rarity>
 		<Cost>4</Cost>
   	</Passive>
+	<Passive ID="2160111">
+		<Rarity>Unique</Rarity>
+		<CanGivePassive>false</CanGivePassive>
+		<Cost>0</Cost>
+  	</Passive>
 	<!--无胄盟-->
 	<Passive ID="2160021">
 		<Rarity>Unique</Rarity>
@@ -189,7 +194,7 @@
   	</Passive>
 	<Passive ID="2160151">
 		<Rarity>Unique</Rarity>
-		<Cost>4</Cost>
+		<Cost>3</Cost>
   	</Passive>
 	<Passive ID="2160152">
 		<Rarity>Unique</Rarity>

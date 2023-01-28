@@ -28,6 +28,12 @@
   <BattleCardAbility ID="FlowerBlossom">
     <Desc>[命中时] 使用斩击(12-16)的骰子额外攻击目标3次</Desc>
   </BattleCardAbility>
+  <BattleCardAbility ID="FlowerBlossomLib">
+    <Desc>[命中时] 使用斩击(5-9)的骰子额外攻击目标3次</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ApplySuckTarget">
+    <Desc>[装备时] 指定目标成为[悄然噬光华]的目标;战斗开始时摧毁其费用最高的即将使用的书页并恢复等同于所摧毁的书页费用的光芒</Desc>
+  </BattleCardAbility>
   <!--无胄盟-->
   <BattleCardAbility ID="Corrosion1Atk">
     <Desc>[命中时] 对目标施加1层[侵蚀]</Desc>
@@ -99,7 +105,7 @@
     <Desc>[先手]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BloodHeal">
-    <Desc>[装备时] 恢复自身15%的体力上限的生命值</Desc>
+    <Desc>[装备时] 恢复自身15%的体力上限的生命值;抽取一张书页</Desc>
   </BattleCardAbility>
   <!--耀骑士-->
   <BattleCardAbility ID="Discard1Atk">

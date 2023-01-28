@@ -32,10 +32,7 @@ namespace KazimierzMajor
         }
         public override void BeforeGiveDamage(BattleDiceBehavior behavior)
         {
-            if(_owner.faction==Faction.Enemy)
-                behavior.ApplyDiceStatBonus(new DiceStatBonus { dmgRate=20*stack });
-            else
-                behavior.ApplyDiceStatBonus(new DiceStatBonus { dmgRate = 10 * stack });
+            behavior.ApplyDiceStatBonus(new DiceStatBonus { dmgRate = 20 * stack });
             this.Destroy();
         }
     }

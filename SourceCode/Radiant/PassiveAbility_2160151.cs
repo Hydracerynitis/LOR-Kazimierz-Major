@@ -8,16 +8,7 @@ namespace KazimierzMajor
         public override void OnSucceedAttack(BattleDiceBehavior behavior)
         {
             base.OnSucceedAttack(behavior);
-            owner.breakDetail.RecoverBreak(6); //15
-        }
-        public override bool DontChangeResistByBreak()
-        {
-            return true;
-        }
-        public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
-        {
-            base.OnUseCard(curCard);
-            curCard.ignorePower = true;
+            owner.breakDetail.RecoverBreak(5); //15
         }
     }
 }
