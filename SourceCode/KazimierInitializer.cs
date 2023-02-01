@@ -28,7 +28,7 @@ namespace KazimierzMajor
         public static Dictionary<List<StageClassInfo>, UIStoryProgressIconSlot> Storyslots;
         public static GameObject mainGameobject;
         public static Dictionary<string, AssetBundle> assetBundle;
-
+        public static bool MlynarOn = false;
         public override void OnInitializeMod()
         {
             try
@@ -104,6 +104,7 @@ namespace KazimierzMajor
                 CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
                 CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
+                //CreateStoryLine(__instance, 22600002, UIStoryLine.CaneOffice, new Vector3(500f, 750f));
                 CenterPanel_Init = true;
             }
             if (__instance.gameObject.transform.parent.gameObject.name == "BattleStoryPanel" && !BattleStoryPanel_Init)
@@ -116,6 +117,7 @@ namespace KazimierzMajor
                 CreateStoryLine(__instance, 21600033, UIStoryLine.CaneOffice, new Vector3(625f, 320f));
                 CreateStoryLine(__instance, 21600043, UIStoryLine.CaneOffice, new Vector3(750f, 160f));
                 CreateStoryLine(__instance, 21600053, UIStoryLine.CaneOffice, new Vector3(500f, 480f));
+                //CreateStoryLine(__instance, 22600002, UIStoryLine.CaneOffice, new Vector3(500f, 750f));
                 BattleStoryPanel_Init = true;
             }
             foreach (List<StageClassInfo> key in Storyslots.Keys)
@@ -127,6 +129,71 @@ namespace KazimierzMajor
                     Storyslots[key].SetActiveStory(false);
             }
         }
+        public static void CreateStoryLine(UIStoryProgressPanel __instance, int stageId, UIStoryLine reference, Vector3 vector)
+        {
+            StageClassInfo data = Singleton<StageClassInfoList>.Instance.GetData(Tools.MakeLorId(stageId));
+            if (Storyslots.TryGetValue(new List<StageClassInfo>() { data }, out UIStoryProgressIconSlot slot))
+            {
+                slot.Initialized(__instance);
+                return;
+            }
+            UIStoryProgressIconSlot progressIconSlot = __instance.iconList.Find(x => x.currentStory == reference);
+            UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate<UIStoryProgressIconSlot>(progressIconSlot, progressIconSlot.transform.parent);
+            newslot.currentStory = UIStoryLine.Rats;
+            newslot.Initialized(__instance);
+            newslot.transform.localPosition += vector;
+            newslot.connectLineList = new List<GameObject>();
+            Storyslots[new List<StageClassInfo>() { data }] = newslot;
+        }
+        /*[HarmonyPatch(typeof(UIInvitationPanel),nameof(UIInvitationPanel.GetTheBlueReverberationPrimaryStage))]
+        [HarmonyPostfix]
+        public static void UIInvitationPanel_GetTheBlueReverberationPrimaryStage_Post(UIInvitationPanel __instance,ref UIStoryLine __result)
+        {
+            if (__instance.CurrentStage!=null && __instance.CurrentStage.id==Tools.MakeLorId(22600002))
+                __result = UIStoryLine.TwistedBlue;
+        }
+        [HarmonyPatch(typeof(UIInvitationRightMainPanel),nameof(UIInvitationRightMainPanel.OnClickSendButtonForBlue))]
+        [HarmonyPrefix]
+        public static bool UIInvitationRightMainPanel_OnClickSendButtonForBlue_Pre(UIInvitationRightMainPanel __instance)
+        {
+            StageClassInfo mlynar = __instance.invPanel.CurrentStage;
+            if (mlynar != null && mlynar.id == Tools.MakeLorId(22600002))
+            {
+                UIAlarmPopup.instance.SetAlarmTextForBlue(UIAlarmType.StartTwistedBlue, (ConfirmEvent)(yesno =>
+                {
+                    if (!yesno)
+                        return;
+                    Singleton<LibraryQuestManager>.Instance.OnSendInvitation(mlynar.id);
+                    UI.UIController.Instance.PrepareBattle(mlynar, new List<DropBookXmlInfo>());
+                    UISoundManager.instance.PlayEffectSound(UISoundType.Ui_Invite);
+                }), TextDataModel.GetText("ui_invitation_Mlynar"), UIStoryLine.TwistedBlue);
+                return false;
+            }
+            return true;
+        }
+        [HarmonyPatch(typeof(UIAlarmPopup),nameof(UIAlarmPopup.SetAlarmTextForBlue))]
+        [HarmonyPostfix]
+        public static void UIAlarmPopup_SetAlarmTextForBlue_Post(UIAlarmType alarmtype,TextMeshProUGUI ___txt_alarmForBlue,TextMeshProUGUI[] ___txt_alarmEffectTextForBlues,string param = "")
+        {
+            if (alarmtype != UIAlarmType.StartTwistedBlue || !MlynarOn)
+                return;
+            ___txt_alarmForBlue.text = param;
+            for (int index = 0; index < ___txt_alarmEffectTextForBlues.Length; ++index)
+                ___txt_alarmEffectTextForBlues[index].text = param;
+        }
+        [HarmonyPatch(typeof(UIInvitationRightMainPanel),nameof(UIInvitationRightMainPanel.SetInvBookApplyState))]
+        [HarmonyPostfix]
+        public static void UIInvitationRightMainPanel_SetInvBookApplyState_Post(UIInvitationRightMainPanel __instance,InvitationApply_State state,UICustomGraphicObject ___button_SendButtonForBlue,Image ___img_endcontents_content,TextMeshProUGUI ___txt_SendButton)
+        {
+            StageClassInfo mlynar = __instance.invPanel.CurrentStage;
+            MlynarOn = false;
+            if (mlynar != null && mlynar.id == Tools.MakeLorId(22600002))
+            {
+                MlynarOn = true;
+                ___img_endcontents_content.sprite = Harmony_Patch.ArtWorks["OWPlaceHolder"];
+                ___img_endcontents_content.SetNativeSize();
+            }
+        }*/
         [HarmonyPatch(typeof(BattlePlayingCardSlotDetail),nameof(BattlePlayingCardSlotDetail.RecoverPlayPoint))]
         [HarmonyPrefix]
         static bool BattlePlayingCardSlotDetail_RecoverPlayPoint_Pre(BattlePlayingCardSlotDetail __instance)
@@ -151,22 +218,6 @@ namespace KazimierzMajor
             if (owner != null && owner.passiveDetail.HasPassive<PassiveAbility_2160128>())
                 if (__instance.card!=null &&  __instance.card.currentBehavior != null && !__instance.card.currentBehavior.IsParrying())
                     __result = true;
-        }
-        public static void CreateStoryLine(UIStoryProgressPanel __instance,int stageId, UIStoryLine reference, Vector3 vector)
-        {
-            StageClassInfo data = Singleton<StageClassInfoList>.Instance.GetData(Tools.MakeLorId(stageId));
-            if (Storyslots.TryGetValue(new List<StageClassInfo>() { data }, out UIStoryProgressIconSlot slot))
-            {
-                slot.Initialized(__instance);
-                return;
-            }
-            UIStoryProgressIconSlot progressIconSlot = __instance.iconList.Find(x => x.currentStory == reference);
-            UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate<UIStoryProgressIconSlot>(progressIconSlot, progressIconSlot.transform.parent);
-            newslot.currentStory = UIStoryLine.Rats;
-            newslot.Initialized(__instance);
-            newslot.transform.localPosition += vector;
-            newslot.connectLineList = new List<GameObject>();
-            Storyslots[new List<StageClassInfo>() { data }] = newslot;
         }
         [HarmonyPatch(typeof(LibraryModel),nameof(LibraryModel.OnClearStage))]
         [HarmonyPostfix]

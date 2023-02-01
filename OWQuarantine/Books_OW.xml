@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<bookDescList>
+		<BookDesc BookID="2260001">
+			<BookName>"鞭刃"骑士之页</BookName>
+			<TextList>
+				<Desc>鞭刃佐菲娅，前卡西米尔竞技骑士，亲缘关系上是临光及瑕光的姑母，曾打入特锦赛十六强，过去是左撇子，后因故伤残，转而使用右手</Desc>
+			</TextList>
+			<PassiveList />
+		</BookDesc>
+	</bookDescList>
+</BookDescRoot>

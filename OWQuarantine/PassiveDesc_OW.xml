@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--鞭刃-->
+	<PassiveDesc ID="2260001">
+		<Name>教官</Name> 
+		<Desc>战斗开始时若自身与任意友方角色指向同一位角色则该友方单位获得3层伤害提升</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2260002">
+		<Name>责骂</Name> 
+		<Desc>战斗开始时使使用了三张战斗书页的我方角色获得1层强壮与忍耐</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2260003">
+		<Name>比肩的愿景</Name> 
+		<Desc>战斗开始时使使用了三张战斗书页的我方角色获得6层护盾</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2261003">
+		<Name>比肩的愿景</Name> 
+		<Desc>战斗开始时使使用了三张战斗书页的我方角色获得3层护盾(最多10层)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2260004">
+		<Name>前工匠团的改装</Name> 
+		<Desc>每一幕开始时获得2层强壮忍耐和3层守护振奋</Desc>
+	</PassiveDesc>
+</PassiveDescRoot>

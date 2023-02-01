@@ -14,7 +14,11 @@ namespace KazimierzMajor
         public override void CustomInit()
         {
             Retextualize();
-            AudioClip bgm = KazimierInitializer.BGM["Fearless"];
+            string name = "Fearless";
+            LorId stageid = Singleton<StageController>.Instance.GetStageModel().ClassInfo.id;
+            if (stageid == Tools.MakeLorId(22600002))
+                name = "Mlynar1";
+            AudioClip bgm = KazimierInitializer.BGM[name];
             mapBgm = new AudioClip[3] { bgm,bgm, bgm };
             mapSize = MapSize.L;
             _bMapInitialized = true;

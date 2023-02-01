@@ -14,6 +14,8 @@
 			<SBResist>Normal</SBResist>
 			<PBResist>Endure</PBResist>
 			<HBResist>Normal</HBResist>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
 			<OnlyCard>2060301</OnlyCard>
 			<Passive>2060031</Passive>
 			<Passive>2060032</Passive>
@@ -41,6 +43,8 @@
 			<SBResist>Endure</SBResist>
 			<PBResist>Normal</PBResist>
 			<HBResist>Endure</HBResist>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
 			<OnlyCard>2061201</OnlyCard>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060021</Passive>
@@ -68,6 +72,8 @@
 			<SBResist>Endure</SBResist>
 			<PBResist>Endure</PBResist>
 			<HBResist>Endure</HBResist>
+			<StartPlayPoint>4</StartPlayPoint>
+      		<MaxPlayPoint>4</MaxPlayPoint>
 			<PassiveCost>10</PassiveCost>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060111</Passive>

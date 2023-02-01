@@ -127,4 +127,38 @@
 		<MapInfo>Custom_Tournament</MapInfo>
     		<Chapter>7</Chapter>
   	</Stage>
+	<!--<Stage id="22600001">
+		<Wave>
+			<Formation>13</Formation>
+			<AvailableUnit>1</AvailableUnit>
+			<Unit>2260001</Unit>
+		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>Kazimier</StoryType>
+    		<Invitation Combine="BookRecipe">
+				<Book>2060006</Book>
+				<Book>2060007</Book>
+    		</Invitation>
+    		<Condition>
+      			<Stage>20600003</Stage>
+    		</Condition>
+    		<Chapter>6</Chapter>
+  	</Stage>
+	<Stage id="22600002">
+		<Wave>
+			<Formation>13</Formation>
+			<AvailableUnit>5</AvailableUnit>
+      		<Unit>2060006</Unit>
+      		<Unit>2060007</Unit>
+			<Unit>2260101</Unit>
+		</Wave>
+ 		<FloorNum>1</FloorNum>
+		<StoryType>Kazimier</StoryType>
+			<Condition>
+      			<Stage>20600003</Stage>
+				<Stage>22600001</Stage>
+    		</Condition>
+			<MapInfo>Custom_Street</MapInfo>
+    		<Chapter>7</Chapter>
+  	</Stage>-->
 </StageXmlRoot>

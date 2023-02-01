@@ -8,12 +8,12 @@ namespace KazimierzMajor
     {
         public override void OnWaveStart()
         {
-            owner.bufListDetail.AddBuf(new Shield() { stack = 10 });
+            owner.bufListDetail.AddBuf(new BattleUnitBuf_Shield() { stack = 10 });
         }
         public override void OnReleaseBreak()
         {
             base.OnReleaseBreak();
-            owner.bufListDetail.AddBuf(new Shield() { stack = 5 });
+            owner.bufListDetail.AddBuf(new BattleUnitBuf_Shield() { stack = 5 });
         }
     }
 }

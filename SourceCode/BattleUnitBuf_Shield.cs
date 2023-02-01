@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KazimierzMajor_Mod.SourceCode
+namespace KazimierzMajor
 {
-    public class Shield : BattleUnitBuf
+    public class BattleUnitBuf_Shield : BattleUnitBuf
     {
         public override string keywordId => _owner?.faction == Faction.Player ? "RadiantShieldLib" : "RadiantShield";
         public override string keywordIconId => "Resistance_simple";

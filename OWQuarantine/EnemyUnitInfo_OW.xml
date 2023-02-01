@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnemyUnitClassRoot>
+	<!--鞭刃-->
+	<Enemy ID="2260001">
+		<NameID>226001</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12260001</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2260001</DropItem>
+		</DropTable>
+	</Enemy>
+	<Enemy ID="2260101">
+		<NameID>226001</NameID>
+		<MinHeight>200</MinHeight>
+		<MaxHeight>200</MaxHeight>
+		<BookId>12260101</BookId>
+		<DropTable Level="0">
+			<DropItem Prob="1">2260001</DropItem>
+		</DropTable>
+	</Enemy>
+</EnemyUnitClassRoot>
