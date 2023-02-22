@@ -20,7 +20,7 @@
     <Desc>该书页骰子命中时将造成等同于骰子威力的伤害</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="AmpDmg">
-    <Desc>该书页骰子每命中一个目标便使下一个骰子造成的伤害和混乱伤害提升+50%</Desc>
+    <Desc>该书页骰子每命中一个目标便获得1层[骰子增幅]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="InfiniteLight">
     <Desc>[使用时] 使所有角色下三幕内每一幕开始时恢复所有的光芒</Desc>
@@ -95,8 +95,7 @@
     <Desc>[使用时] 获得4层[鲜血附魔]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BloodStun">
-    <Desc>[使用时] 摧毁本书页所有骰子并使目标从下一幕起陷入混乱持续2幕
-期间每一幕目标承受10点血量并使自己获得2层[鲜血附魔]</Desc>
+    <Desc>[使用时] 摧毁目标书页所有骰子并对目标下一幕施加2层[血归缠身]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="BloodStunLib">
     <Desc>[命中时] 对目标下一幕施加2层[血归缠身]</Desc>

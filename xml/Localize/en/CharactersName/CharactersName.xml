@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CharactersNameRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- 玛莉亚临光 -->
+	<Name ID="206001">Plastic Knight Szewczyk</Name>
+	<Name ID="206003">Left-hand Knight Tytus Topola</Name>
+	<Name ID="206002">Brasscrust Knight Olmer Ingra</Name>
+	<Name ID="206004">Corrupted Knight ???</Name>
+	<Name ID="206005">Withered Knight ???</Name>
+	<Name ID="206006">Blemishine Knight Maria Nearl</Name>
+	<Name ID="206007">Margeret Nearl</Name>
+	<!-- 长夜临光 -->
+	<Name ID="216001">The Candle Knight Viviana</Name>
+	<Name ID="216002">Lazurite Roy</Name>
+	<Name ID="216003">Lazurite Monique</Name>
+	<Name ID="216004">Armorless Union Cleanup Squad</Name>
+	<Name ID="216005">Armorless Union Third Squad</Name>
+	<Name ID="216006">Armorless Union Assassin</Name>
+	<Name ID="216007">Undertide Gloompincer</Name>
+	<Name ID="216008">Armorless Union Crossbowman</Name>
+	<Name ID="216009">Nightzmare Knight Tola</Name>
+	<Name ID="216011">The Blood Knight Dikaiopolis</Name>
+	<Name ID="216012">Bloodblade</Name>
+	<Name ID="216013">The Radiant Knight Margeret Nearl</Name>
+	<!-- 日暮寻路 -->
+	<Name ID="226001">Fomer Whiplash Knight Zofia</Name>
+</CharactersNameRoot>

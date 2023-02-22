@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PassiveDesc ID="2060000">
+		<Name>Pre-battle Preparation</Name> 
+		<Desc>At the start of each Act, increase all characters' Emotion Level to match the average Emotion Level of the more advantageous side</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060031">
+		<Name>Taunting</Name> 
+		<Desc>When attakcing the character, enemies' Dice lose -1 Power</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060032">
+		<Name>Up.Continue.</Name> 
+		<Desc>When making enemy Staggered, make them recover from Stagger and inflict them 1 Low Morale ("All Dice lose -X Power")</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060033">
+		<Name>Unrelenting</Name> 
+		<Desc>HP does not go below 1. If HP drops to 1 recover all health, Stagger Resist and Light at the start of next Scene.
+And since then gain 1 Strength and Endurance at the start of each Scene. (Activate once per Act)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060133">
+		<Name>Unrelenting</Name> 
+		<Desc>HP does not go below 1. If HP drops to 1 recover 40% of Max health and Max Stagger Resistat the start of next Scene.
+(Activate once per Act)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060034">
+		<Name>What a Waste of Time</Name> 
+		<Desc>If there exist an enemy with 3 Low Morale, the character will use a special Combat Page to terminate this duel.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060021">
+		<Name>Bloodthirst</Name> 
+		<Desc>If HP is more than 50% of Max HP, cost 5% of Max HP to make the next die gain +1 Power; Otherwise, recover die's Power when it lands a successful hit.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060022">
+		<Name>Obliterate</Name> 
+		<Desc>When winning a clash using a Offensive Die, inflict target Damage equal to half of the Die's Power (Once per Page)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060122">
+		<Name>Obliterate</Name> 
+		<Desc>When winning a clash using a Offensive Die with more than 50% of Max HP, inflict target Damage equal to half of the Die's Power (Once per Page)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060023">
+		<Name>Frenzy</Name> 
+		<Desc>When losing a clash using a Offensive Die, roll the die again.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060123">
+		<Name>Frenzy</Name> 
+		<Desc>When losing a clash using a Offensive Die with less than 50% of Max HP, roll the die again. (Once per Page)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060024">
+		<Name>Duel to Death</Name> 
+		<Desc>If hp drop to 25%, recover all Stagger Resist and use specail Combat Page "Fight to your Death"</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060011">
+		<Name>Latest Jack 2 Body Armor</Name> 
+		<Desc>At the start of each Scene, if the character is not Immobilized, Gain 2 Protection, Haste and Draw 1 Page.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060012">
+		<Name>Oversight for the Aesthetics</Name> 
+		<Desc>Become Staggered or Immobilized will remove all "Keeping Momentum" and "Keeping Momentum" and gain 2 Fragile</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060111">
+		<Name>Faulty Jack Model Armor</Name> 
+		<Desc>At the Start of each Scene, Gain 2 Protection, Haste and Draw 1 Page.
+After using 6 Pages become Immobilized for the next Scene.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060013">
+		<Name>Move and Shoot</Name> 
+		<Desc>Gain 1 "Keeping Momentum" upon rolling Offensive Dice
+Rolling Defensive Dice will use 1 Stack of "Keeping Momentum" to boost its Power by +1</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060014">
+		<Name>Catch Them off Guard</Name> 
+		<Desc>Gain 1 "Sudden Brake" upon rolling Defensive Dice
+Rolling Offensive Dice will use 1 Stack to boost its Power by +1</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060041">
+		<Name>Corrupting Haze</Name> 
+		<Desc>At the start of each Scene, all enemise take 4 Damage if the character is not Staggered</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060043">
+		<Name>Withering Pollution</Name> 
+		<Desc>At the start of each Scene, all enemise take 4 Stagger Damage if the character is not Staggered</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060042">
+		<Name>Bring all to Destruction</Name> 
+		<Desc>When landing a successful hit, inflict all enemies 4 Damage.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060044">
+		<Name>Spreading the Hex</Name> 
+		<Desc>When landing a successful hit, inflict 2 random enemies 4 Stagger Damage.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060045">
+		<Name>Corrupted body shall collapse</Name> 
+		<Desc>For each 3 Scene, Corrupted Knight and Withered Knight will use their special Combat Page in turn. Be prepared.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060046">
+		<Name>Withered mind shall dispearse</Name> 
+		<Desc>For each 3 Scene, Corrupted Knight and Withered Knight will use their special Combat Page in turn. Be prepared.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2061040">
+		<Name>Excutioner for General Chamber of Commerce</Name> 
+		<Desc>At the start of each Scene, if there exist a dead ally with "Excutioner for General Chamber of Commerce" gain +4 Speed Dice, draw 8 pages and make their cost become 0.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2061041">
+		<Name>Swift Wrap up</Name> 
+		<Desc>At the start of each Scene, Dice gain +1 Power if there exist a dead enemy and the allies outnumber the enemies</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2061050">
+		<Name>"Fear neither hardship nor darkness"</Name> 
+		<Desc>Recever 2 Stagger Resist whenever the character take damage</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060051">
+		<Name>Surging Brilliance</Name> 
+		<Desc>Landing a successful hit will recover 4 HP of other random ally.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060151">
+		<Name>Divine Avatar</Name> 
+		<Desc>Dice gain +1 Power; Landing a successful hit will inflict additional half of the Die's Damage to target and recover HP equal to the Die's Damage of other random ally.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060052">
+		<Name>Knight of Sword and Shield</Name> 
+		<Desc>After achieving a Clash win with Defensive Dice, add a Slash 4-4 Die to the end</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060053">
+		<Name>Pegasian Halo</Name> 
+		<Desc>At the Start of each Scene, recover 4 Hp and Stagger Resist of all allies</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060054">
+		<Name>Knight of Nearl Family</Name> 
+		<Desc>At the Start of each Scene, if the character have more than 3 Light store excessive Light as "Glow". On Use Page, recover 1 Light.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060056">
+		<Name>Deterring Radiance</Name> 
+		<Desc>After landing 5 successful hits, repond to one-sided attack with Guard 16-16 ([On Clash Win] Inflict Sleep next Scene)
+Can attack units affected by Sleep</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060057">
+		<Name>Pegasian's Radiance</Name> 
+		<Desc>If an ally with Hp lower than 50% of Max Hp, Add a copy of "Pegasian's Radiance" to Hand. (Once per Act)</Desc>
+	</PassiveDesc>
+</PassiveDescRoot>

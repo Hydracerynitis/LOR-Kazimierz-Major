@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <cardDescList>
+    <BattleCardDesc ID="2060301">
+      <LocalizedName>Childplay is Over</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060302">
+      <LocalizedName>Small Break</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061302">
+      <LocalizedName>Small Break</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060303">
+      <LocalizedName>Overwhelm</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061303">
+      <LocalizedName>Overwhelm</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060304">
+      <LocalizedName>Confrontation</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061304">
+      <LocalizedName>Confrontation</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060305">
+      <LocalizedName>Vanquish Diginities</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061305">
+      <LocalizedName>Vanquish Diginities</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060201">
+      <LocalizedName>Fight to your Death</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061201">
+      <LocalizedName>Fight to your Death</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060202">
+      <LocalizedName>Grinding Gears</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061202">
+      <LocalizedName>Grinding Gears</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060203">
+      <LocalizedName>Cracking Armor</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061203">
+      <LocalizedName>Cracking Armor</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060204">
+      <LocalizedName>Breaking Shields</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061204">
+      <LocalizedName>Breaking Shields</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060205">
+      <LocalizedName>Axe Whirlwind</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2061205">
+      <LocalizedName>Axe Whirlwind</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060101">
+      <LocalizedName>Plastic Tempo</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061101">
+      <LocalizedName>Plastic Tempo</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060102">
+      <LocalizedName>Kiting</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060103">
+      <LocalizedName>Breaking Stalemate</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060104">
+      <LocalizedName>Keeping Distance</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060105">
+      <LocalizedName>Quick Barage</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060401">
+      <LocalizedName>Crushing Flesh</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060403">
+      <LocalizedName>Complete Fracture</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061403">
+      <LocalizedName>Complete Fracture</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060404">
+      <LocalizedName>Prepare for Slaughter</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061404">
+      <LocalizedName>Prepare for Slaughter</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060405">
+      <LocalizedName>Cripple Strike</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060406">
+      <LocalizedName>Echo of Skull</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061406">
+      <LocalizedName>Echo of Skull</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060402">
+      <LocalizedName>Quelling Souls</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060407">
+      <LocalizedName>Execution Shot</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061407">
+      <LocalizedName>Execution Shot</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060408">
+      <LocalizedName>Focused Burst</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061408">
+      <LocalizedName>Focused Burst</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060409">
+      <LocalizedName>Hex Corruption</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060410">
+      <LocalizedName>Suprression</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060501">
+      <LocalizedName>Deterring Radiance</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061501">
+      <LocalizedName>Deterring Radiance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2060503">
+        <LocalizedName>Divine Avatar</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060504">
+      <LocalizedName>Breathing Room</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061504">
+      <LocalizedName>Breathing Room</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060505">
+      <LocalizedName>Improvisation</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060506">
+      <LocalizedName>Observe, Think, Overcome</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061506">
+      <LocalizedName>Observe, Think, Overcome</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060502">
+      <LocalizedName>Pegasian's Radiance</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061502">
+      <LocalizedName>Pegasian's Radiance</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060507">
+      <LocalizedName>Emergency Heal</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061507">
+      <LocalizedName>Emergency Heal</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060508">
+      <LocalizedName>Repentance</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061508">
+      <LocalizedName>Repentance</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060509">
+      <LocalizedName>Blinding Flash</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2061509">
+      <LocalizedName>Blinding Flash</LocalizedName>
+    </BattleCardDesc>
+	  <BattleCardDesc ID="2060510">
+      <LocalizedName>Barrier of Lights</LocalizedName>
+    </BattleCardDesc>
+ </cardDescList>
+</BattleCardDescRoot>

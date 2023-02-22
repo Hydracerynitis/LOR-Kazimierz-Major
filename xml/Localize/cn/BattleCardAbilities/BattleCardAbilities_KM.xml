@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <BattleCardAbility ID="aoeatk">
-    <Desc>[命中时] 对其他所有敌方单位造成等同于骰子的伤害</Desc>
-  </BattleCardAbility>
   <BattleCardAbility ID="FinalPush">
     <Desc>仅限对拥有3层[斗志低昂]的敌人使用
 [使用时] 目标每有一层[斗志低昂]该牌所有骰子威力+10</Desc>
@@ -73,13 +70,13 @@
     <Desc>[单方面攻击时] 自身获得1层[把握时机][迅敏动量]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="doubleAoeDmg">
-    <Desc>[命中时]对其他所有敌方单位造成相等伤害</Desc>
+    <Desc>该骰子会在命中时对其他所有敌方单位造成同等伤害</Desc>
   </BattleCardAbility>
     <BattleCardAbility ID="Other1SameBreak">
-    <Desc>[命中时]对随机其他1位造成等同于骰子的混乱伤害</Desc>
+    <Desc>该骰子会在命中时对随机其他1位敌人造成同等混乱伤害</Desc>
   </BattleCardAbility>
    <BattleCardAbility ID="Crippling">
-    <Desc>[命中时] 在下一幕减少目标一个速度骰</Desc>
+    <Desc>[命中时] 在下一幕封锁目标一个速度骰</Desc>
   </BattleCardAbility>
    <BattleCardAbility ID="disarm2pw">
     <Desc>[拼点胜利] 在下一幕对目标施加2层[破绽]</Desc>
@@ -91,10 +88,10 @@
     <Desc>[命中时]使下一个骰子命中时对目标施加1层[虚弱][破绽][缠绕]</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="LowpowerUp1">
-    <Desc>如果目标混乱抗性小于50%则该骰子威力+1</Desc>
+    <Desc>如果目标混乱抗性小于50%最大抗性则该骰子威力+1</Desc>
   </BattleCardAbility>
      <BattleCardAbility ID="Highbreak5">
-    <Desc>如果目标混乱抗性大于50%则该骰子混乱伤害+5</Desc>
+    <Desc>如果目标混乱抗性大于50%最大抗性则该骰子混乱伤害+5</Desc>
   </BattleCardAbility>
 	<BattleCardAbility ID="destroynextdice">
     <Desc>[命中时] 摧毁目标书页下一颗骰子</Desc>
@@ -104,15 +101,12 @@
   </BattleCardAbility>
   	<BattleCardAbility ID="SleepingLib">
     <Desc>[拼点胜利] 下一幕对目标施加1层沉睡
-使用者可攻击受承受的单位</Desc>
+使用者可攻击受影响的单位</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="Regenerate">
     <Desc>[使用时] 使所有友方单位在这一幕结束时恢复其10%的血量</Desc>
   </BattleCardAbility>
 	<BattleCardAbility ID="Blessing">
-    <Desc>[使用时] 为所有友方单位施加[天马祝福]，这一幕结束时每有一个[天马祝福]触发其效果则自己获得一层眩晕</Desc>
-  </BattleCardAbility>
-	<BattleCardAbility ID="BlessingLib">
     <Desc>[使用时] 为所有友方单位施加[天马祝福]，这一幕结束时每有一个[天马祝福]触发其效果则自己获得一层眩晕</Desc>
   </BattleCardAbility>
  	<BattleCardAbility ID="Avatar">

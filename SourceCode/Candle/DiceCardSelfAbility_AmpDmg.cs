@@ -7,6 +7,7 @@ namespace KazimierzMajor
 {
     public class DiceCardSelfAbility_AmpDmg : DiceCardSelfAbilityBase
     {
+        public override string[] Keywords => new string[] { "AmpDmg_Desc"};
         public override void OnSucceedAreaAttack(BattleUnitModel target)
         {
             base.OnSucceedAreaAttack(target);

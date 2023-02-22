@@ -2,7 +2,6 @@
 using System.Collections;
 using HarmonyLib;
 using System;
-using EmotionalFix;
 using LOR_DiceSystem;
 using static UnityEngine.EventSystems.EventTrigger;
 using System.Collections.Generic;

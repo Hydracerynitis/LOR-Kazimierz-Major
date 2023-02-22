@@ -2,49 +2,49 @@
 <BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<bookDescList>
 		<BookDesc BookID="2060007">
-			<BookName>玛嘉烈临光之页</BookName>
+			<BookName>Margaret Nearl's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2060006">
-			<BookName>玛莉亚临光之页</BookName>
+			<BookName>Maria Nearl's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2060005">
-			<BookName>凋零骑士之页</BookName>
+			<BookName>"Corrupted" Knight's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2060004">
-			<BookName>腐败骑士之页</BookName>
+			<BookName>"Withered" Knight's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2060003">
-			<BookName>泰特斯白杨之页</BookName>
+			<BookName>Tytus Topola's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2060002">
-			<BookName>奥尔默英格拉之页</BookName>
+			<BookName>Olmer Ingra's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2060001">
-			<BookName>瑟奇亚克之页</BookName>
+			<BookName>Szewczyk's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<localize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- 玛莉亚临光 -->
+	<text id="2060007">Book of Margaret Nearl</text>
+	<text id="2060006">Book of Blemishine Knight Maria Nearl</text>
+	<text id="2060005">Book of Withered Knight</text>
+	<text id="2060004">Book of Corrupted Knight</text>
+	<text id="2060003">Book of Left-hand Knight Tytus Topola</text>
+	<text id="2060002">Book of Brasscrust Knight Olmer Ingra</text>
+	<text id="2060001">Book of Plastic Knight Szewczyk</text>
+	<text id="2060000">Kazimierz Major Qualifier Invitation</text>
+	<!-- 长夜临光 -->
+	<text id="2160010">Book of the Blood Knight Dikaiopolis</text>
+	<text id="2160011">Book of the Radinat Knight Nearl</text>
+	<text id="2160003">Book of Nightzmare Knight Tola</text>
+	<text id="2160002">Armorless Union Battle Records</text>
+	<text id="2160001">Book of the Candle Knight Viviana</text>
+	<text id="2160000">Kazimierz Major Playoff Invitation</text>
+	<!-- 日暮寻路 -->
+	<text id="2260001">Book of Whiplash Knight </text>
+</localize>

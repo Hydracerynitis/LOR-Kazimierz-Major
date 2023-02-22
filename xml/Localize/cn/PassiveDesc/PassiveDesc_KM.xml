@@ -52,15 +52,15 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2060011">
 		<Name>崭新的Jack护甲</Name> 
-		<Desc> 回合开始时如果没有陷入混乱和眩晕提供2点守护和2点敏捷并且抽取一张牌</Desc>
+		<Desc>每一幕开始时如果没有陷入混乱和眩晕提供2点守护和2点敏捷并且抽取一张牌</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060012">
 		<Name>为了美观的牺牲</Name> 
-		<Desc>进入混乱或者眩晕时清空自身所有的迅捷动能和把握时机并获得2层易损</Desc>
+		<Desc>陷入混乱或者眩晕时清空自身所有的迅捷动能和把握时机并获得2层易损</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060111">
 		<Name>残次的Jack护甲</Name> 
-		<Desc>回合开始时获得2层守护敏捷并抽取一张牌
+		<Desc>每一幕开始时获得2层守护敏捷并抽取一张牌
 每使用6张牌后下一幕无法行动1幕</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060013">
@@ -89,11 +89,11 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2060045">
 		<Name>腐败的肉体不配在这站立</Name> 
-		<Desc>每三回合，腐败骑士和凋零骑士会交替使用他们的特殊战斗书页，做好准备</Desc>
+		<Desc>每三幕，腐败骑士和凋零骑士会交替使用他们的特殊战斗书页，做好准备</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060046">
 		<Name>凋零的思维理应消逝殆尽</Name> 
-		<Desc>每三回合，腐败骑士和凋零骑士会交替使用他们的特殊战斗书页，做好准备</Desc>
+		<Desc>每三幕，腐败骑士和凋零骑士会交替使用他们的特殊战斗书页，做好准备</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2061040">
 		<Name>商业联合的行刑官</Name> 
@@ -125,7 +125,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2060054">
 		<Name>临光长骑</Name> 
-		<Desc>回合开始时如果所拥有的光芒大于3将多余的光芒储存为光辉，使用牌时恢复一点光芒</Desc>
+		<Desc>每一幕开始时如果所拥有的光芒大于3将多余的光芒储存为光辉，使用牌时恢复一点光芒</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060056">
 		<Name>摄敌辉光</Name> 
@@ -133,6 +133,6 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2060057">
 		<Name>天马之耀</Name> 
-		<Desc>如果有友方单位血量低于50%，将一张天马之耀置入你的手牌（每局只会触发一次）</Desc>
+		<Desc>如果有友方单位血量低于50%，将一张天马之耀置入你的手牌(每舞台只会触发一次)</Desc>
 	</PassiveDesc>
 </PassiveDescRoot>

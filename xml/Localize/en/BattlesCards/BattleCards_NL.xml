@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <cardDescList>
+    <!--烛骑士-->
+    <BattleCardDesc ID="2160101">
+      <LocalizedName>Welcome with Sword</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160102">
+      <LocalizedName>Tango under Light</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160103">
+      <LocalizedName>Rumba on Edge</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160104">
+      <LocalizedName>Cha-cha-cha against Candle</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160105">
+      <LocalizedName>Jig Dance with Blade</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160106">
+      <LocalizedName>Lights Out</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160107">
+      <LocalizedName>Rapier to Heart</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160108">
+      <LocalizedName>Waltz Counter</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160109">
+      <LocalizedName>Candle's Shadow</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160110">
+      <LocalizedName>Calendula Blossom</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160111">
+      <LocalizedName>Ignite Candle Wick</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160112">
+      <LocalizedName>Candlelight</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160113">
+      <LocalizedName>Dazzle</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160114">
+      <LocalizedName>Bouquet</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160115">
+      <LocalizedName>Budding</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160116">
+      <LocalizedName>Glimmering Touch</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161101">
+      <LocalizedName>Welcome with Sword</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161102">
+      <LocalizedName>Tango under Candle</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161103">
+      <LocalizedName>Rumba on Edge</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161104">
+      <LocalizedName>Cha-cha-cha against Candle</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161105">
+      <LocalizedName>Jig Dance with Blade</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161106">
+      <LocalizedName>Candle's Shadow</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161107">
+      <LocalizedName>Calendula Blossom</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161108">
+      <LocalizedName>Ignite Candle Wick</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161109">
+      <LocalizedName>Candlelight</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161110">
+      <LocalizedName>Dazzle</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161111">
+      <LocalizedName>Bouquet</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161112">
+      <LocalizedName>Budding</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161113">
+      <LocalizedName>Call of Candles</LocalizedName>
+    </BattleCardDesc>
+    <!-- 无胄盟 -->
+    <BattleCardDesc ID="2160201">
+      <LocalizedName>Break their Leg</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160202">
+      <LocalizedName>Pierce their Flesh</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160203">
+      <LocalizedName>Brewing Malice</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160204">
+      <LocalizedName>Sudden Stab</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160205">
+      <LocalizedName>Devastating Pince</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160206">
+      <LocalizedName>Lock and Shoot</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161201">
+      <LocalizedName>Break their Leg</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161202">
+      <LocalizedName>Pierce their Flesh</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161203">
+      <LocalizedName>Brewing Malice</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161204">
+      <LocalizedName>Sudden Stab</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161205">
+      <LocalizedName>Devastating Pince</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161206">
+      <LocalizedName>Lock and Shoot</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161207">
+      <LocalizedName>Publish Bounty</LocalizedName>
+    </BattleCardDesc>
+    <!-- 逐魇骑士 -->
+    <BattleCardDesc ID="2160301">
+      <LocalizedName>Lone Khaganquest</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160302">
+      <LocalizedName>Clash in War</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160303">
+      <LocalizedName>Infecting Dread</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160304">
+      <LocalizedName>Halberd of Nightzmora</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160305">
+      <LocalizedName>Dominating Fear</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160306">
+      <LocalizedName>Nightmare Incursion</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160307">
+      <LocalizedName>Khagan's Excursion</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160308">
+      <LocalizedName>Drifting Flag</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160309">
+      <LocalizedName>Humming Horn</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161301">
+      <LocalizedName>Coalesce Fear</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161302">
+      <LocalizedName>Clash in War</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161303">
+      <LocalizedName>Dominating Fear</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161304">
+      <LocalizedName>Nightmare Incursion</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161305">
+      <LocalizedName>Drifting Flag</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161306">
+      <LocalizedName>Khagan's Excursion</LocalizedName>
+    </BattleCardDesc>
+    <!-- 血骑士 -->
+    <BattleCardDesc ID="2160401">
+      <LocalizedName>Axe Crush</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160402">
+      <LocalizedName>Handle Reserval</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160403">
+      <LocalizedName>Obliterate</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160404">
+      <LocalizedName>Blood Dance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160405">
+      <LocalizedName>Exsanguination</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160406">
+      <LocalizedName>Blood Blade</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161401">
+      <LocalizedName>Exsanguination</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161402">
+      <LocalizedName>Blood Blade</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161403">
+      <LocalizedName>Axe Crush</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161404">
+      <LocalizedName>Handle Reserval</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161405">
+      <LocalizedName>Obliterate</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161406">
+      <LocalizedName>Blood Dance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161407">
+      <LocalizedName>Blood Counter</LocalizedName>
+    </BattleCardDesc>
+    <!-- 血骑士 -->
+    <BattleCardDesc ID="2160501">
+      <LocalizedName>Blazing Sun's Obeisance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160502">
+      <LocalizedName>Deterrence</LocalizedName><!--Enough-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160503">
+      <LocalizedName>Allure</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160504">
+      <LocalizedName>Fourfold Swing</LocalizedName><!--Thy End is Now-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160505">
+      <LocalizedName>Direct Hits</LocalizedName><!--Prepare Thyself-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160506">
+      <LocalizedName>Charged Thrust</LocalizedName><!--Judgment-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160507">
+      <LocalizedName>Double Sweep</LocalizedName><!--勾拳下砸-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160508">
+      <LocalizedName>Radiant Strike</LocalizedName><!--Die-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160509">
+      <LocalizedName>Helm Splitter</LocalizedName><!--裂头劈投矛-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160510">
+      <LocalizedName>Tripple Slash</LocalizedName><!--三段连招-->
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160511">
+      <LocalizedName>Examining</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160512">
+      <LocalizedName>Sidestep</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160513">
+      <LocalizedName>Counter Attack</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160514">
+      <LocalizedName>Deflect</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160515">
+      <LocalizedName>Precise Guard</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2160516">
+      <LocalizedName>Reversal</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161501">
+      <LocalizedName>Memory of the Stance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161502">
+      <LocalizedName>Memory of the Stance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161503">
+      <LocalizedName>Memory of the Stance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161504">
+      <LocalizedName>Memory of the Stance</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2161505">
+      <LocalizedName>Memory of the Stance</LocalizedName>
+    </BattleCardDesc>
+ </cardDescList>
+</BattleCardDescRoot>

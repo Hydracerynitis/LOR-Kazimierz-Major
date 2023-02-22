@@ -7,7 +7,7 @@ using LOR_DiceSystem;
 using HarmonyLib;
 using System.Threading.Tasks;
 
-namespace EmotionalFix
+namespace KazimierzMajor
 {
     public class BattleVoidBehaviour
     {

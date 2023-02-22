@@ -4,7 +4,6 @@
 		<Name>耀阳颔首</Name>
 		<Artwork>Radiant1</Artwork>
 		<Rarity>Unique</Rarity>
-		<Option>Basic</Option>
 		<Spec Range="FarAreaEach" Cost="0" Affection="Team"/>
 		<Script>RadiantSpecial</Script>
 		<ScriptDesc></ScriptDesc>

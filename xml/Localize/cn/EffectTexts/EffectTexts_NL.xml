@@ -74,8 +74,12 @@
 			<Desc>每一幕开始时恢复所有的光芒,持续{0}幕</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="AmpDmg">
-			<Name>伤害提升</Name>
-			<Desc>下{0}个骰子提升+25%造成的伤害和混乱伤害</Desc>
+			<Name>骰子增幅</Name>
+			<Desc>下{0}个骰子提升+50%造成的伤害和混乱伤害</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="AmpDmg_Desc">
+			<Name>骰子增幅 X</Name>
+			<Desc>下X个骰子提升+50%造成的伤害和混乱伤害</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="SuckTarget">
 			<Name>金盏花开</Name>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<localize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<text id="ui_popup_getequippage">Gain {1} Key Pages - "{0}"</text>
+	<text id="ui_invitation_Mlynar">In all their last moments, They wished for a radiant light to come.
+He would be the Light in their darkness</text>
+</localize>

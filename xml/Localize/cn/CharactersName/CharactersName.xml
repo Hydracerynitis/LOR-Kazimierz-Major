@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <CharactersNameRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<!-- 玛莉亚临光 -->
-	<Name ID="206001">"塑料"骑士 瑟奇亚克</Name>
-	<Name ID="206003">"左手"骑士 泰特斯白杨</Name>
-	<Name ID="206002">"锈铜"骑士 奥海默英格拉</Name>
-	<Name ID="206004">"腐败"骑士 ???</Name>
-	<Name ID="206005">"凋零"骑士 ???</Name>
-	<Name ID="206006">"瑕光"骑士 玛莉亚临光</Name>
+	<Name ID="206001">塑料骑士 瑟奇亚克</Name>
+	<Name ID="206003">左手骑士 泰特斯白杨</Name>
+	<Name ID="206002">锈铜骑士 奥海默英格拉</Name>
+	<Name ID="206004">腐败骑士 ???</Name>
+	<Name ID="206005">凋零骑士 ???</Name>
+	<Name ID="206006">瑕光骑士 玛莉亚临光</Name>
 	<Name ID="206007">玛嘉烈临光</Name>
 	<!-- 长夜临光 -->
-	<Name ID="216001">"烛"骑士 薇薇安娜</Name>
+	<Name ID="216001">烛骑士 薇薇安娜</Name>
 	<Name ID="216002">青金大位 罗伊</Name>
 	<Name ID="216003">青金大位 莫妮克</Name>
 	<Name ID="216004">无胄盟 清扫小队</Name>
@@ -17,10 +17,10 @@
 	<Name ID="216006">无胄盟刺客</Name>
 	<Name ID="216007">暗潮钳兽</Name>
 	<Name ID="216008">无胄盟弩手</Name>
-	<Name ID="216009">"逐魇"骑士 拓拉</Name>
-	<Name ID="216011">"血"骑士 狄开俄波利斯</Name>
+	<Name ID="216009">逐魇骑士 拓拉</Name>
+	<Name ID="216011">血骑士 狄开俄波利斯</Name>
 	<Name ID="216012">凝血之刃</Name>
-	<Name ID="216013">"耀"骑士 玛嘉烈临光</Name>
+	<Name ID="216013">耀骑士 玛嘉烈临光</Name>
 	<!-- 日暮寻路 -->
-	<Name ID="226001">"鞭刃"前骑士 佐菲亚</Name>
+	<Name ID="226001">前鞭刃骑士 佐菲亚</Name>
 </CharactersNameRoot>

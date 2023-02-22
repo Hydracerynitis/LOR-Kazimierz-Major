@@ -2,84 +2,84 @@
 <BookDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<bookDescList>
 		<BookDesc BookID="2160001">
-			<BookName>烛骑士之页</BookName>
+			<BookName>Candle Knight's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160002">
-			<BookName>罗伊之页</BookName>
+			<BookName>Roy's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160003">
-			<BookName>莫妮克之页</BookName>
+			<BookName>Monique's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160004">
-			<BookName>清扫小队之页</BookName>
+			<BookName>A Cleanup Squad Memebr's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160005">
-			<BookName>第三小队之页</BookName>
+			<BookName>A Third Squad Member's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160006">
-			<BookName>无胄盟刺客之页</BookName>
+			<BookName>An Armorless Union Assassin's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160007">
-			<BookName>暗潮钳兽之页</BookName>
+			<BookName>An Undertide Gloompincer's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160008">
-			<BookName>无胄盟弩手之页</BookName>
+			<BookName>An Armorless Union Crossbowman's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160009">
-			<BookName>逐魇骑士之页</BookName>
+			<BookName>Nightzmora Knight's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160011">
-			<BookName>血骑士之页</BookName>
+			<BookName>Blood Knight's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160012">
-			<BookName>凝血剑刃之页</BookName>
+			<BookName>A BloodBlade's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>
 			<PassiveList />
 		</BookDesc>
 		<BookDesc BookID="2160013">
-			<BookName>耀骑士之页</BookName>
+			<BookName>Radiant Knight's Page</BookName>
 			<TextList>
 				<Desc></Desc>
 			</TextList>

@@ -13,7 +13,7 @@ namespace KazimierzMajor
         public override void OnReleaseBreak()
         {
             base.OnReleaseBreak();
-            owner.bufListDetail.AddBuf(new BattleUnitBuf_Shield() { stack = 5 });
+            owner.bufListDetail.AddBuf(new BattleUnitBuf_Shield() { stack = 10 });
         }
     }
 }

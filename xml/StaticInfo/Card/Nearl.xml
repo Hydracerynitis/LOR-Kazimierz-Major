@@ -154,7 +154,7 @@
 		<Option>OnlyPage</Option>
 		<Option>ExhaustOnUse</Option>
 		<Spec Range="Near" Cost="3"/>
-		<Script>BlessingLib</Script>
+		<Script>Blessing</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
 			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>

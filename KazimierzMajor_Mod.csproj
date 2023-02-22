@@ -248,7 +248,6 @@
     <Compile Include="SourceCode\Nearl\BattleUnitBuf_ChargeLight.cs" />
     <Compile Include="SourceCode\Nearl\BattleUnitBuf_Stunning.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_Blessing.cs" />
-    <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_BlessingLib.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_ChargeLightHeal.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_ChargeLightHealLib.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_ChargeLightPowerDown.cs" />

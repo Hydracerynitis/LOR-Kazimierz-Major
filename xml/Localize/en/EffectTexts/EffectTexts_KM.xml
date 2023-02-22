@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleEffectTextRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<effectTextList>
+		<BattleEffectText ID="ChargeLight">
+			<Name>Glow</Name>
+			<Desc>For each 3 Stacks, the cost of Pages is reduced by -1. Currently, the cost is reduced by -{0}</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Sleep">
+			<Name>Sleep</Name>
+			<Desc>Can not act, can only be attacked by Maria Nearl. The status lasts for {0} Scene</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blemishine_Ready">
+			<Name>Deterring Radiance</Name>
+			<Desc>Passive Deterring Radiance is actived</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blemishine_Not_Ready">
+			<Name>Deterring Radiance</Name>
+			<Desc>Passive Deterring Radiance require {0} successful hits to be activated</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Stunning">
+			<Name>Immobilized</Name>
+			<Desc>Can not act. The status lasts for {0} Scenes</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blessing">
+			<Name>Bless of Pegasian</Name>
+			<Desc>At the end of this Scene recover all Health and Stagger</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BlessingLib">
+			<Name>Bless of Pegasian</Name>
+			<Desc>At the end of this Scene recover half of Max Health and Max Stagger</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Depressed">
+			<Name>Low Morale</Name>
+			<Desc>The character's die lose -{0} Power </Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Monmentum">
+			<Name>Keeping Momentum</Name>
+			<Desc>Rolling Defensive Dice will use 1 Stack to boost its Power by +1</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Force">
+			<Name>Sudden Brake</Name>
+			<Desc>Rolling Offensive Dice will use 1 Stack to boost its Power by +1</Desc>
+		</BattleEffectText>
+	</effectTextList>
+</BattleEffectTextRoot>

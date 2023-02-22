@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PassiveDesc ID="2160000">
+		<Name>Pinnacle Duels</Name> 
+		<Desc>At the start of each Act, all librarians recover all health and Stagger Resist and their Emotion Levels rise by 5</Desc>
+	</PassiveDesc>
+	<!--烛骑士-->
+	<PassiveDesc ID="2160011">
+		<Name>Engulf Glow in Silence</Name> 
+		<Desc>If the character do not have maximun Light destroy at the start of battle, destroy the Combat Page with most cost set on Speed Dice of each enemies and recover Light equal to cost of all destroyed Combat Page.
+Combat Pages destroyed in this way will not return to Hand</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160012">
+		<Name>Lone Candle in small Attic</Name> 
+		<Desc>Can not recove Light normally. At the Start of each Scene, add new Pages to hand according to the character's current Light.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160013">
+		<Name>Protection from Candle Light</Name> 
+		<Desc>For each Light the character has at the start of each Scene, reduce incoming Damage and Stagger Damage by -3% for the duration of the Scene.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160111">
+		<Name>Engulf Glow in Silence</Name> 
+		<Desc>Can not recove Light normally; Can use powerful Exclusive Pages.
+Can appoint allies to destroy the Combat Page with most cost set on Speed Dice of them, the character will recover Light equal to cost of all destroyed Combat Page.</Desc>
+	</PassiveDesc>
+	<!--无胄盟-->
+	<PassiveDesc ID="2160021">
+		<Name>Lazurite Archery</Name> 
+		<Desc>On losing a clash with Offensive Dice, attack enemies with only 25% original Damage and Stagger Damage.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160022">
+		<Name>Fatal Snipe</Name> 
+		<Desc>Attacking enemies with more than 50% of their Max HP boost Die's Damage by half of Die's powerful</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160023">
+		<Name>Urban Headhunt</Name> 
+		<Desc>When the character's attack is redirected, inflict target with 1 Bounty.
+Other character attacking targets with Bounty will boost their Dice's Power by Bounty's stack</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160024">
+		<Name>Fully Focused</Name> 
+		<Desc>Attakcing same Enemy will make Dice on both Pages gain +2 Power</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160025">
+		<Name>No Interruption</Name> 
+		<Desc>When the character's attack is redirected, all Dice on the Page gain +2 Power</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160026">
+		<Name>Backstab</Name> 
+		<Desc>For each retained Dice in Counter Page, Offensive Dice's Natural Roll is increased by +4.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160027">
+		<Name>Fierce Pince</Name> 
+		<Desc>On one-sided attack, Deal +50% Stagger Damage. Prioritize enemies with lowest Stagger Resist.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160028">
+		<Name>Surprise Shots</Name> 
+		<Desc>On one side attack, Offensive Dice will only deal damage equal to their Power when they land successful hits.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160029">
+		<Name>Armorless Union Encirclement</Name> 
+		<Desc>There are 24 Armorless Union members participating in this Encirclement.
+All librarians recover all health and Stagger Resist and their Emotion Levels rise by 5.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160129">
+		<Name>Armorless Union Encirclement</Name> 
+		<Desc>There are 24 Armorless Union members participating in this Encirclement. {0} of them are in reinforcments.
+All librarians recover all health and Stagger Resist and their Emotion Levels rise by 5.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160121">
+		<Name>Lazurite Archery</Name> 
+		<Desc>On losing a clash with Offensive Dice, attack enemies with only 0% original Damage and Stagger Damage.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160123">
+		<Name>Urban Headhunt</Name> 
+		<Desc>The character can use "Publish Bounty" indefinitely ([On Start Battle] Inflict 1 [Bounty])
+Other character attacking targets with Bounty will boost their Dice's Power by Bounty's stack</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160124">
+		<Name>Fully Focused</Name> 
+		<Desc>Attakcing same 3nemy will make Dice on both Pages gain +1 Power</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160125">
+		<Name>No Interruption</Name> 
+		<Desc>After being targeted in an one-sided attack, Dice on next Page attacking the attacker will gain +2 Power</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160126">
+		<Name>Backstab</Name> 
+		<Desc>If there is a retained Dice in Counter Page, Offensive Dice gain +1 Power.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160127">
+		<Name>Fierce Pince</Name> 
+		<Desc>First Combat Page set on Speed Dice of the character gain [Preemptive]</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160128">
+		<Name>Surprise Shots</Name> 
+		<Desc>On one side attack, Offensive Dice will only deal damage equal to their Power when they land successful hits.</Desc>
+	</PassiveDesc>
+	<!--逐魇骑士-->
+	<PassiveDesc ID="2160031">
+		<Name>Coalescing Fear</Name> 
+		<Desc>A speed die with the lowest Speed becomes untargetable
+Combat Page set on the last speed die gain "Coalescing Fear", making it "Preemptive" and attacking all librarians.
+Librarians will use the non-Mass-Area-Attack Combat Page of most cost to clash with Coalescing Fear Page.
+HP does not go below 500. If HP drops to 500 recover all Stagger Resist and enter next phase.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160032">
+		<Name>Blade of Khagan</Name> 
+		<Desc>Summon 4 clones of self. Self and clones shares HP and Status effect.
+>Cannot check or redirect all allies' target. Reduce incomming Damage and Stagger Damage from Mass Attack Pages by 90%</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160132">
+		<Name>Blade of Khagan</Name> 
+		<Desc>Summon 4 clones of self. Self and clones shares HP and Status effect.
+>Cannot check or redirect all allies' target. Reduce incomming Damage and Stagger Damage from Mass Attack Pages by 90%</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160033">
+		<Name>"The Last Kheshig"</Name> 
+		<Desc>Inflict all enemies with "Repressed Horror"
+(Dice's Maximum Roll is reduced by -3 and its Damage and Stagger Damage is reduced by -50%)</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160131">
+		<Name>Coalescing Fear</Name> 
+		<Desc>Can switch between playing normal Combat Pages and playing Coalescing Fear Combat Pages.
+Coalescing Fear Combat Pages' cost is increased by 4 but gain Preemptive and attacking all enemies.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160232">
+		<Name>Khagan's Excursion</Name> 
+		<Desc>For every 50 Damage dealt, at the start of each Scene all allies gain 2 Damage Up</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160133">
+		<Name>"The Last Kheshig"</Name> 
+		<Desc>Inflict all enemies with "Repressed Horror"
+(Dice's Damage and Stagger Damage is reduced by -25%)</Desc>
+	</PassiveDesc>
+	<!--血骑士-->
+	<PassiveDesc ID="2160041">
+		<Name>Blood Engravement</Name> 
+		<Desc>For each 10 HP lost gain 1 "Blood Enchancement". Each "Blood Enchancement" will boost next Offensive Die by +20%.
+Landing a successful hit will clear all stacks of "Blood Enchancement"</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160042">
+		<Name>Exsanguination</Name> 
+		<Desc>Use specail Combat Page "Exsanguination", making target remaining Staggered for next 2 Scene, during which takes 10 Damage and give self 2 Blood Enchancement
+Prioritize enemies that is not Staggered.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160043">
+		<Name>Blood Flood</Name> 
+		<Desc>If not Staggered, use Exsanguination to the enemies that have dealt more than 50 Damage in one Scene to the character.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160044">
+		<Name>Blood Armor</Name> 
+		<Desc>On being targeted by an one-sided attack, change Damage Resistance and Stagger Resistance to Resist.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160045">
+		<Name>Blood Dance</Name> 
+		<Desc>HP can not go below 1. If HP drops to 1 then recover health equal to 50% of Max HP and all Stagger Resist.
+For the next 3 Scene, become invincible and untargetable and summon 4 Bloodblade.
+At the end of third Scene, if the HP does not reach 100% of Max HP then remove Passive "Blood Armor" and "Blood Dance" and gain new Passive "Blood Blade"</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160046">
+		<Name>Blood Blade</Name> 
+		<Desc>Offensive Dice deal +25% more Damage; at the start of each Scene, summon 2 Bloodblade 
+At start of battle gain Slash Counter Die (10-16).</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160047">
+		<Name>Blood Sacrifice</Name> 
+		<Desc>At the end of the Scene, destroy itself and recover The Blood Knight health eqaul to 10% of Max HP.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160048">
+		<Name>Blood Creature</Name> 
+		<Desc>On being targeted by a mass attack, change Damage Resistance and Stagger Resistance to Endure.
+Prioritize enemies that is not Staggered.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160141">
+		<Name>Blood Engravement</Name> 
+		<Desc>For each 7 HP lost gain 1 "Blood Enchancement". Each "Blood Enchancement" will boost next Offensive Die by +20%.
+Landing a successful hit will clear all stacks of "Blood Enchancement"</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160142">
+		<Name>Blood Flood</Name> 
+		<Desc>>If not Staggered, use Slash Die (10-16) to the enemies that have dealt more than 20 Damage in one Scene to the character.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160143">
+		<Name>Great Weapon Mastery</Name> 
+		<Desc>Rolling an Offensive with at least 10 Natural Roll will recover 1 Light and make this Die deal +20% more Damage.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160144">
+		<Name>Blood Sacrifice</Name> 
+		<Desc>If this Key Page is attributed to The Blood Knight's Page, shuffle "Blood Dance" to its deck at the start of each Act.
+([On Play] Recover health equal to 15% of Max HP and draw 1 Page)</Desc>
+	</PassiveDesc>
+	<!--耀骑士-->
+	<PassiveDesc ID="2160051">
+		<Name>Fear neither hardship nor darkness</Name> <!--命中时恢复15点混乱抗性.被击中时恢复10点混乱抗性.-->
+		<Desc>Landing a successful hit will recover 20 Stagger Resist. Activate a "Parry" will recover all Stagger Resist.
+Do not change Damage Resistance when Staggered.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160052">
+		<Name>Noble Principles</Name> 
+		<Desc>All Dice's Power is not influenced by any effect</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160053">
+		<Name>The Radiant Knight’s Prowess</Name> 
+		<Desc>At the start of each Scene, a random Die of all Combat Pages will gain a "Parry" ability against random Offensive type.
+(clashing with the correct Offensive type will block the Offensive Die and destroy target's next die).</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160054">
+		<Name>Flaming Edge</Name> 
+		<Desc>Landing successful hits with Mass Attack will reduce target's Dice's minimun Roll by -3.
+If the Dice's Power is more than 20 then make target discard all Pages in their hand.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160055">
+		<Name>Daybreak</Name> 
+		<Desc>Landing successful hits with Melee Offensive Dice will ignore target's any Damage Reduction Effect.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160056">
+		<Name>Night-scouring Gleam</Name> 
+		<Desc>At the start of each Scene, if the character is not Staggered gain 20 Shileds (Each stack block 1 instance of Damage this Scene)
+When the character has Shield Damage and Stagger Damage of Offensive Dice is increased by +50%.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160151">
+		<Name>Fear neither hardship nor darkness</Name>
+		<Desc>Landing a successful hit will recover 5 Stagger Resist.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160152">
+		<Name>The Radiant Sword Stance</Name> 
+		<Desc>Increasing Emotion Level will gain a copy of "Memory of the Stance" ([On Play] Replace high cost Page in hand with The Radiant Knight's Combat Pages)
+"Memory of the Stance" obtained from high Emotion Level will give Pages with better quality</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160153">
+		<Name>The Radiant Knight’s Prowess</Name>
+		<Desc>Can block an attack whose dice value is at least 15 once per 3 Scene.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2160154">
+		<Name>Night-scouring Gleam</Name> 
+		<Desc>At the start of each Act gain 10 Shield (Each stack block 1 instance of Damage)
+Recover from Staggered will also gain 10 Shield.</Desc>
+	</PassiveDesc>
+</PassiveDescRoot>

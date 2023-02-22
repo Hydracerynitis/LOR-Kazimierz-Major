@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 烛骑士 -->
+  <BattleCardAbility ID="DrainLight2">
+    <Desc>[On Hit] Drain 2 Light from target</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="pwNextPower3">
+    <Desc>[On Clash Win] Add +3 Power to next die</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="SplitShot">
+    <Desc>This page is used against another additional enemy.</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="TripleHit">
+    <Desc>[On Hit] The Die attack target two more times</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="DoubleHit">
+    <Desc>[On Hit] If previous Die land a successful hit on target, the Die will attack target one more time.</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="TrueDamage">
+    <Desc>Dice on this Page will only deal damage equal to their Power when they land successful hits</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="AmpDmg">
+    <Desc>For each enemies dice on this Page have landed a successful hit gain 1 [Amplified Dice]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="InfiniteLight">
+    <Desc>[On Use] For next three Scene, all characters recover all Lights at the Start of each Scene</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="FlowerBlossom">
+    <Desc>[On Hit] Attack target with a Slash Die [Roll: 12-16] three times</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="FlowerBlossomLib">
+    <Desc>[On Hit] Attack target with a Slash Die [Roll: 5-9] three times</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ApplySuckTarget">
+    <Desc>[On Play] Appoint target ally to be [Engulf Glow in Silence]'s targets;</Desc>
+    <Desc>At the start of Battle, destroy the Combat Page with most cost set on Speed Dice of targets and recover Light equal to cost of all destroyed Combat Page.</Desc>
+  </BattleCardAbility>
+  <!--无胄盟-->
+  <BattleCardAbility ID="Corrosion1Atk">
+    <Desc>[On Hit] Inflict 1 [Corrosion]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Corrosion3Atk">
+    <Desc>[On Hit] Inflict 3 [Corrosion]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="LateAttack">
+    <Desc>[Reactive]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="OneSideFastAttack">
+    <Desc>Become [Preemptive] when One-side Attack</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BackStab">
+    <Desc>For each retained Dice in Counter Page gain +2 Power</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="FastAttackPowerUp">
+    <Desc>[On Use] If the Page is [Preemptive], all Dice on the Page gain +2 Power</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BountyPublish">
+    <Desc>[On Start Battle] Inflict 1 [Bounty]</Desc>
+  </BattleCardAbility>
+  <!--逐魇骑士-->
+  <BattleCardAbility ID="fearness1">
+    <Desc>[On Use] If this Page has [Coalescing Fear], all Dice on this Page gain +2 Power</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="fearness2">
+    <Desc>[On Use] If this Page has [Coalescing Fear], Gain a Slash Die (5~9) that comes first</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="fearness3">
+    <Desc>[On Start Battle] If this Page has [Coalescing Fear], [Repressed Horror] reduce enemies' Damage and Stagger Damage by -100% instead for the duration of the Scene.</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="fearness4">
+    <Desc>[On Start Battle] Reduce Damage and Stagger Damage of all its targets by -25% for the duration of this Scene.</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="breakDamage150">
+    <Desc>The Die deal +50% more Stagger Damage</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="targetPower_2">
+    <Desc>[On Clash Win] Reduce remaining Dice's Power on target's Page by -2</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kehan1">
+    <Desc>[On Start Battle] gain 3 [Damage Up]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kehan1_p">
+    <Desc>[On Start Battle] All ally gain 3 [Damage Up]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kehan2">
+    <Desc>[On Start Battle] gain 2 [Strength] and 2 [Endurance]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="KhanStance">
+    <Desc>[On Play] Switch all Combat Pages to be its [Coalescing Fear] variant</Desc>
+  </BattleCardAbility>
+  <!--血骑士-->
+  <BattleCardAbility ID="blood2">
+    <Desc>[On Use] Gain 2 [Blood Enchancement]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="blood4">
+    <Desc>[On Use] Gain 4 [Blood Enchancement]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodStun">
+    <Desc>[On Use] Destroy all Dice on target's Pages and inflict 2 [Exsanguination] next Scene</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodStunLib">
+    <Desc>[On Hit] Inflict 2 [Exsanguination] next Scene</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="FastAttack">
+    <Desc>[Preemptive]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="BloodHeal">
+    <Desc>[On Play] Recover health equal to 15% of Max HP and draw 1 Page</Desc>
+  </BattleCardAbility>
+  <!--耀骑士-->
+  <BattleCardAbility ID="Discard1Atk">
+    <Desc>[On Hit] target randomly discards 1 Page in hand</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="PLNerfLast">
+    <Desc>[On Clash Lose] Reduce Natural Roll of last die on this page by -9</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RepeatBelow50">
+    <Desc>Repeat this die once if health is lower than 50% Mas HP</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ObserveRollMax">
+    <Desc>If target fail to land a successful hit, last die on this Page will roll its maximun value</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RecoverNDamageBreak">
+    <Desc>[On Hit] Inflict 5 Stagger Damage and recover 5 Stagger Resist</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="PWBoostDmg">
+    <Desc>[On Clash Win] For each differnce between Power of both Dice boost Damage of next Die on this Page by +4</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryLate">
+    <Desc>[Reactive] When other Pages activate [Parry], destroy this Page and add its Die to that Page</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryBelow50">
+    <Desc>If health is lower than 50% Mas HP, this die will gain additional [Parry]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryGuaran">
+    <Desc>This Die will always gain [Parry]. Activate [Parry] will repeat this die</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryPayback">
+    <Desc>Activate [Parry] will inflict Damage and Stagger Damage equal to the die's Power</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryAll">
+    <Desc>[Parry] on this page will activate against all types of Offensive Dice</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="OnlyOneSide">
+    <Desc>Only Attacking enemies that tries to perform one-sided attack</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RadiantSum">
+    <Desc>[Mass Attack - Summation] Only attack Primary Target</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="RadiantSingle">
+    <Desc>[Mass Attack - Individual] Only attack Subtarget</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryNone">
+    <Desc>[Parry-Offense]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParrySlash">
+    <Desc>[Parry-Slash]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryHit">
+    <Desc>[Parry-Blunt]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryPenetrate">
+    <Desc>[Parry-Pierce]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ReplaceRadiant1">
+    <Desc>[On Play] Remove a random Page of cost 2 in Hand and add one of The Radiant Knight's Hardcover Combat Page to Hand</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ReplaceRadiant2">
+    <Desc>[On Play] Remove a random Page of cost 3 in Hand and add one of The Radiant Knight's Limited Combat Page to Hand</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ReplaceRadiant3">
+    <Desc>[On Play] Remove a random Page of cost 3 in Hand and add one of The Radiant Knight's Limited Combat Page to Hand, and shuffle Blazing Sun's Obeisance to deck</Desc>
+  </BattleCardAbility>
+</BattleCardAbilityDescRoot>

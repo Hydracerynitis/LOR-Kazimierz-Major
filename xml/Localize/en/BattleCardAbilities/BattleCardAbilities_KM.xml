@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BattleCardAbility ID="FinalPush">
+    <Desc>Can only attack enemies with at least 3 [Low Morale]
+[On Use] for each [Low Morale] the target possess, all Dice on this Page gain +10 Power</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="break4atk">
+    <Desc>[On Hit] Inflict 4 Stagger Damage</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="break5pw">
+    <Desc>[On Clash Win] Inflict 5 Stagger Damage</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="break4pw">
+    <Desc>[On Clash Win] Inflict 4 Stagger Damage</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Allbreak4pw">
+    <Desc>[On Use] All Dice on this Page gain "[On Clash Win] Inflict 4 Stagger Damage"</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Duel">
+    <Desc>[On Use] All Dice on this Page gain "[On Clash Win] Inflict 4 Stagger Damage"
+and  "[On Clash Lose] Inflict self 2 Stagger Damage"</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="drawCard2">
+    <Desc>[On Use] Draw 2 Pages</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="powerUp2targetDfn">
+    <Desc>The die gain +2 Power if target's die is Defensive Dice</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="powerUp1thisRoundenergy2">
+    <Desc>[Combat Start] Gain 1 "Power Up" this Scene</Desc>
+	  <Desc>[On Use] Recover 2 Light</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="powerUp1thisRound">
+    <Desc>[Combat Start] Gain 1 "Power Up" this Scene</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="tag3hp10pc">
+    <Desc>[In a Clash] If all Dice on this Page land successful hits, inflict Damage equals to 10% of targets' Max Hp</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="tag3hp10pcLib">
+    <Desc>[In a Clash] If all Dice on this Page land successful hits, inflict Damage equals to 10% of targets' Max Hp (Max. 24)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="InfiniteRepeat">
+    <Desc>Repeat this Die until it lands an one-sided hits
+[Dragging out the fight is ill-advised]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Critical">
+    <Desc>Can only be used when under 25% Max Hp</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Tempo">
+    <Desc>[On Use] Gain 3 [Keeping Momentum] and [Sudden Brake]; Jack 2 Body Armor will [Overheat] in the next Scene</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="TempoLib">
+    <Desc>[On Use] Gain 2 [Keeping Momentum] and [Sudden Brake]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="MonmentumReplicate">
+    <Desc>When clashing with non-Counter Dice, use 1 stack of [Keeping Momentum] to replicate a Pierce 4-10 Die (At most 5 times)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ForceReplicate">
+    <Desc>When clashing with non-Counter Dice, use 1 stack of [Sudden Brake] to replicate a Evade 4-10 Die (At most 5 times)</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="BothUse1power1">
+    <Desc>[On Use] Use 1 [Keeping Momentum] and [Sudden Brake] to boost all Dice on this Page by +1</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="Force2clash">
+    <Desc>[On Clash Win] Gain 2 [Keeping Momentum]</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="Monmentum2atk">
+    <Desc>[On Hit]  Gain 2 [Sudden Brake]</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="OneSideForceMomemtem">
+    <Desc>[On One-sided Attack] Gain 1 [Keeping Momentum] and [Sudden Brake]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="doubleAoeDmg">
+    <Desc>The die will inflict Damages to other enemies when it lands a successful hit</Desc>
+  </BattleCardAbility>
+    <BattleCardAbility ID="Other1SameBreak">
+    <Desc>The die will inflict Stagger Damage to a random other enemy when it lands a successful hit</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="Crippling">
+    <Desc>[On Hit] one of Target's Speed dice become unusable in the next Scene</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="disarm2pw">
+    <Desc>[On Clash Win] Inflict 2 [Disarm] in the next Scene</Desc>
+  </BattleCardAbility>
+   <BattleCardAbility ID="disarm1pw">
+    <Desc>[On Clash Win] Inflict 1 [Disarm] in the next Scene</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="handicap">
+    <Desc>[On Hit] Inflict 1 [Feeble] [Disarm] [Bind] when next Die lands successful hit</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="LowpowerUp1">
+    <Desc>Gain +1 Power when target's Stagger Resist is less than 50% of its Max Stagger Resist</Desc>
+  </BattleCardAbility>
+     <BattleCardAbility ID="Highbreak5">
+    <Desc>Boost outgoing Stagger Damage by +5 when target's Stagger Resist is more than 50% of its Max Stagger Resist</Desc>
+  </BattleCardAbility>
+	<BattleCardAbility ID="destroynextdice">
+    <Desc>[On Hit] Destroy the target's next Die</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="Sleeping">
+    <Desc>[On Clash Win] Inflict 1 "Sleep" to target in the next Scene;
+All allies recover 15% of their Max Hp at the end of this Scene</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="SleepingLib">
+    <Desc>[On Clash Win] Inflict 1 "Sleep" to target in the next Scene;
+User of this Page can attack affected target</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="Regenerate">
+    <Desc>[On Use] All allies recover 10% of their Max Hp at the end of this Scene</Desc>
+  </BattleCardAbility>
+	<BattleCardAbility ID="Blessing">
+    <Desc>[On Use] All allies gain [Bless of Pegasian]; For each [Bless of Pegasian] activated its effects, gain 1 "Immobolized"</Desc>
+  </BattleCardAbility>
+ 	<BattleCardAbility ID="Avatar">
+    <Desc>Can only be used at Emotion Level 3 and above
+[On Use] Replace passive [Surging Brilliance] with [Divine Avatar]</Desc>
+  </BattleCardAbility>
+  	<BattleCardAbility ID="Improvise">
+    <Desc>In an one-side attack, Defensive Dice on this Page will be transformed to Offensive Dice with -2 Natural Roll.</Desc>
+  </BattleCardAbility>
+   	<BattleCardAbility ID="recoverBreak5pw">
+    <Desc>[On Clash Win] Recover 5 Stagger Resist</Desc>
+  </BattleCardAbility>
+    	<BattleCardAbility ID="powerUp1Last">
+    <Desc>[On Clash Win] Last Die on this Page gain +1 Power</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightHeal">
+    <Desc>[On Use] Draw 2 Page
+If has more than 6 stacks of [Glow], Use 2 [Glow] to recover 10 HP of ally with lowest health </Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightHealLib">
+    <Desc>[On Use] Draw 1 Page
+If has more than 6 stacks of [Glow], Use 2 [Glow] to recover 5 HP of ally with lowest health</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightPowerUp">
+    <Desc>[On Use] If has more than 6 stacks of [Glow], Use 2 [Glow] to boost Power of all Dice of this Page by +1</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightPowerDown">
+    <Desc>[On Use] If has more than 6 stacks of [Glow], Use 2 [Glow] to reduce Maximun Roll of all Dice of opponent's Page by -2</Desc>
+  </BattleCardAbility>
+     	<BattleCardAbility ID="ChargeLightProtection">
+    <Desc>[On Start Battle] If has more than 6 stacks of [Glow], Use 2 [Glow] to give ally with lowest health 2 [Protection] [Stagger Protection]</Desc>
+  </BattleCardAbility>
+</BattleCardAbilityDescRoot>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleEffectTextRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<effectTextList>
+		<BattleEffectText ID="Blood">
+			<Name>Blood Enchancement</Name>
+			<Desc>Damage of Offensive Dice is increased by +{0}%
+Clear all stacks when landing a successful hit.</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BloodStun">
+			<Name>Exsanguination</Name>
+			<Desc>At the start fo each Scene, Become Staggered, take 10 Damage and make the Blood Kinght gain 2 Blood Enchancement.
+This status lasts {0} Scene.</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BloodStunLib">
+			<Name>Exsanguination</Name>
+			<Desc>One speed die become unusable.At the start fo each Scene, take 10 Damage and make the Blood Kinght gain 2 Blood Enchancement.
+This status lasts {0} Scene.</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BloodStunDesc">
+			<Name>Exsanguination X</Name>
+			<Desc>One speed die become unusable.At the start fo each Scene, take 10 Damage and make the Blood Kinght gain 2 Blood Enchancement.
+This status lasts 2 Scene.</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Bounty">
+			<Name>Bounty</Name>
+			<Desc>Dice of Non-Roy character gain +{0} Power when attacking the character</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="BountyLib">
+			<Name>Bounty</Name>
+			<Desc>Dice of Non-Roy character gain +{0} Power when attacking the character, remove all stacks at the end of each Scene.</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="LateAttack">
+			<Name>Reactive</Name>
+			<Desc>The Page and its clashing Page will be used at last</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="FastAttack">
+			<Name>Preemptive</Name>
+			<Desc>The Page and its clashing Page will be used at first</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Corrosion">
+			<Name>Corrosion</Name>
+			<Desc>If stacks reach 4, take {0} Damage and inflict the character with 2 Fragile this Scene and next Scene.
+For each stack of Fragile, increase the Damage by 2</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Fearness">
+			<Name>Repressed Horror</Name>
+			<Desc>Dice's Maximum Value is reduced by -{0} and their Damage and Stagger Damage is reduced by -{1}%</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="KhanStance">
+			<Name>Coalescing Fear</Name>
+			<Desc>All Pages' cost is increase by 4 but gain Preemptive and attack all enemies</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="Blind">
+			<Name>Blinded by Radiance</Name>
+			<Desc>All Dice's minimun roll is reduced by -3 for this Scene</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="RadiantShield">
+			<Name>Shield</Name>
+			<Desc>Can block {0} instances of Damage this Scene</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="RadiantShieldLib">
+			<Name>Shield</Name>
+			<Desc>Can block {0} instances of Damage</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="TargetIndicator">
+			<Name>Blazing Sun Destination</Name>
+			<Desc>Becomes Primary Target of "Blazing Sun's Obeisance"</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="CounterReady">
+			<Name>The Radiant Knight’s Prowess</Name>
+			<Desc>Can block Offensive die with at least 15 Power</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="InifiniteLight">
+			<Name>Light Overcharge</Name>
+			<Desc>At the start of each Scene, recover all Light. The status last {0} Scenes.</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="AmpDmg">
+			<Name>Amplified Dice</Name>
+			<Desc>Increase next {0} Dice's Damage and Stagger Damage by +50%</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="AmpDmg_Desc">
+			<Name>Amplified Dice X</Name>
+			<Desc>Increase next X Dice's Damage and Stagger Damage by +50%</Desc>
+		</BattleEffectText>
+		<BattleEffectText ID="SuckTarget">
+			<Name>Calendula Blossom</Name>
+			<Desc>At the start of Battlem destroy the Combat Page with most cost set on the Speed Dice, ally "Candle" Knight will recover Light equal to cost of all destroyed Combat Page.</Desc>
+		</BattleEffectText>
+	</effectTextList>
+</BattleEffectTextRoot>
