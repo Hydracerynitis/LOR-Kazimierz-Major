@@ -31,7 +31,7 @@
 		</BattleEffectText>
 		<BattleEffectText ID="Depressed">
 			<Name>斗志低昂</Name>
-			<Desc>骰子威力减少{0}点</Desc>
+			<Desc>骰子威力减少{0}点,混乱抗性{1}%</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="Monmentum">
 			<Name>迅敏动量</Name>

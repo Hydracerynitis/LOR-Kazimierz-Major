@@ -2,7 +2,7 @@
 <PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<PassiveDesc ID="2160000">
 		<Name>巅峰对决</Name> 
-		<Desc>舞台开启时回复所有司书血量和混乱抗性并且情感等级提升至5</Desc>
+		<Desc>舞台开启时回复所有司书血量和混乱抗性并且情感等级提升至5,并抽取书页至手牌上限</Desc>
 	</PassiveDesc>
 	<!--烛骑士-->
 	<PassiveDesc ID="2160011">
@@ -184,7 +184,7 @@
 	</PassiveDesc>
 	<!--耀骑士-->
 	<PassiveDesc ID="2160051">
-		<Name>不畏苦暗</Name> <!--命中时恢复15点混乱抗性.被击中时恢复10点混乱抗性.-->
+		<Name>不畏苦暗</Name> 
 		<Desc>命中时恢复20点混乱抗性.若触发了"看破"效果则恢复所有混乱抗性.
 陷入混乱时不改变伤害抗性.</Desc>
 	</PassiveDesc>
@@ -203,7 +203,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160055">
 		<Name>破晓</Name> 
-		<Desc>近战进攻骰造成伤害时无视目标任何减伤.</Desc>
+		<Desc>近战进攻骰造成伤害时无视目标守护以及其他类似的减伤.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160056">
 		<Name>逐夜烁光</Name> 
@@ -221,7 +221,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160153">
 		<Name>耀骑士的技巧</Name>
-		<Desc>被骰子点数不低于15的进攻骰攻击会无效化该骰子,这个被动每3幕最多触发一次.</Desc>
+		<Desc>被骰子点数不低于10的进攻骰攻击会无效化该骰子,这个被动每3幕最多触发一次.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160154">
 		<Name>逐夜烁光</Name> 

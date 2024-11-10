@@ -91,7 +91,7 @@ namespace KazimierzMajor
 
         public override void Start()
         {
-            this.Main = Instantiate<GameObject>(KazimierInitializer.assetBundle["耀阳颔首"].LoadAsset<GameObject>("耀阳颔首"));
+            this.Main = Instantiate(KazimierInitializer.assetBundle["耀阳颔首"].LoadAsset<GameObject>("耀阳颔首1"));
             this.Main.transform.parent = this._selfTransform;
             this.Main.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
             this.Main.layer = 8;
@@ -106,9 +106,9 @@ namespace KazimierzMajor
                         componentsInChildren[index].gameObject.layer = 8;
                 }
             }
-            if (!this.atkdir.Equals((object)Direction.RIGHT))
+            if (!atkdir.Equals(Direction.LEFT))
                 return;
-            this.Main.transform.Rotate(Vector3.up, 180f);
+            Main.transform.Rotate(Vector3.up, 180f);
         }
 
         public override void Update()

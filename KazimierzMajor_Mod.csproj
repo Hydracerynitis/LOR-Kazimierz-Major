@@ -136,7 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SourceCode\BattleStartCinematic.cs" />
-    <Compile Include="SourceCode\CandleHP.cs" />
     <Compile Include="SourceCode\Candle\BattleVoidBehaviour.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_FlowerBlossomLib.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_FlowerBlossom.cs" />
@@ -150,7 +149,12 @@
     <Compile Include="SourceCode\Candle\DiceCardSelfAbility_SplitShot.cs" />
     <Compile Include="SourceCode\Candle\PassiveAbility_2160111.cs" />
     <Compile Include="SourceCode\Candle\PassiveAbility_2160013.cs" />
-    <Compile Include="SourceCode\NightmareHp.cs" />
+    <Compile Include="SourceCode\HarmonyPatch\FastLateAttackHP.cs" />
+    <Compile Include="SourceCode\HarmonyPatch\MaxLight20HP.cs" />
+    <Compile Include="SourceCode\HarmonyPatch\NightmareClashHP.cs" />
+    <Compile Include="SourceCode\HarmonyPatch\NightmareUpdateHP.cs" />
+    <Compile Include="SourceCode\HarmonyPatch\ParryHP.cs" />
+    <Compile Include="SourceCode\HarmonyPatch\RadiantAoeHP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SourceCode\ArmorLess\BattleUnitBuf_Corrosion.cs" />
     <Compile Include="SourceCode\ArmorLess\DiceCardAbility_BackStab.cs" />
@@ -230,7 +234,6 @@
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060041.cs" />
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060042.cs" />
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060045.cs" />
-    <Compile Include="SourceCode\FastLateAttack.cs" />
     <Compile Include="SourceCode\KazimierInitializer.cs" />
     <Compile Include="SourceCode\Left-Handed\BattleUnitBuf_Depressed.cs" />
     <Compile Include="SourceCode\Left-Handed\DiceCardAbility_break2pl.cs" />
@@ -275,6 +278,7 @@
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160031.cs" />
     <Compile Include="SourceCode\NightMare\PassiveAbility_2160033.cs" />
     <Compile Include="SourceCode\NightMare\DiceCardAbility_targetPower_2.cs" />
+    <Compile Include="SourceCode\PassiveAbility_2060002.cs" />
     <Compile Include="SourceCode\PassiveAbility_2060000.cs" />
     <Compile Include="SourceCode\PassiveAbility_2061040.cs" />
     <Compile Include="SourceCode\PassiveAbility_2061041.cs" />
@@ -295,7 +299,6 @@
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060013.cs" />
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060014.cs" />
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060111.cs" />
-    <Compile Include="SourceCode\MagerateHp.cs" />
     <Compile Include="SourceCode\Radiant\ParryBehaviour.cs" />
     <Compile Include="SourceCode\Radiant\DiceCardAbility_ParryPayback.cs" />
     <Compile Include="SourceCode\Radiant\DiceCardAbility_PWBoostDmg.cs" />

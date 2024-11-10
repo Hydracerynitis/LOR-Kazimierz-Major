@@ -31,11 +31,12 @@ This status lasts 2 Scene.</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="LateAttack">
 			<Name>Reactive</Name>
-			<Desc>The Page and its clashing Page will be used at last</Desc>
+			<Desc>The Page will be used at last and is unclashable.
+			Can be intercepted by Counter dice or retained Defensive dice.</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="FastAttack">
 			<Name>Preemptive</Name>
-			<Desc>The Page and its clashing Page will be used at first</Desc>
+			<Desc>The Page will be used at first</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="Corrosion">
 			<Name>Corrosion</Name>

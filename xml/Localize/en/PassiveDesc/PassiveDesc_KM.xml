@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PassiveDesc ID="2060001">
+		<Name>Qualifier Ruleset</Name> 
+		<Desc>Any floors can be used for reception again after an Act cut, as long as the floor has librarians capable to fight.</Desc>
+	</PassiveDesc>
 	<PassiveDesc ID="2060000">
-		<Name>Pre-battle Preparation</Name> 
-		<Desc>At the start of each Act, increase all characters' Emotion Level to match the average Emotion Level of the more advantageous side</Desc>
+		<Name>Pre-match Preparation</Name> 
+		<Desc>At the start of each Act, increase all characters' Emotion Level to match the average Emotion Level of the more advantageous side
+		All characters recover to full health and draw 1 page for each Emotion Level increase.</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060002">
+		<Name>Lone Candidate</Name> 
+		<Desc>At the end of each Scene, gain 2 Strength, Endurance if no other allies are present.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060031">
 		<Name>Taunting</Name> 
@@ -15,7 +24,7 @@
 	<PassiveDesc ID="2060033">
 		<Name>Unrelenting</Name> 
 		<Desc>HP does not go below 1. If HP drops to 1 recover all health, Stagger Resist and Light at the start of next Scene.
-And since then gain 1 Strength and Endurance at the start of each Scene. (Activate once per Act)</Desc>
+And since then gain 2 Strength and Endurance at the start of each Scene. (Activate once per Act)</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060133">
 		<Name>Unrelenting</Name> 

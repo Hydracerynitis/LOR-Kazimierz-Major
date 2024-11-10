@@ -212,7 +212,7 @@ If the Dice's Power is more than 20 then make target discard all Pages in their 
 	</PassiveDesc>
 	<PassiveDesc ID="2160055">
 		<Name>Daybreak</Name> 
-		<Desc>Landing successful hits with Melee Offensive Dice will ignore target's any Damage Reduction Effect.</Desc>
+		<Desc>Landing successful hits with Melee Offensive Dice will ignore target's Damage Reduction Effect from Protection and other similiar Effect.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160056">
 		<Name>Night-scouring Gleam</Name> 
@@ -230,7 +230,7 @@ When the character has Shield Damage and Stagger Damage of Offensive Dice is inc
 	</PassiveDesc>
 	<PassiveDesc ID="2160153">
 		<Name>The Radiant Knight’s Prowess</Name>
-		<Desc>Can block an attack whose dice value is at least 15 once per 3 Scene.</Desc>
+		<Desc>Can block an attack whose dice value is at least 10 once per 3 Scene.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160154">
 		<Name>Night-scouring Gleam</Name> 

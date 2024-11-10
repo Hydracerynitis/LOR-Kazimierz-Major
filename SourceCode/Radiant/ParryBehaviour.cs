@@ -44,7 +44,6 @@ namespace KazimierzMajor
             movingAction3.SetEffectTiming(EffectTiming.PRE, EffectTiming.NONE, EffectTiming.NONE);
             movingAction3.customEffectRes = "Kimsatgat_S2";
             RencounterManager.MovingAction movingAction4 = new RencounterManager.MovingAction(ActionDetail.Slash, CharMoveState.Stop, delay: 1f);
-            //movingAction4.SetEffectTiming(EffectTiming.PRE, EffectTiming.PRE, EffectTiming.PRE);
             if (self.data.actionType == ActionType.Atk)
                 movingAction4.SetEffectTiming(EffectTiming.PRE, EffectTiming.PRE, EffectTiming.PRE);
             else

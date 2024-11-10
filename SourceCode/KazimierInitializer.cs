@@ -36,15 +36,10 @@ namespace KazimierzMajor
                 Harmony harmony = new Harmony("Kazimier");
                 ModPath = Path.GetDirectoryName(Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
                 BGM = new Dictionary<string, AudioClip>();
-                harmony.PatchAll(typeof(FastLateAttack));
-                harmony.PatchAll(typeof(NightmareHp));
-                harmony.PatchAll(typeof(MagerateHp));
-                harmony.PatchAll(typeof(CandleHP));
-                harmony.PatchAll(typeof(BattleStartCinematic));
-                harmony.PatchAll(typeof(KazimierInitializer));
-                KazimierInitializer.assetBundle = new Dictionary<string, AssetBundle>();
-                KazimierInitializer.mainGameobject = new GameObject();
-                KazimierInitializer.AddAssets();
+                StageController.Instance.onChangePhase += LateAttackHP.OnChangeStagePhase;
+                assetBundle = new Dictionary<string, AssetBundle>();
+                mainGameobject = new GameObject();
+                AddAssets();
                 GetBGMs(new DirectoryInfo(ModPath + "/BGM"));
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(20600003), ModPath + "/ArtWork/background.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600013), ModPath + "/ArtWork/Candle.png");
@@ -52,6 +47,7 @@ namespace KazimierzMajor
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600023), ModPath + "/ArtWork/NightMare.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600043), ModPath + "/ArtWork/Tournament.png");
                 BaseMod.Harmony_Patch.GetModStoryCG(Tools.MakeLorId(21600053), ModPath + "/ArtWork/Duel.png");
+                harmony.PatchAll();
             }
             catch(Exception ex)
             {
@@ -76,8 +72,9 @@ namespace KazimierzMajor
             AssetBundle assetBundle = AssetBundle.LoadFromFile(path);
             KazimierInitializer.assetBundle.Add(name, assetBundle);
         }
+        public static void AddAssets() => AddAsset("耀阳颔首", ModPath + "/ab/耀阳颔首.ab");
 
-        public static void AddAssets() => KazimierInitializer.AddAsset("耀阳颔首", KazimierInitializer.ModPath + "/ab/耀阳颔首.ab");
+        //Add Initial Invitation Book
         [HarmonyPatch(typeof(DropBookInventoryModel),nameof(DropBookInventoryModel.GetBookList_invitationBookList))]
         [HarmonyPostfix]
         public static void DropBookInventoryModel_GetBookList_invitationBookList(ref List<LorId> __result)
@@ -90,6 +87,8 @@ namespace KazimierzMajor
             if (!__result.Contains(Tools.MakeLorId(2160002)) && LibraryModel.Instance?.ClearInfo?.GetClearCount(Tools.MakeLorId(21600023))>=1)
                 __result.Add(Tools.MakeLorId(2160002));
         }
+
+        // Add Level Icon to the Invitation Map
         [HarmonyPatch(typeof(UIStoryProgressPanel),nameof(UIStoryProgressPanel.SetStoryLine))]
         [HarmonyPostfix]
         public static void UIStoryProgressPanel_SetStoryLine(UIStoryProgressPanel __instance)
@@ -138,62 +137,37 @@ namespace KazimierzMajor
                 return;
             }
             UIStoryProgressIconSlot progressIconSlot = __instance.iconList.Find(x => x.currentStory == reference);
-            UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate<UIStoryProgressIconSlot>(progressIconSlot, progressIconSlot.transform.parent);
+            UIStoryProgressIconSlot newslot = UnityEngine.Object.Instantiate(progressIconSlot, progressIconSlot.transform.parent);
             newslot.currentStory = UIStoryLine.Rats;
             newslot.Initialized(__instance);
             newslot.transform.localPosition += vector;
             newslot.connectLineList = new List<GameObject>();
             Storyslots[new List<StageClassInfo>() { data }] = newslot;
         }
-        /*[HarmonyPatch(typeof(UIInvitationPanel),nameof(UIInvitationPanel.GetTheBlueReverberationPrimaryStage))]
+        //Enable renetry with one floor
+        [HarmonyPatch(typeof(StageModel),nameof(StageModel.GetFrontAvailableFloor))]
         [HarmonyPostfix]
-        public static void UIInvitationPanel_GetTheBlueReverberationPrimaryStage_Post(UIInvitationPanel __instance,ref UIStoryLine __result)
+        static void StageModel_GetFrontAvailableFloor(StageModel __instance,ref StageLibraryFloorModel __result)
         {
-            if (__instance.CurrentStage!=null && __instance.CurrentStage.id==Tools.MakeLorId(22600002))
-                __result = UIStoryLine.TwistedBlue;
+
+            if (__instance.ClassInfo.id == Tools.MakeLorId(20600003))
+            {
+                StageLibraryFloorModel floorModel=StageController.Instance.GetCurrentStageFloorModel();
+                if (floorModel != null && floorModel._unitList.Exists(x => !x.isDead))
+                    __result = floorModel;
+            }
         }
-        [HarmonyPatch(typeof(UIInvitationRightMainPanel),nameof(UIInvitationRightMainPanel.OnClickSendButtonForBlue))]
+        [HarmonyPatch(typeof(StageController), nameof(StageController.ClearBattle))]
         [HarmonyPrefix]
-        public static bool UIInvitationRightMainPanel_OnClickSendButtonForBlue_Pre(UIInvitationRightMainPanel __instance)
+        static void StageController_ClearBattle(StageController __instance)
         {
-            StageClassInfo mlynar = __instance.invPanel.CurrentStage;
-            if (mlynar != null && mlynar.id == Tools.MakeLorId(22600002))
+            StageModel stageModel = __instance.GetStageModel();
+            if (stageModel!=null && stageModel.ClassInfo.id == Tools.MakeLorId(20600003))
             {
-                UIAlarmPopup.instance.SetAlarmTextForBlue(UIAlarmType.StartTwistedBlue, (ConfirmEvent)(yesno =>
-                {
-                    if (!yesno)
-                        return;
-                    Singleton<LibraryQuestManager>.Instance.OnSendInvitation(mlynar.id);
-                    UI.UIController.Instance.PrepareBattle(mlynar, new List<DropBookXmlInfo>());
-                    UISoundManager.instance.PlayEffectSound(UISoundType.Ui_Invite);
-                }), TextDataModel.GetText("ui_invitation_Mlynar"), UIStoryLine.TwistedBlue);
-                return false;
+                stageModel.floorList.FindAll(x => x._unitList.Exists(y => !y.isDead)).ForEach(x => x._defeated=false);
             }
-            return true;
         }
-        [HarmonyPatch(typeof(UIAlarmPopup),nameof(UIAlarmPopup.SetAlarmTextForBlue))]
-        [HarmonyPostfix]
-        public static void UIAlarmPopup_SetAlarmTextForBlue_Post(UIAlarmType alarmtype,TextMeshProUGUI ___txt_alarmForBlue,TextMeshProUGUI[] ___txt_alarmEffectTextForBlues,string param = "")
-        {
-            if (alarmtype != UIAlarmType.StartTwistedBlue || !MlynarOn)
-                return;
-            ___txt_alarmForBlue.text = param;
-            for (int index = 0; index < ___txt_alarmEffectTextForBlues.Length; ++index)
-                ___txt_alarmEffectTextForBlues[index].text = param;
-        }
-        [HarmonyPatch(typeof(UIInvitationRightMainPanel),nameof(UIInvitationRightMainPanel.SetInvBookApplyState))]
-        [HarmonyPostfix]
-        public static void UIInvitationRightMainPanel_SetInvBookApplyState_Post(UIInvitationRightMainPanel __instance,InvitationApply_State state,UICustomGraphicObject ___button_SendButtonForBlue,Image ___img_endcontents_content,TextMeshProUGUI ___txt_SendButton)
-        {
-            StageClassInfo mlynar = __instance.invPanel.CurrentStage;
-            MlynarOn = false;
-            if (mlynar != null && mlynar.id == Tools.MakeLorId(22600002))
-            {
-                MlynarOn = true;
-                ___img_endcontents_content.sprite = Harmony_Patch.ArtWorks["OWPlaceHolder"];
-                ___img_endcontents_content.SetNativeSize();
-            }
-        }*/
+        //Prevent Candle Knight to recover light
         [HarmonyPatch(typeof(BattlePlayingCardSlotDetail),nameof(BattlePlayingCardSlotDetail.RecoverPlayPoint))]
         [HarmonyPrefix]
         static bool BattlePlayingCardSlotDetail_RecoverPlayPoint_Pre(BattlePlayingCardSlotDetail __instance)
@@ -202,6 +176,8 @@ namespace KazimierzMajor
                 return false;
             return true;
         }
+
+        //Prevent Lazurite's special card from being used
         [HarmonyPatch(typeof(BattlePersonalEgoCardDetail),nameof(BattlePersonalEgoCardDetail.UseCard))]
         [HarmonyPrefix]
         static bool BattlePersonalEgoCardDetail_UseCard_Pre(BattleDiceCardModel card)
@@ -210,6 +186,8 @@ namespace KazimierzMajor
                 return false;
             return true;
         }
+
+        // Surprise Shots
         [HarmonyPatch(typeof(DiceCardSelfAbilityBase),nameof(DiceCardSelfAbilityBase.IsTrueDamage))]
         [HarmonyPostfix]
         static void DiceCardSelfAbilityBase_IsTrueDamage(DiceCardSelfAbilityBase __instance, ref bool __result)
@@ -219,6 +197,8 @@ namespace KazimierzMajor
                 if (__instance.card!=null &&  __instance.card.currentBehavior != null && !__instance.card.currentBehavior.IsParrying())
                     __result = true;
         }
+
+        // Give Radiant Knight Page after clearance
         [HarmonyPatch(typeof(LibraryModel),nameof(LibraryModel.OnClearStage))]
         [HarmonyPostfix]
         public static void LibraryModel_OnClearStage(LorId stageId)
@@ -233,8 +213,40 @@ namespace KazimierzMajor
                 int difference = data2.Limit - all.Count;
                 for (int i = 0; i < difference; i++)
                     Singleton<BookInventoryModel>.Instance.CreateBook(radiantReward);
-                UIAlarmPopup.instance.SetAlarmText(TextDataModel.GetText("ui_popup_getequippage", (object)Singleton<BookDescXmlList>.Instance.GetBookName(Tools.MakeLorId(2160013)), (object)difference));
+                UIAlarmPopup.instance.SetAlarmText(TextDataModel.GetText("ui_popup_getequippage", Singleton<BookDescXmlList>.Instance.GetBookName(Tools.MakeLorId(2160013)), (object)difference));
             }
+        }
+        // Enable Nightmare AOE custom script
+        [HarmonyPatch(typeof(BattleObjectManager), nameof(BattleObjectManager.OnFixedUpdate))]
+        [HarmonyPostfix]
+        static void BattleObjectManager_OnFixedUpdate_Post(float deltaTime)
+        {
+            foreach (BattleUnitModel unit in KhanEffectData.added)
+                unit.OnFixedUpdate(deltaTime);
+        }
+
+        // Handling Switching between KhanStance
+        [HarmonyPatch(typeof(BattleAllyCardDetail), nameof(BattleAllyCardDetail.ReturnCardToHand))]
+        [HarmonyPostfix]
+        static void BattleAllyCardDetail_ReturnCardToHand(BattleAllyCardDetail __instance, BattleDiceCardModel appliedCard)
+        {
+            if (__instance._self.bufListDetail.HasBuf<KhanStance>())
+            {
+                if (!KhanStance.ChangeCards.Contains(appliedCard))
+                    KhanStance.ChangeToTeamNear(appliedCard);
+            }
+            else if (KhanStance.ChangeCards.Contains(appliedCard))
+            {
+                KhanStance.ChangeBack(appliedCard);
+            }
+        }
+
+        // Clear All changed cards
+        [HarmonyPatch(typeof(StageController), nameof(StageController.EndBattle))]
+        [HarmonyPostfix]
+        static void StageController_EndBattle()
+        {
+            KhanStance.ChangeCards.Clear();
         }
         public static void UpdateInfo(BattleUnitModel unit) => SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(unit, unit.faction, unit.hp, unit.breakDetail.breakGauge);
         public static void AddNewCard(BattleUnitModel unit, List<int> cards, Queue<int> priority)
@@ -253,6 +265,18 @@ namespace KazimierzMajor
                 cards.RemoveAt(0);
             }
             while (cards.Count > 0);
+        }
+        public static BattlePlayingCardDataInUnitModel GetParry(BattlePlayingCardDataInUnitModel card)
+        {
+            BattlePlayingCardDataInUnitModel oppoist = card.target.cardSlotDetail.cardAry[card.targetSlotOrder];
+            if (oppoist == null)
+                return null;
+            if (oppoist.owner.DirectAttack() || card.owner.DirectAttack())
+                return null;
+            if (oppoist.target == card.owner && oppoist.targetSlotOrder == card.slotOrder)
+                return oppoist;
+            else
+                return null;
         }
         public static bool IsNotClashCard(BattleDiceCardModel card) => card.XmlData.Spec.Ranged == CardRange.FarArea || card.XmlData.Spec.Ranged == CardRange.FarAreaEach || card.XmlData.Spec.Ranged == CardRange.Instance;
     }

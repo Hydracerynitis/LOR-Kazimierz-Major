@@ -17,12 +17,13 @@
 			<PassiveCost>10</PassiveCost>
 			<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060031</Passive>
 			<Passive>2060032</Passive>
 			<Passive>2060033</Passive>
 			<Passive>2060034</Passive>
-			<Passive>2060000</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
@@ -48,12 +49,14 @@
 			<PassiveCost>10</PassiveCost>
 			<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060021</Passive>
 			<Passive>2060022</Passive>
 			<Passive>2060023</Passive>
 			<Passive>2060024</Passive>
-			<Passive>2060000</Passive>
+			<Passive>2060002</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
@@ -79,12 +82,14 @@
 			<PassiveCost>10</PassiveCost>
 			<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060011</Passive>
 			<Passive>2060012</Passive>
 			<Passive>2060013</Passive>
 			<Passive>2060014</Passive>
-			<Passive>2060000</Passive>
+			<Passive>2060002</Passive>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
 		<BookIcon>Kazimier</BookIcon>
@@ -110,12 +115,13 @@
 			<HBResist>Endure</HBResist>
       		<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060041</Passive>
 			<Passive>2060042</Passive>
 			<Passive>2060045</Passive>
 			<Passive>2061040</Passive>
-			<Passive>2060000</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
@@ -140,12 +146,13 @@
 			<HBResist>Normal</HBResist>
       		<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060043</Passive>
 			<Passive>2060044</Passive>
 			<Passive>2060046</Passive>
 			<Passive>2061040</Passive>
-			<Passive>2060000</Passive>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
 		<BookIcon>Kazimier</BookIcon>
@@ -171,12 +178,13 @@
 			<HBResist>Normal</HBResist>
       		<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2061050</Passive>
 			<Passive>2060051</Passive>
 			<Passive>2060052</Passive>
 			<Passive>2060056</Passive>
-			<Passive>2060000</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>
@@ -201,12 +209,13 @@
 			<HBResist>Normal</HBResist>
       		<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
+			<Passive>2060000</Passive>
+			<Passive>2060001</Passive>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2061050</Passive>
 			<Passive>2060053</Passive>
 			<Passive>2060054</Passive>
 			<Passive>2060057</Passive>
-			<Passive>2060000</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Chapter>6</Chapter>

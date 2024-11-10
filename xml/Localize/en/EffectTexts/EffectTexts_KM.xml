@@ -31,7 +31,7 @@
 		</BattleEffectText>
 		<BattleEffectText ID="Depressed">
 			<Name>Low Morale</Name>
-			<Desc>The character's die lose -{0} Power </Desc>
+			<Desc>The character's die lose -{0} Power, Stager Resist {1}%</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="Monmentum">
 			<Name>Keeping Momentum</Name>

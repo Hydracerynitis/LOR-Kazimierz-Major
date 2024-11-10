@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BookUseXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<BookUse ID="2260001">
-		<TextId>2260001</TextId>
-		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
-		<DropItem Type="Equip">2260001</DropItem>
-	</BookUse>
-</BookUseXmlRoot>

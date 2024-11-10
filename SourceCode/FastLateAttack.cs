@@ -9,9 +9,16 @@ using UnityEngine;
 namespace KazimierzMajor
 {
     [HarmonyPatch]
+    static class LateAttackHandler
+    {
+        public static List<BattlePlayingCardDataInUnitModel> LateCards = new List<BattlePlayingCardDataInUnitModel>();
+    }
     static class FastLateAttack
     {
         public static List<BattlePlayingCardDataInUnitModel> FastCards = new List<BattlePlayingCardDataInUnitModel>();
+        
+
+        [HarmonyPatch(typeof(FastLateAttack))]
         [HarmonyPatch(typeof(StageController),nameof(StageController.ActivateStartBattleEffectPhase))]
         [HarmonyPrefix]
         public static void StageController_ActivateStartBattleEffectPhase(List<BattlePlayingCardDataInUnitModel> ____allCardList)
@@ -29,7 +36,7 @@ namespace KazimierzMajor
         [HarmonyPrefix]
         public static bool StageController_MoveUnitPhase(ref StageController.StagePhase ____phase)
         {
-            List<BattleUnitModel> battleUnitModelList1 = new List<BattleUnitModel>();
+            /*List<BattleUnitModel> battleUnitModelList1 = new List<BattleUnitModel>();
             foreach (BattleUnitModel alive in BattleObjectManager.instance.GetAliveList())
             {
                 if (alive.turnState == BattleUnitTurnState.BREAK || alive.currentDiceAction == null || alive.currentDiceAction.cardBehaviorQueue.Count == 0)
@@ -38,7 +45,7 @@ namespace KazimierzMajor
                     battleUnitModelList1.Add(alive);
             }
             if (battleUnitModelList1.Count == 0)
-                ____phase = StageController.StagePhase.RoundEndPhase;
+                ____phase = StageController.StagePhase.RoundEndPhase;*/
             else
             {
                 List<BattleUnitModel> LateAttack = battleUnitModelList1.FindAll(x => IsLateAttack(x.currentDiceAction) || IsLateAttack(GetParry(x.currentDiceAction)));
@@ -86,7 +93,7 @@ namespace KazimierzMajor
                         return 0;
                     return currentDiceAction1.speedDiceResultValue > currentDiceAction2.speedDiceResultValue ? -1 : 1;
                 });
-                int a = -1;
+                /*int a = -1;
                 for (int index = 0; index < battleUnitModelList1.Count; ++index)
                 {
                     if (battleUnitModelList1[index].currentDiceAction.speedDiceResultValue > a)
@@ -94,14 +101,14 @@ namespace KazimierzMajor
                 }
                 int num1 = Mathf.Min(a, 10);
                 List<BattleUnitModel> battleUnitModelList2 = new List<BattleUnitModel>();
-                List<BattleUnitModel> battleUnitModelList3 = new List<BattleUnitModel>();
-                for (int index = 0; index < battleUnitModelList1.Count; ++index)
+                List<BattleUnitModel> battleUnitModelList3 = new List<BattleUnitModel>();*/
+                /*for (int index = 0; index < battleUnitModelList1.Count; ++index)
                 {
                     BattleUnitModel unit = battleUnitModelList1[index];
                     BattleUnitModel target = unit.currentDiceAction.target;
                     if (target == null || target.IsDead() || target.IsExtinction())
                         unit.currentDiceAction = null;
-                    else if (unit.turnState != BattleUnitTurnState.BREAK)
+                    else if (unit.turnState != BattleUnitTurnState.BREAK)*/
                     {
                         if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Far && !IsLateAttack(unit.currentDiceAction.target?.currentDiceAction))
                         {
@@ -109,17 +116,17 @@ namespace KazimierzMajor
                             unit.currentDiceAction?.GetDiceBehaviorList();
                             battleUnitModelList2.Add(target);
                         }
-                        else if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Special)
+                        /*else if (unit.currentDiceAction.card.GetSpec().Ranged == CardRange.Special)
                         {
                             unit.moveDetail.Stop();
                             battleUnitModelList3.Add(target);
-                        }
+                        }*/
                         else if (IsFastAttack(unit.currentDiceAction))
                         {
                             unit.moveDetail.Stop();
                             battleUnitModelList3.Add(target);
                         }
-                        else
+                        /*else
                         {
                             BattleDiceCardModel card = unit.currentDiceAction.target?.currentDiceAction?.card;
                             bool flag = false;
@@ -151,8 +158,8 @@ namespace KazimierzMajor
                                     unit.moveDetail.Move(target, speed);
                             }
                         }
-                        unit.UpdateDirection(target.view.WorldPosition);
-                    }
+                        unit.UpdateDirection(target.view.WorldPosition);*/
+                    /*}
                     else
                     {
                         unit.currentDiceAction = null;
@@ -160,7 +167,7 @@ namespace KazimierzMajor
                     }
                 }
                 StageController.Instance.phase = StageController.StagePhase.WaitUnitsArrive;
-                SingletonBehavior<BattleCamManager>.Instance.StartMoveUnits();
+                SingletonBehavior<BattleCamManager>.Instance.StartMoveUnits();*/
             }
             return false;
         }
@@ -168,8 +175,8 @@ namespace KazimierzMajor
         [HarmonyPrefix]
         public static bool StageController_WaitUnitArrivePhase(ref StageController.StagePhase ____phase)
         {
-            List<BattleUnitModel> battleUnitModelList1 = new List<BattleUnitModel>();
-            foreach (BattleUnitModel alive in BattleObjectManager.instance.GetAliveList())
+            //List<BattleUnitModel> battleUnitModelList1 = new List<BattleUnitModel>();
+            /*foreach (BattleUnitModel alive in BattleObjectManager.instance.GetAliveList())
             {
                 if (alive.turnState == BattleUnitTurnState.BREAK || alive.currentDiceAction == null || alive.currentDiceAction.cardBehaviorQueue.Count == 0)
                     alive.moveDetail.Stop();
@@ -177,7 +184,7 @@ namespace KazimierzMajor
                     battleUnitModelList1.Add(alive);
             }
             if (battleUnitModelList1.Count == 0)
-                ____phase = StageController.StagePhase.RoundEndPhase;
+                ____phase = StageController.StagePhase.RoundEndPhase;*/
             else
             {
                 List<BattleUnitModel> LateAttack = battleUnitModelList1.FindAll(x => IsLateAttack(x.currentDiceAction) || IsLateAttack(GetParry(x.currentDiceAction)));
@@ -225,7 +232,7 @@ namespace KazimierzMajor
                         return 0;
                     return currentDiceAction1.speedDiceResultValue > currentDiceAction2.speedDiceResultValue ? -1 : 1;
                 });
-                int num1 = -1;
+                /*int num1 = -1;
                 List<BattleUnitModel> battleUnitModelList2 = new List<BattleUnitModel>();
                 for (int index = 0; index < battleUnitModelList1.Count; ++index)
                 {
@@ -244,8 +251,8 @@ namespace KazimierzMajor
                     }
                     else if (battleUnitModelList1[index].currentDiceAction.speedDiceResultValue == num1 && num1 > -1)
                         battleUnitModelList2.Add(battleUnitModelList1[index]);
-                }
-                BattleUnitModel arrivedUnit = null;
+                }*/
+                /*BattleUnitModel arrivedUnit = null;
                 for (int index = 0; index < battleUnitModelList1.Count; ++index)
                 {
                     BattleUnitModel unit = battleUnitModelList1[index];
@@ -263,7 +270,7 @@ namespace KazimierzMajor
                             {
                                 arrivedUnit = unit;
                                 break;
-                            }
+                            }*/
                             if (IsFastAttack(unit.currentDiceAction))
                             {
                                 arrivedUnit = unit;
@@ -274,7 +281,7 @@ namespace KazimierzMajor
                                 arrivedUnit = unit;
                                 break;
                             }
-                        }
+                        /*}
                         else if (!unit.moveDetail.isKnockback)
                         {
                             float num2 = 1f;
@@ -288,8 +295,8 @@ namespace KazimierzMajor
                             }
                         }
                     }
-                }
-                if (arrivedUnit == null)
+                }*/
+                /*if (arrivedUnit == null)
                     return false;
                 for (int index = 0; index < battleUnitModelList1.Count; ++index)
                 {
@@ -381,7 +388,7 @@ namespace KazimierzMajor
                         target1.moveDetail.Stop();
                     else
                         target1.moveDetail.Move(arrivedUnit, 15f);
-                    Singleton<StageController>.Instance.sp(arrivedUnit.currentDiceAction, target1.cardSlotDetail.keepCard);
+                    Singleton<StageController>.Instance.StartParrying(arrivedUnit.currentDiceAction, target1.cardSlotDetail.keepCard);
                 }
                 else
                 {
@@ -395,7 +402,7 @@ namespace KazimierzMajor
                     }
                     StageController.Instance.StartAction(arrivedUnit.currentDiceAction);
                 }
-            }
+            }*/
             return false;
         }
         public static BattlePlayingCardDataInUnitModel GetParry(BattlePlayingCardDataInUnitModel card)

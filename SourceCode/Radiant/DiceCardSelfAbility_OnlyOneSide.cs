@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using KI = KazimierzMajor.KazimierInitializer;
 
 namespace KazimierzMajor
 {
@@ -10,7 +11,7 @@ namespace KazimierzMajor
             List<BattleUnitModel> oneSider = new List<BattleUnitModel>();
             foreach(BattlePlayingCardDataInUnitModel cards in StageController.Instance.GetAllCards())
             {
-                if (FastLateAttack.GetParry(cards) == null && cards.target==owner)
+                if (KI.GetParry(cards) == null && cards.target==owner)
                 {
                     oneSider.Add(cards.owner);
                 }

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PassiveDesc ID="2060001">
+		<Name>淘汰赛制</Name> 
+		<Desc>若接待楼层还有存活的位上场的司书,则接待失败后还能用该楼层继续接待</Desc>
+	</PassiveDesc>
 	<PassiveDesc ID="2060000">
-		<Name>战前准备</Name> 
-		<Desc>舞台开启时将双方情感等级提升至较高一方的平均情感等级</Desc>
+		<Name>赛前准备</Name> 
+		<Desc>舞台开启时将双方情感等级提升至较高一方的平均情感等级并恢复所有体力,每提升1情感等级便额外抽取1张书页</Desc>
+	</PassiveDesc>
+	<PassiveDesc ID="2060002">
+		<Name>单打独斗</Name> 
+		<Desc>每一幕结束时若舞台中不存在友方角色则下一幕中使自身获得2层强壮,忍耐</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060031">
 		<Name>威慑</Name> 
@@ -10,11 +18,11 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2060032">
 		<Name>起来。继续。</Name> 
-		<Desc>如果把目标打入混乱，恢复目标所有混乱抗性并施加一层"斗志低昂"(所有骰子威力-X)</Desc>
+		<Desc>如果把目标打入混乱，恢复目标所有混乱抗性并施加一层"斗志低昂"(所有骰子威力-X,混乱抗性-20*X%)</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060033">
 		<Name>百折不饶</Name> 
-		<Desc>体力无法低于1，若体力将至1则在下一幕开始时恢复所有血量,混乱抗性和光芒并永久获得1层强壮忍耐
+		<Desc>体力无法低于1，若体力将至1则在下一幕开始时恢复所有血量,混乱抗性和光芒并永久获得2层强壮忍耐
 (至多生效1次)</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2060133">

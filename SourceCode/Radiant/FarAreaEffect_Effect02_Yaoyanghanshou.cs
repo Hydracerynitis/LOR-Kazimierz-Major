@@ -84,7 +84,7 @@ namespace KazimierzMajor
 
         public override void Start()
         {
-            this.Main = Instantiate<GameObject>(KazimierInitializer.assetBundle["耀阳颔首"].LoadAsset<GameObject>("耀阳颔首2.5"));
+            this.Main = Instantiate(KazimierInitializer.assetBundle["耀阳颔首"].LoadAsset<GameObject>("耀阳颔首3"));
             this.Main.transform.parent = this._targetTransform;
             this.Main.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
             this.Main.layer = 8;

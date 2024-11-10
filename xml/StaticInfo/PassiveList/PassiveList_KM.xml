@@ -4,6 +4,14 @@
 		<Rarity>Uncommon</Rarity>
 		<Cost>10</Cost>
   	</Passive>
+	<Passive ID="2060001">
+		<Rarity>Uncommon</Rarity>
+		<Cost>10</Cost>
+  	</Passive>
+	<Passive ID="2060002">
+		<Rarity>Uncommon</Rarity>
+		<Cost>3</Cost>
+  	</Passive>
 	<Passive ID="2060031">
 		<Rarity>Rare</Rarity>
 		<Cost>3</Cost>

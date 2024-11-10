@@ -13,11 +13,11 @@
 			<HResist>Normal</HResist>
 			<SBResist>Normal</SBResist>
 			<PBResist>Normal</PBResist>
-			<HBResist>Normal</HBResist>		
+			<HBResist>Normal</HBResist>
+			<Passive>2160000</Passive>		
 			<Passive>2160011</Passive>
 			<Passive>2160012</Passive>
 			<Passive>2160013</Passive>
-			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>20</MaxPlayPoint>
 		</EquipEffect>
@@ -43,6 +43,7 @@
 			<SBResist>Endure</SBResist>
 			<PBResist>Endure</PBResist>
 			<HBResist>Endure</HBResist>
+			<Passive>2160000</Passive>
 			<Passive>2160021</Passive>
 			<Passive>2160022</Passive>
 			<Passive>2160023</Passive>
@@ -72,6 +73,7 @@
 			<SBResist>Endure</SBResist>
 			<PBResist>Endure</PBResist>
 			<HBResist>Endure</HBResist>
+			<Passive>2160000</Passive>
 			<Passive>2160021</Passive>
 			<Passive>2160024</Passive>
 			<Passive>2160025</Passive>
@@ -233,10 +235,10 @@
 			<HResist>Normal</HResist>
 			<SBResist>Normal</SBResist>
 			<PBResist>Normal</PBResist>
-			<HBResist>Normal</HBResist>		
+			<HBResist>Normal</HBResist>
+			<Passive>2160000</Passive>		
 			<Passive>2160031</Passive>
 			<Passive>2160033</Passive>
-			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
@@ -262,7 +264,6 @@
 			<PBResist>Normal</PBResist>
 			<HBResist>Normal</HBResist>		
 			<Passive>2160132</Passive>
-			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
@@ -287,12 +288,12 @@
 			<SBResist>Normal</SBResist>
 			<PBResist>Normal</PBResist>
 			<HBResist>Normal</HBResist>
+			<Passive>2160000</Passive>
 			<Passive>2160041</Passive>
 			<Passive>2160042</Passive>
 			<Passive>2160043</Passive>
 			<Passive>2160044</Passive>
 			<Passive>2160045</Passive>
-			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
@@ -319,7 +320,6 @@
 			<HBResist>Normal</HBResist>
 			<Passive>2160047</Passive>
 			<Passive>2160048</Passive>
-			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>
@@ -344,13 +344,13 @@
 			<SBResist>Normal</SBResist>
 			<PBResist>Normal</PBResist>
 			<HBResist>Normal</HBResist>
+			<Passive>2160000</Passive>
 			<Passive>2160051</Passive>
 			<Passive>2160052</Passive>
 			<Passive>2160053</Passive>
 			<Passive>2160054</Passive>
 			<Passive>2160055</Passive>
 			<Passive>2160056</Passive>
-			<Passive>2160000</Passive>
 			<StartPlayPoint>0</StartPlayPoint>
       		<MaxPlayPoint>0</MaxPlayPoint>
 		</EquipEffect>

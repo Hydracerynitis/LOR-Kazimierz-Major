@@ -19,8 +19,8 @@ namespace KazimierzMajor
             base.OnRoundStart();
             if (hasActivated)
             {
-                owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Strength, 1);
-                owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Endurance, 1);
+                owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Strength, 2);
+                owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Endurance, 2);
             }
         }
         public override void OnRoundEnd()
