@@ -56,6 +56,9 @@
   <BattleCardAbility ID="BountyPublish">
     <Desc>[战斗开始] 使目标获得1层[赏金]</Desc>
   </BattleCardAbility>
+  <BattleCardAbility ID="OneSideRepeat">
+    <Desc>单方面攻击时重复投掷该骰子(至多1次)</Desc>
+  </BattleCardAbility>
   <!--逐魇骑士-->
   <BattleCardAbility ID="fearness1">
     <Desc>[使用时] 若该书页拥有[恐惧凝集]则该书页所有骰子威力+2</Desc>
@@ -125,11 +128,11 @@
   <BattleCardAbility ID="PWBoostDmg">
     <Desc>[拼点胜利] 骰子威力每高出目标1点便使下一颗骰子伤害+4</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="ParryLate">
-    <Desc>[后手] 其他书页触发[看破]时摧毁该书页并把该书页骰子移至触发书页末尾</Desc>
-  </BattleCardAbility>
   <BattleCardAbility ID="ParryBelow50">
     <Desc>若自身血量低于50%则额外获得[看破]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryCritical">
+    <Desc>[单方面攻击]时或触发[看破]会使该骰子伤害和混乱伤害提升100%</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ParryGuaran">
     <Desc>必定获得[看破]. 触发[看破]时重新投掷该骰</Desc>

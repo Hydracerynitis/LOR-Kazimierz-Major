@@ -57,6 +57,9 @@
   <BattleCardAbility ID="BountyPublish">
     <Desc>[On Start Battle] Inflict 1 [Bounty]</Desc>
   </BattleCardAbility>
+  <BattleCardAbility ID="OneSideRepeat">
+    <Desc>Reuse this Die when One-Side attack (Max once)</Desc>
+  </BattleCardAbility>
   <!--逐魇骑士-->
   <BattleCardAbility ID="fearness1">
     <Desc>[On Use] If this Page has [Coalescing Fear], all Dice on this Page gain +2 Power</Desc>
@@ -126,11 +129,11 @@
   <BattleCardAbility ID="PWBoostDmg">
     <Desc>[On Clash Win] For each differnce between Power of both Dice boost Damage of next Die on this Page by +4</Desc>
   </BattleCardAbility>
-  <BattleCardAbility ID="ParryLate">
-    <Desc>[Reactive] When other Pages activate [Parry], destroy this Page and add its Die to that Page</Desc>
-  </BattleCardAbility>
   <BattleCardAbility ID="ParryBelow50">
     <Desc>If health is lower than 50% Mas HP, this die will gain additional [Parry]</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="ParryCritical">
+    <Desc>On [One-Side Attack] or activate [Parry] will increase this die's Damage and Stagger Damage by +100%</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ParryGuaran">
     <Desc>This Die will always gain [Parry]. Activate [Parry] will repeat this die</Desc>

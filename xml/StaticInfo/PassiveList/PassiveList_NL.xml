@@ -53,15 +53,11 @@
   	</Passive>
 	<Passive ID="2160028">
 		<Rarity>Unique</Rarity>
-		<Cost>5</Cost>
+		<Cost>4</Cost>
   	</Passive>
 	<Passive ID="2160029">
 		<Rarity>Unique</Rarity>
 		<Cost>10</Cost>
-  	</Passive>
-	<Passive ID="2160121">
-		<Rarity>Unique</Rarity>
-		<Cost>6</Cost>
   	</Passive>
 	<Passive ID="2160123">
 		<Rarity>Unique</Rarity>
@@ -85,7 +81,7 @@
   	</Passive>
 	<Passive ID="2160128">
 		<Rarity>Common</Rarity>
-		<Cost>7</Cost>
+		<Cost>4</Cost>
   	</Passive>
 	<!-- 逐魇骑士 -->
 	<Passive ID="2160031">

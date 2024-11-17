@@ -12,9 +12,11 @@ namespace KazimierzMajor
         }
         public override void OnLoseParrying(BattleDiceBehavior behavior)
         {
-            if (!this.IsAttackDice(behavior.Detail) || _activated == true || owner.IsBreakLifeZero())
+            if (!this.IsAttackDice(behavior.Detail) || _activated == true || owner.IsBreakLifeZero() || behavior.isBonusAttack)
                 return;
             behavior.isBonusAttack = true;
+            int CurrentBonus = behavior._statBonus.dmgRate;
+            behavior.ApplyDiceStatBonus(new DiceStatBonus() { dmgRate = 50 + CurrentBonus / 2 });
             _activated = true;
         }
     }

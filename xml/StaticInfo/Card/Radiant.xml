@@ -107,10 +107,10 @@
 		<Artwork>Radiant8</Artwork>
 		<Rarity>Rare</Rarity>
 		<Spec Range="Near" Cost="0" />
-		<Script>ParryLate</Script>
+		<Script>FastAttack</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-			<Behaviour Min="8" Dice="16" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="10" Dice="18" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="ParryCritical" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		<Priority>0</Priority>

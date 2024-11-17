@@ -248,6 +248,21 @@ namespace KazimierzMajor
         {
             KhanStance.ChangeCards.Clear();
         }
+
+        //SpendCost interface
+        [HarmonyPatch(typeof(BattlePlayingCardSlotDetail),nameof(BattlePlayingCardSlotDetail.SpendCost))]
+        [HarmonyPostfix]
+        static void BattlePlayingCardSlotDetail_SpendCost(BattlePlayingCardSlotDetail __instance,int value)
+        {
+            foreach(PassiveAbilityBase passive in __instance._self.passiveDetail.PassiveList)
+            {
+                if (passive is SpendCostAbility)
+                {
+                    (passive as SpendCostAbility).OnSpendCost(value);
+                }
+            }
+        }
+
         public static void UpdateInfo(BattleUnitModel unit) => SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(unit, unit.faction, unit.hp, unit.breakDetail.breakGauge);
         public static void AddNewCard(BattleUnitModel unit, List<int> cards, Queue<int> priority)
         {

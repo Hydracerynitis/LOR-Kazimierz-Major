@@ -9,13 +9,14 @@ namespace KazimierzMajor
 {
     public class DiceCardSelfAbility_Blessing : DiceCardSelfAbilityBase
     {
-        public override void OnUseCard()
+        public override void OnStartBattle()
         {
-            foreach (BattleUnitModel battleUnitModel in BattleObjectManager.instance.GetAliveList(this.owner.faction))
+            if (BattleUnitBuf_ChargeLight.GetBuff(owner, out BattleUnitBuf_ChargeLight buf) && buf.stack > 0)
             {
-                BattleUnitBuf_Blessing.AddBuf(battleUnitModel, this.owner, 1);
+                BattleUnitBuf_Blessing.AddBuf(owner, owner, Math.Min(buf.stack, 3));
+                buf.UseStack(buf.stack);
             }
-            this.card.card.exhaust = true;
+            card.card.exhaust = true;
         }
     }
 }

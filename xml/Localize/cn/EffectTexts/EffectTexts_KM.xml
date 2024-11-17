@@ -3,7 +3,7 @@
 	<effectTextList>
 		<BattleEffectText ID="ChargeLight">
 			<Name>光辉</Name>
-			<Desc>每有3层光辉手牌费用-1,现在手牌费用-{0}</Desc>
+			<Desc>手牌费用-{0}</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="Sleep">
 			<Name>沉睡</Name>
@@ -17,17 +17,10 @@
 			<Name>摄敌辉光</Name>
 			<Desc>摄敌辉光还差{0}次进攻命中激活</Desc>
 		</BattleEffectText>
-		<BattleEffectText ID="Stunning">
-			<Name>眩晕</Name>
-			<Desc>无法行动，持续{0}幕</Desc>
-		</BattleEffectText>
 		<BattleEffectText ID="Blessing">
 			<Name>天马祝福</Name>
-			<Desc>在这一幕结束时恢复其所有血量和混乱抗性</Desc>
-		</BattleEffectText>
-		<BattleEffectText ID="BlessingLib">
-			<Name>天马祝福</Name>
-			<Desc>在这一幕结束时恢复其一半血量和所有混乱抗性</Desc>
+			<Desc>在这一幕结束时恢复所有我方角色40%最大生命值和所有混乱抗性并层数-1
+使用书页时将所有进攻骰子转化成反击防御骰子</Desc>
 		</BattleEffectText>
 		<BattleEffectText ID="Depressed">
 			<Name>斗志低昂</Name>

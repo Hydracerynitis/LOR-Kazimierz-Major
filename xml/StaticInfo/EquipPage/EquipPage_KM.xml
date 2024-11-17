@@ -4,7 +4,7 @@
 		<Name>左手</Name>
 		<TextId>2060003</TextId>
 		<EquipEffect>
-			<HP>95</HP>
+			<HP>110</HP>
 			<Break>45</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
@@ -24,7 +24,7 @@
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
 		<CharacterSkin>Custom_Left</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -33,8 +33,8 @@
 		<Name>锈铜</Name>
 		<TextId>2060002</TextId>
 		<EquipEffect>
-			<HP>98</HP>
-			<Break>42</Break>
+			<HP>105</HP>
+			<Break>40</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
 			<SResist>Normal</SResist>
@@ -48,12 +48,12 @@
 			<OnlyCard>2061201</OnlyCard>
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060021</Passive>
-			<Passive>2060122</Passive>
-			<Passive>2060123</Passive>
+			<Passive>2060022</Passive>
+			<Passive>2060023</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
 		<CharacterSkin>Custom_Copper</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -62,7 +62,7 @@
 		<Name>塑料</Name>
 		<TextId>2060001</TextId>
 		<EquipEffect>
-			<HP>90</HP>
+			<HP>100</HP>
 			<Break>49</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
@@ -88,7 +88,7 @@
 		<RangeType>Range</RangeType>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_Plastic</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -97,7 +97,7 @@
 		<Name>腐败</Name>
 		<TextId>2060004</TextId>
 		<EquipEffect>
-			<HP>100</HP>
+			<HP>108</HP>
 			<Break>48</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
@@ -117,7 +117,7 @@
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
 		<CharacterSkin>Custom_Corrosion</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -126,7 +126,7 @@
 		<Name>凋零</Name>
 		<TextId>2060005</TextId>
 		<EquipEffect>
-			<HP>100</HP>
+			<HP>110</HP>
 			<Break>48</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
@@ -147,7 +147,7 @@
 		<RangeType>Range</RangeType>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_Wither</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -156,7 +156,7 @@
 		<Name>玛莉亚临光</Name>
 		<TextId>2060006</TextId>
 		<EquipEffect>
-			<HP>95</HP>
+			<HP>118</HP>
 			<Break>52</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
@@ -177,7 +177,7 @@
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> <!-- Stephan-->
 		<CharacterSkin>Custom_Blemishine</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -186,7 +186,7 @@
 		<Name>玛嘉烈临光</Name>
 		<TextId>2060007</TextId>
 		<EquipEffect>
-			<HP>100</HP>
+			<HP>110</HP>
 			<Break>50</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
@@ -203,14 +203,10 @@
 			<Passive>2060053</Passive>
 			<Passive>2060054</Passive>
 			<OnlyCard>2061502</OnlyCard>
-			<OnlyCard>2061507</OnlyCard>
-			<OnlyCard>2061508</OnlyCard>
-			<OnlyCard>2061509</OnlyCard>
-			<OnlyCard>2061510</OnlyCard>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
 		<Episode>20600003</Episode>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_Nearl</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>

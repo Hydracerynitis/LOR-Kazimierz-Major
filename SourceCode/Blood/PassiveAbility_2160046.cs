@@ -14,10 +14,13 @@ namespace KazimierzMajor
         public PassiveAbility_2160046(BattleUnitModel model)
         {
             this.Init(model);
-            this.name = Singleton<PassiveDescXmlList>.Instance.GetName(Tools.MakeLorId(2160046));
-            this.desc = Singleton<PassiveDescXmlList>.Instance.GetDesc(Tools.MakeLorId(2160046));
             this.rare = Rarity.Unique;
             model.view.ChangeSkin("Custom_BLOOD2");
+        }
+        public void GetDesc()
+        {
+            this.name = Singleton<PassiveDescXmlList>.Instance.GetName(Tools.MakeLorId(2160046));
+            this.desc = Singleton<PassiveDescXmlList>.Instance.GetDesc(Tools.MakeLorId(2160046));
         }
         public override int SpeedDiceNumAdder() => -3;
         private Queue<int> Priority=new Queue<int>(); 

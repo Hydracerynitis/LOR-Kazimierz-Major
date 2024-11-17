@@ -31,7 +31,9 @@ namespace KazimierzMajor
                 this.owner.breakDetail.nextTurnBreak = false;
                 owner.ResetBreakGauge();
                 StageController.Instance._enemyStageManager = new EnemyTeamStageManager_Nightmare(owner.hp,owner.breakDetail.breakGauge);
-                owner.passiveDetail.AddPassive(new PassiveAbility_2160032());
+                PassiveAbility_2160032 phase2 = new PassiveAbility_2160032();
+                owner.passiveDetail.AddPassive(phase2);
+                phase2.GetDesc();
                 owner.Book._deck._deck.RemoveAll(x => x._id== 2160302 || x._id == 2160303 || x._id == 2160306);
                 owner.Book._deck._deck.Add(ItemXmlDataList.instance.GetCardItem(Tools.MakeLorId(2160307)));
                 owner.Book._deck._deck.Add(ItemXmlDataList.instance.GetCardItem(Tools.MakeLorId(2160308)));

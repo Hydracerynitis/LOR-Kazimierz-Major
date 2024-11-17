@@ -13,7 +13,7 @@
 		<Behaviour Min="3" Dice="3" Type="Atk" Detail="Slash" Motion="J" EffectRes="Basic_J" Script="" ActionScript="" Desc="" />
 		<Behaviour Min="4" Dice="4" Type="Atk" Detail="Slash" Motion="H" EffectRes="Basic_H" Script="" ActionScript="" Desc="" />
 	</BehaviourList>
-	<Chapter>6</Chapter>
+	<Chapter>7</Chapter>
 	<Priority>10</Priority>
 </Card> 
 <Card ID="2060302">
@@ -24,10 +24,10 @@
 		<Script>energy2</Script>
 		<ScriptDesc></ScriptDesc>
     		<BehaviourList>
-			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break3pw" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break3pw" ActionScript="" Desc="" />
 			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break3pw" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>2</Priority>		
 </Card>
 <Card ID="2061302">
@@ -38,10 +38,10 @@
 		<Script>energy1</Script>
 		<ScriptDesc></ScriptDesc>
     		<BehaviourList>
-			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break3pw" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break3pw" ActionScript="" Desc="" />
 			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>2</Priority>		
 </Card>
 <Card ID="2060303">
@@ -53,9 +53,9 @@
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Basic_Z" Script="break3atk" ActionScript="" Desc="" />
-			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="J" EffectRes="Basic_J" Script="break4pw" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="J" EffectRes="Basic_J" Script="break4pw" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>4</Priority>
 </Card>
 <Card ID="2061303">
@@ -67,9 +67,9 @@
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Basic_Z" Script="break3atk" ActionScript="" Desc="" />
-			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="J" EffectRes="Basic_J" Script="break4pw" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="J" EffectRes="Basic_J" Script="break4pw" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>4</Priority>
 </Card>
 <Card ID="2060304">
@@ -80,11 +80,11 @@
 		<Script>Allbreak4pw</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="3" Dice="10" Type="Def" Detail="Guard" Motion="J" EffectRes="Basic_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="2" Dice="10" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="10" Type="Def" Detail="Guard" Motion="J" EffectRes="Basic_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="4" Dice="10" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="" ActionScript="" Desc="" />
 			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="Basic_H" Script="break3atk" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>5</Priority>
 </Card>
 <Card ID="2061304">
@@ -99,7 +99,7 @@
 			<Behaviour Min="2" Dice="10" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="" ActionScript="" Desc="" />
 			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="Basic_H" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>5</Priority>
 </Card>
 <Card ID="2060305">
@@ -110,10 +110,10 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="8" Dice="20" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break5pw" ActionScript="" Desc="" />
-			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="Basic_J" Script="break5atk" ActionScript="" Desc="" />
+      		<Behaviour Min="8" Dice="25" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break5pw" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Basic_J" Script="break5atk" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>5</Priority>
 </Card>
 <Card ID="2061305">
@@ -124,10 +124,10 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="8" Dice="20" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break5pw" ActionScript="" Desc="" />
-			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="Basic_J" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="8" Dice="25" Type="Def" Detail="Guard" Motion="Z" EffectRes="Basic_Z" Script="break5pw" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Basic_J" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>5</Priority>
 </Card>
 </DiceCardXmlRoot>

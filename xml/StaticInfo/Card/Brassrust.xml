@@ -8,9 +8,9 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="EGO_Helper_Atk" Script="InfiniteRepeat" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="12" Type="Atk" Detail="Slash" Motion="H" EffectRes="EGO_Helper_Atk" Script="InfiniteRepeat" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>10</Priority>
 </Card>
 <Card ID="2061201">
@@ -22,9 +22,9 @@
 		<Script>Critical</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="EGO_Helper_Atk" Script="InfiniteRepeat" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="12" Type="Atk" Detail="Slash" Motion="H" EffectRes="EGO_Helper_Atk" Script="InfiniteRepeat" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>10</Priority>
 </Card>
 <Card ID="2060202">
@@ -35,24 +35,24 @@
 		<Script>powerUp1thisRoundenergy2</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="2" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="2" Dice="5" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="3" Dice="7" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>5</Priority>
 </Card>
 <Card ID="2061202">
 		<Name>磨刀霍霍</Name>
 		<Artwork>Copper3</Artwork>
 		<Rarity>Uncommon</Rarity>
-		<Spec Range="Near" Cost="0" />
+		<Spec Range="Near" Cost="1" />
 		<Script>powerUp1thisRound</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="2" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="2" Dice="5" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="2" Dice="7" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>5</Priority>
 </Card>
 <Card ID="2060203">
@@ -63,10 +63,10 @@
 		<Script>drawCard</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="vulnerable1atk" ActionScript="" Desc="" />
-			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="vulnerable1atk" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="vulnerable1atk" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="vulnerable1atk" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>7</Priority>
 </Card>
 <Card ID="2061203">
@@ -77,10 +77,10 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="vulnerable1atk" ActionScript="" Desc="" />
-			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="vulnerable1atk" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_H" Script="vulnerable1atk" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="Shi_J" Script="vulnerable1atk" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>4</Priority>
 </Card>
 <Card ID="2060204">
@@ -91,10 +91,10 @@
 		<Script>drawCard</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="4" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Shi_Z" Script="powerDown3targetDfn" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="12" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Shi_Z" Script="powerDown3targetDfn" ActionScript="" Desc="" />
 			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Hit" Motion="H" EffectRes="Shi_H" Script="powerUp2targetDfn" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>6</Priority>
 </Card>
 <Card ID="2061204">
@@ -105,10 +105,10 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="4" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Shi_Z" Script="powerDown3targetDfn" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="12" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Shi_Z" Script="powerDown3targetDfn" ActionScript="" Desc="" />
 			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Hit" Motion="H" EffectRes="Shi_H" Script="powerUp2targetDfn" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>6</Priority>
 </Card>
 <Card ID="2060205">
@@ -119,11 +119,11 @@
 		<Script>tag3hp10pc</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="Z" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="8" Type="Atk" Detail="Slash" Motion="Z" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>8</Priority>
 </Card>
 <Card ID="2061205">
@@ -134,11 +134,11 @@
 		<Script>tag3hp10pcLib</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="Z" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="5" Dice="8" Type="Atk" Detail="Slash" Motion="Z" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="Shi_J" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		 <Priority>8</Priority>
 </Card>
 </DiceCardXmlRoot>

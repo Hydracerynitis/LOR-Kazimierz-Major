@@ -8,9 +8,9 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="4" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>6</Priority>
 </Card>
 <Card ID="2060501">
@@ -23,7 +23,7 @@
 		<BehaviourList>
 			<Behaviour Min="8" Dice="16" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="Sleeping" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>9</Priority>
 </Card>
 <Card ID="2061501">
@@ -38,7 +38,7 @@
 		<BehaviourList>
 			<Behaviour Min="8" Dice="16" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="SleepingLib" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>9</Priority>
 </Card>
 <Card ID="2060503">
@@ -51,10 +51,10 @@
 		<Script>Avatar</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="7" Dice="11" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="7" Dice="11" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>10</Priority>
 </Card>
 <Card ID="2060504">
@@ -68,7 +68,7 @@
 			<Behaviour Min="3" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="recoverBreak5pw" ActionScript="" Desc=""/>
 			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>5</Priority>
 </Card>
 <Card ID="2061504">
@@ -82,7 +82,7 @@
 			<Behaviour Min="2" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="recoverBreak5pw" ActionScript="" Desc=""/>
 			<Behaviour Min="2" Dice="5" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>5</Priority>
 </Card>
 <Card ID="2060505">
@@ -95,9 +95,9 @@
 		<BehaviourList>
 			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 			<Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="recoverBreak5atk" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="recoverBreak5atk" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2060506">
@@ -113,7 +113,7 @@
 			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
 			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="drawCard1atk" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2061506">
@@ -127,9 +127,9 @@
 			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
 			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
 			<Behaviour Min="6" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUp1Last" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="6" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="drawCard1atk" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2060502">
@@ -144,52 +144,53 @@
 			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>10</Priority>
 </Card>
 <Card ID="2061502">
 		<Name>天马之耀</Name>
 		<Artwork>Nearl1</Artwork>
 		<Rarity>Unique</Rarity>
-		<Option>OnlyPage</Option>
 		<Option>ExhaustOnUse</Option>
 		<Spec Range="Near" Cost="3"/>
 		<Script>Blessing</Script>
+		<Option>OnlyPage</Option>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
 			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 			<Behaviour Min="5" Dice="10" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>10</Priority>
 </Card>
 <Card ID="2060507">
 		<Name>紧急治疗</Name>
 		<Artwork>Nearl2</Artwork>
 		<Rarity>Rare</Rarity>
-		<Spec Range="Near" Cost="0"/>
+		<Spec Range="Near" Cost="2"/>
 		<Script>ChargeLightHeal</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="7" Dice="11" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="paralysis2pw" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis2atk" ActionScript="" Desc=""/>
 			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2061507">
 		<Name>紧急治疗</Name>
 		<Artwork>Nearl2</Artwork>
 		<Rarity>Rare</Rarity>
-		<Option>OnlyPage</Option>
-		<Spec Range="Near" Cost="1"/>
+		<Spec Range="Near" Cost="2"/>
 		<Script>ChargeLightHealLib</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="5" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="7" Dice="11" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="paralysis2pw" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis2atk" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2060508">
@@ -200,66 +201,62 @@
 		<Script>ChargeLightPowerUp</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis3atk" ActionScript="" Desc=""/>
 			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="drawCard1atk" ActionScript="" Desc=""/>
 			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2061508">
 		<Name>战锤惩戒</Name>
 		<Artwork>Nearl3</Artwork>
 		<Rarity>Rare</Rarity>
-		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="2"/>
 		<Script>ChargeLightPowerUp</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis3atk" ActionScript="" Desc=""/>
 			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2060509">
 		<Name>刺眼闪光</Name>
 		<Artwork>Nearl4</Artwork>
 		<Rarity>Rare</Rarity>
-		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="3"/>
 		<Script>ChargeLightPowerDown</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="10" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="paralysis2atk" ActionScript="" Desc=""/>
+			<Behaviour Min="3" Dice="8" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2061509">
 		<Name>刺眼闪光</Name>
 		<Artwork>Nearl4</Artwork>
 		<Rarity>Rare</Rarity>
-		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="3"/>
 		<Script>ChargeLightPowerDown</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="8" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="paralysis1pw" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="10" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="paralysis2atk" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2060510">
 		<Name>圣光屏障</Name>
 		<Artwork>Nearl5</Artwork>
 		<Rarity>Rare</Rarity>
-		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="1"/>
 		<Script>ChargeLightProtection</Script>
 		<ScriptDesc></ScriptDesc>
@@ -268,22 +265,21 @@
 			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
 			<Behaviour Min="3" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 <Card ID="2061510">
 		<Name>圣光屏障</Name>
 		<Artwork>Nearl5</Artwork>
 		<Rarity>Rare</Rarity>
-		<Option>OnlyPage</Option>
 		<Spec Range="Near" Cost="1"/>
 		<Script>ChargeLightProtection</Script>
 		<ScriptDesc></ScriptDesc>
 		<BehaviourList>
-			<Behaviour Min="4" Dice="8" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc=""/>
-			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis1atk" ActionScript="" Desc=""/>
+			<Behaviour Min="5" Dice="8" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" ActionScript="" Desc=""/>
+			<Behaviour Min="4" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="paralysis2atk" ActionScript="" Desc=""/>
 		</BehaviourList>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Priority>8</Priority>
 </Card>
 </DiceCardXmlRoot>

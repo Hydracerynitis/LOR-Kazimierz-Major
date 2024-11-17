@@ -19,7 +19,7 @@ namespace KazimierzMajor
         }
         public override void OnSucceedAttack(BattleDiceBehavior behavior)
         {
-            int dmg = (int)(behavior.DiceResultDamage * 0.5);
+            int dmg = (int)(behavior.DiceResultValue * 0.5);
             behavior.card.target.TakeDamage(dmg);
             List<BattleUnitModel> friend = BattleObjectManager.instance.GetAliveList(this.owner.faction);
             friend.Remove(this.owner);

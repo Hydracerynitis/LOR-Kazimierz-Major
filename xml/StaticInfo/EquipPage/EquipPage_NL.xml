@@ -57,7 +57,7 @@
 			<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
 			<Passive Pid="@origin">10008</Passive>
-			<Passive>2160121</Passive>
+			<Passive>2160021</Passive>
 			<Passive>2160022</Passive>
 			<Passive>2160123</Passive>
 		</EquipEffect>
@@ -88,7 +88,7 @@
 			<StartPlayPoint>4</StartPlayPoint>
       		<MaxPlayPoint>4</MaxPlayPoint>
 			<Passive Pid="@origin">10008</Passive>
-			<Passive>2160121</Passive>
+			<Passive>2160021</Passive>
 			<Passive>2160124</Passive>
 			<Passive>2160125</Passive>
 		</EquipEffect>

@@ -8,7 +8,6 @@ namespace KazimierzMajor
     public class BattleUnitBuf_ChargeLight : BattleUnitBuf
     {
         public override string keywordId => "ChargeLight";
-        public override int paramInBufDesc => stack/3;
         public static void AddBuf(BattleUnitModel model, int value)
         {
             if (!(model.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_ChargeLight) is BattleUnitBuf_ChargeLight battleUnitBufChargeLight))
@@ -39,9 +38,8 @@ namespace KazimierzMajor
         }
         public override void OnRoundStartAfter()
         {
-            int cost = (int)((double)stack / 3);
             foreach (BattleDiceCardModel card in this._owner.allyCardDetail.GetAllDeck())
-                card.SetCurrentCost(card.GetOriginCost() - cost);
+                card.SetCurrentCost(card.GetOriginCost() - stack);
         }
     }
 }

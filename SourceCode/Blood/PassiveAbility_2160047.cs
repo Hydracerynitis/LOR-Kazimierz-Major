@@ -31,7 +31,7 @@ namespace KazimierzMajor
             Priority.Clear();
             for (int i = 100; i >= 0; i -= 10)
                 Priority.Enqueue(i);
-            KazimierInitializer.AddNewCard(owner, new List<int>() { 2160404, 2160404, 2160404}, Priority);
+            KazimierInitializer.AddNewCard(owner, new List<int>() { 2160404, 2160404}, Priority);
             sacrifice = true;
             AreaTarget = false;
         }

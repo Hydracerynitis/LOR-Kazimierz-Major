@@ -8,8 +8,8 @@
 		<Script>blood2</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="12" Dice="16" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="7" Dice="9" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="12" Dice="15" Type="Atk" Detail="Slash" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="5" Dice="8" Type="Atk" Detail="Hit" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
@@ -23,7 +23,7 @@
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
       		<Behaviour Min="7" Dice="10" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" ActionScript="" Desc="" />
-			<Behaviour Min="11" Dice="17" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
+			<Behaviour Min="10" Dice="16" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
@@ -36,7 +36,7 @@
 		<Script>FastAttack</Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="16" Dice="24" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
+      		<Behaviour Min="15" Dice="25" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" ActionScript="" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
@@ -91,7 +91,7 @@
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
-      		<Behaviour Min="13" Dice="21" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="EGO_ApcBird_FarLaserAtk_NotWin" Script="BloodStunLib" ActionScript="Final_ApcBird_Laser" Desc="" />
+      		<Behaviour Min="14" Dice="21" Type="Atk" Detail="Penetrate" Motion="F" EffectRes="EGO_ApcBird_FarLaserAtk_NotWin" Script="BloodStunLib" ActionScript="Final_ApcBird_Laser" Desc="" />
 		</BehaviourList>
 		<Chapter>7</Chapter>
 		 <Priority>0</Priority>
@@ -101,7 +101,7 @@
 		<Artwork>Blood6</Artwork>
 		<Rarity>Unique</Rarity>
 		<Option>OnlyPage</Option>
-		<Spec Range="Near" Cost="4" />
+		<Spec Range="Near" Cost="3" />
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>
@@ -167,7 +167,7 @@
 		<Name>血反</Name>
 		<Artwork>Blood6</Artwork>
 		<Rarity>Rare</Rarity>
-		<Spec Range="Near" Cost="0" />
+		<Spec Range="Special" Cost="0" />
 		<Script></Script>
 		<ScriptDesc></ScriptDesc>
     	<BehaviourList>

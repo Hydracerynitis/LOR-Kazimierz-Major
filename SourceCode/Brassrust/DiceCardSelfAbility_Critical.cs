@@ -8,9 +8,16 @@ namespace KazimierzMajor
 {
     public class DiceCardSelfAbility_Critical:DiceCardSelfAbilityBase
     {
-        public override bool OnChooseCard(BattleUnitModel owner)
+        public override void OnUseCard()
         {
-            return owner.hp<owner.MaxHp/4;
+            if (owner.hp > owner.MaxHp / 4)
+            {
+                int lost_hp = (int)(owner.hp - owner.MaxHp / 4);
+                owner.LoseHp(lost_hp);
+                int dmgRate = (int) (90 * (lost_hp / 0.75 * owner.MaxHp));
+                card.ApplyDiceStatBonus(DiceMatch.AllDice, new DiceStatBonus() { dmgRate = dmgRate });
+            }
+            
         }
     }
 }

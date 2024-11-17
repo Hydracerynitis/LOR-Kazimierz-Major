@@ -6,25 +6,31 @@ using System;
 
 namespace KazimierzMajor
 {
-    public class PassiveAbility_2060054 : PassiveAbilityBase
+    public class PassiveAbility_2060054 : PassiveAbilityBase, SpendCostAbility
     {
+        int count= 0;
         public override void OnWaveStart()
         {
             BattleUnitBuf_ChargeLight.AddBuf(this.owner, 0);
-        }
-        public override void OnRoundStart()
-        {
-            if (this.owner.cardSlotDetail.PlayPoint > 3)
-            {
-                int num = this.owner.cardSlotDetail.PlayPoint - 3;
-                this.owner.cardSlotDetail.LosePlayPoint(num);
-                BattleUnitBuf_ChargeLight.AddBuf(this.owner, num);
-            }
         }
         public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
         {
             this.owner.cardSlotDetail.RecoverPlayPoint(1);
         }
+
+        public void OnSpendCost(int cost)
+        {
+            count+=cost;
+            if (count >= 8)
+            {
+                count-=8;
+                BattleUnitBuf_ChargeLight.AddBuf(this.owner, 1);
+            }
+        }
+    }
+    public interface SpendCostAbility
+    {
+        public void OnSpendCost(int cost);
     }
 }
 

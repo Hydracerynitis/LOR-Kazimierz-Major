@@ -7,15 +7,17 @@ namespace KazimierzMajor
 {
     public class DiceCardSelfAbility_ChargeLightPowerDown : DiceCardSelfAbilityBase
     {
+        private bool isCost0 = false;
+        public override void OnStartBattle()
+        {
+            if(card.card.GetCost() <=0)
+                isCost0 = true;
+        }
         public override void OnUseCard()
         {
-            if(BattleUnitBuf_ChargeLight.GetBuff(this.owner,out BattleUnitBuf_ChargeLight buf) && buf.stack > 6)
-            {
-                buf.UseStack(2);
-                if (this.card.target.currentDiceAction == null)
-                    return;
-                this.card.target.currentDiceAction.ApplyDiceStatBonus(DiceMatch.AllDice, new DiceStatBonus() { max=-2 });
-            }
+            if (this.card.target.currentDiceAction == null || !isCost0)
+                return;
+            this.card.target.currentDiceAction?.ApplyDiceStatBonus(DiceMatch.AllDice, new DiceStatBonus() { min=-2, max = -2 });
         }
     }
 }

@@ -43,7 +43,8 @@
 [拖延并不是一个好选择]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="Critical">
-    <Desc>仅限体力低于25%时使用</Desc>
+    <Desc>[使用时] 将血量减至25%最大生命值
+    期间每消耗25%最大生命值便将自身所有骰子伤害+30% (至多90%)</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="Tempo">
     <Desc>[使用时] 获得3层[迅捷动量]和[把握时机]，并下一幕让Jack2护甲[过热]</Desc>
@@ -52,10 +53,10 @@
     <Desc>[使用时] 获得2层[迅捷动量]和[把握时机]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="MonmentumReplicate">
-    <Desc>若不与反击骰拼点,额外消耗1层[迅捷动能]复制一个穿刺4~10骰子(至多5次)</Desc>
+    <Desc>若不与反击骰拼点,额外消耗1层[迅捷动能]将下一个骰子复制到书页末尾(至多5次)</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ForceReplicate">
-    <Desc>若不与反击骰拼点,额外消耗1层[把握时机]复制一个闪避4~10骰子(至多5次)</Desc>
+    <Desc>若不与反击骰拼点,额外消耗1层[把握时机]将上一个闪避复制到书页末尾(至多5次)</Desc>
   </BattleCardAbility>
     <BattleCardAbility ID="BothUse1power1">
     <Desc>[使用时] 使用一层[迅捷动量]和[把握时机]使所有骰子获得威力+1</Desc>
@@ -85,7 +86,7 @@
     <Desc>[拼点胜利] 在下一幕对目标施加1层[破绽]</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="handicap">
-    <Desc>[命中时]使下一个骰子命中时对目标施加1层[虚弱][破绽][缠绕]</Desc>
+    <Desc>[命中时]使下一个骰子命中时对目标施加2层[虚弱][破绽][束缚]</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="LowpowerUp1">
     <Desc>如果目标混乱抗性小于50%最大抗性则该骰子威力+1</Desc>
@@ -107,14 +108,14 @@
     <Desc>[使用时] 使所有友方单位在这一幕结束时恢复其10%的血量</Desc>
   </BattleCardAbility>
 	<BattleCardAbility ID="Blessing">
-    <Desc>[使用时] 为所有友方单位施加[天马祝福]，这一幕结束时每有一个[天马祝福]触发其效果则自己获得一层眩晕</Desc>
+    <Desc>[战斗开始] 消耗所有[光辉],每消耗一层光辉便使自己获得1层[天马祝福] (至多3层)</Desc>
   </BattleCardAbility>
  	<BattleCardAbility ID="Avatar">
     <Desc>仅限情感等级为3时使用
 [使用时] [光芒涌动]被动替换成[先贤化身]被动</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="Improvise">
-    <Desc>该书页的防御骰单方面攻击时会转化为基础值-2的打击进攻骰</Desc>
+    <Desc>该书页的防御骰单方面攻击时会转化为基础值-1的打击进攻骰</Desc>
   </BattleCardAbility>
    	<BattleCardAbility ID="recoverBreak5pw">
     <Desc>[拼点胜利] 恢复5点混乱抗性</Desc>
@@ -124,19 +125,19 @@
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightHeal">
     <Desc>[使用时] 抽取两张书页
-如果[光辉]层数大于6消耗2层[光辉]恢复友方血量最少的单位10血量</Desc>
+如果该书页战斗开始时费用为0,恢复友方血量最少的单位20血量</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightHealLib">
     <Desc>[使用时] 抽取一张书页
-如果[光辉]层数大于6消耗2层[光辉]恢复友方血量最少的单位5血量</Desc>
+如果该书页战斗开始时费用为0,恢复友方血量最少的单位20血量</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightPowerUp">
-    <Desc>[使用时] 如果[光辉]层数大于6消耗2层[光辉]使该战斗书页所有骰子威力+1</Desc>
+    <Desc>[使用时] 如果该书页战斗开始时费用为0,使该战斗书页所有骰子最大值+3</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightPowerDown">
-    <Desc>[使用时] 如果[光辉]层数大于6消耗2层[光辉]使目标的战斗书页所有骰子最大值-2</Desc>
+    <Desc>[使用时] 如果该书页战斗开始时费用为0,则使目标所有骰子基础值-2</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightProtection">
-    <Desc>[战斗开始] 如果[光辉]层数大于6消耗2层[光辉]使友方血量最少的单位获得2层[守护][振奋]</Desc>
+    <Desc>[战斗开始] 如果该书页费用为0,使所有我方角色获得2层[守护][振奋]</Desc>
   </BattleCardAbility>
 </BattleCardAbilityDescRoot>

@@ -20,7 +20,7 @@ namespace KazimierzMajor
         {
             base.BeforeRollDice(behavior);
             if (_dead)
-                behavior.ApplyDiceStatBonus(new DiceStatBonus() { power = 1 });
+                behavior.ApplyDiceStatBonus(new DiceStatBonus() { power = 2 });
         }
     }
 }

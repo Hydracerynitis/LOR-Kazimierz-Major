@@ -28,10 +28,6 @@
 		<Rarity>Unique</Rarity>
 		<Cost>6</Cost>
   	</Passive>
-	<Passive ID="2060034">
-		<Rarity>Unique</Rarity>
-		<Cost>6</Cost>
-  	</Passive>
 	<Passive ID="2060021">
 		<Rarity>Rare</Rarity>
 		<Cost>6</Cost>
@@ -85,7 +81,11 @@
   	</Passive>
 	<Passive ID="2061041">
 		<Rarity>Unique</Rarity>
-		<Cost>4</Cost>
+		<Cost>6</Cost>
+  	</Passive>
+	<Passive ID="2061042">
+		<Rarity>Unique</Rarity>
+		<Cost>6</Cost>
   	</Passive>
 	<Passive ID="2060041">
 		<Rarity>Rare</Rarity>
@@ -101,14 +101,6 @@
   	</Passive>
 	<Passive ID="2060044">
 		<Rarity>Rare</Rarity>
-		<Cost>6</Cost>
-  	</Passive>
-	<Passive ID="2060045">
-		<Rarity>Unique</Rarity>
-		<Cost>6</Cost>
-  	</Passive>
-	<Passive ID="2060046">
-		<Rarity>Unique</Rarity>
 		<Cost>6</Cost>
   	</Passive>
 	<Passive ID="2061050">

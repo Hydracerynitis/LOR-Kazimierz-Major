@@ -61,11 +61,6 @@ namespace KazimierzMajor
                     behavior.TargetDice.forbiddenBonusDice = true;
                     behavior.TargetDice.card.DestroyDice(DiceMatch.NextDice,DiceUITiming.AttackAfter);
                     owner.breakDetail.ResetBreakDefault();
-                    if (StageController.Instance._allCardList.Find(x => x.card.GetID()==Tools.MakeLorId(2160508)) is BattlePlayingCardDataInUnitModel Die)
-                    {
-                        Die.DestroyPlayingCard();
-                        Die.GetDiceBehaviorList().ForEach(x => behavior.card.AddDice(x));
-                    }
                     behavior.abilityList.FindAll(x => x is ParryAbility).ForEach(x => (x as ParryAbility).TriggerParry());
                     ParryTriggered = owner.battleCardResultLog.CurbehaviourResult;
                 }

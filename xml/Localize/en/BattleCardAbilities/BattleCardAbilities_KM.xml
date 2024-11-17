@@ -44,7 +44,8 @@ and  "[On Clash Lose] Inflict self 2 Stagger Damage"</Desc>
 [Dragging out the fight is ill-advised]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="Critical">
-    <Desc>Can only be used when under 25% Max Hp</Desc>
+    <Desc>[On Use] Reduce HP to 25% Max HP
+For each 25% HP lost, incresae Damage of all Offensive Dice by +30% (Max 90%)</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="Tempo">
     <Desc>[On Use] Gain 3 [Keeping Momentum] and [Sudden Brake]; Jack 2 Body Armor will [Overheat] in the next Scene</Desc>
@@ -53,10 +54,10 @@ and  "[On Clash Lose] Inflict self 2 Stagger Damage"</Desc>
     <Desc>[On Use] Gain 2 [Keeping Momentum] and [Sudden Brake]</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="MonmentumReplicate">
-    <Desc>When clashing with non-Counter Dice, use 1 stack of [Keeping Momentum] to replicate a Pierce 4-10 Die (At most 5 times)</Desc>
+    <Desc>When clashing with non-Counter Dice, use 1 stack of [Keeping Momentum] to add a copy of next Die to the end of the Page (At most 5 times)</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="ForceReplicate">
-    <Desc>When clashing with non-Counter Dice, use 1 stack of [Sudden Brake] to replicate a Evade 4-10 Die (At most 5 times)</Desc>
+    <Desc>When clashing with non-Counter Dice, use 1 stack of [Sudden Brake] to add a copy of previous Die to the end of the Page (At most 5 times)</Desc>
   </BattleCardAbility>
     <BattleCardAbility ID="BothUse1power1">
     <Desc>[On Use] Use 1 [Keeping Momentum] and [Sudden Brake] to boost all Dice on this Page by +1</Desc>
@@ -86,7 +87,7 @@ and  "[On Clash Lose] Inflict self 2 Stagger Damage"</Desc>
     <Desc>[On Clash Win] Inflict 1 [Disarm] in the next Scene</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="handicap">
-    <Desc>[On Hit] Inflict 1 [Feeble] [Disarm] [Bind] when next Die lands successful hit</Desc>
+    <Desc>[On Hit] Inflict 2 [Feeble] [Disarm] [Bind] when next Die lands successful hit</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="LowpowerUp1">
     <Desc>Gain +1 Power when target's Stagger Resist is less than 50% of its Max Stagger Resist</Desc>
@@ -109,14 +110,14 @@ User of this Page can attack affected target</Desc>
     <Desc>[On Use] All allies recover 10% of their Max Hp at the end of this Scene</Desc>
   </BattleCardAbility>
 	<BattleCardAbility ID="Blessing">
-    <Desc>[On Use] All allies gain [Bless of Pegasian]; For each [Bless of Pegasian] activated its effects, gain 1 "Immobolized"</Desc>
+    <Desc>[On Start Battle] Consumm All [Radiant]. For each stack of [Radiant] gain 1 stack of [Bless of Pegasian]</Desc>
   </BattleCardAbility>
  	<BattleCardAbility ID="Avatar">
     <Desc>Can only be used at Emotion Level 3 and above
 [On Use] Replace passive [Surging Brilliance] with [Divine Avatar]</Desc>
   </BattleCardAbility>
   	<BattleCardAbility ID="Improvise">
-    <Desc>In an one-side attack, Defensive Dice on this Page will be transformed to Offensive Dice with -2 Natural Roll.</Desc>
+    <Desc>In an one-side attack, Defensive Dice on this Page will be transformed to Offensive Dice with -1 Natural Roll.</Desc>
   </BattleCardAbility>
    	<BattleCardAbility ID="recoverBreak5pw">
     <Desc>[On Clash Win] Recover 5 Stagger Resist</Desc>
@@ -126,19 +127,19 @@ User of this Page can attack affected target</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightHeal">
     <Desc>[On Use] Draw 2 Page
-If has more than 6 stacks of [Glow], Use 2 [Glow] to recover 10 HP of ally with lowest health </Desc>
+ If the Page's Cost is 0 at the start of Battle, recover 20 HP of ally with lowest health</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightHealLib">
     <Desc>[On Use] Draw 1 Page
-If has more than 6 stacks of [Glow], Use 2 [Glow] to recover 5 HP of ally with lowest health</Desc>
+ If the Page's Cost is 0 at the start of Battle, recover 20 HP of ally with lowest health</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightPowerUp">
-    <Desc>[On Use] If has more than 6 stacks of [Glow], Use 2 [Glow] to boost Power of all Dice of this Page by +1</Desc>
+    <Desc>[On Use] If the Page's Cost is 0 at the start of Battle, boost Maximun Roll of All Dice by +3</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightPowerDown">
-    <Desc>[On Use] If has more than 6 stacks of [Glow], Use 2 [Glow] to reduce Maximun Roll of all Dice of opponent's Page by -2</Desc>
+    <Desc>[On Use] If the Page's Cost is 0 at the start of Battle, reduce Natural Roll of all Dice of opponent's Page by -2</Desc>
   </BattleCardAbility>
      	<BattleCardAbility ID="ChargeLightProtection">
-    <Desc>[On Start Battle] If has more than 6 stacks of [Glow], Use 2 [Glow] to give ally with lowest health 2 [Protection] [Stagger Protection]</Desc>
+    <Desc>[On Start Battle] If the Page's Cost is 0, give all ally 2 [Protection] [Stagger Protection]</Desc>
   </BattleCardAbility>
 </BattleCardAbilityDescRoot>

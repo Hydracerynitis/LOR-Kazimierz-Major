@@ -18,8 +18,8 @@ namespace KazimierzMajor
                 BattleDiceBehavior diceBehavior = this.card.GetDiceBehaviorList()[1];
                 diceBehavior.behaviourInCard = diceBehavior.behaviourInCard.Copy();
                 diceBehavior.behaviourInCard.Detail = BehaviourDetail.Hit;
-                diceBehavior.behaviourInCard.Min -= 2;
-                diceBehavior.behaviourInCard.Dice -= 2;
+                diceBehavior.behaviourInCard.Min -= 1;
+                diceBehavior.behaviourInCard.Dice -= 1;
                 diceBehavior.behaviourInCard.Type = BehaviourType.Atk;
             }
         }
@@ -32,8 +32,8 @@ namespace KazimierzMajor
                 {
                     diceBehavior.behaviourInCard = diceBehavior.behaviourInCard.Copy();
                     diceBehavior.behaviourInCard.Detail = BehaviourDetail.Hit;
-                    diceBehavior.behaviourInCard.Min -= 2;
-                    diceBehavior.behaviourInCard.Dice -= 2;
+                    diceBehavior.behaviourInCard.Min -= 1;
+                    diceBehavior.behaviourInCard.Dice -= 1;
                     diceBehavior.behaviourInCard.Type = BehaviourType.Atk;
                     diceBehavior.behaviourInCard.EffectRes = "LiuSection2Unit_J";
                     diceBehavior.behaviourInCard.MotionDetail = MotionDetail.J;

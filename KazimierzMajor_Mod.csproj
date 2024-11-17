@@ -135,6 +135,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SourceCode\ArmorLess\DiceCardAbility_OneSideRepeat.cs" />
     <Compile Include="SourceCode\BattleStartCinematic.cs" />
     <Compile Include="SourceCode\Candle\BattleVoidBehaviour.cs" />
     <Compile Include="SourceCode\Candle\DiceCardAbility_FlowerBlossomLib.cs" />
@@ -171,7 +172,6 @@
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160125.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160124.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160123.cs" />
-    <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160121.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160029.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160028.cs" />
     <Compile Include="SourceCode\ArmorLess\PassiveAbility_2160027.cs" />
@@ -233,7 +233,6 @@
     <Compile Include="SourceCode\Corrupted\DiceCardAbility_handicap.cs" />
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060041.cs" />
     <Compile Include="SourceCode\Corrupted\PassiveAbility_2060042.cs" />
-    <Compile Include="SourceCode\Corrupted\PassiveAbility_2060045.cs" />
     <Compile Include="SourceCode\KazimierInitializer.cs" />
     <Compile Include="SourceCode\Left-Handed\BattleUnitBuf_Depressed.cs" />
     <Compile Include="SourceCode\Left-Handed\DiceCardAbility_break2pl.cs" />
@@ -245,11 +244,9 @@
     <Compile Include="SourceCode\Left-Handed\PassiveAbility_2060031.cs" />
     <Compile Include="SourceCode\Left-Handed\PassiveAbility_2060032.cs" />
     <Compile Include="SourceCode\Left-Handed\PassiveAbility_2060033.cs" />
-    <Compile Include="SourceCode\Left-Handed\PassiveAbility_2060034.cs" />
     <Compile Include="SourceCode\Left-Handed\PassiveAbility_2060133.cs" />
     <Compile Include="SourceCode\Nearl\BattleUnitBuf_Blessing.cs" />
     <Compile Include="SourceCode\Nearl\BattleUnitBuf_ChargeLight.cs" />
-    <Compile Include="SourceCode\Nearl\BattleUnitBuf_Stunning.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_Blessing.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_ChargeLightHeal.cs" />
     <Compile Include="SourceCode\Nearl\DiceCardSelfAbility_ChargeLightHealLib.cs" />
@@ -280,6 +277,7 @@
     <Compile Include="SourceCode\NightMare\DiceCardAbility_targetPower_2.cs" />
     <Compile Include="SourceCode\PassiveAbility_2060002.cs" />
     <Compile Include="SourceCode\PassiveAbility_2060000.cs" />
+    <Compile Include="SourceCode\PassiveAbility_2061042.cs" />
     <Compile Include="SourceCode\PassiveAbility_2061040.cs" />
     <Compile Include="SourceCode\PassiveAbility_2061041.cs" />
     <Compile Include="SourceCode\PassiveAbility_2061050.cs" />
@@ -299,6 +297,7 @@
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060013.cs" />
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060014.cs" />
     <Compile Include="SourceCode\Plastic\PassiveAbility_2060111.cs" />
+    <Compile Include="SourceCode\Radiant\DiceCardAbility_ParryCritical.cs" />
     <Compile Include="SourceCode\Radiant\ParryBehaviour.cs" />
     <Compile Include="SourceCode\Radiant\DiceCardAbility_ParryPayback.cs" />
     <Compile Include="SourceCode\Radiant\DiceCardAbility_PWBoostDmg.cs" />
@@ -343,7 +342,6 @@
     <Compile Include="SourceCode\Withered\DiceCardAbility_Other1SameBreak.cs" />
     <Compile Include="SourceCode\Withered\PassiveAbility_2060043.cs" />
     <Compile Include="SourceCode\Withered\PassiveAbility_2060044.cs" />
-    <Compile Include="SourceCode\Withered\PassiveAbility_2060046.cs" />
     <PackageReference Include="Krafs.Publicizer" Version="1.0.2" />
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>

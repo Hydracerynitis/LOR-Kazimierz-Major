@@ -23,10 +23,10 @@
 			<Passive>2060031</Passive>
 			<Passive>2060032</Passive>
 			<Passive>2060033</Passive>
-			<Passive>2060034</Passive>
+			<Passive>2060002</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
 		<CharacterSkin>Custom_Left</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -59,7 +59,7 @@
 			<Passive>2060002</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
 		<CharacterSkin>Custom_Copper</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -93,7 +93,7 @@
 		</EquipEffect>
 		<RangeType>Range</RangeType>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> <!-- Stephan-->
 		<CharacterSkin>Custom_Plastic</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -120,11 +120,11 @@
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060041</Passive>
 			<Passive>2060042</Passive>
-			<Passive>2060045</Passive>
 			<Passive>2061040</Passive>
+			<Passive>2061042</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> <!-- Stephan-->
 		<CharacterSkin>Custom_Corrosion</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -151,12 +151,12 @@
 			<Passive Pid="@origin">10008</Passive>
 			<Passive>2060043</Passive>
 			<Passive>2060044</Passive>
-			<Passive>2060046</Passive>
 			<Passive>2061040</Passive>
+			<Passive>2061042</Passive>
 		</EquipEffect>
 		<RangeType>Range</RangeType>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> <!-- Stephan-->
 		<CharacterSkin>Custom_Wither</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -187,7 +187,7 @@
 			<Passive>2060056</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity> 
 		<CharacterSkin>Custom_Blemishine</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>
@@ -218,7 +218,7 @@
 			<Passive>2060057</Passive>
 		</EquipEffect>
 		<BookIcon>Kazimier</BookIcon>
-		<Chapter>6</Chapter>
+		<Chapter>7</Chapter>
 		<Rarity>Unique</Rarity>
 		<CharacterSkin>Custom_Nearl</CharacterSkin>
 		<SpeedDiceNum>1</SpeedDiceNum>

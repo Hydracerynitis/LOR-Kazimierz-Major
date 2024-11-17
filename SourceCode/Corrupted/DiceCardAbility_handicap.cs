@@ -10,7 +10,16 @@ namespace KazimierzMajor
     {
         public override void OnSucceedAttack()
         {
-            card.ApplyDiceAbility(DiceMatch.NextAttackDice,new DiceCardAbility_weakDisarmBinding1atk());
+            card.ApplyDiceAbility(DiceMatch.NextAttackDice,new handicapAbility());
+        }
+    }
+    public class handicapAbility : DiceCardAbilityBase
+    {
+        public override void OnSucceedAttack()
+        {
+            this.card.target?.bufListDetail.AddKeywordBufByCard(KeywordBuf.Weak, 2, this.owner);
+            this.card.target?.bufListDetail.AddKeywordBufByCard(KeywordBuf.Disarm, 2, this.owner);
+            this.card.target?.bufListDetail.AddKeywordBufByCard(KeywordBuf.Binding, 2, this.owner);
         }
     }
 }

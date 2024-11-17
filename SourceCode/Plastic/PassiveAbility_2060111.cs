@@ -6,7 +6,6 @@ namespace KazimierzMajor
 {
     public class PassiveAbility_2060111 : PassiveAbilityBase
     {
-        private int count = 0;
         public override void OnRoundStart()
         {
             if (this.owner.breakDetail.breakLife == 0 || this.owner.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_stun) is BattleUnitBuf_stun || this.owner.bufListDetail.GetReadyBufList().Find(x => x is BattleUnitBuf_stun) is BattleUnitBuf_stun)
@@ -18,12 +17,8 @@ namespace KazimierzMajor
         public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
         {
             base.OnUseCard(curCard);
-            count += 1;
-            if (count >= 6)
-            {
-                owner.bufListDetail.AddKeywordBufByEtc(KeywordBuf.Stun, 1);
-                count = 0;
-            }
+            if (RandomUtil.valueForProb < 0.2)
+                curCard.DestroyDice(DiceMatch.AllDice);
         }
     }
 }

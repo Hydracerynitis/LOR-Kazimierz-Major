@@ -4,8 +4,8 @@
 		<Name>烛骑士</Name>
 		<TextId>2160001</TextId>
 		<EquipEffect>
-			<HP>1000</HP>
-			<Break>1000</Break>
+			<HP>1200</HP>
+			<Break>700</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>7</Speed>
 			<SResist>Normal</SResist>
@@ -226,7 +226,7 @@
 		<Name>逐魇骑士</Name>
 		<TextId>2160009</TextId>
 		<EquipEffect>
-			<HP>900</HP>
+			<HP>950</HP>
 			<Break>400</Break>
 			<SpeedMin>3</SpeedMin>
 			<Speed>7</Speed>
@@ -278,8 +278,8 @@
 		<Name>血骑士</Name>
 		<TextId>2160011</TextId>
 		<EquipEffect>
-			<HP>700</HP>
-			<Break>350</Break>
+			<HP>600</HP>
+			<Break>250</Break>
 			<SpeedMin>3</SpeedMin>
 			<Speed>5</Speed>
 			<SResist>Normal</SResist>
@@ -308,8 +308,8 @@
 		<Name>凝血之刃</Name>
 		<TextId>2160012</TextId>
 		<EquipEffect>
-			<HP>80</HP>
-			<Break>80</Break>
+			<HP>60</HP>
+			<Break>20</Break>
 			<SpeedMin>2</SpeedMin>
 			<Speed>6</Speed>
 			<SResist>Normal</SResist>
@@ -327,7 +327,7 @@
 		<Chapter>7</Chapter>
 		<Rarity>Rare</Rarity> 
 		<CharacterSkin>Custom_BLOOD_A</CharacterSkin>
-		<SpeedDiceNum>3</SpeedDiceNum>
+		<SpeedDiceNum>2</SpeedDiceNum>
 		<!--<RandomFace>true</RandomFace>-->
 	</Book>
 	<Book ID="12160013">

@@ -66,10 +66,6 @@
 		<Desc>一共有24名无胄盟成员参与了此次围剿.这次围剿还剩下{0}名成员在支援途中
 舞台开启时回复所有司书血量和混乱抗性并且提升至情感等级5.</Desc>
 	</PassiveDesc>
-	<PassiveDesc ID="2160121">
-		<Name>青金箭术</Name> 
-		<Desc>进攻骰拼点失败会以0%原本伤害和混乱伤害直接攻击目标</Desc>
-	</PassiveDesc>
 	<PassiveDesc ID="2160123">
 		<Name>都市狩猎</Name> 
 		<Desc>该单位能无限使用"发布赏金"([战斗开始] 使目标获得1层[赏金])
@@ -142,7 +138,7 @@
 	</PassiveDesc>
 	<PassiveDesc ID="2160043">
 		<Name>血噬</Name> 
-		<Desc>没有陷入混乱时若一幕内被一个敌人造成超过50点伤害后立刻对其使用血归.</Desc>
+		<Desc>没有陷入混乱时若一幕内被一个敌人造成超过50点伤害后立刻用一颗斩击骰子(10-16)攻击该敌人.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160044">
 		<Name>血甲</Name> 

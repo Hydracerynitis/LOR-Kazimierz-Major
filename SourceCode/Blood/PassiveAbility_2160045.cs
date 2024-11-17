@@ -78,7 +78,9 @@ namespace KazimierzMajor
             {
                 if (owner.hp != owner.MaxHp)
                 {
-                    owner.passiveDetail.AddPassive(new PassiveAbility_2160046(owner));
+                    PassiveAbility_2160046 phase2 = new PassiveAbility_2160046(owner);
+                    owner.passiveDetail.AddPassive(phase2);
+                    phase2.GetDesc();
                     PassiveAbilityBase passive = owner.passiveDetail.PassiveList.Find(x => x is PassiveAbility_2160044);
                     if (passive != null)
                         owner.passiveDetail.DestroyPassive(passive);

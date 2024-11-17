@@ -146,7 +146,7 @@ Prioritize enemies that is not Staggered.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160043">
 		<Name>Blood Flood</Name> 
-		<Desc>If not Staggered, use Exsanguination to the enemies that have dealt more than 50 Damage in one Scene to the character.</Desc>
+		<Desc>If not Staggered, use Slash Die (10-16) to the enemies that have dealt more than 50 Damage in one Scene to the character.</Desc>
 	</PassiveDesc>
 	<PassiveDesc ID="2160044">
 		<Name>Blood Armor</Name> 

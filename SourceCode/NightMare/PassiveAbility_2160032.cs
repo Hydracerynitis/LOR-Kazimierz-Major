@@ -19,11 +19,11 @@ namespace KazimierzMajor
                 (BattleSceneRoot.Instance.currentMapObject as TournamentMapManager).ChangeToKhan();
             owner.bufListDetail.AddBuf(new aoeReduction());
         }
-        public PassiveAbility_2160032()
+        public void GetDesc()
         {
             this.name = Singleton<PassiveDescXmlList>.Instance.GetName(Tools.MakeLorId(2160032));
             this.desc = Singleton<PassiveDescXmlList>.Instance.GetDesc(Tools.MakeLorId(2160032));
-            this.rare = Rarity.Unique;
+            rare = Rarity.Unique;
         }
         public override void OnAfterRollSpeedDice()
         {
